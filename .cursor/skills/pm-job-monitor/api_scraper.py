@@ -4,12 +4,18 @@ from __future__ import annotations
 
 import json
 import os
+import re
+from html import unescape
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote
+from urllib.parse import quote, urljoin
 from urllib.request import Request, urlopen
 
-USER_AGENT = "Mozilla/5.0 (compatible; PMJobMonitor/1.0)"
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+)
+JOOBLE_BASE = "https://cz.jooble.org"
 BASE_DIR = Path(__file__).resolve().parent
 LOCAL_KEYS_FILE = BASE_DIR / "api-keys.local.json"
 
@@ -69,6 +75,144 @@ def _get_json(url: str, timeout: int = 30) -> tuple[dict | None, str | None]:
         return None, str(exc.reason)
     except Exception as exc:  # noqa: BLE001
         return None, str(exc)
+
+
+def _get_html(url: str, timeout: int = 30) -> tuple[str | None, str | None]:
+    try:
+        req = Request(
+            url,
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept": "text/html,application/xhtml+xml",
+                "Accept-Language": "cs-CZ,cs;q=0.9",
+            },
+        )
+        with urlopen(req, timeout=timeout) as resp:
+            charset = resp.headers.get_content_charset() or "utf-8"
+            return resp.read().decode(charset, errors="replace"), None
+    except HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")[:300]
+        return None, f"HTTP {exc.code}: {body}"
+    except URLError as exc:
+        return None, str(exc.reason)
+    except Exception as exc:  # noqa: BLE001
+        return None, str(exc)
+
+
+def _jooble_cloudflare(html: str) -> bool:
+    text = html.lower()
+    return (
+        "just a moment" in text
+        or "okamžik" in text
+        or "attention required" in text
+        or "cdn-cgi/challenge-platform" in text
+    )
+
+
+def parse_jooble_html(html: str, portal: str, default_location: str = "") -> list[dict]:
+    jobs: list[dict] = []
+    seen: set[str] = set()
+
+    for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        items = data if isinstance(data, list) else [data]
+        for item in items:
+            if item.get("@type") not in {"JobPosting", "WebPage"}:
+                continue
+            title = item.get("title", "").strip()
+            url = item.get("url") or item.get("mainEntityOfPage", "")
+            if isinstance(url, dict):
+                url = url.get("@id", "")
+            if not title or not url:
+                continue
+            norm = urljoin(JOOBLE_BASE, url)
+            if norm in seen:
+                continue
+            seen.add(norm)
+            org = item.get("hiringOrganization", {})
+            company = org.get("name", "") if isinstance(org, dict) else ""
+            loc_parts = []
+            job_loc = item.get("jobLocation", {})
+            if isinstance(job_loc, dict):
+                addr = job_loc.get("address", {})
+                if isinstance(addr, dict):
+                    loc_parts.extend([addr.get("addressLocality", ""), addr.get("addressCountry", "")])
+            jobs.append({
+                "title": title,
+                "company": company.strip(),
+                "location": ", ".join(p for p in loc_parts if p) or default_location,
+                "url": norm,
+                "portal": portal,
+            })
+
+    for href, title in re.findall(
+        r'href="((?:https://cz\.jooble\.org)?/(?:jdp|desc)/[^"]+)"[^>]*>([^<]{3,200})<',
+        html,
+        re.I,
+    ):
+        norm = urljoin(JOOBLE_BASE, href.split("?")[0])
+        if norm in seen:
+            continue
+        seen.add(norm)
+        jobs.append({
+            "title": unescape(re.sub(r"\s+", " ", title)).strip(),
+            "company": "",
+            "location": default_location,
+            "url": norm,
+            "portal": portal,
+        })
+
+    for href in re.findall(r'href="((?:https://cz\.jooble\.org)?/(?:jdp|desc)/[^"]+)"', html, re.I):
+        norm = urljoin(JOOBLE_BASE, href.split("?")[0])
+        if norm in seen:
+            continue
+        seen.add(norm)
+        slug = norm.rsplit("/", 1)[-1]
+        jobs.append({
+            "title": f"Jooble #{slug[:12]}",
+            "company": "",
+            "location": default_location,
+            "url": norm,
+            "portal": portal,
+        })
+
+    return jobs
+
+
+def fetch_jooble_cz_html(
+    portal: str,
+    listing_url: str = "https://cz.jooble.org/pr%C3%A1ce/Praha",
+    keywords: str = "product manager",
+) -> tuple[list[dict], str | None]:
+    """Přímý HTTP fetch cz.jooble.org — funguje jen pokud Cloudflare propustí."""
+    urls = [listing_url]
+    if keywords and "ukw=" not in listing_url.lower():
+        q = quote(keywords)
+        urls.append(f"https://cz.jooble.org/SearchResult?ukw={q}&loc=Praha")
+
+    jobs: list[dict] = []
+    default_location = "Praha" if "praha" in listing_url.lower() else ""
+    blocked = False
+
+    for url in urls:
+        html, err = _get_html(url)
+        if err:
+            if "403" in err:
+                blocked = True
+            continue
+        if not html or _jooble_cloudflare(html):
+            blocked = True
+            continue
+        jobs.extend(parse_jooble_html(html, portal, default_location))
+
+    if jobs:
+        return jobs, None
+    if blocked:
+        return [], "Cloudflare blokuje cz.jooble.org (curl i browser z cloudu)"
+    return [], "Jooble CZ HTML — prázdná stránka nebo neznámý layout"
 
 
 def fetch_jooble_api(

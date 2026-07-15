@@ -17,7 +17,7 @@ from urllib.request import Request, urlopen
 BASE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE_DIR))
 
-from api_scraper import fetch_adzuna_api, fetch_himalayas_api, fetch_jooble_api  # noqa: E402
+from api_scraper import fetch_adzuna_api, fetch_himalayas_api, fetch_jooble_api, fetch_jooble_cz_html  # noqa: E402
 from browser_scraper import BrowserScraper  # noqa: E402
 PORTALS_FILE = BASE_DIR / "portals.json"
 FILTERS_FILE = BASE_DIR / "filters.json"
@@ -462,7 +462,23 @@ def scrape_browser_portals(portals: list[dict]) -> tuple[dict[str, list[dict]], 
                             failures.append(("Indeed CZ", err or api_err or "Všechny fallbacky selhaly"))
             if "Jooble CZ" in enabled:
                 portal = next(p for p in portals if p["name"] == "Jooble CZ")
-                jooble_jobs, err = scraper.scrape_jooble(portal["searchUrl"], "Jooble CZ")
+                search_url = portal["searchUrl"]
+                jooble_jobs, err = scraper.scrape_jooble(search_url, "Jooble CZ")
+                if not jooble_jobs and err:
+                    html_jobs, html_err = fetch_jooble_cz_html(
+                        "Jooble CZ",
+                        listing_url=search_url,
+                        keywords=portal.get("searchQuery", "product manager"),
+                    )
+                    if html_jobs:
+                        jooble_jobs = html_jobs
+                        err = None
+                        fallback_notes.append((
+                            "Jooble CZ",
+                            f"browser blokován → přímý HTML fetch ({len(html_jobs)} pozic)",
+                        ))
+                    elif html_err and not err:
+                        err = html_err
                 if jooble_jobs:
                     jobs["Jooble CZ"] = jooble_jobs
                 elif err:

@@ -275,7 +275,7 @@ class BrowserScraper:
         page = self._page()
         try:
             self._goto(page, search_url, wait_ms=5000)
-            for _ in range(12):
+            for _ in range(24):
                 if "just a moment" not in page.title().lower() and "okamžik" not in page.title().lower():
                     break
                 page.wait_for_timeout(5000)
@@ -283,9 +283,18 @@ class BrowserScraper:
             if "just a moment" in page.title().lower() or "okamžik" in page.title().lower():
                 return [], "Cloudflare ochrana — headless browser neprošel"
 
+            search = page.query_selector(
+                'input[name="ukw"], input[name="q"], input[type="search"], input[placeholder*="Hledat"]'
+            )
+            if search and "/pr" in search_url and "ukw=" not in search_url:
+                search.fill("product manager")
+                search.press("Enter")
+                page.wait_for_timeout(4000)
+
             jobs: list[dict] = []
+            default_location = "Praha" if "praha" in search_url.lower() else ""
             for _ in range(max_pages):
-                items = page.query_selector_all('a[href*="/desc/"]')
+                items = page.query_selector_all('a[href*="/desc/"], a[href*="/jdp/"]')
                 seen: set[str] = set()
                 for item in items:
                     href = item.get_attribute("href") or ""
@@ -293,10 +302,12 @@ class BrowserScraper:
                         continue
                     seen.add(href)
                     title = item.inner_text().strip().split("\n")[0]
+                    if not title or len(title) < 3:
+                        continue
                     jobs.append({
                         "title": title,
                         "company": "",
-                        "location": "",
+                        "location": default_location,
                         "url": href if href.startswith("http") else urljoin("https://cz.jooble.org", href),
                         "portal": portal,
                     })

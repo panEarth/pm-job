@@ -25,10 +25,11 @@
     {
       "name": "Jooble CZ",
       "type": "search_url",
-      "searchUrl": "https://cz.jooble.org/SearchResult?ukw=product+manager",
+      "searchUrl": "https://cz.jooble.org/pr%C3%A1ce/Praha",
+      "searchQuery": "product manager",
       "enabled": true,
-      "fallbacks": ["jooble_api", "adzuna_api"],
-      "notes": "Cloudflare → fallback Jooble REST API (JOOBLE_API_KEY). API klíč funguje, ale globální index nemusí mít CZ data."
+      "fallbacks": ["html_direct", "jooble_api", "adzuna_api"],
+      "notes": "Praha listing + PM filtr. Cloudflare blokuje scraping z cloudu → fallback REST API."
     },
     {
       "name": "Tribee",
