@@ -74,36 +74,83 @@ def _get_json(url: str, timeout: int = 30) -> tuple[dict | None, str | None]:
 def fetch_jooble_api(
     portal: str,
     keywords: str = "product manager",
-    location: str = "Praha",
+    location: str = "Czech Republic",
     max_pages: int = 2,
 ) -> tuple[list[dict], str | None]:
     api_key = _credential("JOOBLE_API_KEY", "jooble", "api_key")
     if not api_key:
         return [], "Chybí JOOBLE_API_KEY (registrace: https://jooble.org/api/about)"
 
-    jobs: list[dict] = []
-    for page in range(1, max_pages + 1):
-        data, err = _post_json(
-            f"https://jooble.org/api/{api_key}",
-            {
-                "keywords": keywords,
-                "location": location,
-                "page": str(page),
-                "companysearch": "false",
-            },
-        )
-        if err:
-            return jobs, err if not jobs else None
-        for item in data.get("jobs", []):
-            jobs.append({
-                "title": item.get("title", "").strip(),
-                "company": item.get("company", "").strip(),
-                "location": item.get("location", "").strip(),
-                "url": item.get("link", "").strip(),
-                "portal": portal,
-            })
-        if not data.get("jobs"):
-            break
+    czech_markers = (
+        "czech", "prague", "praha", "brno", "česk", "cesk", "czechia", "czech republic",
+        "cz.jooble",
+    )
+    us_markers = (
+        ", tx", ", ca", ", ny", ", fl", ", ne", ", nc", ", usa", "united states",
+        ", il", ", oh", ", pa", ", ga", ", va", ", wa", ", co", ", az",
+    )
+
+    def is_czech_job(item: dict) -> bool:
+        text = " ".join([
+            item.get("title", ""),
+            item.get("location", ""),
+            item.get("snippet", "")[:300],
+            item.get("link", ""),
+        ]).lower()
+        if any(marker in text for marker in us_markers):
+            return False
+        return any(marker in text for marker in czech_markers)
+
+    def query_jooble(query_location: str) -> tuple[list[dict], bool]:
+        batch: list[dict] = []
+        auth_ok = False
+        for page in range(1, max_pages + 1):
+            data, err = _post_json(
+                f"https://jooble.org/api/{api_key}",
+                {
+                    "keywords": keywords,
+                    "location": query_location,
+                    "page": str(page),
+                    "companysearch": "false",
+                    "ResultOnPage": "50",
+                },
+            )
+            if err:
+                if "403" in err:
+                    return batch, False
+                continue
+            auth_ok = True
+            for item in data.get("jobs", []):
+                if query_location.lower() in {"czech republic", "česká republika", "czechia"}:
+                    if not is_czech_job(item) and item.get("location", "").strip():
+                        continue
+                elif query_location.lower() == "europe" and not is_czech_job(item):
+                    continue
+                batch.append({
+                    "title": item.get("title", "").strip(),
+                    "company": item.get("company", "").strip(),
+                    "location": item.get("location", "").strip(),
+                    "url": item.get("link", "").strip(),
+                    "portal": portal,
+                })
+            if not data.get("jobs") or page >= (data.get("totalCount", 0) + 49) // 50:
+                break
+        return batch, auth_ok
+
+    jobs, auth_ok = query_jooble(location)
+    if not jobs and location.lower() != "europe":
+        extra, extra_auth = query_jooble("Europe")
+        auth_ok = auth_ok or extra_auth
+        seen = {j["url"] for j in jobs}
+        for job in extra:
+            if job["url"] not in seen:
+                jobs.append(job)
+                seen.add(job["url"])
+
+    if not auth_ok:
+        return [], "Jooble API: neplatný API klíč nebo nedostupné"
+    if not jobs:
+        return [], "Jooble API funguje, ale nevrací CZ PM pozice (index bez českého trhu)"
     return jobs, None
 
 
