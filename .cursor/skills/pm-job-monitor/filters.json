@@ -1,0 +1,66 @@
+{
+  "includeKeywords": [
+    "product manager",
+    "product owner",
+    "head of product",
+    "vp product",
+    "produktový manažer",
+    "produktový manažer/ka",
+    "produktový manažerka",
+    "vedoucí produktu",
+    "senior pm",
+    "group pm",
+    "principal pm",
+    "staff pm",
+    "product lead",
+    "product director",
+    "chief product officer",
+    "cpo"
+  ],
+  "excludeKeywords": [
+    "intern",
+    "internship",
+    "stáž",
+    "junior",
+    "junior product",
+    "graduate",
+    "entry level",
+    "absolvent",
+    "trainee",
+    "junior developer",
+    "junior software",
+    "frontend developer",
+    "backend developer"
+  ],
+  "locations": {
+    "accept": [
+      "Praha",
+      "Prague",
+      "Brno",
+      "Ostrava",
+      "Plzeň",
+      "Česko",
+      "Czech",
+      "Czechia",
+      "ČR",
+      "Czech Republic",
+      "Hybrid",
+      "Remote",
+      "Na dálku",
+      "Full remote",
+      "Plně na dálku"
+    ],
+    "remoteAlsoAccept": [
+      "EU",
+      "Europe",
+      "Europa",
+      "EMEA",
+      "Remote EU",
+      "Remote Europe",
+      "Work from anywhere",
+      "Fully remote"
+    ],
+    "rules": "Akceptuj: hybrid nebo onsite v Česku (primárně Praha). Full remote v ČR i EU. Vyluč junior pozice (včetně 'Junior Product Manager')."
+  },
+  "locationRequired": true
+}

@@ -1,0 +1,47 @@
+{
+  "portals": [
+    {
+      "name": "StartupJobs.cz",
+      "type": "search_url",
+      "searchUrl": "https://www.startupjobs.cz/nabidky/product-manager",
+      "enabled": true,
+      "notes": "Český startup portál — kategorie Product Manager"
+    },
+    {
+      "name": "Jobs.cz",
+      "type": "search_url",
+      "searchUrl": "https://www.jobs.cz/prace/?q=product%20manager",
+      "enabled": true,
+      "notes": "Obecný český job portál"
+    },
+    {
+      "name": "Indeed CZ",
+      "type": "search_url",
+      "searchUrl": "https://cz.indeed.com/jobs?q=product+manager&l=%C4%8Cesko",
+      "enabled": true,
+      "notes": "Indeed pro Česko — agent filtruje lokaci dle pravidel"
+    },
+    {
+      "name": "Jooble CZ",
+      "type": "search_url",
+      "searchUrl": "https://cz.jooble.org/SearchResult?ukw=product+manager",
+      "enabled": true,
+      "notes": "Agregátor pracovních nabídek"
+    },
+    {
+      "name": "Tribee",
+      "type": "url",
+      "url": "https://www.tribee.cz/cs/prace",
+      "searchQuery": "product manager",
+      "enabled": true,
+      "notes": "Otevřít stránku a vyhledat 'product manager' ve vyhledávacím poli"
+    },
+    {
+      "name": "NoFluffJobs CZ",
+      "type": "search_url",
+      "searchUrl": "https://nofluffjobs.com/cz/productManagement",
+      "enabled": true,
+      "notes": "IT portál — kategorie Produktový management"
+    }
+  ]
+}

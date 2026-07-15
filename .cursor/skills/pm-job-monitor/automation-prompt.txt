@@ -1,0 +1,22 @@
+Použij skill pm-job-monitor pro denní monitoring PM pozic.
+
+1. Načti konfiguraci z ~/.cursor/skills/pm-job-monitor/:
+   - portals.json (enabled portály)
+   - filters.json (klíčová slova, vyloučení, lokace)
+   - state/seen-jobs.json (již viděné inzeráty)
+
+2. Projdi každý enabled portál (max 2 stránky na portál). Použij browser nebo WebFetch podle typu portálu.
+
+3. Filtruj pozice:
+   - PM role (product manager, product owner, head of product, …)
+   - Vyluč junior, intern, stáž, graduate, entry level
+   - Lokace: hybrid/onsite v Česku, full remote v ČR i EU
+
+4. Porovnej se stavem — reportuj jen NOVÉ pozice (nebo aktualizované).
+
+5. Aktualizuj state/seen-jobs.json (firstSeen, lastSeen, max 2000 záznamů, smaž starší než 90 dní).
+
+6. Pošli Slack DM s reportem:
+   - Pokud nové pozice: seznam s názvem, firmou, lokací, URL a zdrojem
+   - Pokud žádné nové: ✅ Žádné nové PM pozice. Monitorováno N portálů.
+   - Pokud portál selhal: ⚠️ varování s důvodem
