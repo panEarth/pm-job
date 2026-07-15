@@ -1,4 +1,1445 @@
 {
-  "jobs": [],
-  "lastRun": null
+  "jobs": [
+    {
+      "id": "94eb742d248fd279",
+      "title": "Category & Product Manager v MIXIT",
+      "company": "",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/105921/category-product-manager-v-mixit",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "00c8c3f68467708c",
+      "title": "Senior Project/Product Manager (ex-developer)",
+      "company": "",
+      "location": "Remote",
+      "url": "https://www.startupjobs.cz/nabidka/105831/senior-project-product-manager-ex-developer",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "f6d7721c7bf87122",
+      "title": "Frontend SW Engineer s přesahem do Product Ownershipu pro Český cybersecurity produkt (Medior / Senior)",
+      "company": "",
+      "location": "Brno",
+      "url": "https://www.startupjobs.cz/nabidka/105791/frontend-sw-engineer-s-presahem-do-product-ownershipu-pro-cesky-cybersecurity-produkt-medior-senior",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "222bead42c203a8a",
+      "title": "Product Owner/Project manager",
+      "company": "",
+      "location": "Brno",
+      "url": "https://www.startupjobs.cz/nabidka/105717/product-owner-project-manager",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "22cdf0053a233449",
+      "title": "Produktový manažer pro brandovou reklamu",
+      "company": "",
+      "location": "Brno",
+      "url": "https://www.startupjobs.cz/nabidka/105505/produktovy-manazer-pro-brandovou-reklamu",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "408048a6fe8be392",
+      "title": "Product Manager - AI-First E-commerce Marketplace",
+      "company": "",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/105441/product-manager-ai-first-e-commerce-marketplace",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "0e8ecf10aa69ad13",
+      "title": "Product Manager do Pixelfield",
+      "company": "",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/105347/product-manager-do-pixelfield",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "499f90a804aa2061",
+      "title": "Product Manager",
+      "company": "",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/105279/product-manager",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "7c29bb1e971378aa",
+      "title": "Senior Product Owner",
+      "company": "",
+      "location": "Hybrid",
+      "url": "https://www.startupjobs.cz/nabidka/105275/senior-product-owner",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "ee83c5828ea5ce75",
+      "title": "🚀Product Manager – tvoř produkty, které se opravdu dostanou na trh",
+      "company": "",
+      "location": "Hybrid",
+      "url": "https://www.startupjobs.cz/nabidka/105197/product-manager-tvor-produkty-ktere-se-opravdu-dostanou-na-trh",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a46538aca0d8b2df",
+      "title": "SW Developer / Product Owner 👨‍💻🚉",
+      "company": "",
+      "location": "",
+      "url": "https://www.startupjobs.cz/nabidka/105175/sw-developer-product-owner",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "6ec742870ce6e5d1",
+      "title": "HW Product Manager / System Engineer",
+      "company": "",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/105125/hw-product-manager-system-engineer",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "5f546c98db0ec32d",
+      "title": "Product Manager / Product Owner v menší technologické firmě 🖥️",
+      "company": "",
+      "location": "Hybrid",
+      "url": "https://www.startupjobs.cz/nabidka/104669/product-manager-product-owner-v-mensi-technologicke-firme",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "df104a7f7f16ae9b",
+      "title": "Technický produktový manažer pro doporučovací systém",
+      "company": "",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/104343/technicky-produktovy-manazer-pro-doporucovaci-system",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "00492c2cae800f22",
+      "title": "Product Manager",
+      "company": "",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/103673/product-manager-health-fitness-startup",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "9eba6d8f287109a2",
+      "title": "Senior Product Manager (AI solutions)",
+      "company": "",
+      "location": "Remote (CET +/- 2h)Languages: Fluent English +",
+      "url": "https://www.startupjobs.cz/nabidka/103567/senior-product-manager-ai-solutions",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "c0b3377da8d0ab65",
+      "title": "AI Product Manager pro B2B (m/ž)",
+      "company": "O2 Czech Republic a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001246572",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a0e4946d97e62e75",
+      "title": "Technical Product Manager – Datová a integrační platforma (SQL, API, telemetrie), remote",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001290968",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "abbceeec8d314f58",
+      "title": "Veď digitální transformaci investičních služeb | Project Manager/Product Owner 📱",
+      "company": "UniCredit Bank Czech Republic and Slovakia, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001293180",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a36deb524130c71c",
+      "title": "Head of Product / Product Manager",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001305497",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "04312d8d70991090",
+      "title": "Produktový manažer pro brandovou reklamu",
+      "company": "Seznam.cz, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001231544",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "7f6d2f6ebb262743",
+      "title": "Produktový manažer/manažerka - lékař/ka",
+      "company": "STAPRO s. r. o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001229581",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "fa05109244938e79",
+      "title": "Product Manager – Printables & EasyPrint",
+      "company": "Prusa Research a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001326905",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "1ec3751acacb0856",
+      "title": "Produktový manažer pro brandovou reklamu",
+      "company": "Seznam.cz, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001124429",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "13388b114371d5a3",
+      "title": "Product Manager for AI Centre (m/f)",
+      "company": "O2 Czech Republic a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001298006",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "d60ae8661f66dc91",
+      "title": "Projektový manažer / Product Owner",
+      "company": "AAA Auto (AURES Holdings a.s.)",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001311064",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "8ec7785e284e5173",
+      "title": "Produktový manažer/ka",
+      "company": "Asseco Solutions, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001298892",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "85d50947a20832a4",
+      "title": "Technický produktový manažer",
+      "company": "PŘEDVÝBĚR.CZ a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001282025",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "8b92f9d4672de905",
+      "title": "🚀Product Manager – tvoř produkty, které se opravdu dostanou na trh",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001319392",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "6e9951c959080a7d",
+      "title": "⋙Produktový manažer - Služební automobil (m/ž)⋘",
+      "company": "mBlue Czech, s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001309371",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "8ab54acd50b975f9",
+      "title": "IT Product Owner, Manager - Order Management",
+      "company": "Atlas Copco Services s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001306986",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "7a079c7102bf1365",
+      "title": "Technický produktový manažer pro doporučovací systém",
+      "company": "Seznam.cz, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001234158",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "ff0735ac6fdecd5c",
+      "title": "Produktový manažer pro Sreality",
+      "company": "Seznam.cz, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001277385",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "cd4e7eaf43c4b2e6",
+      "title": "Product Manager",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001316567",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "62642f623b8fb576",
+      "title": "Product Manager",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001319585",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "66b7130065ecdd9c",
+      "title": "Product Manager A185",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001295438",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "4f5d358b214135f3",
+      "title": "Produktový manažer/Produktová manažerka",
+      "company": "Skupina ČEZ",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001251875",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "012252d3d3fdad33",
+      "title": "Produktový manažer/ka IT služeb",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001304776",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "1cccedfeed412784",
+      "title": "AI produktový manažer/ka",
+      "company": "VLTAVA LABE MEDIA a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001189416",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "d3754b14bf1c0b1d",
+      "title": "SALES PRODUCT MANAGER",
+      "company": "METALIMEX a. s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2000910201",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "bdced051f8d36374",
+      "title": "PRODUKTOVÝ MANAŽER /OBCHODNÍK pro CZ a SK",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001283561",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a7e1e54edd90db42",
+      "title": "Produktový manažer/Projektový manažer",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001281698",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a2f9547b82c8703c",
+      "title": "Produktový manažer (non-paint portfolio)",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001316573",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "731412ff51d0c673",
+      "title": "🧭 Senior Product Manager Vybavení – Privátní značky",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001288575",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "132e582831e5b724",
+      "title": "Produktový manažer pro vývoj sportovních doplňků",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001224945",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "873c6a00b44c690f",
+      "title": "Produktový manažer - Specialista pro alt. zdroje - Brno",
+      "company": "Ptáček - velkoobchod, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001250780",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "bf7732bc36c03dad",
+      "title": "Produktový manažer – elektrokomponenty (m/ž)",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001316583",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "e89a0a07e0225a4f",
+      "title": "PRODUKTOVÝ MANAŽER",
+      "company": "IZOMAT stavebniny s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001221609",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "e8ba2749122b5de4",
+      "title": "Senior Product Manager Fresh & Frozen",
+      "company": "MAKRO Cash &amp; Carry ČR s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001232159",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "e59b7b0a0b7cb67e",
+      "title": "Produktový manažer pojištění motorových vozidel",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001325162",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "ce51631bd46cd8fd",
+      "title": "PRODUKTOVÝ MANAŽER",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001321933",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "f2379320ee129c07",
+      "title": "Produktový manažer",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001297731",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "bf5626e8e292f568",
+      "title": "Produktový manažer Ž/M",
+      "company": "HECHT MOTORS s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001188893",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "4b741701c168875d",
+      "title": "Globální produktový manažer",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001152012",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "8ebbe58ce6115a70",
+      "title": "Product Manager dětského oddělení | ZARA | Brno",
+      "company": "INDITEX Česká republika, s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001322170",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "17e1f7e16c30c260",
+      "title": "Product Manager pánského oddělení | ZARA | Brno",
+      "company": "INDITEX Česká republika, s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001322167",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "1c5883393508fdd1",
+      "title": "PRODUKTOVÝ MANAŽER(KA) - KRMNÉ SMĚSI",
+      "company": "ZZN Pelhřimov a. s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001249908",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "05b8b80eead2f397",
+      "title": "Technical Product Manager",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001286213",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "760be136c5789e92",
+      "title": "Product Manager",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001249760",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "7ea4dd4fd0c8b5cc",
+      "title": "Produktový manažer",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001304655",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "4ee9bb6b22be2d22",
+      "title": "Produktový manažer / Produktová manažerka pro investiční a penzijní produkty CZ/SK",
+      "company": "UNIQA",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001322603",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "fe04ced05d211131",
+      "title": "Produktový manažer pro B2B IT sektor – nastartuj svou kariéru v IT",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001327488",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "fcb26d840d9fd4b7",
+      "title": "Produktový manažer/manažerka",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001286507",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "6f0edd974588bd73",
+      "title": "HW Product Manager",
+      "company": "Škoda Digital",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001128279",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "2acfc64693b0f81b",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Remote, Warszawa, Poland, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-remote",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "44a300bf302f00f9",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Warszawa, Poland, Remote, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-warszawa",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "250949dc28bb9759",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Sopot, Poland, Remote, Warszawa, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-sopot",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a1a30447b0f79169",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "gorzów wielkopolski, Poland, Remote, Warszawa, Sopot",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-gorzowwielkopolski",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "770583b1176948e0",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-lower-silesian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a5d5180f0c601e70",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-kuyavian-pomeranian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "beaaa040000e1107",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-lodz",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a4b949d03bbc14d4",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-lublin",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "d4a2983b406ffc30",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-lesser-poland",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "9ed587ab60d1e9e1",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-opole",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "730f17ef21bace14",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-subcarpathian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "45ceebb9c5fbee61",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-podlaskie",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "224a53de21aab8f6",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-silesian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "bef92dd4c8428f47",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-holy-cross",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "ddc76168d3ef0109",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-warmian-masurian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "45c5352cf83843fb",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-greater-poland",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "4f17a594171d1959",
+      "title": "Product Manager (MSP)",
+      "company": "Xopero Software",
+      "location": "Poland, Remote, Warszawa, Sopot, gorzów wielkopolski",
+      "url": "https://nofluffjobs.com/job/product-manager-msp-xopero-software-west-pomeranian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "086c7fb7634a4346",
+      "title": "AI Agents & Intelligent Automation Product Lead",
+      "company": "Square One Resources",
+      "location": "Remote, Warsaw, Poland",
+      "url": "https://nofluffjobs.com/job/ai-agents-intelligent-automation-product-lead-square-one-resources-remote",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "0a87a7b96ff06ce6",
+      "title": "AI Agents & Intelligent Automation Product Lead",
+      "company": "Square One Resources",
+      "location": "Warsaw, Poland, Remote",
+      "url": "https://nofluffjobs.com/job/ai-agents-intelligent-automation-product-lead-square-one-resources-warsaw",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "62a0d6d67ce5059e",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Remote, Poland",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-remote",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a4a018ecdd118986",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-lower-silesian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "58e25530f6369720",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-kuyavian-pomeranian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "64514018de26edbc",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-lodz",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "f9119a62bb5bb56b",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-lublin",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "6e36eaaee1e1b177",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-lubusz",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "d0f582397c2ee0e1",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-lesser-poland",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "775bada680be4b61",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-masovian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "f06da4569ea125e9",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-opole",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "0ed5f13eeda2db1d",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-subcarpathian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "66fdf378c3fa9165",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-podlaskie",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "976edaef159d448f",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-pomeranian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "6c2a19a9545e9911",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-silesian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "e9c39b52b7af7316",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-holy-cross",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "e2baff0a969f9b59",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-warmian-masurian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "c5b5c50d5ec028d5",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-greater-poland",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "797547bd4f27f195",
+      "title": "Product Manager – eLIMS Clinical Diagnostics",
+      "company": "Link Group",
+      "location": "Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-manager-elims-clinical-diagnostics-link-group-west-pomeranian",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "e74852437b1f2042",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Remote, Poznań, Poland, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-remote-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "96b654c5006ebb34",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poznań, Poland, Remote, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-poznan-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "6f1d467f59f0a021",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Gdańsk, Poland, Remote, Poznań, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-gdansk-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "3a710f3bc4aff71e",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Wrocław, Poland, Remote, Poznań, Gdańsk, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-wroclaw-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "f330daf0411023cc",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Warszawa, Poland, Remote, Poznań, Gdańsk, Wrocław, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-warszawa-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "907645a668b4fef8",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Kraków, Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-krakow-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "02ed80b0003c9eb0",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-kuyavian-pomeranian-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "101fc9c60af7c916",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-lodz-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "1aa2698831e0d6d9",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-lublin-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "49dddcbe1beb35f6",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-lubusz-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "46baa78ee43605b7",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-opole-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "48702ceb4d906c36",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-subcarpathian-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "2b1f23b9e2ce7657",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-podlaskie-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "0bd9fa6034cae28e",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-silesian-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "486cba83ad9a89eb",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-holy-cross-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "4d52e309457cc3cf",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-warmian-masurian-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "b17068a3fa4424a8",
+      "title": "Technical Product Manager",
+      "company": "CKSource",
+      "location": "Poland, Remote, Poznań, Gdańsk, Wrocław, Warszawa, Kraków",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-cksource-west-pomeranian-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "5d8a05d7d66f0ccb",
+      "title": "Technical Product Owner",
+      "company": "Connectis_",
+      "location": "Remote, Warszawa, Poland",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-connectis--remote-11",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "fd71aabababbcf2e",
+      "title": "Technical Product Owner",
+      "company": "Connectis_",
+      "location": "Warszawa, Poland, Remote",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-connectis--warszawa-13",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "2c3e572feb1e605d",
+      "title": "Product Owner/Presales Support (Freelancer)",
+      "company": "Fabres",
+      "location": "Remote, Poznań, Poland",
+      "url": "https://nofluffjobs.com/job/product-owner-presales-support-freelancer-fabres-remote",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "2d3072b685fbae44",
+      "title": "Product Owner/Presales Support (Freelancer)",
+      "company": "Fabres",
+      "location": "Poznań, Poland, Remote",
+      "url": "https://nofluffjobs.com/job/product-owner-presales-support-freelancer-fabres-poznan",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "1175482a7ecfe66f",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Remote, Warszawa, Poland",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "28dc5b15c802b1fe",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Warszawa, Poland, Remote",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-warszawa-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a494d7d77079c599",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-lower-silesian-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "0be2a83cb7d96caf",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-kuyavian-pomeranian-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "ab6ec8b58bdc770e",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-lodz-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "fc2f789438a1e873",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-lublin-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "65956e804009e68b",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-lubusz-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "8f9b859b5b865fe8",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-lesser-poland-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "624d03105254b838",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-opole-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "1d276c0eaabb23a0",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-subcarpathian-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "2047897e089925c4",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-podlaskie-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "d0a730d77accbf0f",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-pomeranian-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "3a1db7eae746232e",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-silesian-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "02406059178230c9",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-holy-cross-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "8df7a0ea03d98f5f",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-warmian-masurian-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "190492daab524a78",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-greater-poland-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "d806a2e1ff2190be",
+      "title": "Technical Product Owner (remote/afternoon hours)",
+      "company": "DahliaMatic Sp. z o.o.",
+      "location": "Poland, Remote, Warszawa",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-remote-afternoon-hours-dahliamatic-west-pomeranian-2",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "f727daa877c0c288",
+      "title": "Technical Product Owner (Core Team, AI technologies)",
+      "company": "Creatio",
+      "location": "Remote, Warsaw, Poland",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-core-team-ai-technologies-creatio-remote",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "9949b033764b6192",
+      "title": "Technical Product Owner (Core Team, AI technologies)",
+      "company": "Creatio",
+      "location": "Warsaw, Poland, Remote",
+      "url": "https://nofluffjobs.com/job/technical-product-owner-core-team-ai-technologies-creatio-warsaw",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "6fa3b7f1e6073faf",
+      "title": "Senior Product Owner with German",
+      "company": "Spyrosoft",
+      "location": "Remote, Wrocław, Poland",
+      "url": "https://nofluffjobs.com/job/senior-product-owner-with-german-spyrosoft-remote",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "187a8a489cb58fdc",
+      "title": "Senior Product Owner with German",
+      "company": "Spyrosoft",
+      "location": "Wrocław, Poland, Remote",
+      "url": "https://nofluffjobs.com/job/senior-product-owner-with-german-spyrosoft-wroclaw",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "c7765b20796ef253",
+      "title": "Technical Product Manager",
+      "company": "SoftServe",
+      "location": "Remote",
+      "url": "https://nofluffjobs.com/job/technical-product-manager-softserve-remote-1",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "ef1b99b46f281808",
+      "title": "Senior IT Product Owner",
+      "company": "AVENGA (Agencja Pracy, nr KRAZ: 8448)",
+      "location": "Remote",
+      "url": "https://nofluffjobs.com/job/senior-it-product-owner-avenga-agencja-pracy-nr-kraz-8448-remote",
+      "portal": "NoFluffJobs CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "lastRun": "2026-07-15T09:23:56.809361+00:00"
 }
