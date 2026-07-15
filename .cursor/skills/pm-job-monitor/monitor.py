@@ -17,7 +17,13 @@ from urllib.request import Request, urlopen
 BASE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE_DIR))
 
-from api_scraper import fetch_adzuna_api, fetch_himalayas_api, fetch_jooble_api, fetch_jooble_cz_html  # noqa: E402
+from api_scraper import (  # noqa: E402
+    fetch_adzuna_api,
+    fetch_himalayas_api,
+    fetch_jooble_api,
+    fetch_jooble_cz_html,
+    load_jooble_local_cache,
+)
 from browser_scraper import BrowserScraper  # noqa: E402
 PORTALS_FILE = BASE_DIR / "portals.json"
 FILTERS_FILE = BASE_DIR / "filters.json"
@@ -463,43 +469,51 @@ def scrape_browser_portals(portals: list[dict]) -> tuple[dict[str, list[dict]], 
             if "Jooble CZ" in enabled:
                 portal = next(p for p in portals if p["name"] == "Jooble CZ")
                 search_url = portal["searchUrl"]
-                jooble_jobs, err = scraper.scrape_jooble(search_url, "Jooble CZ")
-                if not jooble_jobs and err:
-                    html_jobs, html_err = fetch_jooble_cz_html(
+                cached_jobs, cache_note = load_jooble_local_cache()
+                if cached_jobs:
+                    jobs["Jooble CZ"] = cached_jobs
+                    fallback_notes.append((
                         "Jooble CZ",
-                        listing_url=search_url,
-                        keywords=portal.get("searchQuery", "product manager"),
-                    )
-                    if html_jobs:
-                        jooble_jobs = html_jobs
-                        err = None
-                        fallback_notes.append((
+                        f"domácí IP cache ({len(cached_jobs)} pozic · {cache_note})",
+                    ))
+                else:
+                    jooble_jobs, err = scraper.scrape_jooble(search_url, "Jooble CZ")
+                    if not jooble_jobs and err:
+                        html_jobs, html_err = fetch_jooble_cz_html(
                             "Jooble CZ",
-                            f"browser blokován → přímý HTML fetch ({len(html_jobs)} pozic)",
-                        ))
-                    elif html_err and not err:
-                        err = html_err
-                if jooble_jobs:
-                    jobs["Jooble CZ"] = jooble_jobs
-                elif err:
-                    api_jobs, api_err = fetch_jooble_api("Jooble CZ")
-                    if api_jobs:
-                        jobs["Jooble CZ"] = api_jobs
-                        fallback_notes.append((
-                            "Jooble CZ",
-                            f"browser blokován → Jooble REST API ({len(api_jobs)} pozic)",
-                        ))
-                    else:
-                        adzuna_jobs, adzuna_err = fetch_adzuna_api("Jooble CZ")
-                        if adzuna_jobs:
-                            jobs["Jooble CZ"] = adzuna_jobs
+                            listing_url=search_url,
+                            keywords=portal.get("searchQuery", "product manager"),
+                        )
+                        if html_jobs:
+                            jooble_jobs = html_jobs
+                            err = None
                             fallback_notes.append((
                                 "Jooble CZ",
-                                f"browser blokován → Adzuna API ({len(adzuna_jobs)} pozic)",
+                                f"browser blokován → přímý HTML fetch ({len(html_jobs)} pozic)",
+                            ))
+                        elif html_err and not err:
+                            err = html_err
+                    if jooble_jobs:
+                        jobs["Jooble CZ"] = jooble_jobs
+                    elif err:
+                        api_jobs, api_err = fetch_jooble_api("Jooble CZ")
+                        if api_jobs:
+                            jobs["Jooble CZ"] = api_jobs
+                            fallback_notes.append((
+                                "Jooble CZ",
+                                f"browser blokován → Jooble REST API ({len(api_jobs)} pozic)",
                             ))
                         else:
-                            reason = api_err or adzuna_err or err or "Všechny fallbacky selhaly"
-                            failures.append(("Jooble CZ", reason))
+                            adzuna_jobs, adzuna_err = fetch_adzuna_api("Jooble CZ")
+                            if adzuna_jobs:
+                                jobs["Jooble CZ"] = adzuna_jobs
+                                fallback_notes.append((
+                                    "Jooble CZ",
+                                    f"browser blokován → Adzuna API ({len(adzuna_jobs)} pozic)",
+                                ))
+                            else:
+                                reason = api_err or adzuna_err or err or "Všechny fallbacky selhaly"
+                                failures.append(("Jooble CZ", reason))
     except Exception as exc:  # noqa: BLE001
         for name in ["StartupJobs.cz", "Tribee", "Indeed CZ", "Jooble CZ"]:
             if name in enabled and name not in jobs and not any(f[0] == name for f in failures):

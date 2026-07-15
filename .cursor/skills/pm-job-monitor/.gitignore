@@ -1,2 +1,3 @@
 __pycache__/
 api-keys.local.json
+state/jooble-local-cache.json

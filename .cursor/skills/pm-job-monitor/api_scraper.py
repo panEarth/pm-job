@@ -15,8 +15,10 @@ USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
 )
-JOOBLE_BASE = "https://cz.jooble.org"
 BASE_DIR = Path(__file__).resolve().parent
+JOOBLE_BASE = "https://cz.jooble.org"
+JOOBLE_CACHE_FILE = BASE_DIR / "state" / "jooble-local-cache.json"
+JOOBLE_CACHE_MAX_AGE_HOURS = 36
 LOCAL_KEYS_FILE = BASE_DIR / "api-keys.local.json"
 
 
@@ -213,6 +215,58 @@ def fetch_jooble_cz_html(
     if blocked:
         return [], "Cloudflare blokuje cz.jooble.org (curl i browser z cloudu)"
     return [], "Jooble CZ HTML — prázdná stránka nebo neznámý layout"
+
+
+def save_jooble_local_cache(
+    jobs: list[dict],
+    method: str = "local",
+    fetched_at: datetime | None = None,
+) -> None:
+    from datetime import datetime, timezone
+
+    fetched_at = fetched_at or datetime.now(timezone.utc).astimezone()
+    JOOBLE_CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "fetchedAt": fetched_at.isoformat(),
+        "method": method,
+        "jobs": jobs,
+    }
+    with JOOBLE_CACHE_FILE.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
+def load_jooble_local_cache(max_age_hours: int = JOOBLE_CACHE_MAX_AGE_HOURS) -> tuple[list[dict], str | None]:
+    """Načte cache z domácího běhu local_jooble.py (pokud není starší než max_age_hours)."""
+    from datetime import datetime, timedelta, timezone
+
+    if not JOOBLE_CACHE_FILE.exists():
+        return [], None
+    try:
+        with JOOBLE_CACHE_FILE.open(encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return [], None
+
+    fetched_raw = data.get("fetchedAt", "")
+    try:
+        fetched_at = datetime.fromisoformat(fetched_raw)
+        if fetched_at.tzinfo is None:
+            fetched_at = fetched_at.replace(tzinfo=timezone.utc)
+    except ValueError:
+        return [], None
+
+    age = datetime.now(timezone.utc) - fetched_at.astimezone(timezone.utc)
+    if age > timedelta(hours=max_age_hours):
+        return [], None
+
+    jobs = data.get("jobs", [])
+    if not jobs:
+        return [], None
+
+    method = data.get("method", "domácí IP cache")
+    note = f"{method} · {fetched_at.astimezone().strftime('%d.%m.%Y %H:%M')}"
+    return jobs, note
 
 
 def fetch_jooble_api(

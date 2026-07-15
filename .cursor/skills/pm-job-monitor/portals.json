@@ -29,7 +29,7 @@
       "searchQuery": "product manager",
       "enabled": true,
       "fallbacks": ["html_direct", "jooble_api", "adzuna_api"],
-      "notes": "Praha listing + PM filtr. Cloudflare blokuje scraping z cloudu → fallback REST API."
+      "notes": "Praha listing + PM filtr. Cloudflare blokuje cloud → spusť local_jooble.py z domácí IP."
     },
     {
       "name": "Tribee",
