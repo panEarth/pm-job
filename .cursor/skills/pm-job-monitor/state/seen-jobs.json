@@ -43,7 +43,7 @@
     {
       "id": "22cdf0053a233449",
       "title": "Produktový manažer pro brandovou reklamu",
-      "company": "",
+      "company": "Seznam.cz, a.s.",
       "location": "Brno",
       "url": "https://www.startupjobs.cz/nabidka/105505/produktovy-manazer-pro-brandovou-reklamu",
       "portal": "StartupJobs.cz",
@@ -53,8 +53,8 @@
     {
       "id": "408048a6fe8be392",
       "title": "Product Manager - AI-First E-commerce Marketplace",
-      "company": "",
-      "location": "Praha",
+      "company": "Carvago s.r.o.",
+      "location": "80 - 110 000 Kč / měsíc",
       "url": "https://www.startupjobs.cz/nabidka/105441/product-manager-ai-first-e-commerce-marketplace",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-15",
@@ -63,7 +63,7 @@
     {
       "id": "0e8ecf10aa69ad13",
       "title": "Product Manager do Pixelfield",
-      "company": "",
+      "company": "Pixelfield",
       "location": "Praha",
       "url": "https://www.startupjobs.cz/nabidka/105347/product-manager-do-pixelfield",
       "portal": "StartupJobs.cz",
@@ -73,7 +73,7 @@
     {
       "id": "499f90a804aa2061",
       "title": "Product Manager",
-      "company": "",
+      "company": "Footshop",
       "location": "Praha",
       "url": "https://www.startupjobs.cz/nabidka/105279/product-manager",
       "portal": "StartupJobs.cz",
@@ -93,8 +93,8 @@
     {
       "id": "ee83c5828ea5ce75",
       "title": "🚀Product Manager – tvoř produkty, které se opravdu dostanou na trh",
-      "company": "",
-      "location": "Hybrid",
+      "company": "elem6 s.r.o.",
+      "location": "Onsite, Hybrid",
       "url": "https://www.startupjobs.cz/nabidka/105197/product-manager-tvor-produkty-ktere-se-opravdu-dostanou-na-trh",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-15",
@@ -133,7 +133,7 @@
     {
       "id": "df104a7f7f16ae9b",
       "title": "Technický produktový manažer pro doporučovací systém",
-      "company": "",
+      "company": "Seznam.cz, a.s.",
       "location": "Praha",
       "url": "https://www.startupjobs.cz/nabidka/104343/technicky-produktovy-manazer-pro-doporucovaci-system",
       "portal": "StartupJobs.cz",
@@ -153,8 +153,8 @@
     {
       "id": "9eba6d8f287109a2",
       "title": "Senior Product Manager (AI solutions)",
-      "company": "",
-      "location": "Remote (CET +/- 2h)Languages: Fluent English +",
+      "company": "Sudolabs",
+      "location": "Remote",
       "url": "https://www.startupjobs.cz/nabidka/103567/senior-product-manager-ai-solutions",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-15",
@@ -1439,7 +1439,147 @@
       "portal": "NoFluffJobs CZ",
       "firstSeen": "2026-07-15",
       "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "4bf06151f151e43e",
+      "title": "Senior Product Manager - Identity Security",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001133469",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "9d81f86ce20cd00b",
+      "title": "Senior Product Manager - Identity Security",
+      "company": "",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001133478",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "9ad0c46b0e621de5",
+      "title": "Produktový manažer IT",
+      "company": "Mountfield a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001301728",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "7759049be94d79ff",
+      "title": "Product Manager, Pure1",
+      "company": "Everpure",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/product-manager-pure1/50e84461-2491-4982-974e-98e592653442",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "538c5d359b8f7ff0",
+      "title": "Growth Product Manager, Subscription Products & Lifecycle",
+      "company": "Everpure",
+      "location": "Santa Clara",
+      "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/growth-product-manager-subscription-products-lifecycle/2659a760-59e8-46bb-bcf5-cf6f4cb3cec2",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "08f8682f9109342b",
+      "title": "Senior Product Manager, Data Management",
+      "company": "Everpure",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/senior-product-manager-data-management/e27c7a96-08a9-47c6-94c3-f08e9635dd3c",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "43ee33c7431b7dd9",
+      "title": "Product Manager, Systems, FlashArray & FlashBlade",
+      "company": "Everpure",
+      "location": "Santa Clara",
+      "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/product-manager-systems-flasharray-flashblade/76cf63e5-fde9-425f-ba7e-f66371c58281",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "5966f5a7acf25593",
+      "title": "Senior Product Manager, FlashArray Core",
+      "company": "Everpure",
+      "location": "Santa Clara",
+      "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/senior-product-manager-flasharray-core/86ddf955-fa7f-4342-bb45-7d9641b9605c",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "eff06ee7b57cb4c6",
+      "title": "Senior Product Manager, Data Management",
+      "company": "Everpure",
+      "location": "Santa Clara",
+      "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/senior-product-manager-data-management/fda90d11-acf3-4c60-a32b-5f56089dbd1a",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "4803d5a2965d0f5f",
+      "title": "Principal Product Manager, Commercial Systems",
+      "company": "Everpure",
+      "location": "Santa Clara",
+      "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/principal-product-manager-commercial-systems/b18ebebb-2b7c-4f71-854c-65206d3a8c7f",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "7c76707f7c43a4e4",
+      "title": "Senior Product Manager – AI & Workflow Automation, Pure1",
+      "company": "Everpure",
+      "location": "Santa Clara",
+      "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/senior-product-manager-ai-workflow-automation-pure1/8dc9ae1a-09f8-485a-b5a9-8d67e2aee4ec",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "34b39934f66dea59",
+      "title": "Product Manager || Join the PURE Talent Community",
+      "company": "Everpure",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/product-manager-join-the-pure-talent-community/d4d7ed00-463d-4436-aca9-e1068bd662e9",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "25b1f5511b773bef",
+      "title": "Principal Product Manager, Enterprise AI and Analytics",
+      "company": "Everpure",
+      "location": "Santa Clara",
+      "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/principal-product-manager-enterprise-ai-and-analytics/c2653888-699d-4df3-8cfc-afc9a33bc333",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "f73a2fcfdea0c510",
+      "title": "Product Manager Investment Products (m/f) – úvazek cca 60 %",
+      "company": "Raiffeisenbank",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/product-manager-investment-products-m-f-uvazek-cca-60/8b44ca50-757b-4fa9-92f8-c69fe52975b4",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-07-15T09:23:56.809361+00:00"
+  "lastRun": "2026-07-15T09:41:55.392328+00:00"
 }

@@ -15,12 +15,26 @@ from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 from urllib.request import Request, urlopen
 
 BASE_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(BASE_DIR))
+
+from browser_scraper import BrowserScraper  # noqa: E402
 PORTALS_FILE = BASE_DIR / "portals.json"
 FILTERS_FILE = BASE_DIR / "filters.json"
 STATE_FILE = BASE_DIR / "state" / "seen-jobs.json"
 
 USER_AGENT = "Mozilla/5.0 (compatible; PMJobMonitor/1.0)"
 REQUEST_DELAY = 1.0
+
+PORTAL_STYLE = {
+    "StartupJobs.cz": {"emoji": "🚀", "label": "StartupJobs.cz", "bar": "🟠"},
+    "Jobs.cz": {"emoji": "💼", "label": "Jobs.cz", "bar": "🔵"},
+    "NoFluffJobs CZ": {"emoji": "🧩", "label": "NoFluffJobs", "bar": "🟢"},
+    "Indeed CZ": {"emoji": "🔎", "label": "Indeed CZ", "bar": "🟣"},
+    "Jooble CZ": {"emoji": "📋", "label": "Jooble CZ", "bar": "🟡"},
+    "Tribee": {"emoji": "🐝", "label": "Tribee", "bar": "🟤"},
+}
+PORTAL_ORDER = ["StartupJobs.cz", "Jobs.cz", "NoFluffJobs CZ", "Indeed CZ", "Jooble CZ", "Tribee"]
+BROWSER_PORTALS = {"StartupJobs.cz", "Tribee", "Indeed CZ", "Jooble CZ"}
 
 
 def load_json(path: Path) -> dict:
@@ -116,58 +130,6 @@ def parse_jobs_cz(html_text: str, portal: str) -> list[dict]:
     return jobs
 
 
-def parse_startupjobs_offer(html_text: str, url: str, portal: str) -> dict | None:
-    title_m = re.search(r"<title>([^<|]+)", html_text)
-    if not title_m:
-        return None
-    title = html_lib.unescape(title_m.group(1).strip())
-    if title.endswith("| StartupJobs.cz"):
-        title = title[:-len("| StartupJobs.cz")].strip()
-
-    company = ""
-    for pat in [
-        r'"company"\s*:\s*\{[^}]*"name"\s*:\s*"([^"]+)"',
-        r'"companyName"\s*:\s*"([^"]+)"',
-        r'itemprop="hiringOrganization"[^>]*>[\s\S]*?itemprop="name"[^>]*>([^<]+)<',
-        r'itemprop="name"[^>]*>([^<]+)<',
-    ]:
-        m = re.search(pat, html_text)
-        if m:
-            company = html_lib.unescape(m.group(1).strip())
-            break
-
-    location = ""
-    for pat in [
-        r'"addressLocality"\s*:\s*"([^"]+)"',
-        r'Lokalita[\s\S]{0,200}?>([^<]{2,80})<',
-        r'(?:Hybrid|Remote|Praha|Brno)[^<]{0,40}',
-    ]:
-        m = re.search(pat, html_text, re.I)
-        if m:
-            location = html_lib.unescape(m.group(1 if m.lastindex else 0).strip())
-            break
-
-    return {
-        "title": title,
-        "company": company,
-        "location": location,
-        "url": url,
-        "portal": portal,
-    }
-
-
-def startupjobs_pm_urls() -> list[str]:
-    content, err = fetch("https://www.startupjobs.cz/sitemap/offers.xml")
-    if err or not content:
-        return []
-    urls = re.findall(r"<loc>(https://www\.startupjobs\.cz/nabidka/[^<]+)</loc>", content)
-    keys = [
-        "product-manager", "product-owner", "produktov", "head-of-product",
-        "product-lead", "product-director", "chief-product", "vp-product", "/cpo",
-    ]
-    return [u for u in urls if any(k in u.lower() for k in keys)]
-
-
 def parse_nofluffjobs(posting: dict, portal: str) -> dict:
     loc = posting.get("location", {})
     places = loc.get("places", [])
@@ -212,9 +174,16 @@ def nofluff_location_ok(posting: dict, filters: dict) -> bool:
     return False
 
 
-def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
+def scan_portal(portal: dict, filters: dict, browser_jobs: dict[str, list[dict]] | None = None) -> tuple[list[dict], str | None]:
     name = portal["name"]
     ptype = portal["type"]
+    browser_jobs = browser_jobs or {}
+
+    if name in browser_jobs:
+        return browser_jobs[name], None
+
+    if name in BROWSER_PORTALS:
+        return [], None
 
     if name == "Jobs.cz":
         all_jobs = []
@@ -226,19 +195,6 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
                 return [], err
             all_jobs.extend(parse_jobs_cz(content or "", name))
         return all_jobs, None
-
-    if name == "StartupJobs.cz":
-        jobs = []
-        urls = startupjobs_pm_urls()[:40]
-        for url in urls:
-            content, err = fetch(url)
-            time.sleep(REQUEST_DELAY)
-            if err or not content:
-                continue
-            job = parse_startupjobs_offer(content, url, name)
-            if job:
-                jobs.append(job)
-        return jobs, None if jobs else "Nepodařilo se načíst nabídky ze sitemap"
 
     if name == "NoFluffJobs CZ":
         api_url = "https://nofluffjobs.com/api/posting?limit=1000&criteria=category%3DproductManagement"
@@ -264,18 +220,6 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
             jobs.append(parse_nofluffjobs(posting, name))
         return jobs, None
 
-    if name in {"Indeed CZ", "Jooble CZ", "Tribee"}:
-        target = portal.get("searchUrl") or portal.get("url", "")
-        content, err = fetch(target)
-        time.sleep(REQUEST_DELAY)
-        if err:
-            return [], err
-        if content and ("Just a moment" in content or "challenge-platform" in content):
-            return [], "Cloudflare ochrana — vyžaduje browser"
-        if content and len(content) < 5000:
-            return [], "Prázdná nebo blokovaná odpověď"
-        return [], "SPA bez veřejného API — vyžaduje browser"
-
     if ptype == "search_url":
         content, err = fetch(portal["searchUrl"])
         time.sleep(REQUEST_DELAY)
@@ -286,13 +230,43 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
     return [], "Neznámý typ portálu"
 
 
+def slack_link(url: str, label: str) -> str:
+    safe_label = label.replace("|", "·").replace(">", "›").replace("<", "‹")
+    return f"<{url}|{safe_label}>"
+
+
+def portal_header(portal: str, count: int) -> str:
+    style = PORTAL_STYLE.get(portal, {"emoji": "📌", "label": portal, "bar": "⚪"})
+    return f"{style['bar']} *{style['emoji']} {style['label']}* — {count} {'pozice' if count == 1 else 'pozic'}"
+
+
+def format_job_line(index: int, job: dict) -> list[str]:
+    company = job.get("company") or "Neznámá firma"
+    location = job.get("location") or "Neuvedeno"
+    url = job.get("url", "")
+    title = job.get("title", "")
+    link = slack_link(url, title) if url else title
+    return [
+        f"*{index}. {link}*",
+        f"   🏢 {company}  ·  📍 {location}",
+    ]
+
+
 def dedupe_key(job: dict) -> str:
     title = re.sub(r"\s+", " ", job.get("title", "").strip().lower())
     company = re.sub(r"\s+", " ", job.get("company", "").strip().lower())
     url = job.get("url", "")
     if "nofluffjobs.com/job/" in url:
         slug = url.rsplit("/", 1)[-1]
-        slug = re.sub(r"-(?:remote|warszawa|warsaw|krakow|kraków|wroclaw|wrocław|poznan|poznań|gdansk|gdańsk|katowice|lodz|łódź|lublin|pl|cz)(?:-\d+)?$", "", slug, flags=re.I)
+        slug = re.sub(
+            r"-(?:remote|warszawa|warsaw|krakow|kraków|wroclaw|wrocław|poznan|poznań|gdansk|gdańsk|"
+            r"katowice|lodz|łódź|lublin|sopot|gorzowwielkopolski|lower-silesian|kuyavian-pomeranian|"
+            r"lesser-poland|masovian|lubusz|opole|subcarpathian|podlaskie|pomeranian|silesian|"
+            r"holy-cross|warmian-masurian|greater-poland|west-pomeranian|pl|cz)(?:-\d+)?$",
+            "",
+            slug,
+            flags=re.I,
+        )
         return f"nofluff|{company}|{title}|{slug}"
     norm = normalize_url(url)
     if norm:
@@ -335,7 +309,7 @@ def update_state(state: dict, found_jobs: list[dict], now: datetime) -> tuple[li
             old_title = rec.get("title", "")
             rec["lastSeen"] = today
             rec["title"] = job["title"]
-            rec["company"] = job.get("company", rec.get("company", ""))
+            rec["company"] = job.get("company") or rec.get("company", "")
             rec["location"] = job.get("location", rec.get("location", ""))
             rec["url"] = job.get("url", rec.get("url", ""))
             rec["portal"] = job.get("portal", rec.get("portal", ""))
@@ -374,53 +348,91 @@ def build_report(
 ) -> str:
     date_str = now.strftime("%d.%m.%Y")
     time_str = now.strftime("%H:%M")
-
-    lines = []
-    if failures:
-        lines.append(f"⚠️ *PM Job Monitor — varování — {date_str}*")
-        lines.append("")
-        for portal, reason in failures:
-            lines.append(f"• *{portal}*: {reason}")
-        lines.append("")
-
     report_items = new_jobs + [
-        {**u, "title": f"{u['title']} _(aktualizováno z: {u.get('oldTitle', '')})_"}
+        {**u, "title": f"{u['title']} (aktualizováno z: {u.get('oldTitle', '')})"}
         for u in updated_jobs
     ]
 
+    lines: list[str] = [f"🔍 *PM Job Monitor — {date_str}*"]
+
+    if failures:
+        lines.extend(["", "⚠️ *Varování:*"])
+        for portal, reason in failures:
+            style = PORTAL_STYLE.get(portal, {"emoji": "⚠️"})
+            lines.append(f"   {style.get('emoji', '⚠️')} *{portal}*: {reason}")
+
     if report_items:
-        header = f"🔍 *PM Job Monitor — {date_str}*"
-        if not failures:
-            lines = [header]
-        else:
-            lines.insert(0, header)
-        count = len(report_items)
-        lines.append("")
-        lines.append(f"Nalezeno *{count} nových* pozic:")
-        lines.append("")
-        for i, job in enumerate(report_items, 1):
-            lines.append(f"*{i}. {job['title']}*")
-            company = job.get("company") or "Neznámá firma"
-            location = job.get("location") or "Neuvedeno"
-            lines.append(f"🏢 {company} · 📍 {location}")
-            lines.append(f"🔗 {job.get('url', '')}")
-            lines.append(f"📌 Zdroj: {job.get('portal', '')}")
-            if i < len(report_items):
+        lines.extend(["", f"Nalezeno *{len(report_items)} nových* pozic:", ""])
+        by_portal: dict[str, list[dict]] = {}
+        for job in report_items:
+            by_portal.setdefault(job.get("portal", "?"), []).append(job)
+
+        first = True
+        for portal in PORTAL_ORDER:
+            items = by_portal.pop(portal, [])
+            if not items:
+                continue
+            if not first:
+                lines.append("────────────────────")
+            first = False
+            lines.append(portal_header(portal, len(items)))
+            lines.append("")
+            for i, job in enumerate(items, 1):
+                lines.extend(format_job_line(i, job))
                 lines.append("")
-                lines.append("---")
+
+        for portal, items in by_portal.items():
+            if not first:
+                lines.append("────────────────────")
+            lines.append(portal_header(portal, len(items)))
+            lines.append("")
+            for i, job in enumerate(items, 1):
+                lines.extend(format_job_line(i, job))
                 lines.append("")
-        lines.append("")
+
         lines.append(f"_Celkem monitorováno: {portal_count} portálů · Poslední běh: {time_str}_")
     elif not failures:
-        lines = [
-            f"✅ *PM Job Monitor — {date_str}*",
-            "",
-            f"Žádné nové PM pozice. Monitorováno {portal_count} portálů.",
-        ]
+        lines.extend(["", f"✅ Žádné nové PM pozice. Monitorováno {portal_count} portálů."])
     else:
         lines.append(f"_Celkem monitorováno: {portal_count} portálů · Poslední běh: {time_str}_")
 
-    return "\n".join(lines)
+    return "\n".join(lines).strip()
+
+
+def scrape_browser_portals(portals: list[dict]) -> tuple[dict[str, list[dict]], list[tuple[str, str]]]:
+    enabled = {p["name"] for p in portals}
+    jobs: dict[str, list[dict]] = {}
+    failures: list[tuple[str, str]] = []
+
+    try:
+        with BrowserScraper() as scraper:
+            if "StartupJobs.cz" in enabled:
+                portal = next(p for p in portals if p["name"] == "StartupJobs.cz")
+                jobs["StartupJobs.cz"] = scraper.scrape_startupjobs(portal["searchUrl"], "StartupJobs.cz")
+            if "Tribee" in enabled:
+                portal = next(p for p in portals if p["name"] == "Tribee")
+                url = portal.get("searchUrl") or f"{portal['url']}?q=product+manager"
+                jobs["Tribee"] = scraper.scrape_tribee(url, "Tribee")
+            if "Indeed CZ" in enabled:
+                portal = next(p for p in portals if p["name"] == "Indeed CZ")
+                indeed_jobs, err = scraper.scrape_indeed(portal["searchUrl"], "Indeed CZ")
+                if err:
+                    failures.append(("Indeed CZ", err))
+                else:
+                    jobs["Indeed CZ"] = indeed_jobs
+            if "Jooble CZ" in enabled:
+                portal = next(p for p in portals if p["name"] == "Jooble CZ")
+                jooble_jobs, err = scraper.scrape_jooble(portal["searchUrl"], "Jooble CZ")
+                if err:
+                    failures.append(("Jooble CZ", err))
+                else:
+                    jobs["Jooble CZ"] = jooble_jobs
+    except Exception as exc:  # noqa: BLE001
+        for name in ["StartupJobs.cz", "Tribee", "Indeed CZ", "Jooble CZ"]:
+            if name in enabled and name not in jobs and not any(f[0] == name for f in failures):
+                failures.append((name, str(exc)))
+
+    return jobs, failures
 
 
 def main() -> int:
@@ -435,14 +447,25 @@ def main() -> int:
 
     now = datetime.now(timezone.utc).astimezone()
     all_found: list[dict] = []
-    failures: list[tuple[str, str]] = []
+    browser_jobs, browser_failures = scrape_browser_portals(enabled)
+    failures: list[tuple[str, str]] = list(browser_failures)
 
     for portal in enabled:
-        jobs, err = scan_portal(portal, filters)
+        jobs, err = scan_portal(portal, filters, browser_jobs)
         if err:
             failures.append((portal["name"], err))
         filtered = filter_jobs(jobs, filters)
         all_found.extend(filtered)
+
+    # deduplicate failure messages per portal
+    seen_fail: set[str] = set()
+    unique_failures: list[tuple[str, str]] = []
+    for portal, reason in failures:
+        if portal in seen_fail:
+            continue
+        seen_fail.add(portal)
+        unique_failures.append((portal, reason))
+    failures = unique_failures
 
     new_jobs, updated_jobs = update_state(state, all_found, now)
     save_json(STATE_FILE, state)
