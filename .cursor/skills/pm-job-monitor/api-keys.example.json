@@ -1,0 +1,9 @@
+{
+  "adzuna": {
+    "app_id": "YOUR_APP_ID",
+    "app_key": "YOUR_APP_KEY"
+  },
+  "jooble": {
+    "api_key": "YOUR_JOOBLE_API_KEY"
+  }
+}

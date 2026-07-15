@@ -17,7 +17,7 @@ from urllib.request import Request, urlopen
 BASE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE_DIR))
 
-from api_scraper import fetch_adzuna_api, fetch_jooble_api  # noqa: E402
+from api_scraper import fetch_adzuna_api, fetch_himalayas_api, fetch_jooble_api  # noqa: E402
 from browser_scraper import BrowserScraper  # noqa: E402
 PORTALS_FILE = BASE_DIR / "portals.json"
 FILTERS_FILE = BASE_DIR / "filters.json"
@@ -33,8 +33,9 @@ PORTAL_STYLE = {
     "Indeed CZ": {"emoji": "🔎", "label": "Indeed CZ", "bar": "🟣"},
     "Jooble CZ": {"emoji": "📋", "label": "Jooble CZ", "bar": "🟡"},
     "Tribee": {"emoji": "🐝", "label": "Tribee", "bar": "🟤"},
+    "Himalayas": {"emoji": "🏔️", "label": "Himalayas", "bar": "🔷"},
 }
-PORTAL_ORDER = ["StartupJobs.cz", "Jobs.cz", "NoFluffJobs CZ", "Indeed CZ", "Jooble CZ", "Tribee"]
+PORTAL_ORDER = ["StartupJobs.cz", "Jobs.cz", "NoFluffJobs CZ", "Himalayas", "Indeed CZ", "Jooble CZ", "Tribee"]
 BROWSER_PORTALS = {"StartupJobs.cz", "Tribee", "Indeed CZ", "Jooble CZ"}
 
 
@@ -220,6 +221,14 @@ def scan_portal(portal: dict, filters: dict, browser_jobs: dict[str, list[dict]]
                 continue
             jobs.append(parse_nofluffjobs(posting, name))
         return jobs, None
+
+    if name == "Himalayas" or ptype == "api":
+        params = portal.get("apiParams", {})
+        return fetch_himalayas_api(
+            name,
+            query=params.get("q", "product manager"),
+            country=params.get("country", "Czechia"),
+        )
 
     if ptype == "search_url":
         content, err = fetch(portal["searchUrl"])

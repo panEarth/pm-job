@@ -44,6 +44,18 @@
       "searchUrl": "https://nofluffjobs.com/cz/productManagement",
       "enabled": true,
       "notes": "IT portál — kategorie Produktový management"
+    },
+    {
+      "name": "Himalayas",
+      "type": "api",
+      "searchUrl": "https://himalayas.app/jobs/countries/czechia/product-manager-jobs",
+      "apiUrl": "https://himalayas.app/jobs/api/search",
+      "apiParams": {
+        "q": "product manager",
+        "country": "Czechia"
+      },
+      "enabled": true,
+      "notes": "Remote job board — veřejné JSON API (listing URL jen pro referenci)"
     }
   ]
 }
