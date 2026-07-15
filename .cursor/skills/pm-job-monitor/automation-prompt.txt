@@ -1,6 +1,6 @@
 Použij skill pm-job-monitor pro denní monitoring PM pozic.
 
-1. Načti konfiguraci z ~/.cursor/skills/pm-job-monitor/:
+1. Načti konfiguraci z .cursor/skills/pm-job-monitor/ (v kořeni repozitáře):
    - portals.json (enabled portály)
    - filters.json (klíčová slova, vyloučení, lokace)
    - state/seen-jobs.json (již viděné inzeráty)
