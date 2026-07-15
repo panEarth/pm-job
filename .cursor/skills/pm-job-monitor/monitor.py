@@ -17,6 +17,7 @@ from urllib.request import Request, urlopen
 BASE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE_DIR))
 
+from api_scraper import fetch_adzuna_api, fetch_jooble_api  # noqa: E402
 from browser_scraper import BrowserScraper  # noqa: E402
 PORTALS_FILE = BASE_DIR / "portals.json"
 FILTERS_FILE = BASE_DIR / "filters.json"
@@ -345,9 +346,11 @@ def build_report(
     portal_count: int,
     failures: list[tuple[str, str]],
     now: datetime,
+    fallback_notes: list[tuple[str, str]] | None = None,
 ) -> str:
     date_str = now.strftime("%d.%m.%Y")
     time_str = now.strftime("%H:%M")
+    fallback_notes = fallback_notes or []
     report_items = new_jobs + [
         {**u, "title": f"{u['title']} (aktualizováno z: {u.get('oldTitle', '')})"}
         for u in updated_jobs
@@ -360,6 +363,12 @@ def build_report(
         for portal, reason in failures:
             style = PORTAL_STYLE.get(portal, {"emoji": "⚠️"})
             lines.append(f"   {style.get('emoji', '⚠️')} *{portal}*: {reason}")
+
+    if fallback_notes:
+        lines.extend(["", "ℹ️ *Fallback zdroje:*"])
+        for portal, note in fallback_notes:
+            style = PORTAL_STYLE.get(portal, {"emoji": "ℹ️"})
+            lines.append(f"   {style.get('emoji', 'ℹ️')} *{portal}*: {note}")
 
     if report_items:
         lines.extend(["", f"Nalezeno *{len(report_items)} nových* pozic:", ""])
@@ -399,10 +408,11 @@ def build_report(
     return "\n".join(lines).strip()
 
 
-def scrape_browser_portals(portals: list[dict]) -> tuple[dict[str, list[dict]], list[tuple[str, str]]]:
+def scrape_browser_portals(portals: list[dict]) -> tuple[dict[str, list[dict]], list[tuple[str, str]], list[tuple[str, str]]]:
     enabled = {p["name"] for p in portals}
     jobs: dict[str, list[dict]] = {}
     failures: list[tuple[str, str]] = []
+    fallback_notes: list[tuple[str, str]] = []
 
     try:
         with BrowserScraper() as scraper:
@@ -416,23 +426,61 @@ def scrape_browser_portals(portals: list[dict]) -> tuple[dict[str, list[dict]], 
             if "Indeed CZ" in enabled:
                 portal = next(p for p in portals if p["name"] == "Indeed CZ")
                 indeed_jobs, err = scraper.scrape_indeed(portal["searchUrl"], "Indeed CZ")
-                if err:
-                    failures.append(("Indeed CZ", err))
-                else:
+                if indeed_jobs:
                     jobs["Indeed CZ"] = indeed_jobs
+                else:
+                    # Indeed security redirect poškozuje session — vyčistit cookies
+                    try:
+                        scraper.context.clear_cookies()
+                    except Exception:  # noqa: BLE001
+                        pass
+                    linkedin_jobs = scraper.scrape_linkedin_fallback("Indeed CZ")
+                    if linkedin_jobs:
+                        jobs["Indeed CZ"] = linkedin_jobs
+                        fallback_notes.append((
+                            "Indeed CZ",
+                            f"přímý scraping blokován → LinkedIn fallback ({len(linkedin_jobs)} pozic)",
+                        ))
+                    else:
+                        api_jobs, api_err = fetch_adzuna_api("Indeed CZ")
+                        if api_jobs:
+                            jobs["Indeed CZ"] = api_jobs
+                            fallback_notes.append((
+                                "Indeed CZ",
+                                f"přímý scraping blokován → Adzuna API ({len(api_jobs)} pozic)",
+                            ))
+                        else:
+                            failures.append(("Indeed CZ", err or api_err or "Všechny fallbacky selhaly"))
             if "Jooble CZ" in enabled:
                 portal = next(p for p in portals if p["name"] == "Jooble CZ")
                 jooble_jobs, err = scraper.scrape_jooble(portal["searchUrl"], "Jooble CZ")
-                if err:
-                    failures.append(("Jooble CZ", err))
-                else:
+                if jooble_jobs:
                     jobs["Jooble CZ"] = jooble_jobs
+                elif err:
+                    api_jobs, api_err = fetch_jooble_api("Jooble CZ")
+                    if api_jobs:
+                        jobs["Jooble CZ"] = api_jobs
+                        fallback_notes.append((
+                            "Jooble CZ",
+                            f"browser blokován → Jooble REST API ({len(api_jobs)} pozic)",
+                        ))
+                    else:
+                        adzuna_jobs, adzuna_err = fetch_adzuna_api("Jooble CZ")
+                        if adzuna_jobs:
+                            jobs["Jooble CZ"] = adzuna_jobs
+                            fallback_notes.append((
+                                "Jooble CZ",
+                                f"browser blokován → Adzuna API ({len(adzuna_jobs)} pozic)",
+                            ))
+                        else:
+                            reason = api_err or adzuna_err or err or "Všechny fallbacky selhaly"
+                            failures.append(("Jooble CZ", reason))
     except Exception as exc:  # noqa: BLE001
         for name in ["StartupJobs.cz", "Tribee", "Indeed CZ", "Jooble CZ"]:
             if name in enabled and name not in jobs and not any(f[0] == name for f in failures):
                 failures.append((name, str(exc)))
 
-    return jobs, failures
+    return jobs, failures, fallback_notes
 
 
 def main() -> int:
@@ -447,7 +495,7 @@ def main() -> int:
 
     now = datetime.now(timezone.utc).astimezone()
     all_found: list[dict] = []
-    browser_jobs, browser_failures = scrape_browser_portals(enabled)
+    browser_jobs, browser_failures, fallback_notes = scrape_browser_portals(enabled)
     failures: list[tuple[str, str]] = list(browser_failures)
 
     for portal in enabled:
@@ -470,7 +518,7 @@ def main() -> int:
     new_jobs, updated_jobs = update_state(state, all_found, now)
     save_json(STATE_FILE, state)
 
-    report = build_report(new_jobs, updated_jobs, len(enabled), failures, now)
+    report = build_report(new_jobs, updated_jobs, len(enabled), failures, now, fallback_notes)
     print(report)
     print("\n---STATS---")
     print(json.dumps({
@@ -478,6 +526,7 @@ def main() -> int:
         "new": len(new_jobs),
         "updated": len(updated_jobs),
         "failures": failures,
+        "fallback_notes": fallback_notes,
         "portals": len(enabled),
     }, ensure_ascii=False))
     return 0

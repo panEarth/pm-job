@@ -19,14 +19,16 @@
       "type": "search_url",
       "searchUrl": "https://cz.indeed.com/jobs?q=product+manager&l=%C4%8Cesko",
       "enabled": true,
-      "notes": "Indeed pro Česko — agent filtruje lokaci dle pravidel"
+      "fallbacks": ["linkedin", "adzuna_api"],
+      "notes": "Indeed často blokuje boty → fallback LinkedIn Jobs, případně Adzuna API (ADZUNA_APP_ID/KEY)"
     },
     {
       "name": "Jooble CZ",
       "type": "search_url",
       "searchUrl": "https://cz.jooble.org/SearchResult?ukw=product+manager",
       "enabled": true,
-      "notes": "Agregátor pracovních nabídek"
+      "fallbacks": ["jooble_api", "adzuna_api"],
+      "notes": "Cloudflare → fallback Jooble REST API (JOOBLE_API_KEY) nebo Adzuna API"
     },
     {
       "name": "Tribee",

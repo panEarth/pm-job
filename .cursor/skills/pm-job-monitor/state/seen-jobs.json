@@ -1579,7 +1579,367 @@
       "portal": "Tribee",
       "firstSeen": "2026-07-15",
       "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "75cc2fe198156f8f",
+      "title": "Senior Product Manager",
+      "company": "Quadient",
+      "location": "Hradec Králové",
+      "url": "https://cz.linkedin.com/jobs/view/senior-product-manager-at-quadient-4439835992",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "987309a2be6046bc",
+      "title": "Senior Product Manager, Supply API",
+      "company": "Cint",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/senior-product-manager-supply-api-at-cint-4430442095",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "84986f2d00eef986",
+      "title": "Group Product Manager (Core)",
+      "company": "Wrike",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/group-product-manager-core-at-wrike-4422349630",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "eefb8a7bd07cc989",
+      "title": "Group Product Manager (Core) Hybrid",
+      "company": "Wrike",
+      "location": "Hlavní město Praha, Česko",
+      "url": "https://cz.linkedin.com/jobs/view/group-product-manager-core-hybrid-at-wrike-4420947128",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "10c3b2eaade31f7a",
+      "title": "Product Manager, Self Managed Service",
+      "company": "Jobgether",
+      "location": "Česko",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-self-managed-service-at-jobgether-4439978662",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "100c4f5ec8bd312c",
+      "title": "Product Manager",
+      "company": "SITA",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-at-sita-4411702459",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "7175b1e8dbbf1a44",
+      "title": "Product Manager",
+      "company": "Ingram Micro Czech Republic",
+      "location": "Hradec Králové",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-at-ingram-micro-czech-republic-4437268713",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a91037f3ac171459",
+      "title": "Product Manager - Toll Experience",
+      "company": "EUROWAG",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-toll-experience-at-eurowag-4437654446",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "e8b6c770c67181c9",
+      "title": "Sr. Product Manager, Population Genomics Research Platform",
+      "company": "DNAnexus",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/sr-product-manager-population-genomics-research-platform-at-dnanexus-4435952456",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "2edddd2f03750fdd",
+      "title": "Product Manager – Toll Expansion",
+      "company": "EUROWAG",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-%E2%80%93-toll-expansion-at-eurowag-4435674280",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "a73f64c98fe6c58b",
+      "title": "Product Manager",
+      "company": "Footshop",
+      "location": "Hlavní město Praha, Česko",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-at-footshop-4437271243",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "572c112f6b4c00b8",
+      "title": "Product Manager, Pure1",
+      "company": "Everpure",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-pure1-at-everpure-4410497160",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "73b13f9285ebdf85",
+      "title": "Product Manager || Join the PURE Talent Community",
+      "company": "Everpure",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-join-the-pure-talent-community-at-everpure-4409346434",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "396156b62365a198",
+      "title": "Technical Sales & Product Manager – Food (all ages, all genders)",
+      "company": "Nordmann",
+      "location": "Praha - metropolitní oblast",
+      "url": "https://cz.linkedin.com/jobs/view/technical-sales-product-manager-%E2%80%93-food-all-ages-all-genders-at-nordmann-4430952067",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "5a769520f251c2bb",
+      "title": "Product Manager (43217)",
+      "company": "CoolPeople",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-43217-at-coolpeople-technology-4438813734",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "3e208e21d4c05eeb",
+      "title": "Product Manager - OTC / pharma- vhodné pro kandidáty se zkušeností z FMCG prostředí",
+      "company": "Reed Recruitment Czech Republic",
+      "location": "Hlavní město Praha, Česko",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-otc-pharma-vhodn%C3%A9-pro-kandid%C3%A1ty-se-zku%C5%A1enost%C3%AD-z-fmcg-prost%C5%99ed%C3%AD-at-reed-recruitment-czech-republic-4437261105",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "847cbff905aa1223",
+      "title": "Mobile Application Protection Product Manager",
+      "company": "Wultra",
+      "location": "Hlavní město Praha",
+      "url": "https://cz.linkedin.com/jobs/view/mobile-application-protection-product-manager-at-wultra-4437658476",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "3924e2a976e83153",
+      "title": "Product Manager, Rare Disease",
+      "company": "Novo Nordisk",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-rare-disease-at-novo-nordisk-4438003848",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "ed07f547c2cdffdd",
+      "title": "Product Owner – Customer Mobile Apps",
+      "company": "Corpay",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-owner-%E2%80%93-customer-mobile-apps-at-corpay-4422088349",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "626603b90a79fd54",
+      "title": "Senior Product Manager, Cloudera Cloud Core",
+      "company": "Cloudera",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/senior-product-manager-cloudera-cloud-core-at-cloudera-4418292440",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "cdae4af998931731",
+      "title": "Senior Product Manager - CDP - fixed term",
+      "company": "3Pillar",
+      "location": "Česko",
+      "url": "https://cz.linkedin.com/jobs/view/senior-product-manager-cdp-fixed-term-at-3pillar-4438678486",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "cd2671eff2973dfa",
+      "title": "Product Manager - Intelligent Lubrication Solutions",
+      "company": "SKF Group",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-intelligent-lubrication-solutions-at-skf-group-4434849693",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "8a415ecdf8bde725",
+      "title": "Senior Product Manager for Workflow Orchestration",
+      "company": "SAP",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/senior-product-manager-for-workflow-orchestration-at-sap-4439140970",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "333a4dcbcf519472",
+      "title": "Produktový manažer",
+      "company": "BigMat CZ, obchodní družstvo",
+      "location": "Praha 9",
+      "url": "https://cz.linkedin.com/jobs/view/produktov%C3%BD-mana%C5%BEer-at-bigmat-cz-obchodn%C3%AD-dru%C5%BEstvo-4435676339",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "696528d5e37d6217",
+      "title": "Product Owner – AI, Automation & Tooling for IT Service Desk",
+      "company": "Aeven",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-owner-%E2%80%93-ai-automation-tooling-for-it-service-desk-at-aeven-4437314242",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "380baae6eefde81e",
+      "title": "Produktový manažer pro Sreality.cz",
+      "company": "Seznam.cz, a.s.",
+      "location": "Brno",
+      "url": "https://cz.linkedin.com/jobs/view/produktov%C3%BD-mana%C5%BEer-pro-sreality-cz-at-seznam-cz-4435984700",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "b9bcb0f663827530",
+      "title": "Senior Product Manager - Identity Security (m/f/n)",
+      "company": "ESET",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/senior-product-manager-identity-security-m-f-n-at-eset-4386694183",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "ba17b0647c58e66f",
+      "title": "Product Manager - Intelligent Lubrication Solutions",
+      "company": "SKF Group",
+      "location": "Chodov",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-intelligent-lubrication-solutions-at-skf-group-4434855577",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "60ef63ee77d2ae4f",
+      "title": "PRODUKTOVÝ MANAŽER",
+      "company": "IZOMAT stavebniny s.r.o.",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/produktov%C3%BD-mana%C5%BEer-at-izomat-stavebniny-s-r-o-4439951290",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "1454a4d1bcfd3afd",
+      "title": "Senior Product Manager - Identity Security (m/f/n)",
+      "company": "ESET",
+      "location": "Brno",
+      "url": "https://cz.linkedin.com/jobs/view/senior-product-manager-identity-security-m-f-n-at-eset-4386694182",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "7a9e5cb14955dc7c",
+      "title": "Product Owner Data, Analytics & AI - Tieto Indtech (m/f/d)",
+      "company": "Tieto",
+      "location": "Ostrava",
+      "url": "https://cz.linkedin.com/jobs/view/product-owner-data-analytics-ai-tieto-indtech-m-f-d-at-tieto-4430461699",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "5427334882c10f6e",
+      "title": "HCP Product Manager, Abbott Diabetes Care (ADC)",
+      "company": "Abbott",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/hcp-product-manager-abbott-diabetes-care-adc-at-abbott-4436375247",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "b77869deb767ab65",
+      "title": "Product Owner - Treasury Applications",
+      "company": "Atlas Copco Group",
+      "location": "Brno",
+      "url": "https://cz.linkedin.com/jobs/view/product-owner-treasury-applications-at-atlas-copco-group-4402716629",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "fdcccbf44bf16b66",
+      "title": "AI produktový manažer/ka",
+      "company": "VLTAVA LABE MEDIA",
+      "location": "Hlavní město Praha",
+      "url": "https://cz.linkedin.com/jobs/view/ai-produktov%C3%BD-mana%C5%BEer-ka-at-vltava-labe-media-4435651596",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "b204069a696b1062",
+      "title": "Product Manager HPE Server & Storage & Networking",
+      "company": "TD SYNNEX Czech Republic",
+      "location": "Praha",
+      "url": "https://cz.linkedin.com/jobs/view/product-manager-hpe-server-storage-networking-at-td-synnex%C2%A0czech-republic-4426878482",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "39e2f02f0da3eb27",
+      "title": "Produktový manažer / Produktová manažerka pro investiční a penzijní produkty CZ/SK",
+      "company": "UNIQA CZ",
+      "location": "Brno",
+      "url": "https://cz.linkedin.com/jobs/view/produktov%C3%BD-mana%C5%BEer-produktov%C3%A1-mana%C5%BEerka-pro-investi%C4%8Dn%C3%AD-a-penzijn%C3%AD-produkty-cz-sk-at-uniqa-cz-4438320974",
+      "portal": "Indeed CZ",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-07-15T09:41:55.392328+00:00"
+  "lastRun": "2026-07-15T10:03:32.333090+00:00"
 }

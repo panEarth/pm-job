@@ -1,4 +1,4 @@
-"""Headless browser scraping (Playwright + izolovaný profil)."""
+"""Headless browser scraping (Playwright stealth + izolovaný profil)."""
 
 from __future__ import annotations
 
@@ -9,13 +9,19 @@ from pathlib import Path
 from urllib.parse import urljoin
 
 from playwright.sync_api import Browser, Page, sync_playwright
+from playwright_stealth import Stealth
 
 BASE_URL = "https://www.startupjobs.cz"
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
 )
-BROWSER_ARGS = ["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"]
+BROWSER_ARGS = [
+    "--no-sandbox",
+    "--disable-dev-shm-usage",
+    "--disable-blink-features=AutomationControlled",
+]
+STEALTH = Stealth()
 
 
 class BrowserScraper:
@@ -33,6 +39,7 @@ class BrowserScraper:
             user_agent=USER_AGENT,
             viewport={"width": 1920, "height": 1080},
             locale="cs-CZ",
+            timezone_id="Europe/Prague",
         )
         return self
 
@@ -50,7 +57,15 @@ class BrowserScraper:
         return self._browser
 
     def _page(self) -> Page:
-        return self.context.new_page()
+        page = self.context.new_page()
+        self._prepare_page(page)
+        return page
+
+    def _prepare_page(self, page: Page) -> None:
+        STEALTH.apply_stealth_sync(page)
+        page.add_init_script(
+            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+        )
 
     def _goto(self, page: Page, url: str, wait_ms: int = 3000) -> None:
         page.goto(url, wait_until="domcontentloaded", timeout=60000)
@@ -171,8 +186,9 @@ class BrowserScraper:
             self._click_cookie_banners(page)
             page.wait_for_timeout(3000)
 
-            if "blocked" in page.title().lower():
-                return [], "Indeed blokuje headless browser (Blocked)"
+            title = page.title().lower()
+            if "blocked" in title or "security check" in title or "login-required" in page.url:
+                return [], "Indeed blokuje headless browser"
 
             for _ in range(max_pages):
                 cards = page.query_selector_all(".job_seen_beacon, .result")
@@ -183,7 +199,7 @@ class BrowserScraper:
                     title_el = card.query_selector("h2 a, .jcs-JobTitle, a[data-jk]")
                     if not title_el:
                         continue
-                    title = title_el.inner_text().strip()
+                    job_title = title_el.inner_text().strip()
                     href = title_el.get_attribute("href") or ""
                     if href and not href.startswith("http"):
                         href = urljoin("https://cz.indeed.com", href)
@@ -192,7 +208,7 @@ class BrowserScraper:
                     )
                     loc_el = card.query_selector('[data-testid="text-location"], .companyLocation')
                     jobs.append({
-                        "title": title,
+                        "title": job_title,
                         "company": company_el.inner_text().strip() if company_el else "",
                         "location": loc_el.inner_text().strip() if loc_el else "",
                         "url": href,
@@ -208,16 +224,63 @@ class BrowserScraper:
             page.close()
         return jobs, None
 
+    def scrape_linkedin_fallback(
+        self,
+        portal: str,
+        keywords: str = "product manager",
+        location: str = "Czechia",
+        max_pages: int = 2,
+    ) -> list[dict]:
+        """Alternativní zdroj pro Indeed — LinkedIn Jobs (CZ/EU)."""
+        jobs: list[dict] = []
+        page = self._page()
+        try:
+            from urllib.parse import quote
+            url = (
+                "https://www.linkedin.com/jobs/search/"
+                f"?keywords={quote(keywords)}&location={quote(location)}&f_TPR=r604800"
+            )
+            self._goto(page, url, wait_ms=5000)
+            self._click_cookie_banners(page)
+
+            for page_idx in range(max_pages):
+                if page_idx > 0:
+                    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                    page.wait_for_timeout(3000)
+
+                cards = page.query_selector_all(".job-search-card")
+                for card in cards:
+                    title_el = card.query_selector(".job-search-card__title, h3, strong")
+                    company_el = card.query_selector(".job-search-card__subtitle, h4")
+                    loc_el = card.query_selector(".job-search-card__location")
+                    link_el = card.query_selector('a[href*="/jobs/view/"]')
+                    if not title_el or not link_el:
+                        continue
+                    href = link_el.get_attribute("href") or ""
+                    if "?" in href:
+                        href = href.split("?")[0]
+                    jobs.append({
+                        "title": title_el.inner_text().strip(),
+                        "company": company_el.inner_text().strip() if company_el else "",
+                        "location": loc_el.inner_text().strip() if loc_el else "",
+                        "url": href,
+                        "portal": portal,
+                        "sourceFallback": "LinkedIn",
+                    })
+        finally:
+            page.close()
+        return jobs
+
     def scrape_jooble(self, search_url: str, portal: str, max_pages: int = 2) -> tuple[list[dict], str | None]:
         page = self._page()
         try:
             self._goto(page, search_url, wait_ms=5000)
-            for _ in range(18):
-                if "just a moment" not in page.title().lower():
+            for _ in range(12):
+                if "just a moment" not in page.title().lower() and "okamžik" not in page.title().lower():
                     break
                 page.wait_for_timeout(5000)
 
-            if "just a moment" in page.title().lower():
+            if "just a moment" in page.title().lower() or "okamžik" in page.title().lower():
                 return [], "Cloudflare ochrana — headless browser neprošel"
 
             jobs: list[dict] = []
@@ -243,7 +306,7 @@ class BrowserScraper:
                 next_btn.click()
                 page.wait_for_timeout(3000)
             if not jobs:
-                return [], "Cloudflare ochrana — žádné výsledky (pravděpodobně blokace)"
+                return [], "Cloudflare ochrana — žádné výsledky"
             return jobs, None
         finally:
             page.close()
@@ -274,7 +337,6 @@ def _parse_startupjobs_card(raw: str) -> dict | None:
             return None
         return {"company": company, "title": title, "location": location}
 
-    # Fallback: sloučený text bez newline
     m = re.match(
         r"^(.+?)\s+(Product Manager.+?|Product Owner.+?|Produktov.+?|Head of Product.+?)"
         r"(?:\s*(Praha|Brno|Remote|Hybrid|Onsite).*)?$",
@@ -282,7 +344,11 @@ def _parse_startupjobs_card(raw: str) -> dict | None:
         re.I,
     )
     if m:
-        return {"company": m.group(1).strip(), "title": m.group(2).strip(), "location": (m.group(3) or "").strip()}
+        return {
+            "company": m.group(1).strip(),
+            "title": m.group(2).strip(),
+            "location": (m.group(3) or "").strip(),
+        }
     return None
 
 
