@@ -28,7 +28,7 @@
       "searchUrl": "https://cz.jooble.org/SearchResult?ukw=product+manager",
       "enabled": true,
       "fallbacks": ["jooble_api", "adzuna_api"],
-      "notes": "Cloudflare → fallback Jooble REST API (JOOBLE_API_KEY) nebo Adzuna API"
+      "notes": "Cloudflare → fallback Jooble REST API (JOOBLE_API_KEY) nebo Adzuna API (nepodporuje cz, jen okolní země)"
     },
     {
       "name": "Tribee",

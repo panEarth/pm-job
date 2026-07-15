@@ -116,31 +116,65 @@ def fetch_adzuna_api(
     app_id = _credential("ADZUNA_APP_ID", "adzuna", "app_id")
     app_key = _credential("ADZUNA_APP_KEY", "adzuna", "app_key")
     if not app_id:
-        return [], "Chybí ADZUNA_APP_ID — najdeš ho na https://developer.adzuna.com/home (app_key už máme)"
+        return [], "Chybí ADZUNA_APP_ID — najdeš ho na https://developer.adzuna.com/home"
     if not app_key:
         return [], "Chybí ADZUNA_APP_KEY (registrace: https://developer.adzuna.com/signup)"
 
+    # Adzuna nepodporuje ISO kód cz — hledáme v sousedních zemích a filtrujeme CZ lokace
+    country_queries = [
+        ("pl", what, where),
+        ("de", what, where),
+        ("at", what, where),
+    ]
+    czech_markers = (
+        "czech", "prague", "praha", "brno", "česk", "cesk", "česko", "czechia", "czech republic",
+    )
+
     jobs: list[dict] = []
-    for page in range(1, max_pages + 1):
-        url = (
-            f"https://api.adzuna.com/v1/api/jobs/cz/search/{page}"
-            f"?app_id={app_id}&app_key={app_key}"
-            f"&results_per_page=50&what={quote(what)}&where={quote(where)}"
-            f"&content-type=application/json"
-        )
-        data, err = _get_json(url)
-        if err:
-            return jobs, err if not jobs else None
-        for item in data.get("results", []):
-            jobs.append({
-                "title": item.get("title", "").strip(),
-                "company": item.get("company", {}).get("display_name", "").strip(),
-                "location": item.get("location", {}).get("display_name", "").strip(),
-                "url": item.get("redirect_url", "").strip(),
-                "portal": portal,
-            })
-        if page >= data.get("pages", page):
-            break
+    seen_urls: set[str] = set()
+    auth_ok = False
+
+    for country, query, location in country_queries:
+        for page in range(1, max_pages + 1):
+            params = (
+                f"app_id={app_id}&app_key={app_key}"
+                f"&results_per_page=50&what={quote(query)}"
+                f"&content-type=application/json"
+            )
+            if location:
+                params += f"&where={quote(location)}"
+            url = f"https://api.adzuna.com/v1/api/jobs/{country}/search/{page}?{params}"
+            data, err = _get_json(url)
+            if err:
+                if "AUTH_FAIL" in err or "401" in err:
+                    return [], "Adzuna API: neplatné credentials (app_id/app_key)"
+                continue
+            auth_ok = True
+            for item in data.get("results", []):
+                title = item.get("title", "").strip()
+                company = item.get("company", {}).get("display_name", "").strip()
+                loc = item.get("location", {}).get("display_name", "").strip()
+                job_url = item.get("redirect_url", "").strip()
+                text = f"{title} {loc} {item.get('description', '')[:300]}".lower()
+                if not any(marker in text for marker in czech_markers):
+                    continue
+                if job_url in seen_urls:
+                    continue
+                seen_urls.add(job_url)
+                jobs.append({
+                    "title": title,
+                    "company": company,
+                    "location": loc,
+                    "url": job_url,
+                    "portal": portal,
+                })
+            if page >= data.get("pages", page):
+                break
+
+    if not auth_ok:
+        return [], "Adzuna API nedostupné — zkontroluj credentials"
+    if not jobs:
+        return [], "Adzuna API funguje, ale nepodporuje Česko — nenalezeny CZ PM pozice"
     return jobs, None
 
 
