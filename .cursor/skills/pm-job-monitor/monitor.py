@@ -168,6 +168,76 @@ def startupjobs_pm_urls() -> list[str]:
     return [u for u in urls if any(k in u.lower() for k in keys)]
 
 
+def parse_tribee(html_text: str, portal: str) -> list[dict]:
+    jobs = []
+    for href, block in re.findall(
+        r'href="(https://www\.tribee\.cz/cs/spolecnost/[^"]+/prace/[^"]+)"[^>]*>([\s\S]{0,500}?)</a>',
+        html_text,
+    ):
+        text = re.sub(r"<[^>]+>", "\n", block)
+        lines = [html_lib.unescape(l.strip()) for l in text.split("\n") if l.strip()]
+        if not lines:
+            continue
+        title = lines[0]
+        company = lines[1] if len(lines) > 1 else ""
+        location = lines[2] if len(lines) > 2 else ""
+        jobs.append({
+            "title": title,
+            "company": company,
+            "location": location,
+            "url": href,
+            "portal": portal,
+        })
+    return jobs
+
+
+def scrape_tribee_browser(portal: str) -> tuple[list[dict], str | None]:
+    try:
+        import asyncio
+        from playwright.async_api import async_playwright
+    except ImportError:
+        return [], "Playwright není nainstalován — vyžaduje browser"
+
+    async def _run() -> list[dict]:
+        jobs: list[dict] = []
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            page = await (await browser.new_context(locale="cs-CZ")).new_page()
+            for page_num in (1, 2):
+                url = (
+                    "https://www.tribee.cz/cs/prace?q=product+manager"
+                    if page_num == 1
+                    else f"https://www.tribee.cz/cs/prace?q=product+manager&page={page_num}"
+                )
+                await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+                await page.wait_for_timeout(4000)
+                links = await page.eval_on_selector_all(
+                    'a[href*="/spolecnost/"][href*="/prace/"]',
+                    """els => els.map(a => ({
+                        href: a.href,
+                        text: (a.innerText || '').trim()
+                    })).filter(x => x.text.length > 3)""",
+                )
+                for item in links:
+                    parts = [p.strip() for p in item["text"].split("\n") if p.strip()]
+                    if not parts:
+                        continue
+                    jobs.append({
+                        "title": parts[0],
+                        "company": parts[1] if len(parts) > 1 else "",
+                        "location": parts[2] if len(parts) > 2 else "",
+                        "url": item["href"],
+                        "portal": portal,
+                    })
+            await browser.close()
+        return jobs
+
+    try:
+        return asyncio.run(_run()), None
+    except Exception as exc:  # noqa: BLE001
+        return [], str(exc)
+
+
 def parse_nofluffjobs(posting: dict, portal: str) -> dict:
     loc = posting.get("location", {})
     places = loc.get("places", [])
@@ -264,7 +334,11 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
             jobs.append(parse_nofluffjobs(posting, name))
         return jobs, None
 
-    if name in {"Indeed CZ", "Jooble CZ", "Tribee"}:
+    if name == "Tribee":
+        jobs, err = scrape_tribee_browser(name)
+        return jobs, err
+
+    if name in {"Indeed CZ", "Jooble CZ"}:
         target = portal.get("searchUrl") or portal.get("url", "")
         content, err = fetch(target)
         time.sleep(REQUEST_DELAY)
