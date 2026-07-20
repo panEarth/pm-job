@@ -74,20 +74,83 @@ def matches_exclude(title: str, exclude_keywords: list[str]) -> bool:
     return any(k.lower() in tl for k in exclude_keywords)
 
 
+REJECT_LOCATIONS = [
+    "santa clara", "san francisco", "california", "usa", "united states",
+    "bellevue", "raleigh", "texas", "seattle", "new york", "chicago",
+    "mountain view", "palo alto", "silicon valley",
+]
+
+EU_LOCATION_HINTS = [
+    "poland", "warszawa", "warsaw", "kraków", "krakow", "wrocław", "wroclaw",
+    "poznań", "poznan", "gdańsk", "gdansk", "sopot", "bratislava", "slovakia",
+    "germany", "berlin", "munich", "austria", "vienna", "hungary", "budapest",
+]
+
+
 def location_ok(location: str, title: str, filters: dict) -> bool:
     if not filters.get("locationRequired", True):
         return True
-    text = f"{location} {title}".lower()
+    loc = (location or "").strip()
+    text = f"{loc} {title}".lower()
+    reject = [k.lower() for k in filters.get("rejectLocations", REJECT_LOCATIONS)]
+    if loc and any(k in text for k in reject):
+        return False
     accept = [k.lower() for k in filters["locations"]["accept"]]
     remote_eu = [k.lower() for k in filters["locations"]["remoteAlsoAccept"]]
     if any(k in text for k in accept):
         return True
     if any(k in text for k in remote_eu):
         return True
+    if any(k in text for k in EU_LOCATION_HINTS):
+        return True
     if "remote" in text:
         return True
     # Jobs.cz CZ listings often lack explicit location in card — keep PM titles
-    return True
+    if not loc:
+        return True
+    return False
+
+
+def scrape_tribee_browser(portal: dict) -> tuple[list[dict], str | None]:
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        return [], "Playwright není nainstalován — vyžaduje browser"
+
+    name = portal["name"]
+    query = portal.get("searchQuery", "product manager")
+    jobs: list[dict] = []
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            for page_num in (1, 2):
+                base = portal.get("url", "https://www.tribee.cz/cs/prace")
+                url = f"{base}?q={query.replace(' ', '+')}"
+                if page_num > 1:
+                    url += f"&page={page_num}"
+                page.goto(url, wait_until="networkidle", timeout=60000)
+                page.wait_for_timeout(1500)
+                items = page.evaluate("""
+                    () => Array.from(document.querySelectorAll('a[href*="/spolecnost/"][href*="/prace/"]'))
+                        .map(a => {
+                            const parts = (a.innerText || '').trim().split('\\n').map(s => s.trim()).filter(Boolean);
+                            return {
+                                title: parts[0] || '',
+                                company: parts[1] || '',
+                                location: parts[2] || '',
+                                url: a.href
+                            };
+                        })
+                        .filter(j => j.title && j.url)
+                """)
+                for item in items:
+                    item["portal"] = name
+                    jobs.append(item)
+            browser.close()
+    except Exception as exc:  # noqa: BLE001
+        return [], str(exc)
+    return jobs, None
 
 
 def parse_jobs_cz(html_text: str, portal: str) -> list[dict]:
@@ -264,7 +327,10 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
             jobs.append(parse_nofluffjobs(posting, name))
         return jobs, None
 
-    if name in {"Indeed CZ", "Jooble CZ", "Tribee"}:
+    if name == "Tribee":
+        return scrape_tribee_browser(portal)
+
+    if name in {"Indeed CZ", "Jooble CZ"}:
         target = portal.get("searchUrl") or portal.get("url", "")
         content, err = fetch(target)
         time.sleep(REQUEST_DELAY)
