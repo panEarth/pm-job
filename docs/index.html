@@ -297,25 +297,25 @@
       return `${y}-${m}-${day}`;
     }
 
-    function formatDateMDY(value) {
+    function formatDateDMY(value) {
       if (!value) return "—";
-      // Accept YYYY-MM-DD or ISO datetime
+      // Accept YYYY-MM-DD or ISO datetime → DD.MM.YYYY
       const only = dateOnly(value);
       const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(only);
-      if (m) return `${m[2]}.${m[3]}.${m[1]}`;
+      if (m) return `${m[3]}.${m[2]}.${m[1]}`;
       const d = new Date(value);
       if (Number.isNaN(d.getTime())) return escapeHtml(String(value));
       const mm = String(d.getMonth() + 1).padStart(2, "0");
       const dd = String(d.getDate()).padStart(2, "0");
       const yyyy = d.getFullYear();
-      return `${mm}.${dd}.${yyyy}`;
+      return `${dd}.${mm}.${yyyy}`;
     }
 
     function formatDateTime(iso) {
       if (!iso) return "—";
       const d = new Date(iso);
       if (Number.isNaN(d.getTime())) return escapeHtml(iso);
-      const date = formatDateMDY(iso);
+      const date = formatDateDMY(iso);
       const time = new Intl.DateTimeFormat("cs-CZ", {
         hour: "2-digit",
         minute: "2-digit",
@@ -357,7 +357,7 @@
             ${company ? `<span>${escapeHtml(company)}</span>` : ""}
             <span>${escapeHtml(location)}</span>
             <span>${escapeHtml(portal)}</span>
-            <span>Poprvé: ${formatDateMDY(job.firstSeen)}</span>
+            <span>Poprvé: ${formatDateDMY(job.firstSeen)}</span>
           </div>
         </article>
       `;

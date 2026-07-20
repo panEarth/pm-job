@@ -163,23 +163,39 @@ def parse_jobs_cz(html_text: str, portal: str) -> list[dict]:
         if not title_m:
             continue
         title = html_lib.unescape(title_m.group(1))
+
         company = ""
-        for pat in [
-            r'data-test="employer-name"[^>]*>([^<]+)<',
-            r'data-test="company-name"[^>]*>([^<]+)<',
-            r'class="[^"]*company[^"]*"[^>]*>([^<]+)<',
-            r'alt="([^"]+)"',
-        ]:
-            company_m = re.search(pat, article, re.I)
-            if company_m:
-                candidate = html_lib.unescape(company_m.group(1).strip())
-                if candidate and candidate.lower() not in {"logo", "company logo"}:
-                    company = candidate
-                    break
+        # 1) logo alt (when logo is present)
+        company_m = re.search(
+            r'class="[^"]*CompanyLogo[^"]*"[\s\S]*?<img[^>]*alt="([^"]+)"',
+            article,
+            re.I,
+        )
+        if company_m:
+            company = html_lib.unescape(company_m.group(1).strip())
+        # 2) footer: first item is company (<span translate="no">…</span>)
+        if not company:
+            footer_m = re.search(
+                r'SearchResultCard__footerItem"[\s\S]*?<span[^>]*>([^<]+)</span>',
+                article,
+            )
+            if footer_m:
+                company = html_lib.unescape(footer_m.group(1).strip())
+        # 3) fallback: title "… | Firma"
         if not company and "|" in title:
             company = title.rsplit("|", 1)[-1].strip()
-        loc_m = re.search(r'data-test="location"[^>]*>([^<]+)<', article)
+
+        loc_m = re.search(
+            r'data-test="(?:location|serp-locality)"[^>]*>\s*([^<]+)<',
+            article,
+        )
+        if not loc_m:
+            loc_m = re.search(
+                r'data-test="serp-locality"[\s\S]*?</svg>\s*([^<]+)<',
+                article,
+            )
         location = html_lib.unescape(loc_m.group(1).strip()) if loc_m else ""
+
         link_m = re.search(r'href="(https://www\.jobs\.cz/rpd/\d+/)', article)
         if not link_m:
             continue
@@ -200,16 +216,16 @@ def parse_startupjobs_offer(html_text: str, url: str, portal: str) -> dict | Non
         return None
     title = html_lib.unescape(title_m.group(1).strip())
     if title.endswith("| StartupJobs.cz"):
-        title = title[:-len("| StartupJobs.cz")].strip()
+        title = title[: -len("| StartupJobs.cz")].strip()
 
     company = ""
     for pat in [
-        r'"company"\s*:\s*\{[^}]*"name"\s*:\s*"([^"]+)"',
+        r'"hiringOrganization"\s*:\s*\{[^}]*?"name"\s*:\s*"([^"]+)"',
+        r'"company"\s*:\s*\{[^}]*?"name"\s*:\s*"([^"]+)"',
         r'"companyName"\s*:\s*"([^"]+)"',
         r'itemprop="hiringOrganization"[^>]*>[\s\S]*?itemprop="name"[^>]*>([^<]+)<',
-        r'itemprop="name"[^>]*>([^<]+)<',
     ]:
-        m = re.search(pat, html_text)
+        m = re.search(pat, html_text, re.I | re.S)
         if m:
             company = html_lib.unescape(m.group(1).strip())
             break
