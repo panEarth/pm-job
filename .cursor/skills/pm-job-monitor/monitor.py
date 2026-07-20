@@ -58,12 +58,223 @@ def normalize_url(url: str) -> str:
     return urlunparse((parsed.scheme, parsed.netloc, parsed.path.rstrip("/"), "", urlencode(flat_query), ""))
 
 
-def job_id(url: str, title: str, company: str) -> str:
+def normalize_title(title: str) -> str:
+    return re.sub(r"\s+", " ", (title or "").strip().lower())
+
+
+def normalize_company(company: str) -> str:
+    return re.sub(r"\s+", " ", (company or "").strip().lower())
+
+
+def nofluff_base_slug(url: str) -> str:
+    """Strip region/city suffixes NoFluffJobs appends for multi-location posts."""
+    slug = url.rstrip("/").rsplit("/", 1)[-1]
+    # Keep chopping known location/region tails until stable
+    region_tail = re.compile(
+        r"-(?:"
+        r"remote|fully-remote|hybrid|"
+        r"warszawa|warsaw|krakow|krakow|kraków|wroclaw|wrocław|"
+        r"poznan|poznań|gdansk|gdańsk|katowice|lodz|łódź|lublin|"
+        r"prague|praha|brno|ostrava|"
+        r"poland|poland-\w+|czechia|czech-republic|"
+        r"lower-silesian|kuyavian-pomeranian|lubusz|lesser-poland|opole|"
+        r"subcarpathian|podlaskie|pomeranian|silesian|holy-cross|"
+        r"warmian-masurian|greater-poland|west-pomeranian|masovian|"
+        r"lodzkie|swietokrzyskie|podkarpackie|malopolskie|dolnoslaskie|"
+        r"zachodniopomorskie|warminsko-mazurskie|kujawsko-pomorskie|"
+        r"pl|cz|sk|hu|de|at|nl"
+        r")(?:-\d+)?$",
+        re.I,
+    )
+    prev = None
+    while prev != slug:
+        prev = slug
+        slug = region_tail.sub("", slug)
+    return slug
+
+
+def prefer_job_url(current: str, candidate: str) -> str:
+    """Prefer a canonical remote/generic NoFluff URL over a region-specific one."""
+    if not current:
+        return candidate
+    if not candidate:
+        return current
+    if "nofluffjobs.com/job/" not in current and "nofluffjobs.com/job/" not in candidate:
+        return current
+
+    def score(url: str) -> tuple[int, int]:
+        slug = url.rstrip("/").rsplit("/", 1)[-1]
+        base = nofluff_base_slug(url)
+        # Higher is better: exact base > remote suffix > other region variants
+        if slug == base:
+            tier = 3
+        elif slug.endswith("-remote") or slug.endswith("-fully-remote"):
+            tier = 2
+        else:
+            tier = 1
+        # Prefer shorter slug within the same tier
+        return (tier, -len(slug))
+
+    return candidate if score(candidate) > score(current) else current
+
+
+def dedupe_key(job: dict) -> str:
+    title = normalize_title(job.get("title", ""))
+    company = normalize_company(job.get("company", ""))
+    url = job.get("url", "")
+    portal = (job.get("portal") or "").lower()
+
+    # NoFluffJobs publishes one URL per region — treat as one job.
+    if "nofluffjobs.com/job/" in url or "nofluff" in portal:
+        if company and title:
+            return f"nofluff|{company}|{title}"
+        return f"nofluff|{nofluff_base_slug(url)}|{title}"
+
+    # Same role at same company across portals (Jobs.cz + StartupJobs, …)
+    if company and title:
+        return f"role|{company}|{title}"
+
+    norm = normalize_url(url)
+    if norm:
+        return f"url|{norm}"
+    return f"text|{company}|{title}"
+
+
+def job_id(url: str, title: str, company: str, portal: str = "") -> str:
+    """Stable ID — for NoFluff / known company+title ignore region URL variants."""
+    key_job = {"url": url, "title": title, "company": company, "portal": portal}
+    key = dedupe_key(key_job)
+    if key.startswith(("nofluff|", "role|")):
+        return hashlib.sha256(key.encode()).hexdigest()[:16]
     norm = normalize_url(url)
     if norm and norm != "https://www.jobs.cz":
         return hashlib.sha256(norm.encode()).hexdigest()[:16]
-    key = f"{company}|{title}".strip().lower()
-    return hashlib.sha256(key.encode()).hexdigest()[:16]
+    fallback = f"{normalize_company(company)}|{normalize_title(title)}"
+    return hashlib.sha256(fallback.encode()).hexdigest()[:16]
+
+
+def merge_location(a: str, b: str) -> str:
+    parts = []
+    for raw in (a or "", b or ""):
+        for p in raw.split(","):
+            p = p.strip()
+            if p:
+                parts.append(p)
+    return ", ".join(sorted(dict.fromkeys(parts), key=str.casefold))
+
+
+def collapse_duplicate_jobs(jobs: list[dict]) -> list[dict]:
+    """Merge existing state duplicates (NoFluff region variants + cross-portal)."""
+    merged: dict[str, dict] = {}
+    for job in jobs:
+        key = dedupe_key(job)
+        if key not in merged:
+            merged[key] = dict(job)
+            merged[key]["id"] = job_id(
+                job.get("url", ""),
+                job.get("title", ""),
+                job.get("company", ""),
+                job.get("portal", ""),
+            )
+            continue
+        rec = merged[key]
+        rec["url"] = prefer_job_url(rec.get("url", ""), job.get("url", ""))
+        rec["location"] = merge_location(rec.get("location", ""), job.get("location", ""))
+        # Keep earliest firstSeen, latest lastSeen
+        if (job.get("firstSeen") or "9999") < (rec.get("firstSeen") or "9999"):
+            rec["firstSeen"] = job.get("firstSeen")
+        if (job.get("lastSeen") or "") > (rec.get("lastSeen") or ""):
+            rec["lastSeen"] = job.get("lastSeen")
+        if not rec.get("company") and job.get("company"):
+            rec["company"] = job["company"]
+        # Prefer non-NoFluff portal label only if we somehow merged; keep first otherwise
+        if "nofluff" in (rec.get("portal") or "").lower() and "nofluff" not in (job.get("portal") or "").lower():
+            rec["portal"] = job.get("portal", rec.get("portal"))
+    return list(merged.values())
+
+
+def filter_jobs(jobs: list[dict], filters: dict) -> list[dict]:
+    filtered = []
+    seen = set()
+    for job in jobs:
+        title = job.get("title", "").strip()
+        if not title:
+            continue
+        if not matches_include(title, filters["includeKeywords"]):
+            continue
+        if matches_exclude(title, filters["excludeKeywords"]):
+            continue
+        if not location_ok(job.get("location", ""), title, filters):
+            continue
+        key = dedupe_key(job)
+        if key in seen:
+            # Prefer remote/canonical URL if we already kept a region variant
+            for i, kept in enumerate(filtered):
+                if dedupe_key(kept) == key:
+                    filtered[i] = {
+                        **kept,
+                        "url": prefer_job_url(kept.get("url", ""), job.get("url", "")),
+                        "location": merge_location(kept.get("location", ""), job.get("location", "")),
+                    }
+                    break
+            continue
+        seen.add(key)
+        job["url"] = normalize_url(job.get("url", "")) or job.get("url", "")
+        filtered.append(job)
+    return filtered
+
+
+def update_state(state: dict, found_jobs: list[dict], now: datetime) -> tuple[list[dict], list[dict]]:
+    today = now.date().isoformat()
+    # Collapse historical NoFluff/cross-portal duplicates first
+    existing_list = collapse_duplicate_jobs(state.get("jobs", []))
+    existing = {j["id"]: j for j in existing_list}
+    # Also index by dedupe key for matching renamed IDs
+    by_key = {dedupe_key(j): j for j in existing_list}
+    new_jobs = []
+    updated_jobs = []
+
+    for job in found_jobs:
+        jid = job_id(job.get("url", ""), job["title"], job.get("company", ""), job.get("portal", ""))
+        key = dedupe_key(job)
+        rec = existing.get(jid) or by_key.get(key)
+        if rec:
+            old_title = rec.get("title", "")
+            rec["id"] = jid
+            rec["lastSeen"] = today
+            rec["title"] = job["title"]
+            rec["company"] = job.get("company", "") or rec.get("company", "")
+            rec["location"] = merge_location(rec.get("location", ""), job.get("location", ""))
+            rec["url"] = prefer_job_url(rec.get("url", ""), job.get("url", ""))
+            rec["portal"] = job.get("portal", rec.get("portal", ""))
+            existing[jid] = rec
+            by_key[key] = rec
+            if old_title and old_title != job["title"]:
+                updated_jobs.append({**job, "id": jid, "oldTitle": old_title})
+        else:
+            rec = {
+                "id": jid,
+                "title": job["title"],
+                "company": job.get("company", ""),
+                "location": job.get("location", ""),
+                "url": job.get("url", ""),
+                "portal": job.get("portal", ""),
+                "firstSeen": today,
+                "lastSeen": today,
+            }
+            existing[jid] = rec
+            by_key[key] = rec
+            new_jobs.append(rec)
+
+    cutoff = (now.date() - timedelta(days=90)).isoformat()
+    jobs_list = collapse_duplicate_jobs(list(existing.values()))
+    jobs_list = [j for j in jobs_list if j.get("lastSeen", "1970-01-01") >= cutoff]
+    jobs_list.sort(key=lambda x: x.get("lastSeen", ""), reverse=True)
+    jobs_list = jobs_list[:2000]
+
+    state["jobs"] = jobs_list
+    state["lastRun"] = now.isoformat()
+    return new_jobs, updated_jobs
 
 
 def matches_include(title: str, include_keywords: list[str]) -> bool:
@@ -267,7 +478,7 @@ def startupjobs_pm_urls() -> list[str]:
 def parse_nofluffjobs(posting: dict, portal: str) -> dict:
     loc = posting.get("location", {})
     places = loc.get("places", [])
-    parts = []
+    parts: list[str] = []
     for pl in places:
         city = pl.get("city", "")
         country = pl.get("country", {}).get("name", "")
@@ -277,7 +488,8 @@ def parse_nofluffjobs(posting: dict, portal: str) -> dict:
             parts.append(country)
     if posting.get("fullyRemote"):
         parts.append("Remote")
-    location = ", ".join(dict.fromkeys(parts))
+    # Stable order so the same job doesn't look different across region variants
+    location = ", ".join(sorted(dict.fromkeys(p for p in parts if p), key=str.casefold))
     return {
         "title": posting.get("title", "").strip(),
         "company": posting.get("name", "").strip(),
@@ -383,85 +595,6 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
         return [], "Nepodporovaný portál bez parseru"
 
     return [], "Neznámý typ portálu"
-
-
-def dedupe_key(job: dict) -> str:
-    title = re.sub(r"\s+", " ", job.get("title", "").strip().lower())
-    company = re.sub(r"\s+", " ", job.get("company", "").strip().lower())
-    url = job.get("url", "")
-    if "nofluffjobs.com/job/" in url:
-        slug = url.rsplit("/", 1)[-1]
-        slug = re.sub(r"-(?:remote|warszawa|warsaw|krakow|kraków|wroclaw|wrocław|poznan|poznań|gdansk|gdańsk|katowice|lodz|łódź|lublin|pl|cz)(?:-\d+)?$", "", slug, flags=re.I)
-        return f"nofluff|{company}|{title}|{slug}"
-    norm = normalize_url(url)
-    if norm:
-        return f"url|{norm}"
-    return f"text|{company}|{title}"
-
-
-def filter_jobs(jobs: list[dict], filters: dict) -> list[dict]:
-    filtered = []
-    seen = set()
-    for job in jobs:
-        title = job.get("title", "").strip()
-        if not title:
-            continue
-        if not matches_include(title, filters["includeKeywords"]):
-            continue
-        if matches_exclude(title, filters["excludeKeywords"]):
-            continue
-        if not location_ok(job.get("location", ""), title, filters):
-            continue
-        key = dedupe_key(job)
-        if key in seen:
-            continue
-        seen.add(key)
-        job["url"] = normalize_url(job.get("url", "")) or job.get("url", "")
-        filtered.append(job)
-    return filtered
-
-
-def update_state(state: dict, found_jobs: list[dict], now: datetime) -> tuple[list[dict], list[dict]]:
-    today = now.date().isoformat()
-    existing = {j["id"]: j for j in state.get("jobs", [])}
-    new_jobs = []
-    updated_jobs = []
-
-    for job in found_jobs:
-        jid = job_id(job.get("url", ""), job["title"], job.get("company", ""))
-        if jid in existing:
-            rec = existing[jid]
-            old_title = rec.get("title", "")
-            rec["lastSeen"] = today
-            rec["title"] = job["title"]
-            rec["company"] = job.get("company", rec.get("company", ""))
-            rec["location"] = job.get("location", rec.get("location", ""))
-            rec["url"] = job.get("url", rec.get("url", ""))
-            rec["portal"] = job.get("portal", rec.get("portal", ""))
-            if old_title and old_title != job["title"]:
-                updated_jobs.append({**job, "id": jid, "oldTitle": old_title})
-        else:
-            rec = {
-                "id": jid,
-                "title": job["title"],
-                "company": job.get("company", ""),
-                "location": job.get("location", ""),
-                "url": job.get("url", ""),
-                "portal": job.get("portal", ""),
-                "firstSeen": today,
-                "lastSeen": today,
-            }
-            existing[jid] = rec
-            new_jobs.append(rec)
-
-    cutoff = (now.date() - timedelta(days=90)).isoformat()
-    jobs_list = [j for j in existing.values() if j.get("lastSeen", "1970-01-01") >= cutoff]
-    jobs_list.sort(key=lambda x: x.get("lastSeen", ""), reverse=True)
-    jobs_list = jobs_list[:2000]
-
-    state["jobs"] = jobs_list
-    state["lastRun"] = now.isoformat()
-    return new_jobs, updated_jobs
 
 
 def build_report(
