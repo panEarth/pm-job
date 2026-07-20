@@ -381,7 +381,7 @@
     function categorizeJob(job) {
       const t = String(job.title || "").toLowerCase()
         .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g);
+        .replace(/[\u0300-\u036f]/g, "");
       for (const cat of CATEGORIES) {
         if (cat.test(t)) return cat;
       }
