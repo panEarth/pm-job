@@ -97,7 +97,8 @@ Pokud `agent-browser` není dostupný, použij vestavěný browser MCP (`browser
 **Poznámky k portálům:**
 - Cookies/consent banner: klikni „Accept"/„Souhlasím" před extrakcí
 - Stránkování: projdi max. 2 stránky na portál
-- Login-required portály: zaznamenej do reportu jako „vyžaduje přihlášení" a přeskoč
+- Login-required portály (`requiresAuth: true`): zaznamenej do reportu jako „vyžaduje přihlášení" a přeskoč
+- **LinkedIn Jobs**: často login wall / anti-bot. Zkus veřejné výsledky bez loginu; pokud redirect na login nebo prázdný seznam → varování ve Slacku a pokračuj na další portál. Neukládej LinkedIn credentials.
 
 ### Krok 3 — Filtrování
 

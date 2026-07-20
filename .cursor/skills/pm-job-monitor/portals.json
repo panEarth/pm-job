@@ -42,6 +42,22 @@
       "searchUrl": "https://nofluffjobs.com/cz/productManagement",
       "enabled": true,
       "notes": "IT portál — kategorie Produktový management"
+    },
+    {
+      "name": "LinkedIn Jobs — Česko",
+      "type": "search_url",
+      "searchUrl": "https://www.linkedin.com/jobs/search/?keywords=product%20manager&location=Czechia&f_TPR=r86400",
+      "enabled": true,
+      "requiresAuth": true,
+      "notes": "PM v Česku, posledních 24h. LinkedIn často vyžaduje login / blokuje scraping — při selhání zaznamenej a pokračuj."
+    },
+    {
+      "name": "LinkedIn Jobs — Remote EU",
+      "type": "search_url",
+      "searchUrl": "https://www.linkedin.com/jobs/search/?keywords=product%20manager&location=European%20Union&f_WT=2&f_TPR=r86400",
+      "enabled": true,
+      "requiresAuth": true,
+      "notes": "Full remote PM v EU, posledních 24h. Stejná omezení jako LinkedIn Česko."
     }
   ]
 }
