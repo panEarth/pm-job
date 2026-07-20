@@ -203,6 +203,35 @@
       background: rgba(255,255,255,0.45);
     }
 
+    .category {
+      margin-top: 1.35rem;
+    }
+
+    .category:first-child {
+      margin-top: 0.35rem;
+    }
+
+    .category-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin: 0 0 0.7rem;
+    }
+
+    .category-head h3 {
+      margin: 0;
+      font-family: "Outfit", sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: var(--ink-soft);
+    }
+
+    .category-head .count {
+      font-size: 0.8rem;
+    }
+
     footer {
       margin-top: 3rem;
       padding-top: 1rem;
@@ -333,9 +362,43 @@
       return "";
     }
 
+    // Order = display order; first match wins (more specific roles first).
+    const CATEGORIES = [
+      { id: "cpo", label: "CPO / Chief Product Officer", test: (t) => /\b(cpo|chief product officer)\b/.test(t) },
+      { id: "vp", label: "VP of Product", test: (t) => /\b(vp|vice president)\b.*\bproduct\b|\bproduct\b.*\b(vp|vice president)\b/.test(t) },
+      { id: "head", label: "Head of Product", test: (t) => /\bhead of product\b|\bvedouc[ií]\s+produktu\b/.test(t) },
+      { id: "director", label: "Product Director", test: (t) => /\b(product director|director of product|ředitel(ka)?\s+produktu)\b/.test(t) },
+      { id: "principal", label: "Principal / Staff / Group PM", test: (t) => /\b(principal|staff|group)\s+(product\s+)?(manager|pm|owner)\b|\b(principal|staff|group)\s+pm\b/.test(t) },
+      { id: "senior-pm", label: "Senior Product Manager", test: (t) => /\bsenior\s+(product\s+)?manager\b|\bsenior\s+pm\b|\bsenior\s+produktov/.test(t) },
+      { id: "senior-po", label: "Senior Product Owner", test: (t) => /\bsenior\s+product\s+owner\b|\bsenior\s+produktov(ý|y)\s+owner\b/.test(t) },
+      { id: "lead", label: "Product Lead", test: (t) => /\bproduct\s+lead\b|\blead\s+product\b|\bproduktov(ý|y)\s+lead\b/.test(t) },
+      { id: "pm", label: "Product Manager", test: (t) => /\bproduct\s+manager\b|\bproduktov(ý|y|á)\s+mana[žz]er/.test(t) },
+      { id: "po", label: "Product Owner", test: (t) => /\bproduct\s+owner\b|\bproduktov(ý|y)\s+owner\b/.test(t) },
+      { id: "other", label: "Ostatní product role", test: () => true },
+    ];
+
+    function categorizeJob(job) {
+      const t = String(job.title || "").toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g);
+      for (const cat of CATEGORIES) {
+        if (cat.test(t)) return cat;
+      }
+      return CATEGORIES[CATEGORIES.length - 1];
+    }
+
+    function groupByCategory(jobs) {
+      const buckets = new Map(CATEGORIES.map((c) => [c.id, { ...c, jobs: [] }]));
+      for (const job of jobs) {
+        const cat = categorizeJob(job);
+        buckets.get(cat.id).jobs.push(job);
+      }
+      return [...buckets.values()].filter((b) => b.jobs.length > 0);
+    }
+
     function jobMatches(job, q) {
       if (!q) return true;
-      const hay = [job.title, companyLabel(job), job.location, job.portal, job.url]
+      const hay = [job.title, companyLabel(job), job.location, job.portal, job.url, categorizeJob(job).label]
         .filter(Boolean)
         .join(" ")
         .toLowerCase();
@@ -363,6 +426,22 @@
       `;
     }
 
+    function renderGroupedList(jobs, { isNew = false, emptyText = "" } = {}) {
+      if (!jobs.length) return `<div class="empty">${emptyText}</div>`;
+      const groups = groupByCategory(jobs);
+      return groups.map((group) => `
+        <div class="category">
+          <div class="category-head">
+            <h3>${escapeHtml(group.label)}</h3>
+            <span class="count${isNew ? " hot" : ""}">${group.jobs.length}</span>
+          </div>
+          <div class="list">
+            ${group.jobs.map((j) => renderJob(j, { isNew })).join("")}
+          </div>
+        </div>
+      `).join("");
+    }
+
     function render(data, query = "") {
       const q = query.trim().toLowerCase();
       const jobs = Array.isArray(data.jobs) ? data.jobs : [];
@@ -371,7 +450,7 @@
 
       const newest = filtered
         .filter((j) => dateOnly(j.firstSeen) === lastRunDate)
-        .sort((a, b) => String(b.title).localeCompare(String(a.title), "cs"));
+        .sort((a, b) => String(a.title).localeCompare(String(b.title), "cs"));
 
       const previous = filtered
         .filter((j) => dateOnly(j.firstSeen) !== lastRunDate)
@@ -393,11 +472,10 @@
             <h2 id="new-heading">Nové nabídky</h2>
             <span class="count hot">${newest.length}</span>
           </div>
-          ${
-            newest.length
-              ? `<div class="list">${newest.map((j) => renderJob(j, { isNew: true })).join("")}</div>`
-              : `<div class="empty">${q ? "Žádné nové nabídky neodpovídají filtru." : "V posledním běhu žádné nové PM pozice."}</div>`
-          }
+          ${renderGroupedList(newest, {
+            isNew: true,
+            emptyText: q ? "Žádné nové nabídky neodpovídají filtru." : "V posledním běhu žádné nové PM pozice.",
+          })}
         </section>
 
         <section aria-labelledby="prev-heading">
@@ -405,11 +483,9 @@
             <h2 id="prev-heading">Dříve nalezené</h2>
             <span class="count">${previous.length}</span>
           </div>
-          ${
-            previous.length
-              ? `<div class="list">${previous.map((j) => renderJob(j)).join("")}</div>`
-              : `<div class="empty">${q ? "Žádné starší nabídky neodpovídají filtru." : "Zatím žádná historie."}</div>`
-          }
+          ${renderGroupedList(previous, {
+            emptyText: q ? "Žádné starší nabídky neodpovídají filtru." : "Zatím žádná historie.",
+          })}
         </section>
       `;
     }
