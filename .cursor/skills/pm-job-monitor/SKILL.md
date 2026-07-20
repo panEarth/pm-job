@@ -142,6 +142,25 @@ Pravidla údržby stavu:
 - Smaž záznamy starší než 90 dní (pozice už pravděpodobně nejsou aktivní)
 - Max. 2000 záznamů — při překročení smaž nejstarší
 
+### Krok 5b — Web přehled
+
+Po aktualizaci stavu exportuj data pro stránku `docs/index.html`:
+
+1. Zapiš `docs/jobs.json` ve tvaru:
+   ```json
+   { "lastRun": "...", "generatedAt": "...", "jobs": [ ... ] }
+   ```
+2. Seřaď `jobs` od nejnovějších (`firstSeen` / `lastSeen`)
+3. Commitni `state/seen-jobs.json` + `docs/jobs.json` (stránka na GitHub Pages se aktualizuje sama)
+
+Web URL: `https://panearth.github.io/pm-job/`
+
+Sekce stránky:
+- **Nové nabídky** = `firstSeen` == datum z `lastRun`
+- **Dříve nalezené** = ostatní
+
+Pokud běží `monitor.py`, export provede automaticky funkce `export_web()`.
+
 ### Krok 6 — Report
 
 **Pokud jsou nové pozice**, pošli Slack zprávu v tomto formátu:

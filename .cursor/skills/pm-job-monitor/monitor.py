@@ -15,9 +15,11 @@ from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 from urllib.request import Request, urlopen
 
 BASE_DIR = Path(__file__).resolve().parent
+REPO_ROOT = BASE_DIR.parents[2]  # pm-job/.cursor/skills/pm-job-monitor → pm-job
 PORTALS_FILE = BASE_DIR / "portals.json"
 FILTERS_FILE = BASE_DIR / "filters.json"
 STATE_FILE = BASE_DIR / "state" / "seen-jobs.json"
+WEB_JOBS_FILE = REPO_ROOT / "docs" / "jobs.json"
 
 USER_AGENT = "Mozilla/5.0 (compatible; PMJobMonitor/1.0)"
 REQUEST_DELAY = 1.0
@@ -489,6 +491,21 @@ def build_report(
     return "\n".join(lines)
 
 
+def export_web(state: dict) -> None:
+    """Export jobs for the public docs/ overview page."""
+    jobs = sorted(
+        state.get("jobs", []),
+        key=lambda j: (j.get("firstSeen") or "", j.get("lastSeen") or "", j.get("title") or ""),
+        reverse=True,
+    )
+    payload = {
+        "lastRun": state.get("lastRun"),
+        "generatedAt": state.get("lastRun"),
+        "jobs": jobs,
+    }
+    save_json(WEB_JOBS_FILE, payload)
+
+
 def main() -> int:
     portals_cfg = load_json(PORTALS_FILE)
     filters = load_json(FILTERS_FILE)
@@ -512,6 +529,7 @@ def main() -> int:
 
     new_jobs, updated_jobs = update_state(state, all_found, now)
     save_json(STATE_FILE, state)
+    export_web(state)
 
     report = build_report(new_jobs, updated_jobs, len(enabled), failures, now)
     print(report)
@@ -522,6 +540,7 @@ def main() -> int:
         "updated": len(updated_jobs),
         "failures": failures,
         "portals": len(enabled),
+        "webExport": str(WEB_JOBS_FILE),
     }, ensure_ascii=False))
     return 0
 

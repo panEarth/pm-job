@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PM Job Monitor</title>
+  <meta name="description" content="Přehled nových a dříve nalezených Product Manager pozic." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #07151c;
+      --ink-soft: #1a3340;
+      --fog: #d7e4ea;
+      --paper: #f3f7f9;
+      --line: rgba(7, 21, 28, 0.12);
+      --accent: #0f766e;
+      --accent-deep: #0b5a54;
+      --new: #c2410c;
+      --muted: #5c7380;
+      --card: rgba(255, 255, 255, 0.72);
+      --shadow: 0 18px 50px rgba(7, 21, 28, 0.08);
+      --radius: 18px;
+      --max: 760px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Outfit", sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(15, 118, 110, 0.18), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(194, 65, 12, 0.10), transparent 50%),
+        linear-gradient(180deg, #eaf2f5 0%, var(--paper) 40%, #e7eef2 100%);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max));
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    header.hero {
+      padding: 1.5rem 0 2rem;
+      animation: rise 0.7s ease both;
+    }
+
+    .brand {
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      font-size: clamp(2.4rem, 7vw, 3.6rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin: 0 0 0.75rem;
+      color: var(--ink);
+    }
+
+    .lede {
+      margin: 0;
+      max-width: 34rem;
+      color: var(--ink-soft);
+      font-size: 1.05rem;
+      line-height: 1.55;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1rem;
+      margin-top: 1.25rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .meta strong { color: var(--ink-soft); font-weight: 600; }
+
+    section {
+      margin-top: 2.25rem;
+      animation: rise 0.8s ease both;
+    }
+
+    section:nth-of-type(2) { animation-delay: 0.08s; }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.65rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-family: "Fraunces", serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .count {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .count.hot { color: var(--new); }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    article.job {
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.05rem 1.15rem 1.1rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    article.job:hover {
+      transform: translateY(-2px);
+      border-color: rgba(15, 118, 110, 0.35);
+    }
+
+    article.job.new {
+      border-color: rgba(194, 65, 12, 0.28);
+      background:
+        linear-gradient(135deg, rgba(194, 65, 12, 0.06), transparent 45%),
+        var(--card);
+    }
+
+    .job-top {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .job-title {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 600;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+
+    .job-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .job-title a:hover { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; }
+
+    .badge {
+      flex-shrink: 0;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--new);
+      background: rgba(194, 65, 12, 0.1);
+      border: 1px solid rgba(194, 65, 12, 0.18);
+      border-radius: 999px;
+      padding: 0.28rem 0.55rem;
+    }
+
+    .job-meta {
+      margin-top: 0.55rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.85rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .job-meta span::before {
+      content: "";
+      display: inline-block;
+      width: 0.35rem;
+      height: 0.35rem;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-right: 0.45rem;
+      vertical-align: 0.15rem;
+      opacity: 0.7;
+    }
+
+    .empty {
+      padding: 1.4rem 1.1rem;
+      border: 1px dashed var(--line);
+      border-radius: var(--radius);
+      color: var(--muted);
+      background: rgba(255,255,255,0.45);
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.85rem;
+      animation: rise 0.9s ease both;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1.25rem 0 0;
+    }
+
+    .filters input[type="search"] {
+      flex: 1 1 220px;
+      min-width: 0;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.8);
+      border-radius: 999px;
+      padding: 0.7rem 1rem;
+      font: inherit;
+      color: var(--ink);
+      outline: none;
+    }
+
+    .filters input[type="search"]:focus {
+      border-color: rgba(15, 118, 110, 0.55);
+      box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+    }
+
+    .status-error {
+      margin-top: 1.5rem;
+      padding: 1rem 1.1rem;
+      border-radius: var(--radius);
+      background: rgba(194, 65, 12, 0.08);
+      border: 1px solid rgba(194, 65, 12, 0.2);
+      color: var(--ink-soft);
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 1.25rem, var(--max)); padding-top: 1.5rem; }
+      .brand { font-size: 2.2rem; }
+      article.job { padding: 0.95rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1 class="brand">PM Job Monitor</h1>
+      <p class="lede">Přehled Product Manager pozic ze sledovaných portálů — nové nahoře, historie pod nimi.</p>
+      <div class="meta" id="meta">Načítám data…</div>
+      <div class="filters">
+        <input id="q" type="search" placeholder="Filtrovat podle názvu, firmy, lokace nebo portálu…" autocomplete="off" />
+      </div>
+    </header>
+
+    <div id="app"></div>
+
+    <footer>
+      Data z denního monitoringu · Aktualizace po každém běhu automatizace
+    </footer>
+  </div>
+
+  <script>
+    const $ = (sel, root = document) => root.querySelector(sel);
+
+    function escapeHtml(str) {
+      return String(str ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function formatDateTime(iso) {
+      if (!iso) return "—";
+      const d = new Date(iso);
+      if (Number.isNaN(d.getTime())) return escapeHtml(iso);
+      return new Intl.DateTimeFormat("cs-CZ", {
+        dateStyle: "medium",
+        timeStyle: "short",
+      }).format(d);
+    }
+
+    function dateOnly(isoOrDate) {
+      if (!isoOrDate) return "";
+      if (/^\d{4}-\d{2}-\d{2}$/.test(isoOrDate)) return isoOrDate;
+      const d = new Date(isoOrDate);
+      if (Number.isNaN(d.getTime())) return String(isoOrDate).slice(0, 10);
+      const y = d.getFullYear();
+      const m = String(d.getMonth() + 1).padStart(2, "0");
+      const day = String(d.getDate()).padStart(2, "0");
+      return `${y}-${m}-${day}`;
+    }
+
+    function jobMatches(job, q) {
+      if (!q) return true;
+      const hay = [job.title, job.company, job.location, job.portal, job.url]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+      return hay.includes(q);
+    }
+
+    function renderJob(job, { isNew = false } = {}) {
+      const company = job.company || "Neznámá firma";
+      const location = job.location || "Neuvedeno";
+      const portal = job.portal || "—";
+      const url = job.url || "#";
+      return `
+        <article class="job${isNew ? " new" : ""}">
+          <div class="job-top">
+            <h3 class="job-title"><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(job.title || "Bez názvu")}</a></h3>
+            ${isNew ? '<span class="badge">Nové</span>' : ""}
+          </div>
+          <div class="job-meta">
+            <span>${escapeHtml(company)}</span>
+            <span>${escapeHtml(location)}</span>
+            <span>${escapeHtml(portal)}</span>
+            <span>Poprvé: ${escapeHtml(job.firstSeen || "—")}</span>
+          </div>
+        </article>
+      `;
+    }
+
+    function render(data, query = "") {
+      const q = query.trim().toLowerCase();
+      const jobs = Array.isArray(data.jobs) ? data.jobs : [];
+      const lastRunDate = dateOnly(data.lastRun);
+      const filtered = jobs.filter((j) => jobMatches(j, q));
+
+      const newest = filtered
+        .filter((j) => dateOnly(j.firstSeen) === lastRunDate)
+        .sort((a, b) => String(b.title).localeCompare(String(a.title), "cs"));
+
+      const previous = filtered
+        .filter((j) => dateOnly(j.firstSeen) !== lastRunDate)
+        .sort((a, b) => {
+          const d = String(b.firstSeen || "").localeCompare(String(a.firstSeen || ""));
+          if (d !== 0) return d;
+          return String(a.title || "").localeCompare(String(b.title || ""), "cs");
+        });
+
+      $("#meta").innerHTML = `
+        <span>Poslední běh: <strong>${formatDateTime(data.lastRun)}</strong></span>
+        <span>Celkem: <strong>${jobs.length}</strong></span>
+        <span>Nové v posledním běhu: <strong>${jobs.filter((j) => dateOnly(j.firstSeen) === lastRunDate).length}</strong></span>
+      `;
+
+      $("#app").innerHTML = `
+        <section aria-labelledby="new-heading">
+          <div class="section-head">
+            <h2 id="new-heading">Nové nabídky</h2>
+            <span class="count hot">${newest.length}</span>
+          </div>
+          ${
+            newest.length
+              ? `<div class="list">${newest.map((j) => renderJob(j, { isNew: true })).join("")}</div>`
+              : `<div class="empty">${q ? "Žádné nové nabídky neodpovídají filtru." : "V posledním běhu žádné nové PM pozice."}</div>`
+          }
+        </section>
+
+        <section aria-labelledby="prev-heading">
+          <div class="section-head">
+            <h2 id="prev-heading">Dříve nalezené</h2>
+            <span class="count">${previous.length}</span>
+          </div>
+          ${
+            previous.length
+              ? `<div class="list">${previous.map((j) => renderJob(j)).join("")}</div>`
+              : `<div class="empty">${q ? "Žádné starší nabídky neodpovídají filtru." : "Zatím žádná historie."}</div>`
+          }
+        </section>
+      `;
+    }
+
+    async function boot() {
+      try {
+        const res = await fetch("./jobs.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        window.__jobsData = data;
+        render(data);
+        $("#q").addEventListener("input", (e) => render(data, e.target.value));
+      } catch (err) {
+        $("#meta").textContent = "Data se nepodařilo načíst.";
+        $("#app").innerHTML = `<div class="status-error">Nepodařilo se načíst <code>jobs.json</code>. Spusť monitoring nebo zkontroluj GitHub Pages.</div>`;
+        console.error(err);
+      }
+    }
+
+    boot();
+  </script>
+</body>
+</html>

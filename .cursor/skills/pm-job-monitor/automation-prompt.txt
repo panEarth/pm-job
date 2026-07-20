@@ -15,8 +15,13 @@ Použij skill pm-job-monitor pro denní monitoring PM pozic.
 4. Porovnej se stavem — reportuj jen NOVÉ pozice (nebo aktualizované).
 
 5. Aktualizuj state/seen-jobs.json (firstSeen, lastSeen, max 2000 záznamů, smaž starší než 90 dní).
+   Po aktualizaci stavu také exportuj data pro web:
+   - zapiš do docs/jobs.json pole { lastRun, generatedAt, jobs }
+   - jobs seřaď od nejnovějších (firstSeen/lastSeen)
+   - commitni změny state + docs/jobs.json do repozitáře (aby GitHub Pages zůstaly aktuální)
 
 6. Pošli Slack DM s reportem:
    - Pokud nové pozice: seznam s názvem, firmou, lokací, URL a zdrojem
    - Pokud žádné nové: ✅ Žádné nové PM pozice. Monitorováno N portálů.
    - Pokud portál selhal: ⚠️ varování s důvodem
+   - Na konec zprávy přidej odkaz na web přehled: https://panearth.github.io/pm-job/
