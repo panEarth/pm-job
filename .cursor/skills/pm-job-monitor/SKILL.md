@@ -42,7 +42,7 @@ Task Progress:
 - [ ] 3. Filtrovat relevantní pozice
 - [ ] 4. Porovnat se stavem — vybrat jen NOVÉ
 - [ ] 5. Aktualizovat state/seen-jobs.json
-- [ ] 6. Odeslat report (Slack nebo chat)
+- [ ] 6. Exportovat web přehled (docs/jobs.json) a commitnout
 ```
 
 ### Krok 1 — Načtení stavu
@@ -98,7 +98,7 @@ Pokud `agent-browser` není dostupný, použij vestavěný browser MCP (`browser
 - Cookies/consent banner: klikni „Accept"/„Souhlasím" před extrakcí
 - Stránkování: projdi max. 2 stránky na portál
 - Login-required portály (`requiresAuth: true`): zaznamenej do reportu jako „vyžaduje přihlášení" a přeskoč
-- **LinkedIn Jobs**: často login wall / anti-bot. Zkus veřejné výsledky bez loginu; pokud redirect na login nebo prázdný seznam → varování ve Slacku a pokračuj na další portál. Neukládej LinkedIn credentials.
+- **LinkedIn Jobs**: často login wall / anti-bot. Zkus veřejné výsledky bez loginu; pokud redirect na login nebo prázdný seznam → zaznamenej varování do logu běhu a pokračuj na další portál. Neukládej LinkedIn credentials.
 
 ### Krok 3 — Filtrování
 
@@ -161,38 +161,23 @@ Sekce stránky:
 
 Pokud běží `monitor.py`, export provede automaticky funkce `export_web()`.
 
-### Krok 6 — Report
+### Krok 6 — Shrnutí běhu (bez Slacku)
 
-**Pokud jsou nové pozice**, pošli Slack zprávu v tomto formátu:
+**Neposílej Slack zprávy.** Report je web přehled + krátký log.
+
+Do logu běhu vypiš:
 
 ```markdown
-🔍 *PM Job Monitor — [datum]*
+PM Job Monitor — [datum]
 
-Nalezeno *X nových* pozic:
-
-*1. [Název pozice]*
-🏢 [Firma] · 📍 [Lokace]
-🔗 [URL]
-📌 Zdroj: [Portál]
-
----
-
-*2. ...*
-
-_Celkem monitorováno: N portálů · Poslední běh: HH:MM_
+Nové: X · Celkem ve stavu: N · Portály: M
+Web: https://panearth.github.io/pm-job/
 ```
 
-**Pokud žádné nové pozice:**
+Pokud nějaký portál selhal, přidej:
 ```markdown
-✅ *PM Job Monitor — [datum]*
-
-Žádné nové PM pozice. Monitorováno N portálů.
-```
-
-**Pokud portál selhal:**
-```markdown
-⚠️ *PM Job Monitor — varování*
-- [Portál]: [důvod selhání]
+Varování:
+- [Portál]: [důvod]
 ```
 
 ## Přidání nového portálu
@@ -216,11 +201,10 @@ Podporované typy: `search_url`, `url`, `rss`.
 |---------|------|
 | Portál nedostupný (timeout/403) | Zaznamenej, pokračuj na další |
 | Prázdný výsledek | OK — žádné pozice na portálu |
-| Změna layoutu portálu | Zkus alternativní selektory, upozorni uživatele |
+| Změna layoutu portálu | Zkus alternativní selektory, upozorni v logu |
 | Login required | Přeskoč, navrhni přidání do `portals.json` s `requiresAuth: true` |
 
 ## Bezpečnost
 
 - Neukládej přihlašovací údaje do konfigurace
-- Neposílej celý `seen-jobs.json` do Slacku — jen nové pozice
 - Respektuj robots.txt; nepřetěžuj portály (max 1 request/sekunda)
