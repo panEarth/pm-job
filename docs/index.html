@@ -286,16 +286,6 @@
         .replaceAll('"', "&quot;");
     }
 
-    function formatDateTime(iso) {
-      if (!iso) return "—";
-      const d = new Date(iso);
-      if (Number.isNaN(d.getTime())) return escapeHtml(iso);
-      return new Intl.DateTimeFormat("cs-CZ", {
-        dateStyle: "medium",
-        timeStyle: "short",
-      }).format(d);
-    }
-
     function dateOnly(isoOrDate) {
       if (!isoOrDate) return "";
       if (/^\d{4}-\d{2}-\d{2}$/.test(isoOrDate)) return isoOrDate;
@@ -307,9 +297,45 @@
       return `${y}-${m}-${day}`;
     }
 
+    function formatDateMDY(value) {
+      if (!value) return "—";
+      // Accept YYYY-MM-DD or ISO datetime
+      const only = dateOnly(value);
+      const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(only);
+      if (m) return `${m[2]}.${m[3]}.${m[1]}`;
+      const d = new Date(value);
+      if (Number.isNaN(d.getTime())) return escapeHtml(String(value));
+      const mm = String(d.getMonth() + 1).padStart(2, "0");
+      const dd = String(d.getDate()).padStart(2, "0");
+      const yyyy = d.getFullYear();
+      return `${mm}.${dd}.${yyyy}`;
+    }
+
+    function formatDateTime(iso) {
+      if (!iso) return "—";
+      const d = new Date(iso);
+      if (Number.isNaN(d.getTime())) return escapeHtml(iso);
+      const date = formatDateMDY(iso);
+      const time = new Intl.DateTimeFormat("cs-CZ", {
+        hour: "2-digit",
+        minute: "2-digit",
+      }).format(d);
+      return `${date} ${time}`;
+    }
+
+    function companyLabel(job) {
+      const raw = (job.company || "").trim();
+      if (raw) return raw;
+      // Sometimes company is only in the title: "… | Firma" / "… v Firma"
+      const title = job.title || "";
+      const pipe = title.match(/\|\s*([^|]+)\s*$/);
+      if (pipe) return pipe[1].trim();
+      return "";
+    }
+
     function jobMatches(job, q) {
       if (!q) return true;
-      const hay = [job.title, job.company, job.location, job.portal, job.url]
+      const hay = [job.title, companyLabel(job), job.location, job.portal, job.url]
         .filter(Boolean)
         .join(" ")
         .toLowerCase();
@@ -317,7 +343,7 @@
     }
 
     function renderJob(job, { isNew = false } = {}) {
-      const company = job.company || "Neznámá firma";
+      const company = companyLabel(job);
       const location = job.location || "Neuvedeno";
       const portal = job.portal || "—";
       const url = job.url || "#";
@@ -328,10 +354,10 @@
             ${isNew ? '<span class="badge">Nové</span>' : ""}
           </div>
           <div class="job-meta">
-            <span>${escapeHtml(company)}</span>
+            ${company ? `<span>${escapeHtml(company)}</span>` : ""}
             <span>${escapeHtml(location)}</span>
             <span>${escapeHtml(portal)}</span>
-            <span>Poprvé: ${escapeHtml(job.firstSeen || "—")}</span>
+            <span>Poprvé: ${formatDateMDY(job.firstSeen)}</span>
           </div>
         </article>
       `;

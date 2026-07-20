@@ -163,8 +163,21 @@ def parse_jobs_cz(html_text: str, portal: str) -> list[dict]:
         if not title_m:
             continue
         title = html_lib.unescape(title_m.group(1))
-        company_m = re.search(r'alt="([^"]+)"', article)
-        company = company_m.group(1).strip() if company_m else ""
+        company = ""
+        for pat in [
+            r'data-test="employer-name"[^>]*>([^<]+)<',
+            r'data-test="company-name"[^>]*>([^<]+)<',
+            r'class="[^"]*company[^"]*"[^>]*>([^<]+)<',
+            r'alt="([^"]+)"',
+        ]:
+            company_m = re.search(pat, article, re.I)
+            if company_m:
+                candidate = html_lib.unescape(company_m.group(1).strip())
+                if candidate and candidate.lower() not in {"logo", "company logo"}:
+                    company = candidate
+                    break
+        if not company and "|" in title:
+            company = title.rsplit("|", 1)[-1].strip()
         loc_m = re.search(r'data-test="location"[^>]*>([^<]+)<', article)
         location = html_lib.unescape(loc_m.group(1).strip()) if loc_m else ""
         link_m = re.search(r'href="(https://www\.jobs\.cz/rpd/\d+/)', article)
