@@ -4,10 +4,12 @@ Denní monitoring job portálů pro Product Manager pozice.
 
 ## Web přehled
 
-Po zapnutí GitHub Pages: **https://panearth.github.io/pm-job/**
+**https://panearth.github.io/pm-job/**
 
 - nahoře **nové nabídky** z posledního běhu
 - pod nimi **všechny dříve nalezené** pozice
+
+Žádné Slack notifikace — jediný výstup je tato stránka (+ log běhu automatizace).
 
 Data: `docs/jobs.json` (aktualizuje se po každém běhu monitoru).
 
