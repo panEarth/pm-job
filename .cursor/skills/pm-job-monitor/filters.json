@@ -88,16 +88,12 @@
     "accept": [
       "Praha",
       "Prague",
-      "Česko",
-      "Czech",
-      "Czechia",
-      "ČR",
-      "Czech Republic",
       "Hybrid",
       "Remote",
       "Na dálku",
       "Full remote",
-      "Plně na dálku"
+      "Plně na dálku",
+      "Home office"
     ],
     "remoteAlsoAccept": [
       "EU",
@@ -109,7 +105,14 @@
       "Work from anywhere",
       "Fully remote"
     ],
-    "rules": "Akceptuj: hybrid nebo onsite v Česku (primárně Praha). Full remote v ČR i EU. Vyluč junior pozice (včetně 'Junior Product Manager'). Zahrň AI varianty product rolí."
+    "rejectOnsiteCities": [
+      "Brno",
+      "Ostrava",
+      "Plzeň",
+      "Olomouc",
+      "Liberec"
+    ],
+    "rules": "Akceptuj: onsite Praha; hybrid; full remote v ČR i EU. Vyluč čisté onsite mimo Prahu (např. Brno). Jobs.cz lokaci ber z detailu inzerátu."
   },
   "locationRequired": true
 }

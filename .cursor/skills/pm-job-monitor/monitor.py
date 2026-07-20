@@ -293,36 +293,105 @@ REJECT_LOCATIONS = [
     "mountain view", "palo alto", "silicon valley",
 ]
 
+# Pure onsite outside Prague — reject unless hybrid/remote is also present
+ONSITE_OUTSIDE_PRAGUE = [
+    "brno", "ostrava", "plzen", "plzeň", "olomouc", "liberec", "hradec",
+    "ceske budejovice", "české budějovice", "pardubice", "zlin", "zlín",
+    "karlovy vary", "usti nad labem", "ústí nad labem", "jihlava",
+]
+
 EU_LOCATION_HINTS = [
     "poland", "warszawa", "warsaw", "kraków", "krakow", "wrocław", "wroclaw",
     "poznań", "poznan", "gdańsk", "gdansk", "sopot", "bratislava", "slovakia",
     "germany", "berlin", "munich", "austria", "vienna", "hungary", "budapest",
 ]
 
+PRAGUE_HINTS = ["praha", "prague", "prague 1", "prague 2", "praha 1", "praha 2"]
+REMOTE_HINTS = [
+    "remote", "full remote", "fully remote", "na dalku", "na dálku",
+    "work from anywhere", "wfa", "home office", "plne na dalku", "plně na dálku",
+]
+HYBRID_HINTS = ["hybrid", "flexibilni", "flexibilní"]
+
+
+def _norm_loc_text(location: str, title: str = "") -> str:
+    return f"{location or ''} {title or ''}".lower()
+
+
+def is_remote_like(text: str) -> bool:
+    return any(k in text for k in REMOTE_HINTS)
+
+
+def is_hybrid_like(text: str) -> bool:
+    return any(k in text for k in HYBRID_HINTS)
+
+
+def is_prague_like(text: str) -> bool:
+    return any(k in text for k in PRAGUE_HINTS)
+
+
+def is_onsite_outside_prague(text: str) -> bool:
+    if is_prague_like(text) or is_remote_like(text) or is_hybrid_like(text):
+        return False
+    return any(k in text for k in ONSITE_OUTSIDE_PRAGUE)
+
 
 def location_ok(location: str, title: str, filters: dict) -> bool:
+    """Accept: Praha onsite, hybrid anywhere CZ-ish, full remote CZ/EU. Reject Brno-only onsite."""
     if not filters.get("locationRequired", True):
         return True
     loc = (location or "").strip()
-    text = f"{loc} {title}".lower()
+    text = _norm_loc_text(loc, title)
     reject = [k.lower() for k in filters.get("rejectLocations", REJECT_LOCATIONS)]
     if loc and any(k in text for k in reject):
         return False
-    accept = [k.lower() for k in filters["locations"]["accept"]]
-    remote_eu = [k.lower() for k in filters["locations"]["remoteAlsoAccept"]]
-    if any(k in text for k in accept):
+
+    # Explicit onsite outside Prague (e.g. Brno) without hybrid/remote
+    if is_onsite_outside_prague(text):
+        return False
+
+    if is_prague_like(text) or is_hybrid_like(text) or is_remote_like(text):
         return True
+
+    remote_eu = [k.lower() for k in filters.get("locations", {}).get("remoteAlsoAccept", [])]
     if any(k in text for k in remote_eu):
         return True
-    if any(k in text for k in EU_LOCATION_HINTS):
+    if any(k in text for k in EU_LOCATION_HINTS) and is_remote_like(text):
         return True
-    if "remote" in text:
+    # EU remote often says only city+country without "remote" word but portal marked remote earlier
+    if any(k in text for k in EU_LOCATION_HINTS) and "remote" in text:
         return True
-    # Jobs.cz CZ listings often lack explicit location in card — keep PM titles
+
+    # Jobs.cz cards sometimes lack location — keep until detail enrichment fills it
     if not loc:
         return True
     return False
 
+
+def nofluff_location_ok(posting: dict, filters: dict) -> bool:
+    loc = posting.get("location", {})
+    places = loc.get("places", [])
+    parts = []
+    for pl in places:
+        parts.append(pl.get("city", ""))
+        parts.append(pl.get("country", {}).get("name", ""))
+    if posting.get("fullyRemote"):
+        parts.append("remote")
+    text = " ".join(parts).lower()
+
+    if is_onsite_outside_prague(text) and not posting.get("fullyRemote"):
+        return False
+    if is_prague_like(text) or is_hybrid_like(text) or posting.get("fullyRemote"):
+        return True
+    remote_eu = [k.lower() for k in filters.get("locations", {}).get("remoteAlsoAccept", [])]
+    if posting.get("fullyRemote") and (any(k in text for k in remote_eu) or not places):
+        return True
+    # Czech region alone is not enough (would include Brno onsite)
+    if "cz" in (posting.get("regions") or []) and is_prague_like(text):
+        return True
+    if any(k in text for k in remote_eu) and posting.get("fullyRemote"):
+        return True
+    return False
 
 def scrape_tribee_browser(portal: dict) -> tuple[list[dict], str | None]:
     try:
@@ -499,25 +568,47 @@ def parse_nofluffjobs(posting: dict, portal: str) -> dict:
     }
 
 
-def nofluff_location_ok(posting: dict, filters: dict) -> bool:
-    loc = posting.get("location", {})
-    places = loc.get("places", [])
-    parts = []
-    for pl in places:
-        parts.append(pl.get("city", ""))
-        parts.append(pl.get("country", {}).get("name", ""))
-    if posting.get("fullyRemote"):
-        parts.append("remote")
-    text = " ".join(parts).lower()
-    accept = [k.lower() for k in filters["locations"]["accept"]]
-    remote_eu = [k.lower() for k in filters["locations"]["remoteAlsoAccept"]]
-    if "cz" in (posting.get("regions") or []):
-        return True
-    if any(k in text for k in accept):
-        return True
-    if posting.get("fullyRemote") and (any(k in text for k in remote_eu) or not places):
-        return True
-    return False
+def parse_jobs_cz_detail_location(html_text: str) -> str:
+    """Extract workplace location from a Jobs.cz detail page."""
+    patterns = [
+        r'data-test="jd-info-location"[^>]*>([^<]+)<',
+        r'"addressLocality"\s*:\s*"([^"]+)"',
+        r'itemprop="addressLocality"[^>]*(?:content="([^"]+)"|>([^<]+)<)',
+    ]
+    for pat in patterns:
+        m = re.search(pat, html_text, re.I)
+        if not m:
+            continue
+        loc = next((g for g in m.groups() if g), "")
+        loc = html_lib.unescape(loc.strip())
+        if loc:
+            return loc
+    # Workplace mode badges
+    modes = []
+    for label, keys in (
+        ("Hybrid", HYBRID_HINTS),
+        ("Remote", REMOTE_HINTS),
+    ):
+        if any(k in html_text.lower() for k in keys):
+            modes.append(label)
+    return ", ".join(modes)
+
+
+def enrich_jobs_cz_locations(jobs: list[dict]) -> list[dict]:
+    """Fetch detail pages when list-card location is missing or ambiguous."""
+    enriched = []
+    for job in jobs:
+        loc = (job.get("location") or "").strip()
+        needs_detail = (not loc) or is_onsite_outside_prague(_norm_loc_text(loc))
+        if needs_detail and job.get("url"):
+            content, err = fetch(job["url"])
+            time.sleep(REQUEST_DELAY)
+            if not err and content:
+                detail_loc = parse_jobs_cz_detail_location(content)
+                if detail_loc:
+                    job = {**job, "location": detail_loc}
+        enriched.append(job)
+    return enriched
 
 
 def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
@@ -533,6 +624,7 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
             if err:
                 return [], err
             all_jobs.extend(parse_jobs_cz(content or "", name))
+        all_jobs = enrich_jobs_cz_locations(all_jobs)
         return all_jobs, None
 
     if name == "StartupJobs.cz":
