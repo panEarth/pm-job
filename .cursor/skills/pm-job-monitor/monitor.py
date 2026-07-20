@@ -258,6 +258,8 @@ def startupjobs_pm_urls() -> list[str]:
     keys = [
         "product-manager", "product-owner", "produktov", "head-of-product",
         "product-lead", "product-director", "chief-product", "vp-product", "/cpo",
+        "ai-product", "product-ai", "technical-product", "growth-product",
+        "platform-product", "group-product", "principal-product", "staff-product",
     ]
     return [u for u in urls if any(k in u.lower() for k in keys)]
 
