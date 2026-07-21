@@ -18,7 +18,7 @@ Každý den projdeš portály z `.cursor/skills/pm-job-monitor/portals.json`, na
 2. Načti `portals.json`, `filters.json`, `state/seen-jobs.json`
 3. Pro každý portál s `enabled: true` vyhledej relevantní pozice
 4. Aktualizuj stav + `docs/jobs.json`, commitni a pushni změny
-5. Spusť `bash .cursor/skills/pm-job-monitor/publish.sh` — automaticky sloučí PR do main (GitHub Pages)
+5. Vytvoř PR (`open_git_pr` MCP) a spusť `bash .cursor/skills/pm-job-monitor/publish.sh` — automaticky sloučí do main
 6. **Neposílej Slack** — výstup je web https://panearth.github.io/pm-job/ + krátký log
 
 ## Výstup
