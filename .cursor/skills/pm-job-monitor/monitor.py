@@ -355,6 +355,11 @@ EU_LOCATION_HINTS = [
     "poznań", "poznan", "gdańsk", "gdansk", "sopot", "bratislava", "slovakia",
     "germany", "berlin", "munich", "austria", "vienna", "hungary", "budapest",
 ]
+CZECH_HINTS = [
+    "czechia", "czech republic", "česko", "cesko", "čr",
+    "praha", "prague", "brno", "ostrava", "plzeň", "plzen",
+    "olomouc", "liberec",
+]
 
 PRAGUE_HINTS = ["praha", "prague", "prague 1", "prague 2", "praha 1", "praha 2"]
 REMOTE_HINTS = [
@@ -380,6 +385,17 @@ def is_prague_like(text: str) -> bool:
     return any(k in text for k in PRAGUE_HINTS)
 
 
+def is_czech_like(text: str) -> bool:
+    return any(k in text for k in CZECH_HINTS)
+
+
+def is_eu_non_czech_like(text: str) -> bool:
+    if is_czech_like(text):
+        return False
+    remote_eu = ["eu", "europe", "europa", "emea"]
+    return any(k in text for k in EU_LOCATION_HINTS) or any(k in text for k in remote_eu)
+
+
 def is_onsite_outside_prague(text: str) -> bool:
     if is_prague_like(text) or is_remote_like(text) or is_hybrid_like(text):
         return False
@@ -387,7 +403,7 @@ def is_onsite_outside_prague(text: str) -> bool:
 
 
 def location_ok(location: str, title: str, filters: dict) -> bool:
-    """Accept: Praha onsite, hybrid anywhere CZ-ish, full remote CZ/EU. Reject Brno-only onsite."""
+    """Accept: Praha onsite; hybrid v ČR; full remote v ČR i EU. Reject onsite/hybrid mimo ČR."""
     if not filters.get("locationRequired", True):
         return True
     loc = (location or "").strip()
@@ -396,21 +412,25 @@ def location_ok(location: str, title: str, filters: dict) -> bool:
     if loc and any(k in text for k in reject):
         return False
 
-    # Explicit onsite outside Prague (e.g. Brno) without hybrid/remote
     if is_onsite_outside_prague(text):
         return False
 
-    if is_prague_like(text) or is_hybrid_like(text) or is_remote_like(text):
+    if is_prague_like(text):
         return True
 
-    remote_eu = [k.lower() for k in filters.get("locations", {}).get("remoteAlsoAccept", [])]
-    if any(k in text for k in remote_eu):
+    if is_remote_like(text):
         return True
-    if any(k in text for k in EU_LOCATION_HINTS) and is_remote_like(text):
-        return True
-    # EU remote often says only city+country without "remote" word but portal marked remote earlier
-    if any(k in text for k in EU_LOCATION_HINTS) and "remote" in text:
-        return True
+
+    # Hybrid akceptuj jen v ČR (ne Berlin hybrid apod.)
+    if is_hybrid_like(text):
+        return is_czech_like(text)
+
+    # EU mimo ČR bez explicitního remote — zamítnout (LinkedIn f_WT=2 není spolehlivý)
+    if is_eu_non_czech_like(text):
+        return False
+
+    if is_czech_like(text):
+        return is_hybrid_like(text)
 
     # Jobs.cz cards sometimes lack location — keep until detail enrichment fills it
     if not loc:
@@ -561,7 +581,6 @@ def scrape_linkedin(portal: dict, filters: dict) -> tuple[list[dict], str | None
         return [], "Chybí searchUrl"
 
     params = parse_qs(urlparse(search_url).query, keep_blank_values=True)
-    is_remote_search = "2" in params.get("f_WT", [])
     search_terms = get_search_keywords(filters)
     starts = search_page_starts(len(search_terms))
 
@@ -576,10 +595,6 @@ def scrape_linkedin(portal: dict, filters: dict) -> tuple[list[dict], str | None
                 last_err = err
                 continue
             page_jobs = parse_linkedin_guest(content or "", name)
-            for job in page_jobs:
-                loc = (job.get("location") or "").strip()
-                if is_remote_search and not is_remote_like(loc.lower()):
-                    job["location"] = f"Remote, {loc}" if loc else "Remote, EU"
             batches.append(page_jobs)
 
     if not batches:
@@ -871,6 +886,50 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
     return [], "Neznámý typ portálu"
 
 
+def needs_linkedin_location_refresh(job: dict) -> bool:
+    """Detekce umělého prefixu Remote, ze starší verze scraperu."""
+    if "linkedin.com/jobs/view/" not in job.get("url", ""):
+        return False
+    loc = (job.get("location") or "").strip()
+    if not re.match(r"^Remote,\s*", loc, re.I):
+        return False
+    rest = re.sub(r"^Remote,\s*", "", loc, flags=re.I).strip()
+    return not is_remote_like(rest.lower()) and not is_hybrid_like(rest.lower())
+
+
+def refresh_linkedin_location(job: dict) -> dict:
+    """Načte skutečnou lokaci z LinkedIn guest API."""
+    url = job.get("url", "")
+    job_id = url.rstrip("/").split("/")[-1]
+    if not job_id.isdigit():
+        return job
+    content, err = fetch(f"https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{job_id}")
+    if err or not content:
+        return job
+    loc_m = re.search(
+        r'topcard__flavor topcard__flavor--bullet">\s*([^<]+?)\s*</span>',
+        content,
+        re.S,
+    )
+    if loc_m:
+        return {**job, "location": html_lib.unescape(loc_m.group(1).strip())}
+    return job
+
+
+def revalidate_state(state: dict, filters: dict) -> int:
+    """Odstraní ze stavu pozice, které neprojdou aktuálními filtry (např. po zpřísnění lokací)."""
+    jobs = state.get("jobs", [])
+    before = len(jobs)
+    refreshed = []
+    for job in jobs:
+        if needs_linkedin_location_refresh(job):
+            job = refresh_linkedin_location(job)
+            time.sleep(REQUEST_DELAY)
+        refreshed.append(job)
+    state["jobs"] = filter_jobs(refreshed, filters)
+    return before - len(state["jobs"])
+
+
 def build_report(
     new_jobs: list[dict],
     updated_jobs: list[dict],
@@ -966,6 +1025,7 @@ def main() -> int:
         all_found.extend(filtered)
 
     new_jobs, updated_jobs = update_state(state, all_found, now)
+    removed = revalidate_state(state, filters)
     save_json(STATE_FILE, state)
     export_web(state)
 

@@ -140,7 +140,7 @@
       "Olomouc",
       "Liberec"
     ],
-    "rules": "Akceptuj: onsite Praha; hybrid; full remote v ČR i EU. Vyluč čisté onsite mimo Prahu (např. Brno). Jobs.cz lokaci ber z detailu inzerátu."
+    "rules": "Akceptuj: onsite Praha; hybrid v ČR; full remote v ČR i EU. Vyluč onsite/hybrid mimo ČR (např. Berlin office). Vyluč čisté onsite mimo Prahu v ČR (např. Brno). Jobs.cz lokaci ber z detailu inzerátu."
   },
   "locationRequired": true
 }
