@@ -43,6 +43,7 @@ Task Progress:
 - [ ] 4. Porovnat se stavem — vybrat jen NOVÉ
 - [ ] 5. Aktualizovat state/seen-jobs.json
 - [ ] 6. Exportovat web přehled (docs/jobs.json) a commitnout
+- [ ] 7. Sloučit PR do main (publish.sh) — GitHub Pages servíruje jen z main
 ```
 
 ### Krok 1 — Načtení stavu
@@ -151,9 +152,23 @@ Po aktualizaci stavu exportuj data pro stránku `docs/index.html`:
    { "lastRun": "...", "generatedAt": "...", "jobs": [ ... ] }
    ```
 2. Seřaď `jobs` od nejnovějších (`firstSeen` / `lastSeen`)
-3. Commitni `state/seen-jobs.json` + `docs/jobs.json` (stránka na GitHub Pages se aktualizuje sama)
+3. Commitni a pushni `state/seen-jobs.json` + `docs/jobs.json`
 
-Web URL: `https://panearth.github.io/pm-job/`
+### Krok 5c — Publikace na GitHub Pages
+
+GitHub Pages servíruje z větve **main** (`/docs`). Změny na feature branchi web neaktualizují.
+
+Po commitu a pushi:
+
+1. Vytvoř PR přes `open_git_pr` MCP (nebo `gh pr create`)
+2. Spusť merge do main:
+
+```bash
+bash .cursor/skills/pm-job-monitor/publish.sh
+# nebo s číslem PR: publish.sh 5
+```
+
+Skript označí draft PR jako ready, sloučí do main a počká na pages deploy.
 
 Sekce stránky:
 - **Nové nabídky** = `firstSeen` == datum z `lastRun`

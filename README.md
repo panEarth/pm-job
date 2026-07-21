@@ -13,6 +13,8 @@ Denní monitoring job portálů pro Product Manager pozice.
 
 Data: `docs/jobs.json` (aktualizuje se po každém běhu monitoru).
 
+GitHub Pages servíruje z větve **main**. Po každém běhu automatizace se PR automaticky sloučí přes `publish.sh`.
+
 ## Konfigurace
 
 `.cursor/skills/pm-job-monitor/`

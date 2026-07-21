@@ -18,8 +18,14 @@ Použij skill pm-job-monitor pro denní monitoring PM pozic.
    Po aktualizaci stavu exportuj data pro web:
    - zapiš do docs/jobs.json pole { lastRun, generatedAt, jobs }
    - jobs seřaď od nejnovějších (firstSeen/lastSeen)
-   - commitni změny state + docs/jobs.json do repozitáře (GitHub Pages se aktualizuje samo)
+   - commitni a pushni změny state + docs/jobs.json
 
-6. NEPOSÍLEJ Slack zprávy ani jiné notifikace. Výstupem běhu je jen:
+6. Publikuj na web — GitHub Pages servíruje z větve main, feature branch nestačí:
+   a) Vytvoř PR: open_git_pr MCP (nebo gh pr create)
+   b) Slouč do main: bash .cursor/skills/pm-job-monitor/publish.sh [číslo_PR]
+   - publish.sh označí draft PR jako ready a automaticky merge do main
+   - bez merge zůstane web na starých datech z main
+
+7. NEPOSÍLEJ Slack zprávy ani jiné notifikace. Výstupem běhu je jen:
    - aktualizovaný web https://panearth.github.io/pm-job/
    - krátké shrnutí v logu běhu (počet nových / celkem / případné chyby portálů)
