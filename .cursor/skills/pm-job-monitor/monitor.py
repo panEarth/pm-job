@@ -287,6 +287,56 @@ def matches_exclude(title: str, exclude_keywords: list[str]) -> bool:
     return any(k.lower() in tl for k in exclude_keywords)
 
 
+def get_search_keywords(filters: dict) -> list[str]:
+    """Klíčová slova pro dotazy na portálech (hledání), odvozená z filters.json."""
+    explicit = filters.get("searchKeywords")
+    if explicit:
+        return list(dict.fromkeys(k.strip() for k in explicit if k and k.strip()))
+    # Fallback: unikátní includeKeywords delší než 3 znaky
+    seen: set[str] = set()
+    result: list[str] = []
+    for kw in filters.get("includeKeywords", []):
+        k = kw.strip()
+        if len(k) <= 3:
+            continue
+        kl = k.lower()
+        if kl in seen:
+            continue
+        seen.add(kl)
+        result.append(k)
+    return result or ["product manager"]
+
+
+def url_set_query_param(url: str, param: str, value: str) -> str:
+    parsed = urlparse(url)
+    params = parse_qs(parsed.query, keep_blank_values=True)
+    params[param] = [value]
+    flat = [(k, v) for k, vals in params.items() for v in vals]
+    return urlunparse((parsed.scheme, parsed.netloc, parsed.path, "", urlencode(flat), ""))
+
+
+def merge_fetched_jobs(job_lists: list[list[dict]]) -> list[dict]:
+    """Sloučí výsledky z více search dotazů bez duplicit."""
+    merged: dict[str, dict] = {}
+    for jobs in job_lists:
+        for job in jobs:
+            key = dedupe_key(job)
+            if key not in merged:
+                merged[key] = job
+            else:
+                rec = merged[key]
+                rec["location"] = merge_location(rec.get("location", ""), job.get("location", ""))
+                rec["url"] = prefer_job_url(rec.get("url", ""), job.get("url", ""))
+    return list(merged.values())
+
+
+def search_page_starts(keyword_count: int, max_pages: int = 2) -> list[int]:
+    """Při více klíčových slovech stáhni 1 stránku na dotaz, jinak max_pages."""
+    if keyword_count > 1:
+        return [0]
+    return [0, 25][:max_pages] if max_pages >= 2 else [0]
+
+
 REJECT_LOCATIONS = [
     "santa clara", "san francisco", "california", "usa", "united states",
     "bellevue", "raleigh", "texas", "seattle", "new york", "chicago",
@@ -393,46 +443,52 @@ def nofluff_location_ok(posting: dict, filters: dict) -> bool:
         return True
     return False
 
-def scrape_tribee_browser(portal: dict) -> tuple[list[dict], str | None]:
+def scrape_tribee_browser(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
         return [], "Playwright není nainstalován — vyžaduje browser"
 
     name = portal["name"]
-    query = portal.get("searchQuery", "product manager")
-    jobs: list[dict] = []
+    queries = get_search_keywords(filters)
+    if portal.get("searchQuery"):
+        queries = list(dict.fromkeys([portal["searchQuery"], *queries]))
+    jobs_batches: list[list[dict]] = []
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
-            for page_num in (1, 2):
-                base = portal.get("url", "https://www.tribee.cz/cs/prace")
-                url = f"{base}?q={query.replace(' ', '+')}"
-                if page_num > 1:
-                    url += f"&page={page_num}"
-                page.goto(url, wait_until="networkidle", timeout=60000)
-                page.wait_for_timeout(1500)
-                items = page.evaluate("""
-                    () => Array.from(document.querySelectorAll('a[href*="/spolecnost/"][href*="/prace/"]'))
-                        .map(a => {
-                            const parts = (a.innerText || '').trim().split('\\n').map(s => s.trim()).filter(Boolean);
-                            return {
-                                title: parts[0] || '',
-                                company: parts[1] || '',
-                                location: parts[2] || '',
-                                url: a.href
-                            };
-                        })
-                        .filter(j => j.title && j.url)
-                """)
-                for item in items:
-                    item["portal"] = name
-                    jobs.append(item)
+            pages_per_query = 2 if len(queries) == 1 else 1
+            for query in queries:
+                batch: list[dict] = []
+                for page_num in range(1, pages_per_query + 1):
+                    base = portal.get("url", "https://www.tribee.cz/cs/prace")
+                    url = f"{base}?q={query.replace(' ', '+')}"
+                    if page_num > 1:
+                        url += f"&page={page_num}"
+                    page.goto(url, wait_until="networkidle", timeout=60000)
+                    page.wait_for_timeout(1500)
+                    items = page.evaluate("""
+                        () => Array.from(document.querySelectorAll('a[href*="/spolecnost/"][href*="/prace/"]'))
+                            .map(a => {
+                                const parts = (a.innerText || '').trim().split('\\n').map(s => s.trim()).filter(Boolean);
+                                return {
+                                    title: parts[0] || '',
+                                    company: parts[1] || '',
+                                    location: parts[2] || '',
+                                    url: a.href
+                                };
+                            })
+                            .filter(j => j.title && j.url)
+                    """)
+                    for item in items:
+                        item["portal"] = name
+                        batch.append(item)
+                jobs_batches.append(batch)
             browser.close()
     except Exception as exc:  # noqa: BLE001
         return [], str(exc)
-    return jobs, None
+    return merge_fetched_jobs(jobs_batches), None
 
 
 def parse_linkedin_guest(html_text: str, portal: str) -> list[dict]:
@@ -484,11 +540,12 @@ def parse_linkedin_guest(html_text: str, portal: str) -> list[dict]:
     return jobs
 
 
-def linkedin_guest_api_url(search_url: str, start: int = 0) -> str:
+def linkedin_guest_api_url(search_url: str, keywords: str, start: int = 0) -> str:
     """Map public /jobs/search URL params to guest API endpoint."""
     parsed = urlparse(search_url)
     params = parse_qs(parsed.query, keep_blank_values=True)
-    flat = [(k, v) for k, vals in params.items() for v in vals]
+    params["keywords"] = [keywords]
+    flat = [(k, v) for k, vals in params.items() for v in vals if k != "start"]
     flat.append(("start", str(start)))
     return (
         "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?"
@@ -496,7 +553,7 @@ def linkedin_guest_api_url(search_url: str, start: int = 0) -> str:
     )
 
 
-def scrape_linkedin(portal: dict) -> tuple[list[dict], str | None]:
+def scrape_linkedin(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
     """Fetch PM jobs via LinkedIn guest API (no login required)."""
     name = portal["name"]
     search_url = portal.get("searchUrl") or portal.get("url", "")
@@ -505,26 +562,29 @@ def scrape_linkedin(portal: dict) -> tuple[list[dict], str | None]:
 
     params = parse_qs(urlparse(search_url).query, keep_blank_values=True)
     is_remote_search = "2" in params.get("f_WT", [])
+    search_terms = get_search_keywords(filters)
+    starts = search_page_starts(len(search_terms))
 
-    all_jobs: list[dict] = []
-    for page_idx, start in enumerate((0, 25)):  # max 2 pages
-        api_url = linkedin_guest_api_url(search_url, start=start)
-        content, err = fetch(api_url)
-        time.sleep(REQUEST_DELAY)
-        if err:
-            return all_jobs, err if not all_jobs else None
-        page_jobs = parse_linkedin_guest(content or "", name)
-        if not page_jobs and page_idx == 0:
-            return [], "Prázdná odpověď guest API — možná rate limit"
-        for job in page_jobs:
-            loc = (job.get("location") or "").strip()
-            if is_remote_search and not is_remote_like(loc.lower()):
-                job["location"] = f"Remote, {loc}" if loc else "Remote, EU"
-        all_jobs.extend(page_jobs)
-        if len(page_jobs) < 10:
-            break
+    batches: list[list[dict]] = []
+    last_err: str | None = None
+    for term in search_terms:
+        for start in starts:
+            api_url = linkedin_guest_api_url(search_url, keywords=term, start=start)
+            content, err = fetch(api_url)
+            time.sleep(REQUEST_DELAY)
+            if err:
+                last_err = err
+                continue
+            page_jobs = parse_linkedin_guest(content or "", name)
+            for job in page_jobs:
+                loc = (job.get("location") or "").strip()
+                if is_remote_search and not is_remote_like(loc.lower()):
+                    job["location"] = f"Remote, {loc}" if loc else "Remote, EU"
+            batches.append(page_jobs)
 
-    return all_jobs, None
+    if not batches:
+        return [], last_err or "Prázdná odpověď guest API — možná rate limit"
+    return merge_fetched_jobs(batches), None
 
 
 def parse_jobs_cz(html_text: str, portal: str) -> list[dict]:
@@ -622,17 +682,30 @@ def parse_startupjobs_offer(html_text: str, url: str, portal: str) -> dict | Non
     }
 
 
-def startupjobs_pm_urls() -> list[str]:
+def startupjobs_slug_keys(filters: dict) -> list[str]:
+    """URL slug fragmenty pro StartupJobs sitemap z searchKeywords."""
+    keys: set[str] = {
+        "product-manager", "product-owner", "produktov", "head-of-product",
+        "product-lead", "product-director", "chief-product", "vp-product", "cpo",
+        "ai-product", "product-ai", "technical-product", "growth-product",
+        "platform-product", "group-product", "principal-product", "staff-product",
+        "vedouci-produktu", "reditel-produktu", "produktovy-manazer",
+    }
+    for kw in get_search_keywords(filters):
+        slug = re.sub(r"[^a-z0-9]+", "-", kw.lower()).strip("-")
+        if slug:
+            keys.add(slug)
+        if "produkt" in kw.lower():
+            keys.add("produktov")
+    return list(keys)
+
+
+def startupjobs_pm_urls(filters: dict) -> list[str]:
     content, err = fetch("https://www.startupjobs.cz/sitemap/offers.xml")
     if err or not content:
         return []
     urls = re.findall(r"<loc>(https://www\.startupjobs\.cz/nabidka/[^<]+)</loc>", content)
-    keys = [
-        "product-manager", "product-owner", "produktov", "head-of-product",
-        "product-lead", "product-director", "chief-product", "vp-product", "/cpo",
-        "ai-product", "product-ai", "technical-product", "growth-product",
-        "platform-product", "group-product", "principal-product", "staff-product",
-    ]
+    keys = startupjobs_slug_keys(filters)
     return [u for u in urls if any(k in u.lower() for k in keys)]
 
 
@@ -708,20 +781,31 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
     ptype = portal["type"]
 
     if name == "Jobs.cz":
-        all_jobs = []
-        for page in (1, 2):
-            url = portal["searchUrl"] if page == 1 else portal["searchUrl"] + "&page=2"
-            content, err = fetch(url)
-            time.sleep(REQUEST_DELAY)
-            if err:
-                return [], err
-            all_jobs.extend(parse_jobs_cz(content or "", name))
+        batches: list[list[dict]] = []
+        search_terms = get_search_keywords(filters)
+        pages_per_query = 2 if len(search_terms) == 1 else 1
+        for term in search_terms:
+            base_url = url_set_query_param(portal["searchUrl"], "q", term)
+            for page in range(1, pages_per_query + 1):
+                url = base_url if page == 1 else base_url + "&page=2"
+                content, err = fetch(url)
+                time.sleep(REQUEST_DELAY)
+                if err:
+                    return [], err
+                batches.append(parse_jobs_cz(content or "", name))
+        all_jobs = merge_fetched_jobs(batches)
+        # Před obohacením lokací filtruj titulky — šetří desítky HTTP requestů
+        all_jobs = [
+            j for j in all_jobs
+            if matches_include(j.get("title", ""), filters["includeKeywords"])
+            and not matches_exclude(j.get("title", ""), filters["excludeKeywords"])
+        ]
         all_jobs = enrich_jobs_cz_locations(all_jobs)
         return all_jobs, None
 
     if name == "StartupJobs.cz":
         jobs = []
-        urls = startupjobs_pm_urls()[:40]
+        urls = startupjobs_pm_urls(filters)[:60]
         for url in urls:
             content, err = fetch(url)
             time.sleep(REQUEST_DELAY)
@@ -757,22 +841,25 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
         return jobs, None
 
     if name == "Tribee":
-        return scrape_tribee_browser(portal)
+        return scrape_tribee_browser(portal, filters)
 
     if name in {"Indeed CZ", "Jooble CZ"}:
         target = portal.get("searchUrl") or portal.get("url", "")
-        content, err = fetch(target)
-        time.sleep(REQUEST_DELAY)
-        if err:
-            return [], err
-        if content and ("Just a moment" in content or "challenge-platform" in content):
-            return [], "Cloudflare ochrana — vyžaduje browser"
-        if content and len(content) < 5000:
-            return [], "Prázdná nebo blokovaná odpověď"
+        batches: list[list[dict]] = []
+        for term in get_search_keywords(filters):
+            query_url = url_set_query_param(target, "q" if "indeed" in target else "ukw", term)
+            content, err = fetch(query_url)
+            time.sleep(REQUEST_DELAY)
+            if err:
+                return [], err
+            if content and ("Just a moment" in content or "challenge-platform" in content):
+                return [], "Cloudflare ochrana — vyžaduje browser"
+            if content and len(content) < 5000:
+                return [], "Prázdná nebo blokovaná odpověď"
         return [], "SPA bez veřejného API — vyžaduje browser"
 
     if name.startswith("LinkedIn Jobs") or "linkedin.com/jobs" in (portal.get("searchUrl") or ""):
-        return scrape_linkedin(portal)
+        return scrape_linkedin(portal, filters)
 
     if ptype == "search_url":
         content, err = fetch(portal["searchUrl"])

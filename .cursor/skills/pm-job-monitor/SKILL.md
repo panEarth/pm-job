@@ -24,6 +24,10 @@ Pokud `portals.json` obsahuje prázdný seznam `portals`, zastav se a požádej 
 
 ## Klíčová slova (výchozí)
 
+**Hledání na portálech** — `filters.json` → `searchKeywords` (dotazy na Jobs.cz, LinkedIn, Tribee, …).
+
+**Filtrování titulů** — `filters.json` → `includeKeywords` / `excludeKeywords` (po stažení výsledků).
+
 Hledej pozice obsahující (case-insensitive):
 
 - product manager, product owner, head of product, vp product

@@ -12,7 +12,7 @@
       "type": "search_url",
       "searchUrl": "https://www.jobs.cz/prace/?q=product%20manager",
       "enabled": true,
-      "notes": "Obecný český job portál"
+      "notes": "Obecný český job portál — klíčová slova z filters.json searchKeywords"
     },
     {
       "name": "Indeed CZ",
@@ -34,7 +34,7 @@
       "url": "https://www.tribee.cz/cs/prace",
       "searchQuery": "product manager",
       "enabled": true,
-      "notes": "Otevřít stránku a vyhledat 'product manager' ve vyhledávacím poli"
+      "notes": "Otevřít stránku a prohledat klíčová slova z filters.json searchKeywords"
     },
     {
       "name": "NoFluffJobs CZ",
@@ -46,16 +46,16 @@
     {
       "name": "LinkedIn Jobs — Česko",
       "type": "linkedin_guest",
-      "searchUrl": "https://www.linkedin.com/jobs/search/?keywords=product%20manager&location=Czechia&f_TPR=r86400",
+      "searchUrl": "https://www.linkedin.com/jobs/search/?location=Czechia&f_TPR=r86400",
       "enabled": true,
-      "notes": "PM v Česku, posledních 24h. Guest API bez přihlášení."
+      "notes": "PM v Česku, posledních 24h. Klíčová slova z filters.json searchKeywords."
     },
     {
       "name": "LinkedIn Jobs — Remote EU",
       "type": "linkedin_guest",
-      "searchUrl": "https://www.linkedin.com/jobs/search/?keywords=product%20manager&location=European%20Union&f_WT=2&f_TPR=r86400",
+      "searchUrl": "https://www.linkedin.com/jobs/search/?location=European%20Union&f_WT=2&f_TPR=r86400",
       "enabled": true,
-      "notes": "Full remote PM v EU, posledních 24h. Guest API bez přihlášení."
+      "notes": "Full remote PM v EU, posledních 24h. Klíčová slova z filters.json searchKeywords."
     }
   ]
 }
