@@ -99,7 +99,7 @@ Pokud `agent-browser` není dostupný, použij vestavěný browser MCP (`browser
 - Cookies/consent banner: klikni „Accept"/„Souhlasím" před extrakcí
 - Stránkování: projdi max. 2 stránky na portál
 - Login-required portály (`requiresAuth: true`): zaznamenej do reportu jako „vyžaduje přihlášení" a přeskoč
-- **LinkedIn Jobs**: často login wall / anti-bot. Zkus veřejné výsledky bez loginu; pokud redirect na login nebo prázdný seznam → zaznamenej varování do logu běhu a pokračuj na další portál. Neukládej LinkedIn credentials.
+- **LinkedIn Jobs**: používej guest API (`/jobs-guest/jobs/api/seeMoreJobPostings/search`) — funguje bez přihlášení. Parametry stejné jako u `/jobs/search` (keywords, location, f_TPR, f_WT). Paginace: `start=0,25`. Nepoužívej přihlašovací údaje.
 
 ### Krok 3 — Filtrování
 

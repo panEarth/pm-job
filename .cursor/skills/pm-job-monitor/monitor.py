@@ -435,6 +435,98 @@ def scrape_tribee_browser(portal: dict) -> tuple[list[dict], str | None]:
     return jobs, None
 
 
+def parse_linkedin_guest(html_text: str, portal: str) -> list[dict]:
+    """Parse HTML fragment from LinkedIn guest jobs API."""
+    jobs = []
+    seen_ids: set[str] = set()
+    for block in re.split(r"(?=data-entity-urn=\"urn:li:jobPosting:)", html_text):
+        urn_m = re.search(r'data-entity-urn="urn:li:jobPosting:(\d+)"', block)
+        if not urn_m:
+            continue
+        job_id = urn_m.group(1)
+        if job_id in seen_ids:
+            continue
+        seen_ids.add(job_id)
+
+        title = ""
+        title_m = re.search(r'base-search-card__title">\s*([^<]+?)\s*</h3>', block, re.S)
+        if title_m:
+            title = html_lib.unescape(title_m.group(1).strip())
+        if not title:
+            sr_m = re.search(r'class="sr-only">\s*([^<]+?)\s*</span>', block, re.S)
+            if sr_m:
+                title = html_lib.unescape(sr_m.group(1).strip())
+
+        company = ""
+        company_m = re.search(
+            r'base-search-card__subtitle[\s\S]*?hidden-nested-link[^>]*>\s*([^<]+?)\s*</a>',
+            block,
+            re.S,
+        )
+        if company_m:
+            company = html_lib.unescape(company_m.group(1).strip())
+
+        location = ""
+        loc_m = re.search(r'job-search-card__location">\s*([^<]+?)\s*</span>', block, re.S)
+        if loc_m:
+            location = html_lib.unescape(loc_m.group(1).strip())
+
+        if not title:
+            continue
+
+        jobs.append({
+            "title": title,
+            "company": company,
+            "location": location,
+            "url": f"https://www.linkedin.com/jobs/view/{job_id}",
+            "portal": portal,
+        })
+    return jobs
+
+
+def linkedin_guest_api_url(search_url: str, start: int = 0) -> str:
+    """Map public /jobs/search URL params to guest API endpoint."""
+    parsed = urlparse(search_url)
+    params = parse_qs(parsed.query, keep_blank_values=True)
+    flat = [(k, v) for k, vals in params.items() for v in vals]
+    flat.append(("start", str(start)))
+    return (
+        "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?"
+        + urlencode(flat)
+    )
+
+
+def scrape_linkedin(portal: dict) -> tuple[list[dict], str | None]:
+    """Fetch PM jobs via LinkedIn guest API (no login required)."""
+    name = portal["name"]
+    search_url = portal.get("searchUrl") or portal.get("url", "")
+    if not search_url:
+        return [], "Chybí searchUrl"
+
+    params = parse_qs(urlparse(search_url).query, keep_blank_values=True)
+    is_remote_search = "2" in params.get("f_WT", [])
+
+    all_jobs: list[dict] = []
+    for page_idx, start in enumerate((0, 25)):  # max 2 pages
+        api_url = linkedin_guest_api_url(search_url, start=start)
+        content, err = fetch(api_url)
+        time.sleep(REQUEST_DELAY)
+        if err:
+            return all_jobs, err if not all_jobs else None
+        page_jobs = parse_linkedin_guest(content or "", name)
+        if not page_jobs and page_idx == 0:
+            return [], "Prázdná odpověď guest API — možná rate limit"
+        for job in page_jobs:
+            loc = (job.get("location") or "").strip()
+            if is_remote_search and not is_remote_like(loc.lower()):
+                job["location"] = f"Remote, {loc}" if loc else "Remote, EU"
+        all_jobs.extend(page_jobs)
+        if len(page_jobs) < 10:
+            break
+
+    return all_jobs, None
+
+
 def parse_jobs_cz(html_text: str, portal: str) -> list[dict]:
     articles = re.findall(r"<article[\s\S]*?</article>", html_text)
     jobs = []
@@ -678,6 +770,9 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
         if content and len(content) < 5000:
             return [], "Prázdná nebo blokovaná odpověď"
         return [], "SPA bez veřejného API — vyžaduje browser"
+
+    if name.startswith("LinkedIn Jobs") or "linkedin.com/jobs" in (portal.get("searchUrl") or ""):
+        return scrape_linkedin(portal)
 
     if ptype == "search_url":
         content, err = fetch(portal["searchUrl"])

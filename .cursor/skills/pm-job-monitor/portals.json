@@ -45,19 +45,17 @@
     },
     {
       "name": "LinkedIn Jobs — Česko",
-      "type": "search_url",
+      "type": "linkedin_guest",
       "searchUrl": "https://www.linkedin.com/jobs/search/?keywords=product%20manager&location=Czechia&f_TPR=r86400",
       "enabled": true,
-      "requiresAuth": true,
-      "notes": "PM v Česku, posledních 24h. LinkedIn často vyžaduje login / blokuje scraping — při selhání zaznamenej a pokračuj."
+      "notes": "PM v Česku, posledních 24h. Guest API bez přihlášení."
     },
     {
       "name": "LinkedIn Jobs — Remote EU",
-      "type": "search_url",
+      "type": "linkedin_guest",
       "searchUrl": "https://www.linkedin.com/jobs/search/?keywords=product%20manager&location=European%20Union&f_WT=2&f_TPR=r86400",
       "enabled": true,
-      "requiresAuth": true,
-      "notes": "Full remote PM v EU, posledních 24h. Stejná omezení jako LinkedIn Česko."
+      "notes": "Full remote PM v EU, posledních 24h. Guest API bez přihlášení."
     }
   ]
 }
