@@ -1,6 +1,6 @@
 {
-  "lastRun": "2026-07-21T08:19:22.028302+00:00",
-  "generatedAt": "2026-07-21T08:19:22.028302+00:00",
+  "lastRun": "2026-07-21T10:48:52.497383+00:00",
+  "generatedAt": "2026-07-21T10:48:52.497383+00:00",
   "jobs": [
     {
       "id": "1a692d61e1dcea1e",
@@ -9,6 +9,16 @@
       "location": "Na Vítězné pláni 1719/4, Praha – Nusle",
       "url": "https://www.jobs.cz/rpd/2001306895",
       "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "7b7c375b1af643dd",
+      "title": "Technical Product Owner",
+      "company": "Livesport",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4443348392",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-21"
     },
@@ -139,6 +149,16 @@
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4442061540",
       "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "3d3c73583b9bdefa",
+      "title": "Product Manager/ka pro růst nabídky a partnerské integrace",
+      "company": "Slevomat",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4443358300",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-21"
     },
