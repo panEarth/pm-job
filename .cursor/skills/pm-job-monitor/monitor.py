@@ -354,6 +354,13 @@ EU_LOCATION_HINTS = [
     "poland", "warszawa", "warsaw", "kraków", "krakow", "wrocław", "wroclaw",
     "poznań", "poznan", "gdańsk", "gdansk", "sopot", "bratislava", "slovakia",
     "germany", "berlin", "munich", "austria", "vienna", "hungary", "budapest",
+    "netherlands", "amsterdam", "rotterdam", "denmark", "copenhagen", "sweden", "stockholm",
+    "finland", "helsinki", "norway", "oslo", "ireland", "dublin", "france", "paris",
+    "spain", "barcelona", "madrid", "belgium", "brussels", "romania", "bucharest",
+    "bulgaria", "sofia", "croatia", "slovenia", "lithuania", "vilnius", "latvia",
+    "estonia", "portugal", "lisbon", "porto", "italy", "milan", "rome", "luxembourg",
+    "greece", "athens", "gelderland", "heerde", "walloon", "liège", "liege",
+    "île-de-france", "ile-de-france", "bavaria", "catalonia", "cluj",
 ]
 CZECH_HINTS = [
     "czechia", "czech republic", "česko", "cesko", "čr",
@@ -599,7 +606,8 @@ def scrape_linkedin(portal: dict, filters: dict) -> tuple[list[dict], str | None
 
     if not batches:
         return [], last_err or "Prázdná odpověď guest API — možná rate limit"
-    return merge_fetched_jobs(batches), None
+    jobs = merge_fetched_jobs(batches)
+    return enrich_linkedin_locations(jobs, filters, name), None
 
 
 def parse_jobs_cz(html_text: str, portal: str) -> list[dict]:
@@ -886,45 +894,135 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
     return [], "Neznámý typ portálu"
 
 
-def needs_linkedin_location_refresh(job: dict) -> bool:
-    """Detekce umělého prefixu Remote, ze starší verze scraperu."""
-    if "linkedin.com/jobs/view/" not in job.get("url", ""):
-        return False
-    loc = (job.get("location") or "").strip()
-    if not re.match(r"^Remote,\s*", loc, re.I):
-        return False
-    rest = re.sub(r"^Remote,\s*", "", loc, flags=re.I).strip()
-    return not is_remote_like(rest.lower()) and not is_hybrid_like(rest.lower())
+LINKEDIN_ONSITE_DESC_HINTS = [
+    "on-site position", "onsite position", "on site position",
+    "in our office", "work from our office", "based in our office",
+    "office-based role", "office based role", "must be located in",
+    "must be based in", "presence in our", "relocation to",
+    "on-site only", "onsite only",
+]
+LINKEDIN_HYBRID_DESC_HINTS = [
+    "hybrid work", "hybrid role", "hybrid model", "hybrid position",
+    "flexibility to work from home", "days in the office", "days per week",
+    "days a week in", "office in berlin", "office in munich", "in our offices",
+    "role is based in", "based in london or", "based in berlin",
+]
+LINKEDIN_STRONG_REMOTE_DESC_HINTS = [
+    "fully remote", "full-remote", "100% remote", "100 % remote",
+    "work from anywhere", "remote-first", "remote first", "fully distributed",
+    "location independent", "anywhere in europe", "anywhere in the eu",
+    "remote within europe", "work remotely", "remote position", "remote role",
+    "telecommute", "work from home only", "fully work from home",
+]
 
 
-def refresh_linkedin_location(job: dict) -> dict:
-    """Načte skutečnou lokaci z LinkedIn guest API."""
+def _linkedin_plain_text(html_text: str) -> str:
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html_text)).lower()
+
+
+def linkedin_description_indicates_onsite(html_text: str) -> bool:
+    text = _linkedin_plain_text(html_text)
+    return any(h in text for h in LINKEDIN_ONSITE_DESC_HINTS)
+
+
+def linkedin_description_indicates_hybrid(html_text: str) -> bool:
+    text = _linkedin_plain_text(html_text)
+    return any(h in text for h in LINKEDIN_HYBRID_DESC_HINTS)
+
+
+def linkedin_description_indicates_remote(html_text: str) -> bool:
+    text = _linkedin_plain_text(html_text)
+    return any(h in text for h in LINKEDIN_STRONG_REMOTE_DESC_HINTS)
+
+
+def linkedin_job_passes_location(job: dict, detail_html: str, portal: str, filters: dict) -> bool:
+    """Lokace pro LinkedIn — detail inzerátu, ne search karta (f_WT=2 je nepřesný)."""
+    loc = job.get("location", "")
+    title = job.get("title", "")
+    text = _norm_loc_text(loc, title)
+
+    # ČR pozice projdou vždy (LinkedIn Česko i EU portál)
+    if is_prague_like(text) or (is_czech_like(text) and not is_eu_non_czech_like(text)):
+        return True
+
+    if linkedin_description_indicates_onsite(detail_html):
+        return False
+
+    has_remote = (
+        is_remote_like(text)
+        or linkedin_description_indicates_remote(detail_html)
+        or ("remote" in title.lower() and "Remote EU" in portal)
+    )
+    has_hybrid = is_hybrid_like(text) or linkedin_description_indicates_hybrid(detail_html)
+
+    if "Remote EU" in portal:
+        if has_hybrid and not has_remote:
+            return False
+        if is_eu_non_czech_like(text):
+            return has_remote
+        return has_remote or location_ok(loc, title, filters)
+
+    return location_ok(loc, title, filters)
+
+
+def parse_linkedin_detail_location(html_text: str) -> str:
+    loc_m = re.search(
+        r'topcard__flavor topcard__flavor--bullet">\s*([^<]+?)\s*</span>',
+        html_text,
+        re.S,
+    )
+    if not loc_m:
+        return ""
+    loc = html_lib.unescape(loc_m.group(1).strip())
+    if linkedin_description_indicates_onsite(html_text):
+        loc = re.sub(r",?\s*remote\b", "", loc, flags=re.I).strip(" ,")
+    return loc
+
+
+def refresh_linkedin_location(job: dict) -> tuple[dict, str]:
+    """Načte skutečnou lokaci z LinkedIn guest API. Vrací (job, detail_html)."""
     url = job.get("url", "")
     job_id = url.rstrip("/").split("/")[-1]
     if not job_id.isdigit():
-        return job
+        return job, ""
     content, err = fetch(f"https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{job_id}")
     if err or not content:
-        return job
-    loc_m = re.search(
-        r'topcard__flavor topcard__flavor--bullet">\s*([^<]+?)\s*</span>',
-        content,
-        re.S,
-    )
-    if loc_m:
-        return {**job, "location": html_lib.unescape(loc_m.group(1).strip())}
-    return job
+        return job, ""
+    loc = parse_linkedin_detail_location(content)
+    if loc:
+        job = {**job, "location": loc}
+    return job, content or ""
+
+
+def enrich_linkedin_locations(jobs: list[dict], filters: dict, portal: str) -> list[dict]:
+    """Lokace a workplace typ z detailu — search karta bývá nepřesná."""
+    enriched = []
+    for job in jobs:
+        refreshed, detail_html = refresh_linkedin_location(job)
+        time.sleep(REQUEST_DELAY)
+        if linkedin_job_passes_location(refreshed, detail_html, portal, filters):
+            enriched.append(refreshed)
+    return enriched
+
+
+def is_linkedin_job(job: dict) -> bool:
+    return "linkedin.com/jobs/view/" in (job.get("url") or "")
 
 
 def revalidate_state(state: dict, filters: dict) -> int:
-    """Odstraní ze stavu pozice, které neprojdou aktuálními filtry (např. po zpřísnění lokací)."""
+    """Odstraní ze stavu pozice, které neprojdou aktuálními filtry."""
     jobs = state.get("jobs", [])
     before = len(jobs)
     refreshed = []
     for job in jobs:
-        if needs_linkedin_location_refresh(job):
-            job = refresh_linkedin_location(job)
+        if is_linkedin_job(job):
+            portal = job.get("portal", "LinkedIn Jobs")
+            updated, detail_html = refresh_linkedin_location(job)
             time.sleep(REQUEST_DELAY)
+            if linkedin_job_passes_location(updated, detail_html, portal, filters):
+                if matches_include(updated.get("title", ""), filters["includeKeywords"]) and not matches_exclude(updated.get("title", ""), filters["excludeKeywords"]):
+                    refreshed.append(updated)
+            continue
         refreshed.append(job)
     state["jobs"] = filter_jobs(refreshed, filters)
     return before - len(state["jobs"])
