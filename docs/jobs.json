@@ -1,7 +1,197 @@
 {
-  "lastRun": "2026-07-21T07:05:21.265179+00:00",
-  "generatedAt": "2026-07-21T07:05:21.265179+00:00",
+  "lastRun": "2026-07-21T08:19:22.028302+00:00",
+  "generatedAt": "2026-07-21T08:19:22.028302+00:00",
   "jobs": [
+    {
+      "id": "45ae0f22f539dcb2",
+      "title": "WMS Product Manager (m/f/d)",
+      "company": "xalax",
+      "location": "Remote, Varaždin, Croatia",
+      "url": "https://www.linkedin.com/jobs/view/4432557780",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "8bb1d61019546995",
+      "title": "VP Product",
+      "company": "Upriver",
+      "location": "Gelderland, Heerde, Netherlands, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4442029579",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "1a692d61e1dcea1e",
+      "title": "Toll Domain Product Owner",
+      "company": "W.A.G. payment solutions, a.s.",
+      "location": "Na Vítězné pláni 1719/4, Praha – Nusle",
+      "url": "https://www.jobs.cz/rpd/2001306895",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "1d722547144a3359",
+      "title": "Technical Product Manager, Connectivity (Europe)",
+      "company": "Gigs",
+      "location": "Berlin, Germany, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4442747168",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "db342711e6921df4",
+      "title": "Technical Product Manager, AI Platform",
+      "company": "Sitecore",
+      "location": "County Dublin, Dublin, Ireland, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4442075372",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "0fa91a3baac83664",
+      "title": "Technical Product Manager",
+      "company": "Dynata",
+      "location": "Remote, Debrecen, Hajdú-Bihar, Hungary",
+      "url": "https://www.linkedin.com/jobs/view/4442091220",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "efc4e4718da0f9c7",
+      "title": "Tech Principal Product Manager (Live TV), Fire TV Experience",
+      "company": "Amazon",
+      "location": "Remote, Berlin, Germany",
+      "url": "https://www.linkedin.com/jobs/view/4443037566",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "d6504abfc9fa8814",
+      "title": "Staff Product Manager - Technical",
+      "company": "Databricks",
+      "location": "Amsterdam, Netherlands, North Holland, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4356595509",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "343b6c2a6d5d5080",
+      "title": "Senior Technical Product Manager — Document Intelligence",
+      "company": "DataSnipper",
+      "location": "Amsterdam, Netherlands, North Holland, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4434497296",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "2acaf5d717676a30",
+      "title": "Senior Product Owner SAP PSL (m/w/d)",
+      "company": "Deutsche Telekom",
+      "location": "Remote, Košice, Kosice, Slovakia",
+      "url": "https://www.linkedin.com/jobs/view/4442750311",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "46b868a489bae81b",
+      "title": "Senior Product Owner Content (m/w/d)",
+      "company": "finanzen.net GmbH",
+      "location": "Remote, Karlsruhe, Baden-Württemberg, Germany",
+      "url": "https://www.linkedin.com/jobs/view/4440136929",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "1c79cd07b8331267",
+      "title": "Senior Product Owner - T Cloud Public (m/w/d)",
+      "company": "Deutsche Telekom",
+      "location": "Baranya, Budapest, Csongrád, Debrecen, Hajdú-Bihar, Hungary, Pécs, Remote, Szeged",
+      "url": "https://www.linkedin.com/jobs/view/4442739831",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "7d6ccd61b29bb158",
+      "title": "Senior Product Owner - T Cloud Public (REF5595R)",
+      "company": "Deutsche Telekom IT Solutions HU",
+      "location": "Remote, Budapest, Budapest, Hungary",
+      "url": "https://www.linkedin.com/jobs/view/4442732714",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "75e8a144ff9cf9c6",
+      "title": "Senior Product Owner (m/w/d) für T-Cloud Public",
+      "company": "Deutsche Telekom",
+      "location": "Kosice, Košice, Remote, Slovakia",
+      "url": "https://www.linkedin.com/jobs/view/4442741805",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "19b354506a43832b",
+      "title": "Senior Product Owner (m/w/d)",
+      "company": "Deutsche Telekom",
+      "location": "Kosice, Košice, Remote, Slovakia",
+      "url": "https://www.linkedin.com/jobs/view/4442748525",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "c124115837c05073",
+      "title": "Senior Product Owner",
+      "company": "Unisys",
+      "location": "Lithuania, Remote, Vilniaus, Vilnius",
+      "url": "https://www.linkedin.com/jobs/view/4434482360",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "307ed8fbf35c9f17",
+      "title": "Senior Product Manager, SMB e-commerce Growth",
+      "company": "Photoroom",
+      "location": "Remote, Paris, Île-de-France, France",
+      "url": "https://www.linkedin.com/jobs/view/4442784795",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "34fa901c5d47b46d",
+      "title": "Senior Product Manager, Consumer Mobile",
+      "company": "Gigs",
+      "location": "Berlin, Germany, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4442744146",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "3c6202504035d07c",
+      "title": "Senior Product Manager – Connectivity (all genders)",
+      "company": "GIATA",
+      "location": "Berlin, Germany, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4440412755",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
     {
       "id": "b65866bfa116c6b6",
       "title": "Senior Product Manager Fresh & Frozen",
@@ -23,12 +213,362 @@
       "lastSeen": "2026-07-21"
     },
     {
+      "id": "5d25256121dd233d",
+      "title": "Senior Product Manager - User Platform",
+      "company": "Spotify",
+      "location": "Remote, Stockholm, Stockholm County, Sweden",
+      "url": "https://www.linkedin.com/jobs/view/4442596399",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "b0ab077983ead6fb",
+      "title": "Senior Product Manager - Travel Experience & App (m/f/d)",
+      "company": "Numa",
+      "location": "Remote, Berlin, Germany",
+      "url": "https://www.linkedin.com/jobs/view/4434473938",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "c1241f3a253923fe",
+      "title": "Senior Product Manager - Customer List",
+      "company": "Women clothing center",
+      "location": "Remote, List, Schleswig-Holstein, Germany",
+      "url": "https://www.linkedin.com/jobs/view/4442750621",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "09f1348bf54c06b6",
+      "title": "Senior Product Manager - Agent Blueprints",
+      "company": "Appfire",
+      "location": "Remote, Sofia, Sofia City, Bulgaria",
+      "url": "https://www.linkedin.com/jobs/view/4437836970",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "0ed78ffe5742e458",
+      "title": "Senior Product Manager (all genders) - New Venture",
+      "company": "Wemolo",
+      "location": "Remote, Munich, Bavaria, Germany",
+      "url": "https://www.linkedin.com/jobs/view/4442730202",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "18ad395778992d61",
+      "title": "Senior Product Manager (all genders)",
+      "company": "Wemolo",
+      "location": "Bavaria, Germany, Munich, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4442700388",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "eda015801152e382",
+      "title": "Senior Product Manager",
+      "company": "Gong",
+      "location": "Remote, Dublin, County Dublin, Ireland",
+      "url": "https://www.linkedin.com/jobs/view/4343817076",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "afdee44800551ca4",
+      "title": "Senior IT Product Manager | €55K - €70K",
+      "company": "Joppy",
+      "location": "Remote, Barcelona, Catalonia, Spain",
+      "url": "https://www.linkedin.com/jobs/view/4442069271",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "e0f3e1a665470060",
+      "title": "Senior Embedded Developer (C/C++) & Product Owner",
+      "company": "Škoda Digital",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001057560",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "2b1d257211878ba9",
+      "title": "Senior Director of Product Management (Backup & Disaster Recovery)",
+      "company": "Acronis",
+      "location": "Bulgaria, Remote, Sofia City",
+      "url": "https://www.linkedin.com/jobs/view/4367365797",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "3bcf733d71b9455b",
+      "title": "Senior Digital Product Manager",
+      "company": "Loop Earplugs",
+      "location": "Amsterdam, Netherlands, North Holland, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4431088668",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "20cc17660e9b8e4b",
+      "title": "Senior Business Product Owner AI & Knowledge Management",
+      "company": "Roche",
+      "location": "Catalonia, Mazowieckie, Poland, Remote, Sant Cugat del Vallès, Spain, Warsaw",
+      "url": "https://www.linkedin.com/jobs/view/4442749213",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "cf3351a61d4e7d1b",
+      "title": "Senior /Principal Product Manager – Search Experience (m/f/d)",
+      "company": "Redcare Pharmacy",
+      "location": "Amsterdam, Bavaria, Berlin, Germany, Munich, Netherlands, North Holland, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4431070985",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "ae26fa837821b969",
+      "title": "Senior / Principal Product Manager – Search Experience (m/f/d)",
+      "company": "Redcare Pharmacy",
+      "location": "Remote, Arnhem, Gelderland, Netherlands",
+      "url": "https://www.linkedin.com/jobs/view/4431091100",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "532d923c16f2845f",
+      "title": "Proxy Product Owner",
+      "company": "Yonder",
+      "location": "Remote, Cluj-Napoca, Cluj, Romania",
+      "url": "https://www.linkedin.com/jobs/view/4443315795",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
       "id": "11744ac9f4484ad8",
       "title": "Projektový manažer(ka) / Product Owner",
       "company": "AAA Auto (AURES Holdings a.s.)",
       "location": "",
       "url": "https://www.jobs.cz/rpd/2001311064",
       "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "dee3780acffdc8b2",
+      "title": "Produktový manažer - CRM",
+      "company": "PPF banka a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001276734",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "a7e2290d654f8877",
+      "title": "Product owner - celní řízení (m/ž)",
+      "company": "Škoda Auto a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001335529",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "428e016ec2a18ff1",
+      "title": "Product Owner – Underwriting",
+      "company": "UNIQA",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001331609",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "68076f2caf268a05",
+      "title": "Product Owner – HMG Segment",
+      "company": "ComAp a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001311073",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "79af1997cf295a21",
+      "title": "Product Owner Solutions",
+      "company": "Vodafone",
+      "location": "Remote, Bucharest, Bucharest, Romania",
+      "url": "https://www.linkedin.com/jobs/view/4439227719",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "83c6a4519454ebf4",
+      "title": "Product Owner Salesforce",
+      "company": "PPF Group a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001291778",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "e7c38b70ea0fbedb",
+      "title": "Product Owner / Product Operations Analyst (m/f/d) – Digital Services",
+      "company": "DRIVE Consulting",
+      "location": "Remote, Bucharest, Bucharest, Romania",
+      "url": "https://www.linkedin.com/jobs/view/4400850513",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "8bf6c965b8e20b6d",
+      "title": "Product Owner - AI Team",
+      "company": "TV Nova s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001329615",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "1592b26acdfe3d99",
+      "title": "Product Owner (m/w/d)",
+      "company": "Deutsche Telekom",
+      "location": "Kosice, Košice, Remote, Slovakia",
+      "url": "https://www.linkedin.com/jobs/view/4442739849",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "c182b81d0fb7c531",
+      "title": "Product Owner (custom software development)",
+      "company": "Blogic",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001337543",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "350194b577574886",
+      "title": "Product Owner (Technical)",
+      "company": "Revolut",
+      "location": "Czechia, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4324297617",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "3a92c0a4cbd80729",
+      "title": "Product Owner",
+      "company": "Investona",
+      "location": "Evropská 2758/11, Praha – Dejvice",
+      "url": "https://www.jobs.cz/rpd/2001322815",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "66ca2b8c2c22d5e4",
+      "title": "Product Owner",
+      "company": "BVGroup",
+      "location": "Czechia, Prague",
+      "url": "https://www.linkedin.com/jobs/view/4442061540",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "66e9f07e56354dd6",
+      "title": "Product Owner",
+      "company": "SOFTETA",
+      "location": "Remote, Vilnius, Vilniaus, Lithuania",
+      "url": "https://www.linkedin.com/jobs/view/4443336105",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "c80244b8683a5da7",
+      "title": "Product Owner",
+      "company": "B2Spin Limited",
+      "location": "Bulgaria, Remote, Romania",
+      "url": "https://www.linkedin.com/jobs/view/4442714281",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "d6fc1f1546745c78",
+      "title": "Product Manager – tablet, nositelná elektronika a mobilní příslušenství",
+      "company": "Samsung Czech Republic & Slovakia",
+      "location": "Czechia, Prague, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4442763161",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "05054fff5face550",
+      "title": "Product Manager – Trade Intelligence (B2B SaaS Startup)",
+      "company": "traide AI",
+      "location": "Remote, Berlin, Berlin, Germany",
+      "url": "https://www.linkedin.com/jobs/view/4440426566",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "231b74a7824f3a45",
+      "title": "Product Manager – Renewable Energy (Slovenia)",
+      "company": "CGS",
+      "location": "Remote, Slovenia",
+      "url": "https://www.linkedin.com/jobs/view/4442072662",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "6aed9ace95d292f5",
+      "title": "Product Manager – Platform & Infrastructure (m/w/d)",
+      "company": "ZABEL",
+      "location": "Remote, Germany",
+      "url": "https://www.linkedin.com/jobs/view/4443335010",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "5aad37d1a0b4eafb",
+      "title": "Product Manager – Developer Tools (Binary Intelligence)",
+      "company": "JetBrains",
+      "location": "Amsterdam, Netherlands, North Holland, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4396672358",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-21"
     },
@@ -43,12 +583,442 @@
       "lastSeen": "2026-07-21"
     },
     {
+      "id": "ec143736bf75043c",
+      "title": "Product Manager II, Attribution - Marketing Data Platform",
+      "company": "Uber",
+      "location": "Remote, Amsterdam, North Holland, Netherlands",
+      "url": "https://www.linkedin.com/jobs/view/4443090029",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "b6b421de74fcfcf6",
+      "title": "Product Manager IA - F/H",
+      "company": "Niji",
+      "location": "Remote, Nantes, Pays de la Loire, France",
+      "url": "https://www.linkedin.com/jobs/view/4440139805",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "28214431b55f5690",
+      "title": "Product Manager HPE Server & Storage & Networking",
+      "company": "TD SYNNEX Czech Republic",
+      "location": "Czechia, Prague, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4440183933",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "26287d48644f33a0",
+      "title": "Product Manager - Sales AI",
+      "company": "Alan",
+      "location": "France, Paris, Remote, Île-de-France",
+      "url": "https://www.linkedin.com/jobs/view/4442700126",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "c7f204e643b3146d",
+      "title": "Product Manager - Public Notifications & Communications",
+      "company": "Nebius",
+      "location": "Amsterdam, Netherlands, North Holland, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4440164357",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "aab4f3cbd3b69dc9",
+      "title": "Product Manager (m/w/d) T Cloud Public",
+      "company": "Deutsche Telekom",
+      "location": "Baranya, Budapest, Csongrád, Debrecen, Hajdú-Bihar, Hungary, Pécs, Remote, Szeged",
+      "url": "https://www.linkedin.com/jobs/view/4442759047",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
       "id": "2018b693e0ed9e49",
       "title": "Product Manager (Medical Devices - Elektrofyziologie)",
       "company": "BTL Medical Development a.s.",
       "location": "Evropská 423/178, Praha – Vokovice",
       "url": "https://www.jobs.cz/rpd/2001333320",
       "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "e50962fcb5870f88",
+      "title": "Product Manager (AI)",
+      "company": "Nostrion",
+      "location": "Leusden, Netherlands, Remote, Utrecht",
+      "url": "https://www.linkedin.com/jobs/view/4433069756",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "7400df47d43b352a",
+      "title": "Product Manager",
+      "company": "Heureka Group",
+      "location": "Czechia, Prague, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4442716139",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "0a9b90183cd228df",
+      "title": "Product Manager",
+      "company": "Bentley Systems",
+      "location": "Lithuania, Remote, Vilniaus, Vilnius",
+      "url": "https://www.linkedin.com/jobs/view/4436861080",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "e7907dd82de8c3eb",
+      "title": "Product Manager",
+      "company": "UiPath",
+      "location": "Bucharest, Remote, Romania",
+      "url": "https://www.linkedin.com/jobs/view/4440134029",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "1e82b8ba2993b945",
+      "title": "Product Manager",
+      "company": "Alpi Investment",
+      "location": "Remote, Sofia, Sofia City, Bulgaria",
+      "url": "https://www.linkedin.com/jobs/view/4437256468",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "2be92584c04a26c7",
+      "title": "Product Manager",
+      "company": "Epec Oy",
+      "location": "Remote, Turku, Southwest Finland, Finland",
+      "url": "https://www.linkedin.com/jobs/view/4442700374",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "feb8adf1f32c0622",
+      "title": "Product Manager",
+      "company": "Riot",
+      "location": "Remote, Paris, Île-de-France, France",
+      "url": "https://www.linkedin.com/jobs/view/4442081692",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "588f0890f558dd7c",
+      "title": "Product Lead - Growth",
+      "company": "Alan",
+      "location": "Antwerp, Barcelona, Belgium, Brussels Region, Catalonia, Flemish Region, Greater Lyon Area, Greater Paris Metropolitan Region, Remote, Spain",
+      "url": "https://www.linkedin.com/jobs/view/4442581934",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "e272ba50e7aa66ef",
+      "title": "Product Director, Personalization Platform",
+      "company": "Criteo",
+      "location": "Remote, Paris, Île-de-France, France",
+      "url": "https://www.linkedin.com/jobs/view/4434457588",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "8c94b62971582ff8",
+      "title": "Process Intelligence Product Owner",
+      "company": "MANN+HUMMEL Service s.r.o. – Shared Service Centre",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001311424",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "59653d75e4890963",
+      "title": "Principal Product Manager, Technical, Amazon Fulfillment Technologies - External Fulfillment",
+      "company": "Amazon",
+      "location": "Remote, Luxembourg, Luxembourg, Luxembourg",
+      "url": "https://www.linkedin.com/jobs/view/4443021929",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "de78dfe019fb6d48",
+      "title": "Principal Product Manager – TeamViewer ONE",
+      "company": "TeamViewer",
+      "location": "Remote, Porto, Porto, Portugal",
+      "url": "https://www.linkedin.com/jobs/view/4442738658",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "cf2287b7b8cb3929",
+      "title": "Principal Product Manager - AI (all genders)",
+      "company": "TradeLink",
+      "location": "Remote, Berlin, Berlin, Germany",
+      "url": "https://www.linkedin.com/jobs/view/4440170713",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "0be829a2e9b3422a",
+      "title": "Pomáhejte měnit data ve strategická rozhodnutí | Procurement & TPM Specialist  📊",
+      "company": "UniCredit Bank Czech Republic and Slovakia, a.s.",
+      "location": "Remote",
+      "url": "https://www.jobs.cz/rpd/2001332924",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "d921b7a35488defe",
+      "title": "PRODUCT OWNER IT – systém Infor",
+      "company": "TATRA TRUCKS a. s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001258682",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "aff435ddfa25f050",
+      "title": "Lead Product Manager - Trading",
+      "company": "Flutter Entertainment",
+      "location": "Remote, Dublin 4, County Dublin, Ireland",
+      "url": "https://www.linkedin.com/jobs/view/4442237509",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "06643d7d2d6189bf",
+      "title": "IT Product Owner – Praha, Česká republika",
+      "company": "WOOD & Company",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/woodandcompany/prace/it-product-owner-praha-ceska-republika/6dd2eccd-b241-4266-ba7b-df1d2b1141cb",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "02bb4accd96355af",
+      "title": "IT Product Owner, Manager - Order Management",
+      "company": "Atlas Copco Group",
+      "location": "Brno, Czechia, Remote, South Moravia",
+      "url": "https://www.linkedin.com/jobs/view/4434122778",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "7fc9fafdbdc94f65",
+      "title": "IT Product Owner - Praha, Česká republika",
+      "company": "WOOD & Company Financial Services, a.s.",
+      "location": "náměstí Republiky 1079/1a, Praha – Nové Město",
+      "url": "https://www.jobs.cz/rpd/2001331689",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "125f92bca62564fb",
+      "title": "IT Product Manager API & Data Management (m/ž)",
+      "company": "Škoda Auto a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001271955",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "b594477c7ff52fcc",
+      "title": "Head of Product Consumer Golf",
+      "company": "Trackman",
+      "location": "Capital Region of Denmark, Denmark, Hørsholm, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4434454999",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "f6ad9e123a64fd6e",
+      "title": "Head of Product - Remote in Germany",
+      "company": "TrioTech Recruitment",
+      "location": "Germany, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4442732765",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "20f5bc451cf9cd3a",
+      "title": "Head of Product - AI (F/M/X)",
+      "company": "ablefy",
+      "location": "Berlin, Germany, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4375544508",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "e3f4684eba27ba0d",
+      "title": "Head of Product (m/w/x)",
+      "company": "Rausch GmbH - Chocolate since 1918",
+      "location": "Berlin, Germany, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4440135628",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "5bd354b995552a8a",
+      "title": "Head of Product & Technology – Streaming Platform",
+      "company": "Recrutech s.r.o.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001328939",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "70877e3a3396d60d",
+      "title": "Head of Product & Technology / CPTO (m/w/d)",
+      "company": "InkuPlay UG (haftungsbeschränkt)",
+      "location": "Biesenthal, Brandenburg, Germany, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4440196377",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "b06436d969cc962b",
+      "title": "Head of Product & Portfolio",
+      "company": "FARMA ŽIVINA s.r.o.",
+      "location": "Polská 2400/1a, Praha – Vinohrady",
+      "url": "https://www.jobs.cz/rpd/2001312826",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "e0dc9cae441e5d05",
+      "title": "Head of Product",
+      "company": "Tylko",
+      "location": "Mazowieckie, Poland, Remote, Warsaw",
+      "url": "https://www.linkedin.com/jobs/view/4443328369",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "5ab7c26f76aca01c",
+      "title": "HEAD OF PRODUCT (LIEGE-BELGIUM)",
+      "company": "GAMING1",
+      "location": "Remote, Liège, Walloon Region, Belgium",
+      "url": "https://www.linkedin.com/jobs/view/4442597384",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "92d444fd8809875c",
+      "title": "Group Product Manager (m/w/d)",
+      "company": "Peter Park",
+      "location": "Remote, Munich, Bavaria, Germany",
+      "url": "https://www.linkedin.com/jobs/view/4442724103",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "f1fc8214f387049b",
+      "title": "Global Product Manager for RTO",
+      "company": "ABB",
+      "location": "Finland, Ollila, Ostrobothnia, Remote, Southwest Finland, Vaasa",
+      "url": "https://www.linkedin.com/jobs/view/4442217194",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "f7f7d3bb73304da8",
+      "title": "Global Product Manager for Augmented Operator",
+      "company": "ABB",
+      "location": "Baden-Württemberg, Finland, Germany, Krakau, Malmo, Mannheim, Minden, North Rhine-Westphalia, Ollila, Ostrobothnia, Remote, Saxony-Anhalt, Skåne County, Southwest Finland, Sweden, Vaasa",
+      "url": "https://www.linkedin.com/jobs/view/4442212351",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "66fdb446098ada8d",
+      "title": "Executive Director of Product Management",
+      "company": "L-Acoustics",
+      "location": "Remote, Massy, Île-de-France, France",
+      "url": "https://www.linkedin.com/jobs/view/4339246047",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "f16d6e814a34efe2",
+      "title": "EMEA ETF Product Manager - Director",
+      "company": "Citi",
+      "location": "Remote, Dublin, County Dublin, Ireland",
+      "url": "https://www.linkedin.com/jobs/view/4442079950",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "2215bb52ce010df5",
+      "title": "Director of Product Management – Decion Agentic Platform",
+      "company": "ToolsGroup",
+      "location": "Remote, Germany",
+      "url": "https://www.linkedin.com/jobs/view/4437853134",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "e92361998cd80a7f",
+      "title": "AI Product Owner",
+      "company": "RESULMATIC",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001295038",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "4c5679f2a6094be1",
+      "title": "AI Product Manager",
+      "company": "HeadFirst Group",
+      "location": "Hoofddorp, Netherlands, North Holland, Remote",
+      "url": "https://www.linkedin.com/jobs/view/4442735000",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-21"
     },
