@@ -330,11 +330,11 @@ def merge_fetched_jobs(job_lists: list[list[dict]]) -> list[dict]:
     return list(merged.values())
 
 
-def search_page_starts(keyword_count: int, max_pages: int = 2) -> list[int]:
+def search_page_starts(keyword_count: int, max_pages: int = 4) -> list[int]:
     """Při více klíčových slovech stáhni 1 stránku na dotaz, jinak max_pages."""
     if keyword_count > 1:
         return [0]
-    return [0, 25][:max_pages] if max_pages >= 2 else [0]
+    return [i * 25 for i in range(max_pages)]
 
 
 REJECT_LOCATIONS = [
@@ -485,7 +485,7 @@ def scrape_tribee_browser(portal: dict, filters: dict) -> tuple[list[dict], str 
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
-            pages_per_query = 2 if len(queries) == 1 else 1
+            pages_per_query = 4 if len(queries) == 1 else 1
             for query in queries:
                 batch: list[dict] = []
                 for page_num in range(1, pages_per_query + 1):
@@ -806,11 +806,11 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
     if name == "Jobs.cz":
         batches: list[list[dict]] = []
         search_terms = get_search_keywords(filters)
-        pages_per_query = 2 if len(search_terms) == 1 else 1
+        pages_per_query = 4 if len(search_terms) == 1 else 1
         for term in search_terms:
             base_url = url_set_query_param(portal["searchUrl"], "q", term)
             for page in range(1, pages_per_query + 1):
-                url = base_url if page == 1 else base_url + "&page=2"
+                url = base_url if page == 1 else f"{base_url}&page={page}"
                 content, err = fetch(url)
                 time.sleep(REQUEST_DELAY)
                 if err:
