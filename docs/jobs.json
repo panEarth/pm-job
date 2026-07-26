@@ -1,6 +1,6 @@
 {
-  "lastRun": "2026-07-25T05:02:11.427127+00:00",
-  "generatedAt": "2026-07-25T05:02:11.427127+00:00",
+  "lastRun": "2026-07-25T05:01:00.431934+00:00",
+  "generatedAt": "2026-07-25T05:01:00.431934+00:00",
   "jobs": [
     {
       "id": "c22a3b108162070b",
@@ -73,6 +73,16 @@
       "lastSeen": "2026-07-25"
     },
     {
+      "id": "d564dc4dc43925ea",
+      "title": "Education Product Owner - 0,7 úvazku",
+      "company": "Czechitas z.ú.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001343300",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-25",
+      "lastSeen": "2026-07-25"
+    },
+    {
       "id": "d0fa58e807709e79",
       "title": "Produktový manažer / Produktová manažerka (Centrála BigMat CZ , Praha 9)",
       "company": "BigMat CZ, obchodní družstvo",
@@ -89,6 +99,16 @@
       "location": "",
       "url": "https://www.jobs.cz/rpd/2001340108",
       "portal": "Jobs.cz",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "89513f524a306673",
+      "title": "Product Owner – Core Insurance Application",
+      "company": "BNP Paribas Cardif",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/bnpparibascardif/prace/product-owner-core-insurance-application/f188d7dc-cea4-4299-bef0-1f5d7dc96d8e",
+      "portal": "Tribee",
       "firstSeen": "2026-07-23",
       "lastSeen": "2026-07-25"
     },
@@ -133,16 +153,6 @@
       "lastSeen": "2026-07-23"
     },
     {
-      "id": "89513f524a306673",
-      "title": "Product Owner – Core Insurance Application",
-      "company": "BNP Paribas Cardif",
-      "location": "Praha",
-      "url": "https://www.tribee.cz/cs/spolecnost/bnpparibascardif/prace/product-owner-core-insurance-application/f188d7dc-cea4-4299-bef0-1f5d7dc96d8e",
-      "portal": "Tribee",
-      "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-23"
-    },
-    {
       "id": "9e84d3c0e9e2f5c6",
       "title": "Product Manager (Produktový katalog)",
       "company": "Heureka Group",
@@ -179,6 +189,16 @@
       "location": "Na Vítězné pláni 1719/4, Praha – Nusle",
       "url": "https://www.jobs.cz/rpd/2001306895",
       "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "7b7c375b1af643dd",
+      "title": "Technical Product Owner",
+      "company": "Livesport",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4443348392",
+      "portal": "Tribee",
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-25"
     },
@@ -333,6 +353,16 @@
       "lastSeen": "2026-07-25"
     },
     {
+      "id": "06643d7d2d6189bf",
+      "title": "IT Product Owner – Praha, Česká republika",
+      "company": "WOOD & Company",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/woodandcompany/prace/it-product-owner-praha-ceska-republika/6dd2eccd-b241-4266-ba7b-df1d2b1141cb",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-25"
+    },
+    {
       "id": "7fc9fafdbdc94f65",
       "title": "IT Product Owner - Praha, Česká republika",
       "company": "WOOD & Company Financial Services, a.s.",
@@ -351,26 +381,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-25"
-    },
-    {
-      "id": "7b7c375b1af643dd",
-      "title": "Technical Product Owner",
-      "company": "Livesport",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4443348392",
-      "portal": "Tribee",
-      "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-23"
-    },
-    {
-      "id": "06643d7d2d6189bf",
-      "title": "IT Product Owner – Praha, Česká republika",
-      "company": "WOOD & Company",
-      "location": "Praha",
-      "url": "https://www.tribee.cz/cs/spolecnost/woodandcompany/prace/it-product-owner-praha-ceska-republika/6dd2eccd-b241-4266-ba7b-df1d2b1141cb",
-      "portal": "Tribee",
-      "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-23"
     },
     {
       "id": "125f92bca62564fb",
@@ -563,6 +573,16 @@
       "lastSeen": "2026-07-25"
     },
     {
+      "id": "26492b51f832a3c0",
+      "title": "Product Manager Investment Products (m/f) – úvazek cca 60 %",
+      "company": "Raiffeisenbank",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/product-manager-investment-products-m-f-uvazek-cca-60/2028a61e-c459-4f1d-a06c-8d6ad49039da",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-25"
+    },
+    {
       "id": "8e0093cd55aca1d0",
       "title": "Product Manager (Medical Devices – Elektrofyziologie)",
       "company": "BTL Medical",
@@ -578,16 +598,6 @@
       "company": "Everpure",
       "location": "Praha",
       "url": "https://www.tribee.cz/cs/spolecnost/everpure/prace/product-manager-join-the-pure-talent-community/d4d7ed00-463d-4436-aca9-e1068bd662e9",
-      "portal": "Tribee",
-      "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-23"
-    },
-    {
-      "id": "26492b51f832a3c0",
-      "title": "Product Manager Investment Products (m/f) – úvazek cca 60 %",
-      "company": "Raiffeisenbank",
-      "location": "Praha",
-      "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/product-manager-investment-products-m-f-uvazek-cca-60/2028a61e-c459-4f1d-a06c-8d6ad49039da",
       "portal": "Tribee",
       "firstSeen": "2026-07-20",
       "lastSeen": "2026-07-23"
