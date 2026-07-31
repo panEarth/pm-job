@@ -361,9 +361,9 @@ def portal_search_queries(portal: dict, filters: dict) -> list[str]:
     if name == "Tribee":
         return keywords or [portal.get("searchQuery") or "product manager"]
     if name == "Jooble CZ":
-        terms = get_search_keywords(filters)
-        keywords = " OR ".join(terms) if terms else "product manager"
-        location = (filters.get("joobleLocation") or "Czech Republic").strip()
+        terms = get_search_keywords(filters) or ["product manager"]
+        keywords = " OR ".join(f'"{t}"' for t in terms) + " remote"
+        location = (filters.get("joobleLocation") or "Europe").strip()
         return [f"API: jooble.org · {location}", keywords]
     if name == "Indeed CZ":
         return keywords
@@ -539,16 +539,17 @@ def nofluff_location_ok(posting: dict, filters: dict) -> bool:
 def scrape_jooble_api(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
     """Jooble REST API — POST https://jooble.org/api/{key}.
 
-    Všechny keywords jdou do jednoho request body (šetří kvótu ~500/den).
+    Jeden request: všechny keywords (OR) + „remote“, location default Europe.
+    Bez „remote“ v keywords Jooble vrací EU onsite (Ireland/UK), které naše filtry zahodí.
     """
     name = portal["name"]
     api_key = (load_secrets().get("JOOBLE_API_KEY") or "").strip()
     if not api_key:
         return [], "Chybí JOOBLE_API_KEY (secrets.local.json nebo env)"
 
-    terms = get_search_keywords(filters)
-    keywords = " OR ".join(terms) if terms else "product manager"
-    location = (filters.get("joobleLocation") or "Czech Republic").strip()
+    terms = get_search_keywords(filters) or ["product manager"]
+    keywords = " OR ".join(f'"{t}"' for t in terms) + " remote"
+    location = (filters.get("joobleLocation") or "Europe").strip()
 
     data, err = fetch_json_post(
         f"https://jooble.org/api/{api_key}",
