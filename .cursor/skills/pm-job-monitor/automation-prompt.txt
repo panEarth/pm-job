@@ -5,27 +5,27 @@ Použij skill pm-job-monitor pro denní monitoring PM pozic.
    - filters.json (klíčová slova, vyloučení, lokace)
    - state/seen-jobs.json (již viděné inzeráty)
 
-2. Projdi každý enabled portál (max 2 stránky na portál). Použij browser nebo WebFetch podle typu portálu.
+2. Spusť sken přes připravený skript (venv + Playwright + Tribee):
+   bash .cursor/skills/pm-job-monitor/run-monitor.sh
+   - skript vytvoří/aktualizuje .venv, nainstaluje requirements.txt a Chromium
+   - .venv NEcommituj (je v .gitignore) — musí se vytvořit na každém běhu v cloudu
+   - Nespouštěj systémové `python3 monitor.py` bez venv (Tribee pak spadne)
 
-3. Filtruj pozice:
+3. Filtruj pozice (skript to dělá sám; ověř výstup):
    - PM role (product manager, product owner, head of product, …)
    - Vyluč junior, intern, stáž, graduate, entry level
-   - Lokace: hybrid/onsite v Česku, full remote v ČR i EU
+   - Lokace: hybrid/onsite v Česku (Praha), full remote v ČR i EU
 
 4. Porovnej se stavem — identifikuj jen NOVÉ pozice (nebo aktualizované).
+   Výstup monitoru už aktualizuje state + docs/jobs.json včetně lastRunReport.
 
-5. Aktualizuj state/seen-jobs.json (firstSeen, lastSeen, max 2000 záznamů, smaž starší než 90 dní).
-   Po aktualizaci stavu exportuj data pro web:
-   - zapiš do docs/jobs.json pole { lastRun, generatedAt, jobs }
-   - jobs seřaď od nejnovějších (firstSeen/lastSeen)
-   - commitni a pushni změny state + docs/jobs.json
+5. Commitni a pushni změny přímo do main (preferováno):
+   - .cursor/skills/pm-job-monitor/state/seen-jobs.json
+   - docs/jobs.json
+   - NEcommituj .venv/ ani __pycache__/
+   Pokud jsi na feature branchi: vytvoř PR a spusť
+   bash .cursor/skills/pm-job-monitor/publish.sh [číslo_PR]
 
-6. Publikuj na web — GitHub Pages servíruje z větve main, feature branch nestačí:
-   a) Vytvoř PR: open_git_pr MCP (nebo gh pr create)
-   b) Slouč do main: bash .cursor/skills/pm-job-monitor/publish.sh [číslo_PR]
-   - publish.sh označí draft PR jako ready a automaticky merge do main
-   - bez merge zůstane web na starých datech z main
-
-7. NEPOSÍLEJ Slack zprávy ani jiné notifikace. Výstupem běhu je jen:
+6. NEPOSÍLEJ Slack zprávy ani jiné notifikace. Výstupem běhu je jen:
    - aktualizovaný web https://panearth.github.io/pm-job/
    - krátké shrnutí v logu běhu (počet nových / celkem / případné chyby portálů)

@@ -16,9 +16,10 @@ Každý den projdeš portály z `.cursor/skills/pm-job-monitor/portals.json`, na
 
 1. Přečti skill `pm-job-monitor` a řiď se jím přesně
 2. Načti `portals.json`, `filters.json`, `state/seen-jobs.json`
-3. Pro každý portál s `enabled: true` vyhledej relevantní pozice
-4. Aktualizuj stav + `docs/jobs.json`, commitni a pushni změny
-5. Vytvoř PR (`open_git_pr` MCP) a spusť `bash .cursor/skills/pm-job-monitor/publish.sh` — automaticky sloučí do main
+3. Spusť sken: `bash .cursor/skills/pm-job-monitor/run-monitor.sh`
+   (venv + Playwright + Chromium — nutné pro Tribee; `.venv` necommituj)
+4. Commitni a pushni `state/seen-jobs.json` + `docs/jobs.json` na **main**
+5. Pokud jsi na feature branchi: vytvoř PR a spusť `bash .cursor/skills/pm-job-monitor/publish.sh`
 6. **Neposílej Slack** — výstup je web https://panearth.github.io/pm-job/ + krátký log
 
 ## Výstup
@@ -31,3 +32,4 @@ Krátké shrnutí v češtině: počet nových, celkem, případné chyby portá
 - Nepřihlašuj se na portály bez explicitního pokynu uživatele
 - Při chybě portálu pokračuj na další — neukončuj celý běh
 - Žádné Slack / e-mail / DM notifikace
+- Nespouštěj `monitor.py` systémovým Pythonem bez venv (Tribee vyžaduje Playwright)

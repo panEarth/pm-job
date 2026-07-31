@@ -42,12 +42,10 @@ Vyluč pozice s: intern, internship, stáž, junior developer, software engineer
 ```
 Task Progress:
 - [ ] 1. Načíst konfiguraci a stav
-- [ ] 2. Projít každý portál
-- [ ] 3. Filtrovat relevantní pozice
-- [ ] 4. Porovnat se stavem — vybrat jen NOVÉ
-- [ ] 5. Aktualizovat state/seen-jobs.json
-- [ ] 6. Exportovat web přehled (docs/jobs.json) a commitnout
-- [ ] 7. Sloučit PR do main (publish.sh) — GitHub Pages servíruje jen z main
+- [ ] 2. Spustit `bash .cursor/skills/pm-job-monitor/run-monitor.sh` (venv + Playwright + sken)
+- [ ] 3. Ověřit nové pozice / chyby portálů ve výstupu
+- [ ] 4. Commitnout state + docs/jobs.json (bez .venv)
+- [ ] 5. Pushnout na main (nebo PR + publish.sh)
 ```
 
 ### Krok 1 — Načtení stavu
@@ -61,13 +59,26 @@ Pokud `state/seen-jobs.json` neexistuje, vytvoř: `{"jobs": [], "lastRun": null}
 
 ### Krok 2 — Prohledání portálů
 
-Pro každý portál v `portals.json`:
+**Preferovaná cesta (automatizace i lokálně):**
+
+```bash
+bash .cursor/skills/pm-job-monitor/run-monitor.sh
+```
+
+Skript:
+1. vytvoří `.venv` (pokud chybí),
+2. nainstaluje `requirements.txt` včetně Playwright,
+3. stáhne Chromium (nutné pro Tribee),
+4. spustí `monitor.py`.
+
+`.venv` necommituj — je v `.gitignore` a je platformově specifické. V cloudové automatizaci se připraví při každém běhu.
+
+Ruční prohlížení portálů (fallback, pokud skript selže):
 
 **Typ `search_url`** — otevři předpřipravenou search URL:
 ```bash
 agent-browser open "<searchUrl>" && agent-browser wait --load networkidle && agent-browser snapshot -i
 ```
-
 **Typ `url`** — otevři stránku a vyhledej klíčová slova:
 ```bash
 agent-browser open "<url>" && agent-browser wait --load networkidle
