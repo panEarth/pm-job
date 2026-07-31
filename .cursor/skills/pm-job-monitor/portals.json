@@ -26,7 +26,7 @@
   "type": "jooble_api",
   "searchUrl": "https://cz.jooble.org/SearchResult?ukw=product+manager",
   "enabled": true,
-  "notes": "Jooble REST API (jooble.org, location=Europe default) — klíč v secrets.local.json / env JOOBLE_API_KEY"
+  "notes": "Jooble REST API — keywords=product remote, location=Europe; klíč v secrets.local.json / env JOOBLE_API_KEY"
 },
     {
       "name": "Tribee",
