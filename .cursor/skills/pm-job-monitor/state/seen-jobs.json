@@ -494,7 +494,7 @@
       "id": "a406072beda13e7e",
       "title": "Product Owner – data analyst a reporting",
       "company": "SAB servis s.r.o.",
-      "location": "Suttnerové 814/17, Praha – Vokovice",
+      "location": "Praha – Vokovice, Suttnerové 814/17",
       "url": "https://www.jobs.cz/rpd/2001281857",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-31",
@@ -541,6 +541,46 @@
       "lastSeen": "2026-07-31"
     },
     {
+      "id": "26492b51f832a3c0",
+      "title": "Product Manager Investment Products (m/f) – úvazek cca 60 %",
+      "company": "Raiffeisenbank",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/product-manager-investment-products-m-f-uvazek-cca-60/2028a61e-c459-4f1d-a06c-8d6ad49039da",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-31"
+    },
+    {
+      "id": "06643d7d2d6189bf",
+      "title": "IT Product Owner – Praha, Česká republika",
+      "company": "WOOD & Company",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/woodandcompany/prace/it-product-owner-praha-ceska-republika/6dd2eccd-b241-4266-ba7b-df1d2b1141cb",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-31"
+    },
+    {
+      "id": "7b7c375b1af643dd",
+      "title": "Technical Product Owner",
+      "company": "Livesport",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4443348392",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-31"
+    },
+    {
+      "id": "89513f524a306673",
+      "title": "Product Owner – Core Insurance Application",
+      "company": "BNP Paribas Cardif",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/bnpparibascardif/prace/product-owner-core-insurance-application/f188d7dc-cea4-4299-bef0-1f5d7dc96d8e",
+      "portal": "Tribee",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-31"
+    },
+    {
       "id": "76f89865acfba5ad",
       "title": "IT Product Owner, Manager - Order Management",
       "company": "Atlas Copco Services s.r.o.",
@@ -578,46 +618,6 @@
       "url": "https://www.jobs.cz/rpd/2001331609",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "26492b51f832a3c0",
-      "title": "Product Manager Investment Products (m/f) – úvazek cca 60 %",
-      "company": "Raiffeisenbank",
-      "location": "Praha",
-      "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/product-manager-investment-products-m-f-uvazek-cca-60/2028a61e-c459-4f1d-a06c-8d6ad49039da",
-      "portal": "Tribee",
-      "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "06643d7d2d6189bf",
-      "title": "IT Product Owner – Praha, Česká republika",
-      "company": "WOOD & Company",
-      "location": "Praha",
-      "url": "https://www.tribee.cz/cs/spolecnost/woodandcompany/prace/it-product-owner-praha-ceska-republika/6dd2eccd-b241-4266-ba7b-df1d2b1141cb",
-      "portal": "Tribee",
-      "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "7b7c375b1af643dd",
-      "title": "Technical Product Owner",
-      "company": "Livesport",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4443348392",
-      "portal": "Tribee",
-      "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "89513f524a306673",
-      "title": "Product Owner – Core Insurance Application",
-      "company": "BNP Paribas Cardif",
-      "location": "Praha",
-      "url": "https://www.tribee.cz/cs/spolecnost/bnpparibascardif/prace/product-owner-core-insurance-application/f188d7dc-cea4-4299-bef0-1f5d7dc96d8e",
-      "portal": "Tribee",
-      "firstSeen": "2026-07-23",
       "lastSeen": "2026-07-30"
     },
     {
@@ -1301,10 +1301,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-07-31T12:03:49.534209+02:00",
+  "lastRun": "2026-07-31T12:20:15.549528+02:00",
   "lastRunReport": {
-    "startedAt": "2026-07-31T12:03:49.534209+02:00",
-    "finishedAt": "2026-07-31T12:11:43.673255+02:00",
+    "startedAt": "2026-07-31T12:20:15.549528+02:00",
+    "finishedAt": "2026-07-31T12:29:21.732151+02:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -1462,8 +1462,8 @@
       },
       {
         "name": "Tribee",
-        "status": "error",
-        "error": "Playwright není nainstalován — vyžaduje browser",
+        "status": "ok",
+        "error": null,
         "queries": [
           "product manager",
           "product owner",
@@ -1492,8 +1492,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 0,
-        "matchedCount": 0
+        "rawCount": 189,
+        "matchedCount": 4
       },
       {
         "name": "NoFluffJobs CZ",
@@ -1537,7 +1537,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 50,
+        "rawCount": 52,
         "matchedCount": 4
       },
       {
@@ -1577,10 +1577,10 @@
       }
     ],
     "totals": {
-      "matched": 58,
-      "new": 5,
+      "matched": 62,
+      "new": 0,
       "updated": 0,
-      "failures": 3
+      "failures": 2
     }
   }
 }
