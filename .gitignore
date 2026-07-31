@@ -3,3 +3,6 @@ __pycache__/
 .Python
 .DS_Store
 .venv/
+secrets.local.json
+.env
+.env.*

@@ -34,3 +34,5 @@ Skript vytvoří `.venv`, nainstaluje `requirements.txt` (Playwright) a Chromium
 - `monitor.py` — skript denního skenu + export na web
 - `run-monitor.sh` — venv + Playwright + spuštění monitoru
 - `automation-prompt.txt` — prompt pro Cursor Automation
+- `secrets.local.json` — lokální API klíče (gitignore; viz `secrets.local.json.example`)
+  - `JOOBLE_API_KEY` — Jooble REST API (nebo env stejného jména)

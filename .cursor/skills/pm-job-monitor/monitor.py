@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -20,6 +21,7 @@ PORTALS_FILE = BASE_DIR / "portals.json"
 FILTERS_FILE = BASE_DIR / "filters.json"
 STATE_FILE = BASE_DIR / "state" / "seen-jobs.json"
 WEB_JOBS_FILE = REPO_ROOT / "docs" / "jobs.json"
+SECRETS_FILE = BASE_DIR / "secrets.local.json"
 
 USER_AGENT = "Mozilla/5.0 (compatible; PMJobMonitor/1.0)"
 REQUEST_DELAY = 1.0
@@ -37,12 +39,49 @@ def save_json(path: Path, data: dict) -> None:
         f.write("\n")
 
 
+def load_secrets() -> dict:
+    """Lokální secrets (gitignore) + env. Nikdy necommituj API klíče."""
+    secrets: dict = {}
+    if SECRETS_FILE.exists():
+        try:
+            secrets.update(load_json(SECRETS_FILE))
+        except (OSError, json.JSONDecodeError):
+            pass
+    for key in ("JOOBLE_API_KEY",):
+        if os.environ.get(key):
+            secrets[key] = os.environ[key]
+    return secrets
+
+
 def fetch(url: str, timeout: int = 30) -> tuple[str | None, str | None]:
     try:
         req = Request(url, headers={"User-Agent": USER_AGENT})
         with urlopen(req, timeout=timeout) as resp:
             charset = resp.headers.get_content_charset() or "utf-8"
             return resp.read().decode(charset, errors="replace"), None
+    except Exception as exc:  # noqa: BLE001
+        return None, str(exc)
+
+
+def fetch_json_post(url: str, payload: dict, timeout: int = 30) -> tuple[dict | None, str | None]:
+    try:
+        body = json.dumps(payload).encode("utf-8")
+        req = Request(
+            url,
+            data=body,
+            headers={
+                "User-Agent": USER_AGENT,
+                "Content-Type": "application/json",
+            },
+            method="POST",
+        )
+        with urlopen(req, timeout=timeout) as resp:
+            charset = resp.headers.get_content_charset() or "utf-8"
+            raw = resp.read().decode(charset, errors="replace")
+        try:
+            return json.loads(raw or "{}"), None
+        except json.JSONDecodeError:
+            return None, "Neplatná JSON odpověď API"
     except Exception as exc:  # noqa: BLE001
         return None, str(exc)
 
@@ -321,7 +360,12 @@ def portal_search_queries(portal: dict, filters: dict) -> list[str]:
         return ["API: category=productManagement"]
     if name == "Tribee":
         return keywords or [portal.get("searchQuery") or "product manager"]
-    if name in {"Indeed CZ", "Jooble CZ"}:
+    if name == "Jooble CZ":
+        terms = get_search_keywords(filters)
+        keywords = " OR ".join(terms) if terms else "product manager"
+        location = (filters.get("joobleLocation") or "Czech Republic").strip()
+        return [f"API: jooble.org · {location}", keywords]
+    if name == "Indeed CZ":
         return keywords
     if name.startswith("LinkedIn Jobs") or "linkedin.com/jobs" in (portal.get("searchUrl") or ""):
         return keywords
@@ -491,6 +535,48 @@ def nofluff_location_ok(posting: dict, filters: dict) -> bool:
     if any(k in text for k in remote_eu) and posting.get("fullyRemote"):
         return True
     return False
+
+def scrape_jooble_api(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
+    """Jooble REST API — POST https://jooble.org/api/{key}.
+
+    Všechny keywords jdou do jednoho request body (šetří kvótu ~500/den).
+    """
+    name = portal["name"]
+    api_key = (load_secrets().get("JOOBLE_API_KEY") or "").strip()
+    if not api_key:
+        return [], "Chybí JOOBLE_API_KEY (secrets.local.json nebo env)"
+
+    terms = get_search_keywords(filters)
+    keywords = " OR ".join(terms) if terms else "product manager"
+    location = (filters.get("joobleLocation") or "Czech Republic").strip()
+
+    data, err = fetch_json_post(
+        f"https://jooble.org/api/{api_key}",
+        {
+            "keywords": keywords,
+            "location": location,
+            "page": "1",
+            "ResultOnPage": "50",
+        },
+    )
+    time.sleep(REQUEST_DELAY)
+    if err:
+        return [], err
+
+    jobs: list[dict] = []
+    for item in (data or {}).get("jobs") or []:
+        title = (item.get("title") or "").strip()
+        if not title:
+            continue
+        jobs.append({
+            "title": title,
+            "company": (item.get("company") or "").strip(),
+            "location": (item.get("location") or location).strip(),
+            "url": (item.get("link") or item.get("url") or "").strip(),
+            "portal": name,
+        })
+    return jobs, None
+
 
 def scrape_tribee_browser(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
     try:
@@ -888,11 +974,13 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
     if name == "Tribee":
         return scrape_tribee_browser(portal, filters)
 
-    if name in {"Indeed CZ", "Jooble CZ"}:
+    if name == "Jooble CZ":
+        return scrape_jooble_api(portal, filters)
+
+    if name == "Indeed CZ":
         target = portal.get("searchUrl") or portal.get("url", "")
-        batches: list[list[dict]] = []
         for term in get_search_keywords(filters):
-            query_url = url_set_query_param(target, "q" if "indeed" in target else "ukw", term)
+            query_url = url_set_query_param(target, "q", term)
             content, err = fetch(query_url)
             time.sleep(REQUEST_DELAY)
             if err:

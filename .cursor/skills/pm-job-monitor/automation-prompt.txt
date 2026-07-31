@@ -10,6 +10,10 @@ Použij skill pm-job-monitor pro denní monitoring PM pozic.
    - skript vytvoří/aktualizuje .venv, nainstaluje requirements.txt a Chromium
    - .venv NEcommituj (je v .gitignore) — musí se vytvořit na každém běhu v cloudu
    - Nespouštěj systémové `python3 monitor.py` bez venv (Tribee pak spadne)
+   - Jooble: nastav env `JOOBLE_API_KEY` (Cursor Automation secret) NEBO
+     soubor `.cursor/skills/pm-job-monitor/secrets.local.json` (gitignore, jen lokálně).
+     Bez klíče Jooble skončí chybou „Chybí JOOBLE_API_KEY“.
+     Klíč NEcommituj do gitu (veřejné repo).
 
 3. Filtruj pozice (skript to dělá sám; ověř výstup):
    - PM role (product manager, product owner, head of product, …)
@@ -22,7 +26,7 @@ Použij skill pm-job-monitor pro denní monitoring PM pozic.
 5. Commitni a pushni změny přímo do main (preferováno):
    - .cursor/skills/pm-job-monitor/state/seen-jobs.json
    - docs/jobs.json
-   - NEcommituj .venv/ ani __pycache__/
+   - NEcommituj .venv/ ani __pycache__/ ani secrets.local.json
    Pokud jsi na feature branchi: vytvoř PR a spusť
    bash .cursor/skills/pm-job-monitor/publish.sh [číslo_PR]
 
