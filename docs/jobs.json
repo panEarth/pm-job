@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-07-31T12:20:15.549528+02:00",
-  "generatedAt": "2026-07-31T12:20:15.549528+02:00",
+  "lastRun": "2026-07-31T11:31:21.465811+00:00",
+  "generatedAt": "2026-07-31T11:31:21.465811+00:00",
   "lastRunReport": {
-    "startedAt": "2026-07-31T12:20:15.549528+02:00",
-    "finishedAt": "2026-07-31T12:29:21.732151+02:00",
+    "startedAt": "2026-07-31T11:31:21.465811+00:00",
+    "finishedAt": "2026-07-31T11:40:05.967280+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -92,7 +92,7 @@
       {
         "name": "Indeed CZ",
         "status": "error",
-        "error": "Cloudflare ochrana — vyžaduje browser",
+        "error": "HTTP Error 403: Forbidden",
         "queries": [
           "product manager",
           "product owner",
@@ -126,37 +126,13 @@
       },
       {
         "name": "Jooble CZ",
-        "status": "error",
-        "error": "HTTP Error 403: Forbidden",
+        "status": "ok",
+        "error": null,
         "queries": [
-          "product manager",
-          "product owner",
-          "head of product",
-          "head of product management",
-          "vp product",
-          "vice president of product",
-          "produktový manažer",
-          "produktový manažerka",
-          "produktovy manazer",
-          "vedoucí produktu",
-          "ředitel produktu",
-          "director of product",
-          "senior product manager",
-          "senior product owner",
-          "group product manager",
-          "principal product manager",
-          "staff product manager",
-          "product lead",
-          "product director",
-          "chief product officer",
-          "technical product manager",
-          "growth product manager",
-          "platform product manager",
-          "ai product manager",
-          "ai product owner",
-          "ai head of product"
+          "API: jooble.org · Europe",
+          "product remote"
         ],
-        "rawCount": 0,
+        "rawCount": 50,
         "matchedCount": 0
       },
       {
@@ -191,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 189,
+        "rawCount": 188,
         "matchedCount": 4
       },
       {
@@ -236,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 52,
-        "matchedCount": 4
+        "rawCount": 42,
+        "matchedCount": 5
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -271,15 +247,15 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 13,
-        "matchedCount": 3
+        "rawCount": 12,
+        "matchedCount": 4
       }
     ],
     "totals": {
-      "matched": 62,
-      "new": 0,
+      "matched": 64,
+      "new": 1,
       "updated": 0,
-      "failures": 2
+      "failures": 1
     }
   },
   "jobs": [
@@ -299,6 +275,16 @@
       "company": "Cloudera",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4418292440",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-31",
+      "lastSeen": "2026-07-31"
+    },
+    {
+      "id": "197e86e9cb9b416f",
+      "title": "Senior Product Manager - Identity Security (m/f/n)",
+      "company": "ESET",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4386694183",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-07-31",
       "lastSeen": "2026-07-31"
