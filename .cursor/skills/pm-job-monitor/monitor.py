@@ -307,6 +307,26 @@ def get_search_keywords(filters: dict) -> list[str]:
     return result or ["product manager"]
 
 
+def portal_search_queries(portal: dict, filters: dict) -> list[str]:
+    """Lidsky čitelné dotazy / zdroje použité při skenu portálu (pro lastRunReport)."""
+    name = portal["name"]
+    keywords = get_search_keywords(filters)
+    if name == "Jobs.cz":
+        return keywords
+    if name == "StartupJobs.cz":
+        return ["sitemap nabídek (PM klíčová slova)"]
+    if name == "NoFluffJobs CZ":
+        return ["API: category=productManagement"]
+    if name == "Tribee":
+        return keywords or [portal.get("searchQuery") or "product manager"]
+    if name in {"Indeed CZ", "Jooble CZ"}:
+        return keywords
+    if name.startswith("LinkedIn Jobs") or "linkedin.com/jobs" in (portal.get("searchUrl") or ""):
+        return keywords
+    url = portal.get("searchUrl") or portal.get("url")
+    return [url] if url else [name]
+
+
 def url_set_query_param(url: str, param: str, value: str) -> str:
     parsed = urlparse(url)
     params = parse_qs(parsed.query, keep_blank_values=True)
@@ -1096,6 +1116,7 @@ def export_web(state: dict) -> None:
     payload = {
         "lastRun": state.get("lastRun"),
         "generatedAt": state.get("lastRun"),
+        "lastRunReport": state.get("lastRunReport"),
         "jobs": jobs,
     }
     save_json(WEB_JOBS_FILE, payload)
@@ -1114,16 +1135,38 @@ def main() -> int:
     now = datetime.now(timezone.utc).astimezone()
     all_found: list[dict] = []
     failures: list[tuple[str, str]] = []
+    portal_reports: list[dict] = []
 
     for portal in enabled:
+        queries = portal_search_queries(portal, filters)
         jobs, err = scan_portal(portal, filters)
         if err:
             failures.append((portal["name"], err))
         filtered = filter_jobs(jobs, filters)
         all_found.extend(filtered)
+        portal_reports.append({
+            "name": portal["name"],
+            "status": "error" if err else "ok",
+            "error": err,
+            "queries": queries,
+            "rawCount": len(jobs),
+            "matchedCount": len(filtered),
+        })
 
     new_jobs, updated_jobs = update_state(state, all_found, now)
     removed = revalidate_state(state, filters)
+    finished = datetime.now(timezone.utc).astimezone()
+    state["lastRunReport"] = {
+        "startedAt": now.isoformat(),
+        "finishedAt": finished.isoformat(),
+        "portals": portal_reports,
+        "totals": {
+            "matched": len(all_found),
+            "new": len(new_jobs),
+            "updated": len(updated_jobs),
+            "failures": len(failures),
+        },
+    }
     save_json(STATE_FILE, state)
     export_web(state)
 

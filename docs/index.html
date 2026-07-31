@@ -78,6 +78,175 @@
 
     .meta strong { color: var(--ink-soft); font-weight: 600; }
 
+    .meta-run {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      font: inherit;
+      color: inherit;
+      cursor: pointer;
+      text-align: left;
+      text-decoration: underline;
+      text-decoration-color: rgba(15, 118, 110, 0.35);
+      text-underline-offset: 0.18em;
+    }
+
+    .meta-run:hover,
+    .meta-run:focus-visible {
+      color: var(--ink-soft);
+      text-decoration-color: rgba(15, 118, 110, 0.7);
+      outline: none;
+    }
+
+    .dialog-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      display: grid;
+      place-items: center;
+      padding: 1.25rem;
+      background: rgba(28, 25, 23, 0.42);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .dialog-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .dialog {
+      width: min(100%, 40rem);
+      max-height: min(86vh, 44rem);
+      overflow: auto;
+      background: #fffdf8;
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) + 4px);
+      box-shadow: 0 24px 60px rgba(28, 25, 23, 0.22);
+      padding: 1.25rem 1.3rem 1.35rem;
+      transform: translateY(10px);
+      transition: transform 0.2s ease;
+    }
+
+    .dialog-backdrop.open .dialog {
+      transform: translateY(0);
+    }
+
+    .dialog-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .dialog-head h2 {
+      margin: 0;
+      font-family: "Fraunces", serif;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .dialog-close {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.75);
+      border-radius: 999px;
+      width: 2rem;
+      height: 2rem;
+      font: inherit;
+      line-height: 1;
+      cursor: pointer;
+      color: var(--ink-soft);
+    }
+
+    .dialog-close:hover {
+      border-color: rgba(15, 118, 110, 0.4);
+    }
+
+    .dialog-summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 1rem;
+      margin: 0 0 1rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .portal-report {
+      border-top: 1px solid var(--line);
+      padding: 0.85rem 0;
+    }
+
+    .portal-report:last-child {
+      padding-bottom: 0;
+    }
+
+    .portal-report-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .portal-report-top h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 650;
+      color: var(--ink);
+    }
+
+    .portal-status {
+      font-size: 0.78rem;
+      font-weight: 650;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .portal-status.ok { color: #0f766e; }
+    .portal-status.error { color: #c2410c; }
+
+    .portal-counts {
+      margin: 0.35rem 0 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .portal-queries {
+      margin: 0.45rem 0 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .portal-queries li {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.7);
+      border-radius: 999px;
+      padding: 0.2rem 0.55rem;
+      font-size: 0.78rem;
+      color: var(--ink-soft);
+    }
+
+    .portal-error {
+      margin: 0.45rem 0 0;
+      color: #9a3412;
+      font-size: 0.84rem;
+    }
+
+    .dialog-empty {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin: 0;
+    }
+
     section {
       margin-top: 2.25rem;
       animation: rise 0.8s ease both;
@@ -304,6 +473,16 @@
     </footer>
   </div>
 
+  <div class="dialog-backdrop" id="run-dialog" hidden>
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="run-dialog-title">
+      <div class="dialog-head">
+        <h2 id="run-dialog-title">Detail posledního běhu</h2>
+        <button type="button" class="dialog-close" id="run-dialog-close" aria-label="Zavřít">×</button>
+      </div>
+      <div id="run-dialog-body"></div>
+    </div>
+  </div>
+
   <script>
     const $ = (sel, root = document) => root.querySelector(sel);
 
@@ -444,6 +623,62 @@
       `).join("");
     }
 
+    function renderRunReport(report) {
+      const body = $("#run-dialog-body");
+      if (!report || !Array.isArray(report.portals) || !report.portals.length) {
+        body.innerHTML = `<p class="dialog-empty">Detail posledního běhu zatím není k dispozici. Objeví se po příštím skenu.</p>`;
+        return;
+      }
+      const totals = report.totals || {};
+      const portals = report.portals.map((p) => {
+        const ok = p.status !== "error";
+        const queries = Array.isArray(p.queries) && p.queries.length
+          ? `<ul class="portal-queries">${p.queries.map((q) => `<li>${escapeHtml(q)}</li>`).join("")}</ul>`
+          : "";
+        const err = p.error
+          ? `<p class="portal-error">${escapeHtml(p.error)}</p>`
+          : "";
+        return `
+          <article class="portal-report">
+            <div class="portal-report-top">
+              <h3>${escapeHtml(p.name || "—")}</h3>
+              <span class="portal-status ${ok ? "ok" : "error"}">${ok ? "OK" : "Chyba"}</span>
+            </div>
+            <p class="portal-counts">Načteno: <strong>${Number(p.rawCount) || 0}</strong> · Po filtrech: <strong>${Number(p.matchedCount) || 0}</strong></p>
+            ${queries}
+            ${err}
+          </article>
+        `;
+      }).join("");
+
+      body.innerHTML = `
+        <div class="dialog-summary">
+          <span>Začátek: <strong>${formatDateTime(report.startedAt || report.finishedAt)}</strong></span>
+          <span>Konec: <strong>${formatDateTime(report.finishedAt || report.startedAt)}</strong></span>
+          <span>Matched: <strong>${Number(totals.matched) || 0}</strong></span>
+          <span>Nové: <strong>${Number(totals.new) || 0}</strong></span>
+          <span>Chyby: <strong>${Number(totals.failures) || 0}</strong></span>
+        </div>
+        ${portals}
+      `;
+    }
+
+    function openRunDialog() {
+      const backdrop = $("#run-dialog");
+      renderRunReport(window.__jobsData && window.__jobsData.lastRunReport);
+      backdrop.hidden = false;
+      requestAnimationFrame(() => backdrop.classList.add("open"));
+      $("#run-dialog-close").focus();
+    }
+
+    function closeRunDialog() {
+      const backdrop = $("#run-dialog");
+      backdrop.classList.remove("open");
+      window.setTimeout(() => {
+        if (!backdrop.classList.contains("open")) backdrop.hidden = true;
+      }, 200);
+    }
+
     function render(data, query = "") {
       const q = query.trim().toLowerCase();
       const jobs = Array.isArray(data.jobs) ? data.jobs : [];
@@ -463,10 +698,13 @@
         });
 
       $("#meta").innerHTML = `
-        <span>Poslední běh: <strong>${formatDateTime(data.lastRun)}</strong></span>
+        <button type="button" class="meta-run" id="open-run-report" title="Zobrazit detail posledního běhu">
+          Poslední běh: <strong>${formatDateTime(data.lastRun)}</strong>
+        </button>
         <span>Celkem: <strong>${jobs.length}</strong></span>
         <span>Nové v posledním běhu: <strong>${jobs.filter((j) => dateOnly(j.firstSeen) === lastRunDate).length}</strong></span>
       `;
+      $("#open-run-report").addEventListener("click", openRunDialog);
 
       $("#app").innerHTML = `
         <section aria-labelledby="new-heading">
@@ -500,6 +738,13 @@
         window.__jobsData = data;
         render(data);
         $("#q").addEventListener("input", (e) => render(data, e.target.value));
+        $("#run-dialog-close").addEventListener("click", closeRunDialog);
+        $("#run-dialog").addEventListener("click", (e) => {
+          if (e.target === $("#run-dialog")) closeRunDialog();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && !$("#run-dialog").hidden) closeRunDialog();
+        });
       } catch (err) {
         $("#meta").textContent = "Data se nepodařilo načíst.";
         $("#app").innerHTML = `<div class="status-error">Nepodařilo se načíst <code>jobs.json</code>. Spusť monitoring nebo zkontroluj GitHub Pages.</div>`;
