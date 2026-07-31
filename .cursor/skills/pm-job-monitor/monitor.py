@@ -314,7 +314,9 @@ def portal_search_queries(portal: dict, filters: dict) -> list[str]:
     if name == "Jobs.cz":
         return keywords
     if name == "StartupJobs.cz":
-        return ["sitemap nabídek (PM klíčová slova)"]
+        # StartupJobs nemá klasický search — bereme URL ze sitemap a filtrujeme podle slugů
+        keys = sorted(startupjobs_slug_keys(filters), key=str.casefold)
+        return ["metoda: sitemap/offers.xml → URL obsahuje slug"] + keys
     if name == "NoFluffJobs CZ":
         return ["API: category=productManagement"]
     if name == "Tribee":
