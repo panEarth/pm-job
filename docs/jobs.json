@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-07-31T11:31:21.465811+00:00",
-  "generatedAt": "2026-07-31T11:31:21.465811+00:00",
+  "lastRun": "2026-08-01T07:03:47.270743+00:00",
+  "generatedAt": "2026-08-01T07:03:47.270743+00:00",
   "lastRunReport": {
-    "startedAt": "2026-07-31T11:31:21.465811+00:00",
-    "finishedAt": "2026-07-31T11:40:05.967280+00:00",
+    "startedAt": "2026-08-01T07:03:47.270743+00:00",
+    "finishedAt": "2026-08-01T07:11:54.439218+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -52,7 +52,7 @@
           "vp-product"
         ],
         "rawCount": 14,
-        "matchedCount": 8
+        "matchedCount": 9
       },
       {
         "name": "Jobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 53,
-        "matchedCount": 43
+        "rawCount": 55,
+        "matchedCount": 44
       },
       {
         "name": "Indeed CZ",
@@ -133,7 +133,7 @@
           "product remote"
         ],
         "rawCount": 50,
-        "matchedCount": 0
+        "matchedCount": 1
       },
       {
         "name": "Tribee",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 188,
+        "rawCount": 187,
         "matchedCount": 4
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 42,
-        "matchedCount": 5
+        "rawCount": 23,
+        "matchedCount": 2
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,18 +247,78 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 12,
-        "matchedCount": 4
+        "rawCount": 15,
+        "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 64,
-      "new": 1,
+      "matched": 62,
+      "new": 4,
       "updated": 0,
       "failures": 1
     }
   },
   "jobs": [
+    {
+      "id": "468ed3290e4f065d",
+      "title": "Web Content & Product Manager v MIXIT",
+      "company": "Mixit s.r.o.",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/106461/web-content-product-manager-v-mixit",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-08-01",
+      "lastSeen": "2026-08-01"
+    },
+    {
+      "id": "7e261ddaa3ec7565",
+      "title": "Technical Product Manager/ka",
+      "company": "Prusa Research a.s.",
+      "location": "Partyzánská 188/7a, Praha – Holešovice",
+      "url": "https://www.jobs.cz/rpd/2001354487",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-01",
+      "lastSeen": "2026-08-01"
+    },
+    {
+      "id": "c19ecbad521fe9eb",
+      "title": "Staff Product Manager",
+      "company": "GoodParty.org",
+      "location": "Remote",
+      "url": "https://jooble.org/away/-8543743273340226800?p=1&pos=28&rgn=55180&cid=16672&ckey=product+remote&jobAge=121&brelb=15&scr=526.7539&bscr=526.7539&aq=2382413469314308853&elckey=840355074403618675",
+      "portal": "Jooble CZ",
+      "firstSeen": "2026-08-01",
+      "lastSeen": "2026-08-01"
+    },
+    {
+      "id": "60adab510b3dba1b",
+      "title": "Product Manager Rare Diseases CZ",
+      "company": "Swixx BioPharma",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4445098488",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-01",
+      "lastSeen": "2026-08-01"
+    },
+    {
+      "id": "197e86e9cb9b416f",
+      "title": "Senior Product Manager - Identity Security (m/f/n)",
+      "company": "ESET",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4386694183",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-31",
+      "lastSeen": "2026-08-01"
+    },
+    {
+      "id": "a406072beda13e7e",
+      "title": "Product Owner – data analyst a reporting",
+      "company": "SAB servis s.r.o.",
+      "location": "Praha – Vokovice, Suttnerové 814/17",
+      "url": "https://www.jobs.cz/rpd/2001281857",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-31",
+      "lastSeen": "2026-08-01"
+    },
     {
       "id": "7185e8a83a859229",
       "title": "System TPM - Application focus - Detect",
@@ -276,26 +336,6 @@
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4418292440",
       "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-07-31",
-      "lastSeen": "2026-07-31"
-    },
-    {
-      "id": "197e86e9cb9b416f",
-      "title": "Senior Product Manager - Identity Security (m/f/n)",
-      "company": "ESET",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4386694183",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-07-31",
-      "lastSeen": "2026-07-31"
-    },
-    {
-      "id": "a406072beda13e7e",
-      "title": "Product Owner – data analyst a reporting",
-      "company": "SAB servis s.r.o.",
-      "location": "Praha – Vokovice, Suttnerové 814/17",
-      "url": "https://www.jobs.cz/rpd/2001281857",
-      "portal": "Jobs.cz",
       "firstSeen": "2026-07-31",
       "lastSeen": "2026-07-31"
     },
@@ -377,7 +417,7 @@
       "url": "https://www.jobs.cz/rpd/2001346822",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-25",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "c22a3b108162070b",
@@ -387,7 +427,7 @@
       "url": "https://www.jobs.cz/rpd/2001312810",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-25",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "348d96ea38f2bedf",
@@ -397,7 +437,7 @@
       "url": "https://www.jobs.cz/rpd/2001342254",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-25",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "0042ddbb2a8c45e6",
@@ -407,7 +447,7 @@
       "url": "https://www.jobs.cz/rpd/2001342252",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-25",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "8091583586783164",
@@ -417,7 +457,7 @@
       "url": "https://www.jobs.cz/rpd/2001346483",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-25",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "fbc467ea6b1520d3",
@@ -427,7 +467,7 @@
       "url": "https://www.jobs.cz/rpd/2001341793",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-25",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "d564dc4dc43925ea",
@@ -507,7 +547,7 @@
       "url": "https://www.jobs.cz/rpd/2001337097",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "ea8a9fb4b8d202b1",
@@ -517,7 +557,7 @@
       "url": "https://www.jobs.cz/rpd/2001340108",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "89513f524a306673",
@@ -527,7 +567,7 @@
       "url": "https://www.tribee.cz/cs/spolecnost/bnpparibascardif/prace/product-owner-core-insurance-application/f188d7dc-cea4-4299-bef0-1f5d7dc96d8e",
       "portal": "Tribee",
       "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "e54b15c026e586e1",
@@ -537,7 +577,7 @@
       "url": "https://www.jobs.cz/rpd/2001177943",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "3c7bd9d173044ec9",
@@ -547,7 +587,7 @@
       "url": "https://www.startupjobs.cz/nabidka/106165/product-owner-custom-software-development",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "116f64690714a5ae",
@@ -557,7 +597,7 @@
       "url": "https://www.jobs.cz/rpd/2001340045",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "3f8762f2ed612685",
@@ -607,7 +647,7 @@
       "url": "https://www.linkedin.com/jobs/view/4443348392",
       "portal": "Tribee",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "b65866bfa116c6b6",
@@ -617,7 +657,7 @@
       "url": "https://www.jobs.cz/rpd/2001232159",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "dc971fc5080197ea",
@@ -627,7 +667,7 @@
       "url": "https://www.jobs.cz/rpd/2001260685",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "e0f3e1a665470060",
@@ -637,7 +677,7 @@
       "url": "https://www.jobs.cz/rpd/2001057560",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "11744ac9f4484ad8",
@@ -647,7 +687,7 @@
       "url": "https://www.jobs.cz/rpd/2001311064",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "dee3780acffdc8b2",
@@ -657,7 +697,7 @@
       "url": "https://www.jobs.cz/rpd/2001276734",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "a7e2290d654f8877",
@@ -667,7 +707,7 @@
       "url": "https://www.jobs.cz/rpd/2001335529",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "68076f2caf268a05",
@@ -677,7 +717,7 @@
       "url": "https://www.jobs.cz/rpd/2001311073",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "8bf6c965b8e20b6d",
@@ -687,7 +727,7 @@
       "url": "https://www.jobs.cz/rpd/2001329615",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "c182b81d0fb7c531",
@@ -697,7 +737,7 @@
       "url": "https://www.jobs.cz/rpd/2001337543",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "3a92c0a4cbd80729",
@@ -707,7 +747,7 @@
       "url": "https://www.jobs.cz/rpd/2001322815",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "75c927cc3bec3643",
@@ -717,7 +757,7 @@
       "url": "https://www.jobs.cz/rpd/2001332735",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "8c94b62971582ff8",
@@ -727,7 +767,7 @@
       "url": "https://www.jobs.cz/rpd/2001311424",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "0be829a2e9b3422a",
@@ -737,7 +777,7 @@
       "url": "https://www.jobs.cz/rpd/2001332924",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "d921b7a35488defe",
@@ -747,7 +787,7 @@
       "url": "https://www.jobs.cz/rpd/2001258682",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "06643d7d2d6189bf",
@@ -757,7 +797,7 @@
       "url": "https://www.tribee.cz/cs/spolecnost/woodandcompany/prace/it-product-owner-praha-ceska-republika/6dd2eccd-b241-4266-ba7b-df1d2b1141cb",
       "portal": "Tribee",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "7fc9fafdbdc94f65",
@@ -767,7 +807,7 @@
       "url": "https://www.jobs.cz/rpd/2001331689",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "1a692d61e1dcea1e",
@@ -917,7 +957,7 @@
       "url": "https://www.jobs.cz/rpd/2001133469",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "74da13fe63bf47ae",
@@ -927,7 +967,7 @@
       "url": "https://www.jobs.cz/rpd/2001331407",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "1939f317bb4a692e",
@@ -937,7 +977,7 @@
       "url": "https://www.jobs.cz/rpd/2001301728",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "365a673ce2023324",
@@ -947,7 +987,7 @@
       "url": "https://www.jobs.cz/rpd/2001316414",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "62ae9bec0592a582",
@@ -957,7 +997,7 @@
       "url": "https://www.jobs.cz/rpd/2001331592",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "ed1f897a06a1d39c",
@@ -967,7 +1007,7 @@
       "url": "https://www.jobs.cz/rpd/2001320509",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "26492b51f832a3c0",
@@ -977,7 +1017,7 @@
       "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/product-manager-investment-products-m-f-uvazek-cca-60/2028a61e-c459-4f1d-a06c-8d6ad49039da",
       "portal": "Tribee",
       "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "8e0093cd55aca1d0",
@@ -987,7 +1027,7 @@
       "url": "https://www.startupjobs.cz/nabidka/106099/product-manager-medical-devices-elektrofyziologie",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "fc143dc80bebf33e",
@@ -1087,7 +1127,7 @@
       "url": "https://www.jobs.cz/rpd/2001319392",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "d3f07fd6a8887643",
@@ -1097,7 +1137,7 @@
       "url": "https://www.jobs.cz/rpd/2001309371",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "6c2a30f0ea64cc19",
@@ -1107,7 +1147,7 @@
       "url": "https://www.jobs.cz/rpd/2001293180",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "cbc3383292611247",
@@ -1117,7 +1157,7 @@
       "url": "https://www.startupjobs.cz/nabidka/104343/technicky-produktovy-manazer-pro-doporucovaci-system",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "d41720a803f6699c",
@@ -1127,7 +1167,7 @@
       "url": "https://www.startupjobs.cz/nabidka/105831/senior-project-product-manager-ex-developer",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "c4af8e820f83b69e",
@@ -1137,7 +1177,7 @@
       "url": "https://www.startupjobs.cz/nabidka/103567/senior-product-manager-ai-solutions",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "68a234c217733ea5",
@@ -1147,7 +1187,7 @@
       "url": "https://www.startupjobs.cz/nabidka/105175/sw-developer-product-owner",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "8036acc9f29fad3e",
@@ -1157,7 +1197,7 @@
       "url": "https://www.jobs.cz/rpd/2001298892",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "ff624e1ad1483023",
@@ -1167,7 +1207,7 @@
       "url": "https://www.jobs.cz/rpd/2001322603",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "cc4cac179279265c",
@@ -1177,7 +1217,7 @@
       "url": "https://www.jobs.cz/rpd/2001326905",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "8ce3a6aa9e0349b9",
@@ -1187,7 +1227,7 @@
       "url": "https://www.jobs.cz/rpd/2001298006",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "28a0b57d628be172",
@@ -1197,7 +1237,7 @@
       "url": "https://www.startupjobs.cz/nabidka/103673/product-manager-health-fitness-startup",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "38a3762a9df02425",
@@ -1207,7 +1247,7 @@
       "url": "https://www.jobs.cz/rpd/2001316567",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "db96d5e75fc7b23c",
@@ -1217,7 +1257,7 @@
       "url": "https://www.startupjobs.cz/nabidka/105921/category-product-manager-v-mixit",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "2b9c2f54fee1d657",
@@ -1227,7 +1267,7 @@
       "url": "https://www.jobs.cz/rpd/2001189416",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "d27b8194c90db0ad",
@@ -1237,7 +1277,7 @@
       "url": "https://www.jobs.cz/rpd/2001246572",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "126f95a8eef9c0e3",
