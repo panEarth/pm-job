@@ -196,7 +196,7 @@
       "company": "Livesport",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4443348392",
-      "portal": "Tribee",
+      "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-08-18"
     },
@@ -506,6 +506,96 @@
       "company": "Aktin",
       "location": "Praha-Klánovice, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4455321189",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "a7c656e09439935b",
+      "title": "🚀Product Manager – tvoř produkty, které se opravdu dostanou na trh",
+      "company": "elem6 s.r.o.",
+      "location": "Praha – Strašnice, U nákladového nádraží 3146/6",
+      "url": "https://www.jobs.cz/rpd/2001319392",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "1b488f9481063422",
+      "title": "Sr. Product Manager - Pharmacy Care",
+      "company": "Transcarent Technologies s.r.o.",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/107041/sr-product-manager-pharmacy-care",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "be98cff20e15f2b0",
+      "title": "Produktový manažer - CZ/SK",
+      "company": "AGROTEC a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001380944",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "62c56f6ae0502037",
+      "title": "Produktový manažer pro značku Dücker – CZ /SK /HU",
+      "company": "AGROTEC a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001380893",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "702a8480bba6d57b",
+      "title": "Product Owner for Fieldbus Communications",
+      "company": "ComAp a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001380967",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "5e37c060c534d1e2",
+      "title": "Product Manager (43544)",
+      "company": "CoolPeople Technology",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4455751428",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "8bb0f8f0846a7eee",
+      "title": "Senior Product Manager",
+      "company": "Transcarent",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4452595995",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "3cf24b82237c2c80",
+      "title": "Sr Product Manager - Hybridisation",
+      "company": "Kraken",
+      "location": "Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4454766221",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "34d9ee31cb25c993",
+      "title": "Product Owner for Fieldbus Communications",
+      "company": "ComAp Group",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4454495641",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-08-18"
@@ -909,16 +999,6 @@
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-08",
       "lastSeen": "2026-08-08"
-    },
-    {
-      "id": "a7c656e09439935b",
-      "title": "🚀Product Manager – tvoř produkty, které se opravdu dostanou na trh",
-      "company": "elem6 s.r.o.",
-      "location": "Praha – Strašnice, U nákladového nádraží 3146/6",
-      "url": "https://www.jobs.cz/rpd/2001319392",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-07-15",
-      "lastSeen": "2026-08-07"
     },
     {
       "id": "2b9c2f54fee1d657",
@@ -2011,10 +2091,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-08-18T08:24:07.470493+00:00",
+  "lastRun": "2026-08-18T18:29:35.765961+00:00",
   "lastRunReport": {
-    "startedAt": "2026-08-18T08:24:07.470493+00:00",
-    "finishedAt": "2026-08-18T08:33:07.760467+00:00",
+    "startedAt": "2026-08-18T18:29:35.765961+00:00",
+    "finishedAt": "2026-08-18T18:38:47.052218+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -2062,8 +2142,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 12,
-        "matchedCount": 10
+        "rawCount": 13,
+        "matchedCount": 11
       },
       {
         "name": "Jobs.cz",
@@ -2097,8 +2177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 50,
-        "matchedCount": 38
+        "rawCount": 53,
+        "matchedCount": 42
       },
       {
         "name": "Indeed CZ",
@@ -2144,7 +2224,7 @@
           "product remote"
         ],
         "rawCount": 50,
-        "matchedCount": 1
+        "matchedCount": 0
       },
       {
         "name": "Tribee",
@@ -2178,8 +2258,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 181,
-        "matchedCount": 2
+        "rawCount": 178,
+        "matchedCount": 1
       },
       {
         "name": "NoFluffJobs CZ",
@@ -2223,8 +2303,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 38,
-        "matchedCount": 2
+        "rawCount": 27,
+        "matchedCount": 5
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -2258,13 +2338,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 16,
-        "matchedCount": 1
+        "rawCount": 18,
+        "matchedCount": 4
       }
     ],
     "totals": {
-      "matched": 54,
-      "new": 3,
+      "matched": 63,
+      "new": 8,
       "updated": 0,
       "failures": 1
     }
