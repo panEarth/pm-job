@@ -578,7 +578,67 @@
       "url": "https://jooble.org/away/4075889978229042610?p=1&pos=27&rgn=55180&cid=16672&ckey=product+remote&jobAge=21&brelb=15&scr=537.23816&bscr=537.23816&aq=4082463963890987592&elckey=-6129667080115497393",
       "portal": "Jooble CZ",
       "firstSeen": "2026-08-12",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-19"
+    },
+    {
+      "id": "e7377d65e63a0a15",
+      "title": "Senior Principal Product Manager - Partner API & SDK Platform",
+      "company": "Gen",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4443289590",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-07-29",
+      "lastSeen": "2026-08-19"
+    },
+    {
+      "id": "8bc6382bc0399c28",
+      "title": "Team Lead & Technical Product Manager - Integrations 🚀",
+      "company": "Ematiq a.s.",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/107093/team-lead-and-technical-product-manager-integrations",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-08-19",
+      "lastSeen": "2026-08-19"
+    },
+    {
+      "id": "ecfbc6e441a8c2b4",
+      "title": "Product Owner",
+      "company": "Good at IT s.r.o.",
+      "location": "Pohořelec 149/6, Praha – Hradčany",
+      "url": "https://www.jobs.cz/rpd/2001382707",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-19",
+      "lastSeen": "2026-08-19"
+    },
+    {
+      "id": "98e4f994571a7f38",
+      "title": "Product Owner-LEASING",
+      "company": "Nathan Peterson International s.r.o.",
+      "location": "28. října 371/1, Praha – Staré Město",
+      "url": "https://www.jobs.cz/rpd/2001383310",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-19",
+      "lastSeen": "2026-08-19"
+    },
+    {
+      "id": "ad17b8e693a1051d",
+      "title": "Product Owner - AI Team",
+      "company": "TV Nova",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4456179659",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-19",
+      "lastSeen": "2026-08-19"
+    },
+    {
+      "id": "6537e31503d191c0",
+      "title": "Director of Product Management",
+      "company": "Usercentrics",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4456329279",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-19",
+      "lastSeen": "2026-08-19"
     },
     {
       "id": "b00a803d0e3798ff",
@@ -1491,16 +1551,6 @@
       "lastSeen": "2026-07-29"
     },
     {
-      "id": "e7377d65e63a0a15",
-      "title": "Senior Principal Product Manager - Partner API & SDK Platform",
-      "company": "Gen",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4443289590",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-07-29",
-      "lastSeen": "2026-07-29"
-    },
-    {
       "id": "b7d6121cb271798d",
       "title": "Product Manager (43217)",
       "company": "CoolPeople Technology",
@@ -2091,10 +2141,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-08-19T07:07:58.576458+00:00",
+  "lastRun": "2026-08-19T16:10:00.268640+00:00",
   "lastRunReport": {
-    "startedAt": "2026-08-19T07:07:58.576458+00:00",
-    "finishedAt": "2026-08-19T07:17:13.197079+00:00",
+    "startedAt": "2026-08-19T16:10:00.268640+00:00",
+    "finishedAt": "2026-08-19T16:19:31.083684+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -2142,8 +2192,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 13,
-        "matchedCount": 11
+        "rawCount": 15,
+        "matchedCount": 12
       },
       {
         "name": "Jobs.cz",
@@ -2177,8 +2227,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 54,
-        "matchedCount": 42
+        "rawCount": 56,
+        "matchedCount": 44
       },
       {
         "name": "Indeed CZ",
@@ -2224,7 +2274,7 @@
           "product remote"
         ],
         "rawCount": 50,
-        "matchedCount": 0
+        "matchedCount": 1
       },
       {
         "name": "Tribee",
@@ -2258,7 +2308,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 177,
+        "rawCount": 182,
         "matchedCount": 1
       },
       {
@@ -2303,7 +2353,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 36,
+        "rawCount": 26,
         "matchedCount": 4
       },
       {
@@ -2338,13 +2388,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 20,
-        "matchedCount": 3
+        "rawCount": 16,
+        "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 61,
-      "new": 0,
+      "matched": 64,
+      "new": 5,
       "updated": 0,
       "failures": 1
     }
