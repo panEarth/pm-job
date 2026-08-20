@@ -434,7 +434,7 @@
       "id": "c4af8e820f83b69e",
       "title": "Senior Product Manager (AI solutions)",
       "company": "Sudolabs",
-      "location": "Remote (CET +/- 2h), Remote (CET +/- 2h)Languages: Fluent English +",
+      "location": "Remote (CET +/- 2h), Remote (CET +/- 2h) Languages: Fluent English, Remote (CET +/- 2h)Languages: Fluent English +",
       "url": "https://www.startupjobs.cz/nabidka/103567/senior-product-manager-ai-solutions",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-07-15",
@@ -576,7 +576,7 @@
       "company": "SITA",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4443699296",
-      "portal": "LinkedIn Jobs — Česko",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-07-30",
       "lastSeen": "2026-08-20"
     },
@@ -588,6 +588,66 @@
       "url": "https://www.linkedin.com/jobs/view/4440183933",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-07-21",
+      "lastSeen": "2026-08-20"
+    },
+    {
+      "id": "8bb0f8f0846a7eee",
+      "title": "Senior Product Manager",
+      "company": "Transcarent",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4452595995",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-20"
+    },
+    {
+      "id": "b0989e2c54c83275",
+      "title": "Product Owner – AI, Automation & Tooling for IT Service Desk",
+      "company": "Aeven",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4437314242",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-31",
+      "lastSeen": "2026-08-20"
+    },
+    {
+      "id": "fd1b10124d7dd23e",
+      "title": "Associate Director - Product Manager, PV Reporting and Surveillance",
+      "company": "MSD Czech Republic",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4446868148",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-30",
+      "lastSeen": "2026-08-20"
+    },
+    {
+      "id": "18ce12291d250bd9",
+      "title": "Produktový manažer / manažer nákupu Apple produktů",
+      "company": "JabkoLevně.cz",
+      "location": "Vodičkova 677/10, Praha – Nové Město",
+      "url": "https://www.jobs.cz/rpd/2001384640",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-20",
+      "lastSeen": "2026-08-20"
+    },
+    {
+      "id": "228ebd0c82eeb57c",
+      "title": "Senior Product Manager",
+      "company": "IP Fabric",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4456706319",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-20",
+      "lastSeen": "2026-08-20"
+    },
+    {
+      "id": "9b29072e1fc47f63",
+      "title": "Senior Product Manager (Full Remote - Europe)",
+      "company": "EverAI",
+      "location": "Malta",
+      "url": "https://www.linkedin.com/jobs/view/4456750699",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-20",
       "lastSeen": "2026-08-20"
     },
     {
@@ -626,16 +686,6 @@
       "company": "CoolPeople Technology",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4455751428",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-18",
-      "lastSeen": "2026-08-19"
-    },
-    {
-      "id": "8bb0f8f0846a7eee",
-      "title": "Senior Product Manager",
-      "company": "Transcarent",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4452595995",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-08-19"
@@ -1451,16 +1501,6 @@
       "lastSeen": "2026-07-31"
     },
     {
-      "id": "b0989e2c54c83275",
-      "title": "Product Owner – AI, Automation & Tooling for IT Service Desk",
-      "company": "Aeven",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4437314242",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-07-31",
-      "lastSeen": "2026-07-31"
-    },
-    {
       "id": "c7bc04a7563a8b86",
       "title": "Senior Product Manager, Cloudera Cloud Core",
       "company": "Cloudera",
@@ -1518,16 +1558,6 @@
       "url": "https://www.jobs.cz/rpd/2001331609",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "fd1b10124d7dd23e",
-      "title": "Associate Director - Product Manager, PV Reporting and Surveillance",
-      "company": "MSD Czech Republic",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4446868148",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-07-30",
       "lastSeen": "2026-07-30"
     },
     {
@@ -2141,10 +2171,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-08-20T07:08:04.516841+00:00",
+  "lastRun": "2026-08-20T16:10:14.671564+00:00",
   "lastRunReport": {
-    "startedAt": "2026-08-20T07:08:04.516841+00:00",
-    "finishedAt": "2026-08-20T07:17:03.858563+00:00",
+    "startedAt": "2026-08-20T16:10:14.671564+00:00",
+    "finishedAt": "2026-08-20T16:19:12.550326+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -2192,8 +2222,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 15,
-        "matchedCount": 12
+        "rawCount": 12,
+        "matchedCount": 10
       },
       {
         "name": "Jobs.cz",
@@ -2227,8 +2257,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 53,
-        "matchedCount": 41
+        "rawCount": 54,
+        "matchedCount": 42
       },
       {
         "name": "Indeed CZ",
@@ -2308,7 +2338,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 181,
+        "rawCount": 180,
         "matchedCount": 1
       },
       {
@@ -2353,8 +2383,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 20,
-        "matchedCount": 5
+        "rawCount": 19,
+        "matchedCount": 6
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -2388,13 +2418,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 19,
-        "matchedCount": 3
+        "rawCount": 20,
+        "matchedCount": 7
       }
     ],
     "totals": {
-      "matched": 63,
-      "new": 0,
+      "matched": 67,
+      "new": 3,
       "updated": 0,
       "failures": 1
     }
