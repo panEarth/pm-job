@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-08-21T07:08:20.500074+00:00",
-  "generatedAt": "2026-08-21T07:08:20.500074+00:00",
+  "lastRun": "2026-08-21T16:10:14.506190+00:00",
+  "generatedAt": "2026-08-21T16:10:14.506190+00:00",
   "lastRunReport": {
-    "startedAt": "2026-08-21T07:08:20.500074+00:00",
-    "finishedAt": "2026-08-21T07:17:33.528909+00:00",
+    "startedAt": "2026-08-21T16:10:14.506190+00:00",
+    "finishedAt": "2026-08-21T16:19:42.748945+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -51,8 +51,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 12,
-        "matchedCount": 10
+        "rawCount": 13,
+        "matchedCount": 11
       },
       {
         "name": "Jobs.cz",
@@ -87,7 +87,7 @@
           "ai head of product"
         ],
         "rawCount": 52,
-        "matchedCount": 40
+        "matchedCount": 41
       },
       {
         "name": "Indeed CZ",
@@ -133,7 +133,7 @@
           "product remote"
         ],
         "rawCount": 50,
-        "matchedCount": 1
+        "matchedCount": 0
       },
       {
         "name": "Tribee",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 182,
+        "rawCount": 177,
         "matchedCount": 1
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 28,
-        "matchedCount": 5
+        "rawCount": 24,
+        "matchedCount": 3
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,13 +247,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 17,
-        "matchedCount": 5
+        "rawCount": 16,
+        "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 62,
-      "new": 1,
+      "matched": 58,
+      "new": 6,
       "updated": 0,
       "failures": 1
     }
@@ -266,6 +266,66 @@
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4457015147",
       "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21"
+    },
+    {
+      "id": "77b33b57897dbe4b",
+      "title": "Senior product lead pro B2B SaaS",
+      "company": "SingleCase",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/98925/senior-product-lead-pro-b2b-saas",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21"
+    },
+    {
+      "id": "095c841f513f5985",
+      "title": "Product Owner – Online sjednání pojištění",
+      "company": "Pojišťovna VZP, a.s.",
+      "location": "Lazarská 1718/3, Praha – Nové Město",
+      "url": "https://www.jobs.cz/rpd/2001387211",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21"
+    },
+    {
+      "id": "1e338dde0522e1fb",
+      "title": "Product Manager – Crypto (m/f)",
+      "company": "IT v Raiffeisenbank",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank-it/prace/product-manager-crypto-m-f/d7e3527f-4978-4b49-9f02-5323f67211c6",
+      "portal": "Tribee",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21"
+    },
+    {
+      "id": "6814f04badf612cb",
+      "title": "PRODUKTOVÝ MANAŽER pro odbornou komunikaci v lékárnách",
+      "company": "BENU Česká republika s.r.o.",
+      "location": "K pérovně 945/7, Praha – Hostivař",
+      "url": "https://www.jobs.cz/rpd/2001387434",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21"
+    },
+    {
+      "id": "c61fbf8a8d6e2004",
+      "title": "Group Product Manager",
+      "company": "FEG",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4456241466",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21"
+    },
+    {
+      "id": "2dcc9f8b34e822fc",
+      "title": "Global Program & Product Manager",
+      "company": "H2 Grand Prix",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4454190722",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-21",
       "lastSeen": "2026-08-21"
     },
