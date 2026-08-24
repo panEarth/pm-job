@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-08-24T07:08:17.030094+00:00",
-  "generatedAt": "2026-08-24T07:08:17.030094+00:00",
+  "lastRun": "2026-08-24T16:10:19.161127+00:00",
+  "generatedAt": "2026-08-24T16:10:19.161127+00:00",
   "lastRunReport": {
-    "startedAt": "2026-08-24T07:08:17.030094+00:00",
-    "finishedAt": "2026-08-24T07:17:10.442143+00:00",
+    "startedAt": "2026-08-24T16:10:19.161127+00:00",
+    "finishedAt": "2026-08-24T16:19:55.604384+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 172,
+        "rawCount": 145,
         "matchedCount": 1
       },
       {
@@ -212,7 +212,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 31,
+        "rawCount": 39,
         "matchedCount": 3
       },
       {
@@ -247,18 +247,48 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 14,
-        "matchedCount": 5
+        "rawCount": 21,
+        "matchedCount": 4
       }
     ],
     "totals": {
-      "matched": 60,
-      "new": 0,
+      "matched": 59,
+      "new": 3,
       "updated": 0,
       "failures": 1
     }
   },
   "jobs": [
+    {
+      "id": "9b7284c55ccddad2",
+      "title": "Senior Product Owner",
+      "company": "AURES Holdings",
+      "location": "Prague 8, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4458164898",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24"
+    },
+    {
+      "id": "16b50ef015b9c918",
+      "title": "Head of Product - Automotive OEM Digital Transformation (100% Remote)",
+      "company": "Savages Corp",
+      "location": "Wroclaw Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4458193609",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24"
+    },
+    {
+      "id": "cd1e1e79d658ddc2",
+      "title": "DevOps Manager (Technical Product Manager) in Open Banking Services",
+      "company": "COMMERZBANK Aktiengesellschaft, pobočka Praha",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001389194",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-08-24"
+    },
     {
       "id": "77b33b57897dbe4b",
       "title": "Senior product lead pro B2B SaaS",
