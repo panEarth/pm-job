@@ -541,6 +541,76 @@
       "lastSeen": "2026-08-25"
     },
     {
+      "id": "680c8829c4a86318",
+      "title": "Technical Product Manager (f/m)",
+      "company": "T-Mobile Czech Republic a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001391852",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-08-25"
+    },
+    {
+      "id": "1d227e56b801f8c6",
+      "title": "Senior Product Owner",
+      "company": "AAA Auto (AURES Holdings a.s.)",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001391831",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-08-25"
+    },
+    {
+      "id": "5cfd9b1dadde8997",
+      "title": "Senior Product Manager",
+      "company": "Emplifi",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4458776513",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-08-25"
+    },
+    {
+      "id": "168c58879e1e34e6",
+      "title": "Technical Product Manager",
+      "company": "MSD Czech Republic",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4458784126",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-08-25"
+    },
+    {
+      "id": "da43b14936da8acc",
+      "title": "Tax Product Manager (f/m/d)",
+      "company": "Deutsche Börse Group",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4457487241",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-08-25"
+    },
+    {
+      "id": "55831c5325d0794b",
+      "title": "Senior Product Owner / Business Analyst – Salesforce Loyalty | Czech Republic",
+      "company": "Deloitte",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4456902513",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-08-25"
+    },
+    {
+      "id": "af5e61234e45d1c9",
+      "title": "Global Educational Program & Product Manager",
+      "company": "H2 Grand Prix",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4456942266",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-08-25"
+    },
+    {
       "id": "d921b7a35488defe",
       "title": "PRODUCT OWNER IT – systém Infor",
       "company": "TATRA TRUCKS a. s.",
@@ -2281,10 +2351,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-08-25T07:08:31.444555+00:00",
+  "lastRun": "2026-08-25T16:10:02.248873+00:00",
   "lastRunReport": {
-    "startedAt": "2026-08-25T07:08:31.444555+00:00",
-    "finishedAt": "2026-08-25T07:18:06.074578+00:00",
+    "startedAt": "2026-08-25T16:10:02.248873+00:00",
+    "finishedAt": "2026-08-25T16:19:26.468034+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -2368,7 +2438,7 @@
           "ai head of product"
         ],
         "rawCount": 51,
-        "matchedCount": 39
+        "matchedCount": 40
       },
       {
         "name": "Indeed CZ",
@@ -2448,7 +2518,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 145,
+        "rawCount": 147,
         "matchedCount": 1
       },
       {
@@ -2493,8 +2563,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 39,
-        "matchedCount": 3
+        "rawCount": 18,
+        "matchedCount": 6
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -2528,13 +2598,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 23,
-        "matchedCount": 4
+        "rawCount": 20,
+        "matchedCount": 5
       }
     ],
     "totals": {
-      "matched": 58,
-      "new": 1,
+      "matched": 63,
+      "new": 7,
       "updated": 0,
       "failures": 1
     }
