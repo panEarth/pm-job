@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-08-26T07:09:17.635848+00:00",
-  "generatedAt": "2026-08-26T07:09:17.635848+00:00",
+  "lastRun": "2026-08-26T16:09:56.311589+00:00",
+  "generatedAt": "2026-08-26T16:09:56.311589+00:00",
   "lastRunReport": {
-    "startedAt": "2026-08-26T07:09:17.635848+00:00",
-    "finishedAt": "2026-08-26T07:18:33.821959+00:00",
+    "startedAt": "2026-08-26T16:09:56.311589+00:00",
+    "finishedAt": "2026-08-26T16:19:54.401168+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 51,
-        "matchedCount": 40
+        "rawCount": 52,
+        "matchedCount": 41
       },
       {
         "name": "Indeed CZ",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 147,
+        "rawCount": 150,
         "matchedCount": 1
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 26,
-        "matchedCount": 6
+        "rawCount": 46,
+        "matchedCount": 5
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,13 +247,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 20,
-        "matchedCount": 7
+        "rawCount": 17,
+        "matchedCount": 6
       }
     ],
     "totals": {
-      "matched": 65,
-      "new": 2,
+      "matched": 64,
+      "new": 4,
       "updated": 0,
       "failures": 1
     }
@@ -276,6 +276,46 @@
       "location": "Dublin, County Dublin, Ireland",
       "url": "https://www.linkedin.com/jobs/view/4459020754",
       "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26"
+    },
+    {
+      "id": "f3fb15b1f1b4886e",
+      "title": "Senior product lead pro B2B SaaS",
+      "company": "Single Case",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/98925/senior-product-lead-pro-b2b-saas",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26"
+    },
+    {
+      "id": "c352efef20cc3240",
+      "title": "Product Manager/ka pro checkout & post-purchase",
+      "company": "Slevomat",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4459165476",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26"
+    },
+    {
+      "id": "997ab3f43da28f6f",
+      "title": "Group Senior Product Owner - (PAM)",
+      "company": "FEG",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4457947778",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-26"
+    },
+    {
+      "id": "b217ca38b78ab5eb",
+      "title": "DevOps Manager (Technical Product Manager) in Open Banking Services",
+      "company": "Commerzbank Czech Republic",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4457912297",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-26",
       "lastSeen": "2026-08-26"
     },
@@ -1030,6 +1070,16 @@
       "lastSeen": "2026-08-26"
     },
     {
+      "id": "cdc45bf060a85fda",
+      "title": "Product Owner for project OnePlatform",
+      "company": "Aeven",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4448985246",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-26"
+    },
+    {
       "id": "fd0d27c3035ea0c6",
       "title": "Product Owner - Treasury Applications",
       "company": "Atlas Copco Services s.r.o.",
@@ -1056,16 +1106,6 @@
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4449139154",
       "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-06",
-      "lastSeen": "2026-08-06"
-    },
-    {
-      "id": "cdc45bf060a85fda",
-      "title": "Product Owner for project OnePlatform",
-      "company": "Aeven",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4448985246",
-      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-06",
       "lastSeen": "2026-08-06"
     },
@@ -1180,6 +1220,16 @@
       "lastSeen": "2026-08-05"
     },
     {
+      "id": "a202dcc62ea08751",
+      "title": "Technický Product Owner - cloudová integrační platforma",
+      "company": "Asseco Solutions, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001340108",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-26"
+    },
+    {
       "id": "8ce0678934b653ab",
       "title": "Produktový manažer pro brandovou reklamu",
       "company": "Seznam.cz, a.s.",
@@ -1208,16 +1258,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-26"
-    },
-    {
-      "id": "a202dcc62ea08751",
-      "title": "Technický Product Owner - cloudová integrační platforma",
-      "company": "Asseco Solutions, a.s.",
-      "location": "",
-      "url": "https://www.jobs.cz/rpd/2001340108",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-21"
     },
     {
       "id": "9d5338e598829294",
