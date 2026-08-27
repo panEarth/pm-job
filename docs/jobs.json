@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-08-27T07:11:26.465766+00:00",
-  "generatedAt": "2026-08-27T07:11:26.465766+00:00",
+  "lastRun": "2026-08-27T16:10:03.288261+00:00",
+  "generatedAt": "2026-08-27T16:10:03.288261+00:00",
   "lastRunReport": {
-    "startedAt": "2026-08-27T07:11:26.465766+00:00",
-    "finishedAt": "2026-08-27T07:21:26.956077+00:00",
+    "startedAt": "2026-08-27T16:10:03.288261+00:00",
+    "finishedAt": "2026-08-27T16:19:52.485652+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -51,8 +51,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 13,
-        "matchedCount": 11
+        "rawCount": 9,
+        "matchedCount": 7
       },
       {
         "name": "Jobs.cz",
@@ -86,7 +86,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 52,
+        "rawCount": 51,
         "matchedCount": 39
       },
       {
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 150,
+        "rawCount": 149,
         "matchedCount": 1
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 35,
-        "matchedCount": 6
+        "rawCount": 27,
+        "matchedCount": 7
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,18 +247,28 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 16,
-        "matchedCount": 6
+        "rawCount": 17,
+        "matchedCount": 8
       }
     ],
     "totals": {
-      "matched": 63,
+      "matched": 62,
       "new": 2,
       "updated": 0,
       "failures": 1
     }
   },
   "jobs": [
+    {
+      "id": "61c2778d979c1ee0",
+      "title": "Product Manager, Rare Diseases, Czech Republic",
+      "company": "Medison Pharma",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4457971387",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-27",
+      "lastSeen": "2026-08-27"
+    },
     {
       "id": "95581460c68ea6da",
       "title": "Product Manager, Oncology, Czech Republic",
@@ -275,6 +285,16 @@
       "company": "AIOS",
       "location": "Berlin, Berlin, Germany",
       "url": "https://www.linkedin.com/jobs/view/4454596482",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-27",
+      "lastSeen": "2026-08-27"
+    },
+    {
+      "id": "998a541940e96e16",
+      "title": "AI Product Builder / Product Owner",
+      "company": "Soflexity",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4458388360",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-27",
       "lastSeen": "2026-08-27"
@@ -360,6 +380,16 @@
       "lastSeen": "2026-08-27"
     },
     {
+      "id": "af5e61234e45d1c9",
+      "title": "Global Educational Program & Product Manager",
+      "company": "H2 Grand Prix",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4456942266",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-08-27"
+    },
+    {
       "id": "168c58879e1e34e6",
       "title": "Technical Product Manager",
       "company": "MSD Czech Republic",
@@ -395,16 +425,6 @@
       "company": "Emplifi",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4458776513",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-25",
-      "lastSeen": "2026-08-26"
-    },
-    {
-      "id": "af5e61234e45d1c9",
-      "title": "Global Educational Program & Product Manager",
-      "company": "H2 Grand Prix",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4456942266",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-25",
       "lastSeen": "2026-08-26"
@@ -1030,6 +1050,16 @@
       "lastSeen": "2026-08-08"
     },
     {
+      "id": "b7ce2e30b0c0e667",
+      "title": "Principal Product Manager: Fulfillment Center",
+      "company": "Rohlik Group",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4441235513",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-07",
+      "lastSeen": "2026-08-27"
+    },
+    {
       "id": "fcacac4cd602a6a1",
       "title": "Product Manager Investment Products (m/f) - úvazek cca 60 %",
       "company": "Raiffeisenbank",
@@ -1070,22 +1100,22 @@
       "lastSeen": "2026-08-07"
     },
     {
-      "id": "b7ce2e30b0c0e667",
-      "title": "Principal Product Manager: Fulfillment Center",
-      "company": "Rohlik Group",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4441235513",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-07",
-      "lastSeen": "2026-08-07"
-    },
-    {
       "id": "7e6e90607f4a3916",
       "title": "Technical Product Owner - PC Tools",
       "company": "ComAp a.s.",
       "location": "",
       "url": "https://www.jobs.cz/rpd/2001360988",
       "portal": "Jobs.cz",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-27"
+    },
+    {
+      "id": "8ef8feb052266e8e",
+      "title": "Senior Product Manager for electromechanic Products / Systems (m/f/d)",
+      "company": "Siemens",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449139154",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-06",
       "lastSeen": "2026-08-27"
     },
@@ -1110,6 +1140,16 @@
       "lastSeen": "2026-08-27"
     },
     {
+      "id": "9dcaad3f580c9b51",
+      "title": "Product Manager – Rare Diseases – Czech & Slovakia",
+      "company": "AstraZeneca",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449304365",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-27"
+    },
+    {
       "id": "2cd11b5bc889d725",
       "title": "Product Manager - Integrations & Ecosystem",
       "company": "FaceUp 💙",
@@ -1128,26 +1168,6 @@
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-06",
       "lastSeen": "2026-08-27"
-    },
-    {
-      "id": "8ef8feb052266e8e",
-      "title": "Senior Product Manager for electromechanic Products / Systems (m/f/d)",
-      "company": "Siemens",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449139154",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-06",
-      "lastSeen": "2026-08-06"
-    },
-    {
-      "id": "9dcaad3f580c9b51",
-      "title": "Product Manager – Rare Diseases – Czech & Slovakia",
-      "company": "AstraZeneca",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449304365",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-06",
-      "lastSeen": "2026-08-06"
     },
     {
       "id": "e78aa2f64d16551a",
