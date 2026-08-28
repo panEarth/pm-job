@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-08-28T07:08:35.494067+00:00",
-  "generatedAt": "2026-08-28T07:08:35.494067+00:00",
+  "lastRun": "2026-08-28T16:22:43.626703+00:00",
+  "generatedAt": "2026-08-28T16:22:43.626703+00:00",
   "lastRunReport": {
-    "startedAt": "2026-08-28T07:08:35.494067+00:00",
-    "finishedAt": "2026-08-28T07:18:10.938622+00:00",
+    "startedAt": "2026-08-28T16:22:43.626703+00:00",
+    "finishedAt": "2026-08-28T16:32:49.925722+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -51,8 +51,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 9,
-        "matchedCount": 7
+        "rawCount": 10,
+        "matchedCount": 8
       },
       {
         "name": "Jobs.cz",
@@ -87,7 +87,7 @@
           "ai head of product"
         ],
         "rawCount": 52,
-        "matchedCount": 39
+        "matchedCount": 40
       },
       {
         "name": "Indeed CZ",
@@ -133,7 +133,7 @@
           "product remote"
         ],
         "rawCount": 50,
-        "matchedCount": 1
+        "matchedCount": 0
       },
       {
         "name": "Tribee",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 147,
+        "rawCount": 149,
         "matchedCount": 1
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 25,
-        "matchedCount": 5
+        "rawCount": 33,
+        "matchedCount": 2
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,18 +247,38 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 14,
-        "matchedCount": 6
+        "rawCount": 15,
+        "matchedCount": 4
       }
     ],
     "totals": {
-      "matched": 59,
-      "new": 2,
+      "matched": 55,
+      "new": 3,
       "updated": 0,
       "failures": 1
     }
   },
   "jobs": [
+    {
+      "id": "1b2ebed3b2a60750",
+      "title": "Product Manager/Instruktor/Trainer",
+      "company": "Astana Motors Czech, s.r.o.",
+      "location": "Lomnického 1742/2a, Praha – Nusle",
+      "url": "https://www.jobs.cz/rpd/2001341793",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28"
+    },
+    {
+      "id": "87823b21a820dbc9",
+      "title": "Product Manager – Growth & Innovation (all genders) - 100% Home Office",
+      "company": "fino",
+      "location": "Germany",
+      "url": "https://www.linkedin.com/jobs/view/4458403446",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28"
+    },
     {
       "id": "f574f906d2fd30a9",
       "title": "Principal Product Manager, Order Management - Germany Remote",
@@ -276,6 +296,16 @@
       "location": "Remote",
       "url": "https://jooble.org/desc/-4785606479749493673?ckey=product+remote&rgn=55180&pos=21&groupId=34902&elckey=-5593642135755928939&p=1&aq=-866311650993311294&cid=16672&jobAge=73&brelb=15&bscr=614.82166&scr=614.82166",
       "portal": "Jooble CZ",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28"
+    },
+    {
+      "id": "c98e6e77481fb0d2",
+      "title": "Group Product Manager",
+      "company": "Groupe SEB",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4458084364",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-28",
       "lastSeen": "2026-08-28"
     },
@@ -770,6 +800,16 @@
       "lastSeen": "2026-08-28"
     },
     {
+      "id": "2b982376320296e1",
+      "title": "Product lead – Pay Apps & TMS portfolio modernization",
+      "company": "Global Payments Inc.",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4454035270",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-14",
+      "lastSeen": "2026-08-28"
+    },
+    {
       "id": "14478b25bb064e58",
       "title": "Product Manager",
       "company": "PLG Group: GoOut & Ticketportal",
@@ -798,16 +838,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-14",
       "lastSeen": "2026-08-19"
-    },
-    {
-      "id": "2b982376320296e1",
-      "title": "Product lead – Pay Apps & TMS portfolio modernization",
-      "company": "Global Payments Inc.",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4454035270",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-14"
     },
     {
       "id": "c2a7ce16564761cd",
@@ -1478,16 +1508,6 @@
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-07-31",
       "lastSeen": "2026-07-31"
-    },
-    {
-      "id": "0c8528aef60786ff",
-      "title": "Product Manager",
-      "company": "SITA",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4443699296",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-07-30",
-      "lastSeen": "2026-08-24"
     },
     {
       "id": "fd1b10124d7dd23e",
@@ -2280,6 +2300,16 @@
       "lastSeen": "2026-08-28"
     },
     {
+      "id": "c4af8e820f83b69e",
+      "title": "Senior Product Manager (AI solutions)",
+      "company": "Sudolabs",
+      "location": "Remote (CET +/- 2h), Remote (CET +/- 2h) Languages: Fluent English, Remote (CET +/- 2h)Languages: Fluent English +",
+      "url": "https://www.startupjobs.cz/nabidka/103567/senior-product-manager-ai-solutions",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-08-28"
+    },
+    {
       "id": "8036acc9f29fad3e",
       "title": "Produktový manažer/ka",
       "company": "Asseco Solutions, a.s.",
@@ -2298,16 +2328,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
       "lastSeen": "2026-08-28"
-    },
-    {
-      "id": "c4af8e820f83b69e",
-      "title": "Senior Product Manager (AI solutions)",
-      "company": "Sudolabs",
-      "location": "Remote (CET +/- 2h), Remote (CET +/- 2h) Languages: Fluent English, Remote (CET +/- 2h)Languages: Fluent English +",
-      "url": "https://www.startupjobs.cz/nabidka/103567/senior-product-manager-ai-solutions",
-      "portal": "StartupJobs.cz",
-      "firstSeen": "2026-07-15",
-      "lastSeen": "2026-08-27"
     },
     {
       "id": "cc4cac179279265c",
