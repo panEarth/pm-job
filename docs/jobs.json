@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-08-31T07:07:57.114578+00:00",
-  "generatedAt": "2026-08-31T07:07:57.114578+00:00",
+  "lastRun": "2026-08-31T16:09:58.320628+00:00",
+  "generatedAt": "2026-08-31T16:09:58.320628+00:00",
   "lastRunReport": {
-    "startedAt": "2026-08-31T07:07:57.114578+00:00",
-    "finishedAt": "2026-08-31T07:17:27.030130+00:00",
+    "startedAt": "2026-08-31T16:09:58.320628+00:00",
+    "finishedAt": "2026-08-31T16:19:46.423839+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -52,7 +52,7 @@
           "vp-product"
         ],
         "rawCount": 11,
-        "matchedCount": 8
+        "matchedCount": 9
       },
       {
         "name": "Jobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 52,
-        "matchedCount": 38
+        "rawCount": 53,
+        "matchedCount": 40
       },
       {
         "name": "Indeed CZ",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 152,
+        "rawCount": 154,
         "matchedCount": 1
       },
       {
@@ -213,7 +213,7 @@
           "ai head of product"
         ],
         "rawCount": 37,
-        "matchedCount": 0
+        "matchedCount": 1
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,18 +247,58 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 10,
-        "matchedCount": 0
+        "rawCount": 7,
+        "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 47,
-      "new": 0,
+      "matched": 52,
+      "new": 4,
       "updated": 0,
       "failures": 1
     }
   },
   "jobs": [
+    {
+      "id": "05fff12362863cd3",
+      "title": "Technical Product Owner",
+      "company": "Good at IT s.r.o.",
+      "location": "Pohořelec 149/6, Praha – Hradčany",
+      "url": "https://www.jobs.cz/rpd/2001382707",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-08-31"
+    },
+    {
+      "id": "4aa95b7bcfc1fd5d",
+      "title": "Produktový manažer - integrace a podnikové systémy",
+      "company": "Mountfield a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001301728",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-08-31"
+    },
+    {
+      "id": "1f88a1a3d618c078",
+      "title": "Product Manager / Product Owner v menší technologické firmě 🖥️",
+      "company": "EGIT s.r.o.",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/107331/product-manager-product-owner-v-mensi-technologicke-firme",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-08-31"
+    },
+    {
+      "id": "6daaaff407a5b56d",
+      "title": "IT technik a product manager | 47-50 000 Kč | Home office",
+      "company": "HOFMANN WIZARD s.r.o.",
+      "location": "Remote",
+      "url": "https://www.jobs.cz/rpd/2001401054",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-08-31"
+    },
     {
       "id": "1b2ebed3b2a60750",
       "title": "Product Manager/Instruktor/Trainer",
@@ -360,21 +400,21 @@
       "lastSeen": "2026-08-31"
     },
     {
-      "id": "c352efef20cc3240",
-      "title": "Product Manager/ka pro checkout & post-purchase",
-      "company": "Slevomat",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4459165476",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-26",
-      "lastSeen": "2026-08-27"
-    },
-    {
       "id": "997ab3f43da28f6f",
       "title": "Group Senior Product Owner - (PAM)",
       "company": "FEG",
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4457947778",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-08-31"
+    },
+    {
+      "id": "c352efef20cc3240",
+      "title": "Product Manager/ka pro checkout & post-purchase",
+      "company": "Slevomat",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4459165476",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-26",
       "lastSeen": "2026-08-27"
@@ -503,7 +543,7 @@
       "id": "16b50ef015b9c918",
       "title": "Head of Product - Automotive OEM Digital Transformation (100% Remote)",
       "company": "Savages Corp",
-      "location": "Wroclaw Metropolitan Area",
+      "location": "France",
       "url": "https://www.linkedin.com/jobs/view/4458193609",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-24",
