@@ -531,6 +531,66 @@
       "lastSeen": "2026-09-01"
     },
     {
+      "id": "d2fdb7b81c3ae758",
+      "title": "Principal Product Manager - Live Query",
+      "company": "Alteryx",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4451426672",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-09-01"
+    },
+    {
+      "id": "676bfda2aeb33b55",
+      "title": "PRODUKTOVÝ MANAŽER - iVYSÍLÁNÍ",
+      "company": "ČESKÁ TELEVIZE",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001403391",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-01"
+    },
+    {
+      "id": "1b5972339755e0b5",
+      "title": "Principal Product Manager - AI Assistant",
+      "company": "Jobgether",
+      "location": "Remote",
+      "url": "https://jooble.org/desc/5965946192037632747?ckey=product+remote&rgn=55180&pos=29&groupId=34902&elckey=5864705041804594301&p=1&aq=5242906948608284387&cid=16672&jobAge=130&brelb=15&bscr=647.25195&scr=647.25195",
+      "portal": "Jooble CZ",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-01"
+    },
+    {
+      "id": "be88fd5b5efbc8e5",
+      "title": "Staff Product Manager, Data & Platform",
+      "company": "Kard Financial, Inc.",
+      "location": "Remote",
+      "url": "https://jooble.org/desc/-8902117535629511539?ckey=product+remote&rgn=55180&pos=32&groupId=34902&elckey=5864705041804594301&p=1&aq=5242906948608284387&cid=16672&jobAge=34&brelb=15&bscr=643.3389&scr=643.3389",
+      "portal": "Jooble CZ",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-01"
+    },
+    {
+      "id": "0c8528aef60786ff",
+      "title": "Product Manager",
+      "company": "SITA",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449862359",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-01"
+    },
+    {
+      "id": "e7ef264710790a48",
+      "title": "Product Manager",
+      "company": "Celltrion Inc",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4460608083",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-01"
+    },
+    {
       "id": "ecfbc6e441a8c2b4",
       "title": "Product Owner",
       "company": "Good at IT s.r.o.",
@@ -864,7 +924,7 @@
       "id": "16b50ef015b9c918",
       "title": "Head of Product - Automotive OEM Digital Transformation (100% Remote)",
       "company": "Savages Corp",
-      "location": "France",
+      "location": "Slovakia",
       "url": "https://www.linkedin.com/jobs/view/4458193609",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-24",
@@ -1439,16 +1499,6 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-12",
       "lastSeen": "2026-08-12"
-    },
-    {
-      "id": "d2fdb7b81c3ae758",
-      "title": "Principal Product Manager - Live Query",
-      "company": "Alteryx",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4451426672",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11"
     },
     {
       "id": "bd3edb4bd69c67b0",
@@ -2531,10 +2581,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-09-01T07:08:13.281579+00:00",
+  "lastRun": "2026-09-01T16:09:53.077408+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-01T07:08:13.281579+00:00",
-    "finishedAt": "2026-09-01T07:18:33.694106+00:00",
+    "startedAt": "2026-09-01T16:09:53.077408+00:00",
+    "finishedAt": "2026-09-01T16:19:55.510315+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -2582,8 +2632,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 11,
-        "matchedCount": 9
+        "rawCount": 10,
+        "matchedCount": 8
       },
       {
         "name": "Jobs.cz",
@@ -2617,8 +2667,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 53,
-        "matchedCount": 40
+        "rawCount": 54,
+        "matchedCount": 41
       },
       {
         "name": "Indeed CZ",
@@ -2664,7 +2714,7 @@
           "product remote"
         ],
         "rawCount": 50,
-        "matchedCount": 1
+        "matchedCount": 2
       },
       {
         "name": "Tribee",
@@ -2698,8 +2748,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 144,
-        "matchedCount": 1
+        "rawCount": 146,
+        "matchedCount": 0
       },
       {
         "name": "NoFluffJobs CZ",
@@ -2743,8 +2793,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 30,
-        "matchedCount": 2
+        "rawCount": 25,
+        "matchedCount": 4
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -2778,13 +2828,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 13,
-        "matchedCount": 2
+        "rawCount": 20,
+        "matchedCount": 3
       }
     ],
     "totals": {
-      "matched": 55,
-      "new": 1,
+      "matched": 58,
+      "new": 5,
       "updated": 0,
       "failures": 1
     }
