@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-02T07:08:29.893570+00:00",
-  "generatedAt": "2026-09-02T07:08:29.893570+00:00",
+  "lastRun": "2026-09-02T16:10:07.232445+00:00",
+  "generatedAt": "2026-09-02T16:10:07.232445+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-02T07:08:29.893570+00:00",
-    "finishedAt": "2026-09-02T07:18:34.961097+00:00",
+    "startedAt": "2026-09-02T16:10:07.232445+00:00",
+    "finishedAt": "2026-09-02T16:20:15.975400+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -51,8 +51,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 10,
-        "matchedCount": 8
+        "rawCount": 11,
+        "matchedCount": 9
       },
       {
         "name": "Jobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 54,
-        "matchedCount": 41
+        "rawCount": 56,
+        "matchedCount": 44
       },
       {
         "name": "Indeed CZ",
@@ -133,7 +133,7 @@
           "product remote"
         ],
         "rawCount": 50,
-        "matchedCount": 2
+        "matchedCount": 0
       },
       {
         "name": "Tribee",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 144,
+        "rawCount": 143,
         "matchedCount": 0
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 34,
-        "matchedCount": 4
+        "rawCount": 27,
+        "matchedCount": 8
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,18 +247,98 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 15,
-        "matchedCount": 1
+        "rawCount": 9,
+        "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 56,
-      "new": 2,
+      "matched": 63,
+      "new": 9,
       "updated": 0,
       "failures": 1
     }
   },
   "jobs": [
+    {
+      "id": "3791c96bc0417494",
+      "title": "Talent Product Owner - Skills - Associate Director",
+      "company": "EY",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4459960437",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-02",
+      "lastSeen": "2026-09-02"
+    },
+    {
+      "id": "f3768b4dfd49d289",
+      "title": "ServiceNow Product Owner",
+      "company": "EYKON",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4434494391",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-02",
+      "lastSeen": "2026-09-02"
+    },
+    {
+      "id": "0d85e2fe53346b94",
+      "title": "Produktový manažer iVysílání",
+      "company": "Česká televize",
+      "location": "Prague 4, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/3688271983",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-02",
+      "lastSeen": "2026-09-02"
+    },
+    {
+      "id": "44c739ac3b8eac3d",
+      "title": "Product owner robotika a datové analýzy (m/ž)",
+      "company": "Škoda Auto a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001335552",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-02",
+      "lastSeen": "2026-09-02"
+    },
+    {
+      "id": "3cda4948e10c042d",
+      "title": "Product Owner",
+      "company": "Tessero Czech Republic s.r.o.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001372212",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-02",
+      "lastSeen": "2026-09-02"
+    },
+    {
+      "id": "1d71f6118949ed8b",
+      "title": "Product Manager dětského oddělení | ZARA | Praha",
+      "company": "INDITEX Česká republika, s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001405763",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-02",
+      "lastSeen": "2026-09-02"
+    },
+    {
+      "id": "dc5c3854b69db1f8",
+      "title": "Product Manager dětského oddělení | ZARA | Praha",
+      "company": "ZARA",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4460993163",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-02",
+      "lastSeen": "2026-09-02"
+    },
+    {
+      "id": "ba3cdfdfa0e0bc71",
+      "title": "Product Manager do Pixelfield",
+      "company": "Pixelfield",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/102685/product-manager-do-pixelfield",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-09-02",
+      "lastSeen": "2026-09-02"
+    },
     {
       "id": "850b277811be8c79",
       "title": "Product Manager - Automotive Importer",
@@ -276,6 +356,16 @@
       "location": "",
       "url": "https://www.jobs.cz/rpd/2001403696",
       "portal": "Jobs.cz",
+      "firstSeen": "2026-09-02",
+      "lastSeen": "2026-09-02"
+    },
+    {
+      "id": "28d8db12f59919f8",
+      "title": "Product Manager (DevTools & AI Reliability, remote)",
+      "company": "Checkly",
+      "location": "Sofia, Sofia City, Bulgaria",
+      "url": "https://www.linkedin.com/jobs/view/4462194913",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-09-02",
       "lastSeen": "2026-09-02"
     },
@@ -377,7 +467,7 @@
       "url": "https://www.jobs.cz/rpd/2001401054",
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-31",
-      "lastSeen": "2026-09-01"
+      "lastSeen": "2026-09-02"
     },
     {
       "id": "1b2ebed3b2a60750",
@@ -1010,6 +1100,16 @@
       "lastSeen": "2026-08-13"
     },
     {
+      "id": "09a100152200383a",
+      "title": "Senior Principal Product Manager",
+      "company": "Gen",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4440190129",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-09-02"
+    },
+    {
       "id": "cda1113a508f2e6b",
       "title": "Senior Product Manager / Consultant",
       "company": "Product Impact",
@@ -1018,16 +1118,6 @@
       "portal": "Jooble CZ",
       "firstSeen": "2026-08-12",
       "lastSeen": "2026-08-24"
-    },
-    {
-      "id": "09a100152200383a",
-      "title": "Senior Principal Product Manager",
-      "company": "Gen",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4440190129",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-12",
-      "lastSeen": "2026-08-12"
     },
     {
       "id": "ac830050277c4af1",
@@ -1210,6 +1300,16 @@
       "lastSeen": "2026-08-08"
     },
     {
+      "id": "c4fe06bf02099836",
+      "title": "Technical Product Owner - PC Tools",
+      "company": "ComAp Group",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449741339",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-07",
+      "lastSeen": "2026-09-02"
+    },
+    {
       "id": "b7ce2e30b0c0e667",
       "title": "Principal Product Manager: Fulfillment Center",
       "company": "Rohlik Group",
@@ -1238,16 +1338,6 @@
       "portal": "Tribee",
       "firstSeen": "2026-08-07",
       "lastSeen": "2026-08-14"
-    },
-    {
-      "id": "c4fe06bf02099836",
-      "title": "Technical Product Owner - PC Tools",
-      "company": "ComAp Group",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449741339",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-07",
-      "lastSeen": "2026-08-07"
     },
     {
       "id": "4f702fbd77cc4c5c",
