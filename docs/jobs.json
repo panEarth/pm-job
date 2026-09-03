@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-03T07:08:17.255445+00:00",
-  "generatedAt": "2026-09-03T07:08:17.255445+00:00",
+  "lastRun": "2026-09-03T16:10:29.880279+00:00",
+  "generatedAt": "2026-09-03T16:10:29.880279+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-03T07:08:17.255445+00:00",
-    "finishedAt": "2026-09-03T07:18:11.250917+00:00",
+    "startedAt": "2026-09-03T16:10:29.880279+00:00",
+    "finishedAt": "2026-09-03T16:20:48.909787+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -86,7 +86,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 55,
+        "rawCount": 56,
         "matchedCount": 43
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 27,
-        "matchedCount": 7
+        "rawCount": 38,
+        "matchedCount": 1
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,13 +247,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 13,
-        "matchedCount": 2
+        "rawCount": 8,
+        "matchedCount": 0
       }
     ],
     "totals": {
-      "matched": 61,
-      "new": 1,
+      "matched": 53,
+      "new": 0,
       "updated": 0,
       "failures": 1
     }
@@ -263,7 +263,7 @@
       "id": "14336f2d3c26e1b8",
       "title": "Produktový manažer",
       "company": "Magistra a.s.",
-      "location": "Průmyslová 1472/11, Praha – Hostivař",
+      "location": "Praha – Hostivař, Průmyslová 1472/11",
       "url": "https://www.jobs.cz/rpd/2001405550",
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-03",
@@ -1020,6 +1020,16 @@
       "lastSeen": "2026-09-03"
     },
     {
+      "id": "39a3d0d2c6909c0a",
+      "title": "Product Growth & Monetization Lead",
+      "company": "Gen",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4422760071",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-14",
+      "lastSeen": "2026-09-03"
+    },
+    {
       "id": "e1a7796e579fcffd",
       "title": "Head of Product",
       "company": "PLG Group: GoOut & Ticketportal",
@@ -1055,16 +1065,6 @@
       "company": "ComAp Group",
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4440697232",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-14"
-    },
-    {
-      "id": "39a3d0d2c6909c0a",
-      "title": "Product Growth & Monetization Lead",
-      "company": "Gen",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4422760071",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-14",
       "lastSeen": "2026-08-14"
