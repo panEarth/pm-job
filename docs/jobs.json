@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-04T07:08:47.179448+00:00",
-  "generatedAt": "2026-09-04T07:08:47.179448+00:00",
+  "lastRun": "2026-09-04T16:13:01.823788+00:00",
+  "generatedAt": "2026-09-04T16:13:01.823788+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-04T07:08:47.179448+00:00",
-    "finishedAt": "2026-09-04T07:18:50.047025+00:00",
+    "startedAt": "2026-09-04T16:13:01.823788+00:00",
+    "finishedAt": "2026-09-04T16:23:23.580121+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 138,
+        "rawCount": 137,
         "matchedCount": 1
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 31,
-        "matchedCount": 3
+        "rawCount": 29,
+        "matchedCount": 7
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,13 +247,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 7,
-        "matchedCount": 0
+        "rawCount": 11,
+        "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 55,
-      "new": 2,
+      "matched": 60,
+      "new": 3,
       "updated": 0,
       "failures": 1
     }
@@ -270,12 +270,42 @@
       "lastSeen": "2026-09-04"
     },
     {
+      "id": "2219ba4ee8348795",
+      "title": "Product Manager",
+      "company": "Ingram Micro Czech Republic s.r.o.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001398444",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04"
+    },
+    {
       "id": "017e622f6d880ce6",
       "title": "Investment Product Manager (m/ž) - Praha",
       "company": "Raiffeisenbank",
       "location": "Praha",
       "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/investment-product-manager-m-z-praha/48b8578a-56ee-4aa4-801b-e64f7ba11b14",
       "portal": "Tribee",
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04"
+    },
+    {
+      "id": "0fe34643baa3d4a6",
+      "title": "Director Of Product — PLG-Led SaaS",
+      "company": "Scale Up Recruiting Partners",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4463324283",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04"
+    },
+    {
+      "id": "9109e3aa3aa1492b",
+      "title": "Data Product Owner - Accounting & Tax Data Architecture",
+      "company": "TMF Group",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4463326210",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-04",
       "lastSeen": "2026-09-04"
     },
@@ -720,6 +750,16 @@
       "lastSeen": "2026-08-26"
     },
     {
+      "id": "9b7284c55ccddad2",
+      "title": "Senior Product Owner",
+      "company": "AURES Holdings",
+      "location": "Prague 8, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4458164898",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-09-04"
+    },
+    {
       "id": "cd1e1e79d658ddc2",
       "title": "DevOps Manager (Technical Product Manager) in Open Banking Services",
       "company": "COMMERZBANK Aktiengesellschaft, pobočka Praha",
@@ -728,16 +768,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-24",
       "lastSeen": "2026-09-04"
-    },
-    {
-      "id": "9b7284c55ccddad2",
-      "title": "Senior Product Owner",
-      "company": "AURES Holdings",
-      "location": "Prague 8, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4458164898",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-24",
-      "lastSeen": "2026-08-25"
     },
     {
       "id": "16b50ef015b9c918",
@@ -1810,6 +1840,16 @@
       "lastSeen": "2026-09-04"
     },
     {
+      "id": "18ef74764950af5b",
+      "title": "Product Manager",
+      "company": "CompuGroup Medical SE & Co. KGaA",
+      "location": "Praha 5, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4385298465",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-07-25",
+      "lastSeen": "2026-09-04"
+    },
+    {
       "id": "b1307444c3d1cefa",
       "title": "🏝️ Produktový manažer/ka – Maledivy & Long Haul",
       "company": "DER Touristik CZ a.s",
@@ -1890,16 +1930,6 @@
       "lastSeen": "2026-07-25"
     },
     {
-      "id": "18ef74764950af5b",
-      "title": "Product Manager",
-      "company": "CompuGroup Medical SE & Co. KGaA",
-      "location": "Praha 5, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4385298465",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-07-25",
-      "lastSeen": "2026-07-25"
-    },
-    {
       "id": "4a41a36e15b1c080",
       "title": "Head of Product - Central Europe",
       "company": "Global Payments Inc.",
@@ -1908,6 +1938,16 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-07-25",
       "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "3f8762f2ed612685",
+      "title": "Sr Principal Product Manager",
+      "company": "Gen",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4421949345",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-09-04"
     },
     {
       "id": "116f64690714a5ae",
@@ -1988,16 +2028,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-23",
       "lastSeen": "2026-08-03"
-    },
-    {
-      "id": "3f8762f2ed612685",
-      "title": "Sr Principal Product Manager",
-      "company": "Gen",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4421949345",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-23"
     },
     {
       "id": "9e84d3c0e9e2f5c6",
