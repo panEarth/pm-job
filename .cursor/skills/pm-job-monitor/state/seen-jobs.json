@@ -531,6 +531,106 @@
       "lastSeen": "2026-09-07"
     },
     {
+      "id": "e0f3e1a665470060",
+      "title": "Senior Embedded Developer (C/C++) & Product Owner",
+      "company": "Škoda Digital",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001057560",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "d2fdb7b81c3ae758",
+      "title": "Principal Product Manager - Live Query",
+      "company": "Alteryx",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4451426672",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "099f002b6b189b49",
+      "title": "Produktový manažer pro Seznam Homepage",
+      "company": "Seznam.cz, a.s.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001413519",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "82cc2551f2a0f9e3",
+      "title": "Product Manager Senior - Oblast firemních úvěrů",
+      "company": "Česká spořitelna, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001413051",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "e5cafa1621bb6ac6",
+      "title": "Produktový manažer pro oblast neživotního pojištění",
+      "company": "ČSOB Pojišťovna",
+      "location": "Pardubice, Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/csob-pojistovna/prace/produktovy-manazer-pro-oblast-nezivotniho-pojisteni/14b9567e-d803-478a-b633-240e8bc9a1a0",
+      "portal": "Tribee",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "2bbdfba5cc0d4a44",
+      "title": "Senior Product Manager (Platform and Shared Services)",
+      "company": "Eleveo",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4462203659",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "bd4c81fc3ddd2e01",
+      "title": "Product Manager Senior - Oblast firemních úvěrů",
+      "company": "Česká spořitelna",
+      "location": "Praha - východ, Central Bohemia, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4464354302",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "998c9d31cd272345",
+      "title": "Product Manager – Enclosures & Low Voltage Solutions",
+      "company": "Noark Electric Europe",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4462213789",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "8638b8b31441cb45",
+      "title": "AI Product Owner (Lyon, France)",
+      "company": "ARCHIMED",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4464330526",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "3c30e354ac571c0f",
+      "title": "Country Product Manager",
+      "company": "Cultural Care Au Pair",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449128121",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
       "id": "d27b8194c90db0ad",
       "title": "AI Product Manager pro B2B (m/ž)",
       "company": "O2 Czech Republic a.s.",
@@ -651,16 +751,6 @@
       "lastSeen": "2026-09-04"
     },
     {
-      "id": "e0f3e1a665470060",
-      "title": "Senior Embedded Developer (C/C++) & Product Owner",
-      "company": "Škoda Digital",
-      "location": "",
-      "url": "https://www.jobs.cz/rpd/2001057560",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-07-21",
-      "lastSeen": "2026-09-03"
-    },
-    {
       "id": "0c8528aef60786ff",
       "title": "Product Manager",
       "company": "SITA",
@@ -768,16 +858,6 @@
       "url": "https://www.jobs.cz/rpd/2001372212",
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-09-02"
-    },
-    {
-      "id": "d2fdb7b81c3ae758",
-      "title": "Principal Product Manager - Live Query",
-      "company": "Alteryx",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4451426672",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-11",
       "lastSeen": "2026-09-02"
     },
     {
@@ -2791,10 +2871,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-09-07T07:12:17.013722+00:00",
+  "lastRun": "2026-09-07T16:09:50.845644+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-07T07:12:17.013722+00:00",
-    "finishedAt": "2026-09-07T07:21:52.675946+00:00",
+    "startedAt": "2026-09-07T16:09:50.845644+00:00",
+    "finishedAt": "2026-09-07T16:19:34.261777+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -2877,8 +2957,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 49,
-        "matchedCount": 39
+        "rawCount": 48,
+        "matchedCount": 40
       },
       {
         "name": "Indeed CZ",
@@ -2958,8 +3038,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 135,
-        "matchedCount": 1
+        "rawCount": 126,
+        "matchedCount": 2
       },
       {
         "name": "NoFluffJobs CZ",
@@ -3003,8 +3083,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 31,
-        "matchedCount": 0
+        "rawCount": 23,
+        "matchedCount": 6
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -3038,13 +3118,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 14,
+        "rawCount": 8,
         "matchedCount": 3
       }
     ],
     "totals": {
-      "matched": 53,
-      "new": 4,
+      "matched": 61,
+      "new": 8,
       "updated": 0,
       "failures": 1
     }
