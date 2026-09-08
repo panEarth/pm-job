@@ -611,6 +611,66 @@
       "lastSeen": "2026-09-08"
     },
     {
+      "id": "8bb0f8f0846a7eee",
+      "title": "Senior Product Manager",
+      "company": "Transcarent",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4452595995",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-09-08"
+    },
+    {
+      "id": "9b29072e1fc47f63",
+      "title": "Senior Product Manager (Full Remote - Europe)",
+      "company": "EverAI",
+      "location": "Malta",
+      "url": "https://www.linkedin.com/jobs/view/4456750699",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-20",
+      "lastSeen": "2026-09-08"
+    },
+    {
+      "id": "b00a803d0e3798ff",
+      "title": "Product Manager",
+      "company": "Schaeffler",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4455340999",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-09-08"
+    },
+    {
+      "id": "bd3edb4bd69c67b0",
+      "title": "Senior Technical Product Manager",
+      "company": "IP Fabric",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4451500506",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-09-08"
+    },
+    {
+      "id": "6f00248e1b88a5df",
+      "title": "Senior Product Owner (PAM)",
+      "company": "Fortuna Group",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001415768",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08"
+    },
+    {
+      "id": "88950d7545629fa9",
+      "title": "Product Manager - TV/Monitory",
+      "company": "Alza.cz a.s.",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4462527095",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08"
+    },
+    {
       "id": "6daaaff407a5b56d",
       "title": "IT technik a product manager | 47-50 000 Kč | Home office",
       "company": "HOFMANN WIZARD s.r.o.",
@@ -1391,16 +1451,6 @@
       "lastSeen": "2026-08-21"
     },
     {
-      "id": "8bb0f8f0846a7eee",
-      "title": "Senior Product Manager",
-      "company": "Transcarent",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4452595995",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-18",
-      "lastSeen": "2026-08-21"
-    },
-    {
       "id": "b0989e2c54c83275",
       "title": "Product Owner – AI, Automation & Tooling for IT Service Desk",
       "company": "Aeven",
@@ -1426,16 +1476,6 @@
       "company": "IP Fabric",
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4456706319",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-20",
-      "lastSeen": "2026-08-21"
-    },
-    {
-      "id": "9b29072e1fc47f63",
-      "title": "Senior Product Manager (Full Remote - Europe)",
-      "company": "EverAI",
-      "location": "Malta",
-      "url": "https://www.linkedin.com/jobs/view/4456750699",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-20",
       "lastSeen": "2026-08-21"
@@ -1599,16 +1639,6 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-08-19"
-    },
-    {
-      "id": "b00a803d0e3798ff",
-      "title": "Product Manager",
-      "company": "Schaeffler",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4455340999",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-18",
-      "lastSeen": "2026-08-18"
     },
     {
       "id": "8427a12692c9c093",
@@ -1839,16 +1869,6 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-12",
       "lastSeen": "2026-08-12"
-    },
-    {
-      "id": "bd3edb4bd69c67b0",
-      "title": "Senior Technical Product Manager",
-      "company": "IP Fabric",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4451500506",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11"
     },
     {
       "id": "a531cd2b7b5f8966",
@@ -2891,10 +2911,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-09-08T07:07:58.006565+00:00",
+  "lastRun": "2026-09-08T16:10:08.494242+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-08T07:07:58.006565+00:00",
-    "finishedAt": "2026-09-08T07:18:24.028478+00:00",
+    "startedAt": "2026-09-08T16:10:08.494242+00:00",
+    "finishedAt": "2026-09-08T16:20:58.971660+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -2942,7 +2962,7 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 13,
+        "rawCount": 14,
         "matchedCount": 11
       },
       {
@@ -2977,8 +2997,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 48,
-        "matchedCount": 40
+        "rawCount": 50,
+        "matchedCount": 41
       },
       {
         "name": "Indeed CZ",
@@ -3058,7 +3078,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 126,
+        "rawCount": 129,
         "matchedCount": 2
       },
       {
@@ -3103,8 +3123,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 34,
-        "matchedCount": 7
+        "rawCount": 32,
+        "matchedCount": 5
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -3138,12 +3158,12 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 8,
-        "matchedCount": 3
+        "rawCount": 11,
+        "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 64,
+      "matched": 62,
       "new": 2,
       "updated": 0,
       "failures": 1
