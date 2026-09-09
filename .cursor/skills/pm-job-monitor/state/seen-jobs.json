@@ -631,6 +631,56 @@
       "lastSeen": "2026-09-09"
     },
     {
+      "id": "3cf24b82237c2c80",
+      "title": "Sr Product Manager - Hybridisation",
+      "company": "Kraken",
+      "location": "Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4454766221",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-09-09"
+    },
+    {
+      "id": "0e6c7670ea9593ae",
+      "title": "Digital Product Manager",
+      "company": "Byzkids, s.r.o.",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/106523/digital-product-manager",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09"
+    },
+    {
+      "id": "31e13dda91a29cf5",
+      "title": "E-commerce Product owner",
+      "company": "MageXo s.r.o.",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/107547/e-commerce-product-owner",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09"
+    },
+    {
+      "id": "98b0489def49de5c",
+      "title": "Head of Product Delivery",
+      "company": "SAB servis s.r.o.",
+      "location": "Suttnerové 814/17, Praha – Vokovice",
+      "url": "https://www.jobs.cz/rpd/2001417814",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09"
+    },
+    {
+      "id": "1e3b46a6dc4ce56b",
+      "title": "Product owner (mini-CEO)",
+      "company": "Scalepunk",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4463035021",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09"
+    },
+    {
       "id": "d2fdb7b81c3ae758",
       "title": "Principal Product Manager - Live Query",
       "company": "Alteryx",
@@ -1636,16 +1686,6 @@
       "company": "CoolPeople Technology",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4455751428",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-18",
-      "lastSeen": "2026-08-19"
-    },
-    {
-      "id": "3cf24b82237c2c80",
-      "title": "Sr Product Manager - Hybridisation",
-      "company": "Kraken",
-      "location": "Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4454766221",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-08-19"
@@ -2931,10 +2971,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-09-09T07:07:53.267678+00:00",
+  "lastRun": "2026-09-09T16:09:55.749557+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-09T07:07:53.267678+00:00",
-    "finishedAt": "2026-09-09T07:18:32.294638+00:00",
+    "startedAt": "2026-09-09T16:09:55.749557+00:00",
+    "finishedAt": "2026-09-09T16:20:38.990541+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -2982,7 +3022,7 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 15,
+        "rawCount": 16,
         "matchedCount": 12
       },
       {
@@ -3017,8 +3057,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 50,
-        "matchedCount": 41
+        "rawCount": 51,
+        "matchedCount": 42
       },
       {
         "name": "Indeed CZ",
@@ -3064,7 +3104,7 @@
           "product remote"
         ],
         "rawCount": 50,
-        "matchedCount": 1
+        "matchedCount": 0
       },
       {
         "name": "Tribee",
@@ -3143,8 +3183,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 31,
-        "matchedCount": 6
+        "rawCount": 33,
+        "matchedCount": 3
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -3179,12 +3219,12 @@
           "ai head of product"
         ],
         "rawCount": 11,
-        "matchedCount": 2
+        "matchedCount": 0
       }
     ],
     "totals": {
-      "matched": 64,
-      "new": 2,
+      "matched": 59,
+      "new": 4,
       "updated": 0,
       "failures": 1
     }
