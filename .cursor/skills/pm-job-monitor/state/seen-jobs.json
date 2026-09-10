@@ -571,6 +571,86 @@
       "lastSeen": "2026-09-10"
     },
     {
+      "id": "bd4c81fc3ddd2e01",
+      "title": "Product Manager Senior - Oblast firemních úvěrů",
+      "company": "Česká spořitelna",
+      "location": "Praha - východ, Central Bohemia, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4464354302",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-10"
+    },
+    {
+      "id": "e7377d65e63a0a15",
+      "title": "Senior Principal Product Manager - Partner API & SDK Platform",
+      "company": "Gen",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4443289590",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-07-29",
+      "lastSeen": "2026-09-10"
+    },
+    {
+      "id": "4a41a36e15b1c080",
+      "title": "Head of Product - Central Europe",
+      "company": "Global Payments Inc.",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4444955681",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-07-25",
+      "lastSeen": "2026-09-10"
+    },
+    {
+      "id": "aa4dcc912adba924",
+      "title": "Senior Product Manager - Pricing & Promo",
+      "company": "Notino s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001398477",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10"
+    },
+    {
+      "id": "d7adc62caba64e34",
+      "title": "Product Manager",
+      "company": "Innomotics, s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001418916",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10"
+    },
+    {
+      "id": "50bc036bf3e0467e",
+      "title": "Produktový manažer/ka - účty a platby",
+      "company": "Air Bank a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001419569",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10"
+    },
+    {
+      "id": "0e73e88606ebea2f",
+      "title": "Technical Product Manager",
+      "company": "IN8INITY",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4463477545",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10"
+    },
+    {
+      "id": "9abb58a93c81a7a4",
+      "title": "Produktový manažer / manažerka - CRM",
+      "company": "PPF banka",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4465682691",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10"
+    },
+    {
       "id": "2c06d5f47ea59599",
       "title": "SENIOR PRODUCT MANAGER",
       "company": "Akacia Group, s.r.o.",
@@ -736,16 +816,6 @@
       "company": "Eleveo",
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4462203659",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-08"
-    },
-    {
-      "id": "bd4c81fc3ddd2e01",
-      "title": "Product Manager Senior - Oblast firemních úvěrů",
-      "company": "Česká spořitelna",
-      "location": "Praha - východ, Central Bohemia, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4464354302",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-09-07",
       "lastSeen": "2026-09-08"
@@ -1651,16 +1721,6 @@
       "lastSeen": "2026-08-20"
     },
     {
-      "id": "e7377d65e63a0a15",
-      "title": "Senior Principal Product Manager - Partner API & SDK Platform",
-      "company": "Gen",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4443289590",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-07-29",
-      "lastSeen": "2026-08-20"
-    },
-    {
       "id": "ad17b8e693a1051d",
       "title": "Product Owner - AI Team",
       "company": "TV Nova",
@@ -2531,16 +2591,6 @@
       "lastSeen": "2026-07-25"
     },
     {
-      "id": "4a41a36e15b1c080",
-      "title": "Head of Product - Central Europe",
-      "company": "Global Payments Inc.",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4444955681",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-07-25",
-      "lastSeen": "2026-07-25"
-    },
-    {
       "id": "c9f897d5ec4630e0",
       "title": "Product Manager A185",
       "company": "Ungrman GROUP",
@@ -3001,10 +3051,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-09-10T07:24:28.972224+00:00",
+  "lastRun": "2026-09-10T16:10:09.571067+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-10T07:24:28.972224+00:00",
-    "finishedAt": "2026-09-10T07:34:58.068864+00:00",
+    "startedAt": "2026-09-10T16:10:09.571067+00:00",
+    "finishedAt": "2026-09-10T16:20:49.316115+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -3052,7 +3102,7 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 17,
+        "rawCount": 19,
         "matchedCount": 13
       },
       {
@@ -3087,8 +3137,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 47,
-        "matchedCount": 39
+        "rawCount": 51,
+        "matchedCount": 40
       },
       {
         "name": "Indeed CZ",
@@ -3168,7 +3218,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 133,
+        "rawCount": 137,
         "matchedCount": 2
       },
       {
@@ -3213,8 +3263,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 34,
-        "matchedCount": 2
+        "rawCount": 26,
+        "matchedCount": 5
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -3249,12 +3299,12 @@
           "ai head of product"
         ],
         "rawCount": 13,
-        "matchedCount": 2
+        "matchedCount": 3
       }
     ],
     "totals": {
-      "matched": 58,
-      "new": 3,
+      "matched": 63,
+      "new": 5,
       "updated": 0,
       "failures": 1
     }
