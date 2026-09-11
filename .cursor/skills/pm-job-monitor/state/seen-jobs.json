@@ -631,6 +631,46 @@
       "lastSeen": "2026-09-11"
     },
     {
+      "id": "d07e975bb9735846",
+      "title": "Product Owner",
+      "company": "NUMETO",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001367187",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-09-11"
+    },
+    {
+      "id": "9b29072e1fc47f63",
+      "title": "Senior Product Manager (Full Remote - Europe)",
+      "company": "EverAI",
+      "location": "Malta",
+      "url": "https://www.linkedin.com/jobs/view/4456750699",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-20",
+      "lastSeen": "2026-09-11"
+    },
+    {
+      "id": "0319f4b0321d9014",
+      "title": "📲 Digital Product Owner pro mobilní aplikaci",
+      "company": "PPL CZ s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001421598",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-11",
+      "lastSeen": "2026-09-11"
+    },
+    {
+      "id": "b495b170eb7a6a8e",
+      "title": "Buyer/Product Manager – segment Televize, Monitory, Projektory (JPO28169)",
+      "company": "Alza.cz a.s.",
+      "location": "Jankovcova 1522/53, Praha – Holešovice",
+      "url": "https://www.jobs.cz/rpd/2001421609",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-11",
+      "lastSeen": "2026-09-11"
+    },
+    {
       "id": "2219ba4ee8348795",
       "title": "Product Manager",
       "company": "Ingram Micro Czech Republic s.r.o.",
@@ -676,16 +716,6 @@
       "company": "Akacia Group, s.r.o.",
       "location": "Na Farkáně I 136/17, Praha – Radlice",
       "url": "https://www.jobs.cz/rpd/2001368198",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-08-11",
-      "lastSeen": "2026-09-09"
-    },
-    {
-      "id": "d07e975bb9735846",
-      "title": "Product Owner",
-      "company": "NUMETO",
-      "location": "Praha",
-      "url": "https://www.jobs.cz/rpd/2001367187",
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-09-09"
@@ -758,16 +788,6 @@
       "url": "https://www.linkedin.com/jobs/view/4452595995",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-18",
-      "lastSeen": "2026-09-09"
-    },
-    {
-      "id": "9b29072e1fc47f63",
-      "title": "Senior Product Manager (Full Remote - Europe)",
-      "company": "EverAI",
-      "location": "Malta",
-      "url": "https://www.linkedin.com/jobs/view/4456750699",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-20",
       "lastSeen": "2026-09-09"
     },
     {
@@ -3061,10 +3081,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-09-11T07:45:38.264022+00:00",
+  "lastRun": "2026-09-11T16:09:55.440081+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-11T07:45:38.264022+00:00",
-    "finishedAt": "2026-09-11T07:55:56.950374+00:00",
+    "startedAt": "2026-09-11T16:09:55.440081+00:00",
+    "finishedAt": "2026-09-11T16:20:50.896231+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -3147,8 +3167,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 53,
-        "matchedCount": 43
+        "rawCount": 57,
+        "matchedCount": 46
       },
       {
         "name": "Indeed CZ",
@@ -3273,8 +3293,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 23,
-        "matchedCount": 5
+        "rawCount": 36,
+        "matchedCount": 0
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -3309,12 +3329,12 @@
           "ai head of product"
         ],
         "rawCount": 9,
-        "matchedCount": 2
+        "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 65,
-      "new": 1,
+      "matched": 62,
+      "new": 2,
       "updated": 0,
       "failures": 1
     }
