@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-14T07:08:00.074454+00:00",
-  "generatedAt": "2026-09-14T07:08:00.074454+00:00",
+  "lastRun": "2026-09-14T16:10:37.126232+00:00",
+  "generatedAt": "2026-09-14T16:10:37.126232+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-14T07:08:00.074454+00:00",
-    "finishedAt": "2026-09-14T07:17:57.923932+00:00",
+    "startedAt": "2026-09-14T16:10:37.126232+00:00",
+    "finishedAt": "2026-09-14T16:21:30.250139+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -51,8 +51,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 17,
-        "matchedCount": 11
+        "rawCount": 18,
+        "matchedCount": 12
       },
       {
         "name": "Jobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 56,
-        "matchedCount": 45
+        "rawCount": 57,
+        "matchedCount": 46
       },
       {
         "name": "Indeed CZ",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 138,
+        "rawCount": 136,
         "matchedCount": 2
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 33,
-        "matchedCount": 2
+        "rawCount": 34,
+        "matchedCount": 3
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,18 +247,58 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 7,
-        "matchedCount": 4
+        "rawCount": 4,
+        "matchedCount": 0
       }
     ],
     "totals": {
-      "matched": 64,
-      "new": 2,
+      "matched": 63,
+      "new": 4,
       "updated": 0,
       "failures": 1
     }
   },
   "jobs": [
+    {
+      "id": "d48d440a4537a495",
+      "title": "Produktový manažer/ka",
+      "company": "TRINITY BANK a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001425652",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14"
+    },
+    {
+      "id": "8733cfc1fd7b4b2b",
+      "title": "Produktový manažer",
+      "company": "coraHB autodíly s.r.o.",
+      "location": "Tiskařská 599/12, Praha – Malešice",
+      "url": "https://www.jobs.cz/rpd/2001425715",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14"
+    },
+    {
+      "id": "9cc892a6dca85b05",
+      "title": "Product Owner",
+      "company": "Tessero",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4467082526",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14"
+    },
+    {
+      "id": "a912cf580f70daba",
+      "title": "Product Manager, Individual Products",
+      "company": "innogy Česká republika a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001424384",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14"
+    },
     {
       "id": "deac24faa24fb886",
       "title": "Marketing Product Manager PET Finder (DE/FR)- Remote",
@@ -1320,6 +1360,16 @@
       "lastSeen": "2026-09-14"
     },
     {
+      "id": "34d9ee31cb25c993",
+      "title": "Product Owner for Fieldbus Communications",
+      "company": "ComAp Group",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4454495641",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-09-14"
+    },
+    {
       "id": "dfead822aa5bca85",
       "title": "Insurance Product Manager (m/f) - Raiffeisen-Leasing",
       "company": "Raiffeisenbank a.s.",
@@ -1360,16 +1410,6 @@
       "lastSeen": "2026-09-09"
     },
     {
-      "id": "34d9ee31cb25c993",
-      "title": "Product Owner for Fieldbus Communications",
-      "company": "ComAp Group",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4454495641",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-08-18",
-      "lastSeen": "2026-08-19"
-    },
-    {
       "id": "5e37c060c534d1e2",
       "title": "Product Manager (43544)",
       "company": "CoolPeople Technology",
@@ -1400,6 +1440,16 @@
       "lastSeen": "2026-09-11"
     },
     {
+      "id": "c2a7ce16564761cd",
+      "title": "Product Owner – HMG Segment",
+      "company": "ComAp Group",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4440697232",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-14",
+      "lastSeen": "2026-09-14"
+    },
+    {
       "id": "14478b25bb064e58",
       "title": "Product Manager",
       "company": "PLG Group: GoOut & Ticketportal",
@@ -1407,7 +1457,7 @@
       "url": "https://www.startupjobs.cz/nabidka/106843/product-manager",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "e1a7796e579fcffd",
@@ -1458,16 +1508,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-14",
       "lastSeen": "2026-08-19"
-    },
-    {
-      "id": "c2a7ce16564761cd",
-      "title": "Product Owner – HMG Segment",
-      "company": "ComAp Group",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4440697232",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-14"
     },
     {
       "id": "c0d50d1ff292a0bc",
