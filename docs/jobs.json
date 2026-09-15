@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-15T07:07:58.102492+00:00",
-  "generatedAt": "2026-09-15T07:07:58.102492+00:00",
+  "lastRun": "2026-09-15T16:19:04.055546+00:00",
+  "generatedAt": "2026-09-15T16:19:04.055546+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-15T07:07:58.102492+00:00",
-    "finishedAt": "2026-09-15T07:18:39.257345+00:00",
+    "startedAt": "2026-09-15T16:19:04.055546+00:00",
+    "finishedAt": "2026-09-15T16:29:53.647271+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 134,
+        "rawCount": 136,
         "matchedCount": 2
       },
       {
@@ -248,12 +248,12 @@
           "ai head of product"
         ],
         "rawCount": 7,
-        "matchedCount": 0
+        "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 63,
-      "new": 1,
+      "matched": 64,
+      "new": 5,
       "updated": 0,
       "failures": 1
     }
@@ -266,6 +266,56 @@
       "location": "Mc Lean, VA",
       "url": "https://jooble.org/away/-5572863417418330277?p=1&pos=47&rgn=55180&cid=16672&ckey=product+remote&jobAge=97&brelb=100&scr=511.02493&bscr=511.02493&aq=-7078988327885391559&elckey=-7976667056763952690",
       "portal": "Jooble CZ",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15"
+    },
+    {
+      "id": "f472e6cec2fce00c",
+      "title": "Product Manager/ka | Vlastní produkt | ⭐ Oceňovaná recruitment platforma | Discovery, data & strategie | 4 dny HO týdně",
+      "company": "Alma Career Czechia",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4465506285",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15"
+    },
+    {
+      "id": "bf6a9a65aa2414ce",
+      "title": "Product Manager - Shoptet Pokladna",
+      "company": "Shoptet",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4466509929",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15"
+    },
+    {
+      "id": "bd2eb4c5c3400904",
+      "title": "Group Product Managers (Future Opportunities) - Prague",
+      "company": "L'Oréal",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4466197381",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15"
+    },
+    {
+      "id": "cf8dd86c435ed121",
+      "title": "Brand Manager / Produktový manažer – hudební nástroje & audio",
+      "company": "Praha Music Center spol. s.r.o., AudioMaster CZ a.s.",
+      "location": "Ocelářská 937/39, Praha – Vysočany",
+      "url": "https://www.jobs.cz/rpd/2001420652",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-15"
+    },
+    {
+      "id": "0ddc48df86cb8b55",
+      "title": "(Senior) Product Manager for Prada, Yves Saint Laurent and Miu Miu",
+      "company": "L'Oréal",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4466538156",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-15",
       "lastSeen": "2026-09-15"
     },
@@ -380,6 +430,16 @@
       "lastSeen": "2026-09-15"
     },
     {
+      "id": "900577f9976ac350",
+      "title": "Product Manager - 4 Day Week + Remote",
+      "company": "Shape Construction",
+      "location": "Portugal",
+      "url": "https://www.linkedin.com/jobs/view/4454940338",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-15"
+    },
+    {
       "id": "a95df298194f8187",
       "title": "Product Manager (možnost full remote)",
       "company": "Tipli",
@@ -428,16 +488,6 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-10",
       "lastSeen": "2026-09-11"
-    },
-    {
-      "id": "900577f9976ac350",
-      "title": "Product Manager - 4 Day Week + Remote",
-      "company": "Shape Construction",
-      "location": "Portugal",
-      "url": "https://www.linkedin.com/jobs/view/4454940338",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-09-10",
-      "lastSeen": "2026-09-10"
     },
     {
       "id": "98b0489def49de5c",
