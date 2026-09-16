@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-16T07:27:04.935960+00:00",
-  "generatedAt": "2026-09-16T07:27:04.935960+00:00",
+  "lastRun": "2026-09-16T16:18:53.955027+00:00",
+  "generatedAt": "2026-09-16T16:18:53.955027+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-16T07:27:04.935960+00:00",
-    "finishedAt": "2026-09-16T07:37:50.664637+00:00",
+    "startedAt": "2026-09-16T16:18:53.955027+00:00",
+    "finishedAt": "2026-09-16T16:29:46.961949+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 56,
-        "matchedCount": 44
+        "rawCount": 57,
+        "matchedCount": 45
       },
       {
         "name": "Indeed CZ",
@@ -133,7 +133,7 @@
           "product remote"
         ],
         "rawCount": 50,
-        "matchedCount": 1
+        "matchedCount": 0
       },
       {
         "name": "Tribee",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 129,
+        "rawCount": 135,
         "matchedCount": 2
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 30,
-        "matchedCount": 5
+        "rawCount": 23,
+        "matchedCount": 8
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,13 +247,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 10,
-        "matchedCount": 2
+        "rawCount": 12,
+        "matchedCount": 5
       }
     ],
     "totals": {
-      "matched": 66,
-      "new": 3,
+      "matched": 72,
+      "new": 7,
       "updated": 0,
       "failures": 1
     }
@@ -266,6 +266,36 @@
       "location": "Praha-Štěrboholy, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4466346100",
       "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16"
+    },
+    {
+      "id": "3ec9f6f8172a0db5",
+      "title": "Technický Product Owner - cloudová integrační platforma",
+      "company": "Asseco Solutions CZ",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4468211074",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16"
+    },
+    {
+      "id": "6851ca286f998506",
+      "title": "Staff Product Manager, OpenTelemetry | Spain | Remote",
+      "company": "Grafana Labs",
+      "location": "Madrid, Community of Madrid, Spain",
+      "url": "https://www.linkedin.com/jobs/view/4459039082",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16"
+    },
+    {
+      "id": "0b2ca7d59b03ab82",
+      "title": "Staff Product Manager, OpenTelemetry | Germany | Remote",
+      "company": "Grafana Labs",
+      "location": "Germany",
+      "url": "https://www.linkedin.com/jobs/view/4459024263",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-09-16",
       "lastSeen": "2026-09-16"
     },
@@ -286,6 +316,46 @@
       "location": "Frederick, MD",
       "url": "https://jooble.org/away/-2086080898757928320?p=1&pos=48&rgn=55180&cid=16672&ckey=product+remote&jobAge=49&brelb=100&scr=382.57492&bscr=382.57492&aq=-5322925983616143339&elckey=2036191988456404037",
       "portal": "Jooble CZ",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16"
+    },
+    {
+      "id": "151c3848a0dd41c7",
+      "title": "Produktový manažer– hudební nástroje & audio",
+      "company": "Music City",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4465986034",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16"
+    },
+    {
+      "id": "9954d8b1587b4b38",
+      "title": "Produktový manažer – hudební nástroje & audio",
+      "company": "Praha Music Center spol. s.r.o., AudioMaster CZ a.s.",
+      "location": "Ocelářská 937/39, Praha – Vysočany",
+      "url": "https://www.jobs.cz/rpd/2001420652",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16"
+    },
+    {
+      "id": "7cd171d441125149",
+      "title": "Product Owner – digitální půjčky pro podnikatele",
+      "company": "Home Credit a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001428872",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16"
+    },
+    {
+      "id": "9baa16d8de04be65",
+      "title": "Product Owner Medior/Senior for Dynamics CRM (m/f/diverse)",
+      "company": "COMMERZBANK Aktiengesellschaft, pobočka Praha",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001419328",
+      "portal": "Jobs.cz",
       "firstSeen": "2026-09-16",
       "lastSeen": "2026-09-16"
     },
@@ -910,6 +980,16 @@
       "lastSeen": "2026-09-02"
     },
     {
+      "id": "0c8528aef60786ff",
+      "title": "Product Manager",
+      "company": "SITA",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449862359",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-16"
+    },
+    {
       "id": "676bfda2aeb33b55",
       "title": "PRODUKTOVÝ MANAŽER - iVYSÍLÁNÍ",
       "company": "ČESKÁ TELEVIZE",
@@ -918,16 +998,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-09-16"
-    },
-    {
-      "id": "0c8528aef60786ff",
-      "title": "Product Manager",
-      "company": "SITA",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449862359",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-01",
-      "lastSeen": "2026-09-15"
     },
     {
       "id": "be88fd5b5efbc8e5",
@@ -1100,6 +1170,26 @@
       "lastSeen": "2026-08-27"
     },
     {
+      "id": "3c0f54d29e6f5c25",
+      "title": "Staff Product Manager, OpenTelemetry | Sweden | Remote",
+      "company": "Grafana Labs",
+      "location": "Stockholm, Stockholm County, Sweden",
+      "url": "https://www.linkedin.com/jobs/view/4459021748",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-09-16"
+    },
+    {
+      "id": "642692869cb64d00",
+      "title": "Staff Product Manager, OpenTelemetry | Ireland | Remote",
+      "company": "Grafana Labs",
+      "location": "Dublin, County Dublin, Ireland",
+      "url": "https://www.linkedin.com/jobs/view/4459020754",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-09-16"
+    },
+    {
       "id": "f3fb15b1f1b4886e",
       "title": "Senior product lead pro B2B SaaS",
       "company": "Single Case",
@@ -1140,32 +1230,22 @@
       "lastSeen": "2026-08-27"
     },
     {
-      "id": "3c0f54d29e6f5c25",
-      "title": "Staff Product Manager, OpenTelemetry | Sweden | Remote",
-      "company": "Grafana Labs",
-      "location": "Stockholm, Stockholm County, Sweden",
-      "url": "https://www.linkedin.com/jobs/view/4459021748",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-26",
-      "lastSeen": "2026-08-26"
-    },
-    {
-      "id": "642692869cb64d00",
-      "title": "Staff Product Manager, OpenTelemetry | Ireland | Remote",
-      "company": "Grafana Labs",
-      "location": "Dublin, County Dublin, Ireland",
-      "url": "https://www.linkedin.com/jobs/view/4459020754",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-26",
-      "lastSeen": "2026-08-26"
-    },
-    {
       "id": "680c8829c4a86318",
       "title": "Technical Product Manager (f/m)",
       "company": "T-Mobile Czech Republic a.s.",
       "location": "",
       "url": "https://www.jobs.cz/rpd/2001391852",
       "portal": "Jobs.cz",
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-09-16"
+    },
+    {
+      "id": "55831c5325d0794b",
+      "title": "Senior Product Owner / Business Analyst – Salesforce Loyalty | Czech Republic",
+      "company": "Deloitte",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4456902513",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-25",
       "lastSeen": "2026-09-16"
     },
@@ -1206,16 +1286,6 @@
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4458784126",
       "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-25",
-      "lastSeen": "2026-08-26"
-    },
-    {
-      "id": "55831c5325d0794b",
-      "title": "Senior Product Owner / Business Analyst – Salesforce Loyalty | Czech Republic",
-      "company": "Deloitte",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4456902513",
-      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-25",
       "lastSeen": "2026-08-26"
     },
@@ -1775,9 +1845,9 @@
       "company": "Vendavo",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4430649608",
-      "portal": "LinkedIn Jobs — Remote EU",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-09",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "57d88e952ba2dc0f",
@@ -1900,6 +1970,16 @@
       "lastSeen": "2026-09-16"
     },
     {
+      "id": "cdc45bf060a85fda",
+      "title": "Product Owner for project OnePlatform",
+      "company": "Aeven",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4448985246",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-09-16"
+    },
+    {
       "id": "fd0d27c3035ea0c6",
       "title": "Product Owner - Treasury Applications",
       "company": "Atlas Copco Services s.r.o.",
@@ -1938,16 +2018,6 @@
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-06",
       "lastSeen": "2026-08-28"
-    },
-    {
-      "id": "cdc45bf060a85fda",
-      "title": "Product Owner for project OnePlatform",
-      "company": "Aeven",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4448985246",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-06",
-      "lastSeen": "2026-08-27"
     },
     {
       "id": "9ff95a197409673e",
@@ -2067,7 +2137,7 @@
       "url": "https://www.jobs.cz/rpd/2001329038",
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "5941af25334d8e51",
@@ -2560,6 +2630,16 @@
       "lastSeen": "2026-09-16"
     },
     {
+      "id": "75c927cc3bec3643",
+      "title": "Product Manager reklamního systému",
+      "company": "Seznam.cz, a.s.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001332735",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-09-16"
+    },
+    {
       "id": "28214431b55f5690",
       "title": "Product Manager HPE Server & Storage & Networking",
       "company": "TD SYNNEX Czech Republic",
@@ -2605,16 +2685,6 @@
       "company": "MAKRO Cash & Carry ČR s.r.o.",
       "location": "",
       "url": "https://www.jobs.cz/rpd/2001260685",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-07-21",
-      "lastSeen": "2026-08-19"
-    },
-    {
-      "id": "75c927cc3bec3643",
-      "title": "Product Manager reklamního systému",
-      "company": "Seznam.cz, a.s.",
-      "location": "Praha",
-      "url": "https://www.jobs.cz/rpd/2001332735",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-08-19"
