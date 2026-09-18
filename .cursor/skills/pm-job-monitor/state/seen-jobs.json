@@ -681,6 +681,46 @@
       "lastSeen": "2026-09-18"
     },
     {
+      "id": "9dcaad3f580c9b51",
+      "title": "Product Manager – Rare Diseases – Czech & Slovakia",
+      "company": "AstraZeneca",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449304365",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-09-18"
+    },
+    {
+      "id": "4b1b8bb6c22bd468",
+      "title": "Key Account & Product Manager | Spotřební elektronika (CZ/SK)",
+      "company": "Aktro s.r.o.",
+      "location": "Nad Rokoskou 2361/2a, Praha – Libeň",
+      "url": "https://www.jobs.cz/rpd/2001432910",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18"
+    },
+    {
+      "id": "ffb3b89371c24f7e",
+      "title": "Product Manager (OT Security)",
+      "company": "DHL",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4469173844",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18"
+    },
+    {
+      "id": "7c79f8b666d21de0",
+      "title": "Product Manager – FinTech/Payments  (fully remote Germany)",
+      "company": "NeueWege Consulting",
+      "location": "Frankfurt Rhine-Main Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4466674704",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18"
+    },
+    {
       "id": "dfead822aa5bca85",
       "title": "Insurance Product Manager (m/f) - Raiffeisen-Leasing",
       "company": "Raiffeisenbank a.s.",
@@ -1758,16 +1798,6 @@
       "url": "https://www.linkedin.com/jobs/view/4441235513",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-07",
-      "lastSeen": "2026-08-28"
-    },
-    {
-      "id": "9dcaad3f580c9b51",
-      "title": "Product Manager – Rare Diseases – Czech & Slovakia",
-      "company": "AstraZeneca",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449304365",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-06",
       "lastSeen": "2026-08-28"
     },
     {
@@ -3411,10 +3441,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-09-18T07:20:29.959831+00:00",
+  "lastRun": "2026-09-18T16:27:14.171081+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-18T07:20:29.959831+00:00",
-    "finishedAt": "2026-09-18T07:31:39.467667+00:00",
+    "startedAt": "2026-09-18T16:27:14.171081+00:00",
+    "finishedAt": "2026-09-18T16:38:38.359991+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -3462,8 +3492,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 18,
-        "matchedCount": 11
+        "rawCount": 17,
+        "matchedCount": 10
       },
       {
         "name": "Jobs.cz",
@@ -3578,7 +3608,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 133,
+        "rawCount": 132,
         "matchedCount": 2
       },
       {
@@ -3624,7 +3654,7 @@
           "ai head of product"
         ],
         "rawCount": 28,
-        "matchedCount": 6
+        "matchedCount": 4
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -3658,13 +3688,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 7,
-        "matchedCount": 3
+        "rawCount": 8,
+        "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 69,
-      "new": 9,
+      "matched": 64,
+      "new": 3,
       "updated": 0,
       "failures": 1
     }
