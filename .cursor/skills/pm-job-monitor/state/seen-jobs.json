@@ -192,7 +192,7 @@
     },
     {
       "id": "017e622f6d880ce6",
-      "title": "Investment Product Manager (m/ž) - Praha",
+      "title": "Investment Product Manager (m/ž) - Praha",
       "company": "Raiffeisenbank",
       "location": "Praha",
       "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/investment-product-manager-m-z-praha/48b8578a-56ee-4aa4-801b-e64f7ba11b14",
@@ -242,7 +242,7 @@
     },
     {
       "id": "e5cafa1621bb6ac6",
-      "title": "Produktový manažer pro oblast neživotního pojištění",
+      "title": "Produktový manažer pro oblast neživotního pojištění",
       "company": "ČSOB Pojišťovna",
       "location": "Pardubice, Praha",
       "url": "https://www.tribee.cz/cs/spolecnost/csob-pojistovna/prace/produktovy-manazer-pro-oblast-nezivotniho-pojisteni/14b9567e-d803-478a-b633-240e8bc9a1a0",
@@ -557,6 +557,56 @@
       "location": "Hamburg, Hamburg, Germany",
       "url": "https://www.linkedin.com/jobs/view/4468482956",
       "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "f472e6cec2fce00c",
+      "title": "Product Manager/ka | Vlastní produkt | ⭐ Oceňovaná recruitment platforma | Discovery, data & strategie | 4 dny HO týdně",
+      "company": "Alma Career Czechia",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4465506285",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "9b7284c55ccddad2",
+      "title": "Senior Product Owner",
+      "company": "AURES Holdings",
+      "location": "Prague 8, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4458164898",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-24",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "75918772ee4dab28",
+      "title": "IT technik/čka a product manager | 47-50 000 Kč | Home office",
+      "company": "HOFMANN WIZARD s.r.o.",
+      "location": "Remote",
+      "url": "https://www.jobs.cz/rpd/2001401054",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "1ee37b306256178b",
+      "title": "Produktový manažer/ka pro služby osobní ochrany - (m/ž/n)",
+      "company": "JABLOTRON SECURITY a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001405523",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "54083dd220b70d7e",
+      "title": "Product Manager - Home assortment",
+      "company": "Vilgain",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4468647563",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-21",
       "lastSeen": "2026-09-21"
     },
@@ -1061,16 +1111,6 @@
       "lastSeen": "2026-09-15"
     },
     {
-      "id": "f472e6cec2fce00c",
-      "title": "Product Manager/ka | Vlastní produkt | ⭐ Oceňovaná recruitment platforma | Discovery, data & strategie | 4 dny HO týdně",
-      "company": "Alma Career Czechia",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4465506285",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-15",
-      "lastSeen": "2026-09-15"
-    },
-    {
       "id": "cd1e1e79d658ddc2",
       "title": "DevOps Manager (Technical Product Manager) in Open Banking Services",
       "company": "COMMERZBANK Aktiengesellschaft, pobočka Praha",
@@ -1528,16 +1568,6 @@
       "url": "https://www.linkedin.com/jobs/view/4460739997",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-04",
-      "lastSeen": "2026-09-04"
-    },
-    {
-      "id": "9b7284c55ccddad2",
-      "title": "Senior Product Owner",
-      "company": "AURES Holdings",
-      "location": "Prague 8, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4458164898",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-08-24",
       "lastSeen": "2026-09-04"
     },
     {
@@ -3451,10 +3481,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-09-21T07:07:55.922779+00:00",
+  "lastRun": "2026-09-21T16:22:03.657046+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-21T07:07:55.922779+00:00",
-    "finishedAt": "2026-09-21T07:18:03.327367+00:00",
+    "startedAt": "2026-09-21T16:22:03.657046+00:00",
+    "finishedAt": "2026-09-21T16:33:13.398045+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -3537,8 +3567,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 53,
-        "matchedCount": 42
+        "rawCount": 52,
+        "matchedCount": 41
       },
       {
         "name": "Indeed CZ",
@@ -3618,7 +3648,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 135,
+        "rawCount": 139,
         "matchedCount": 2
       },
       {
@@ -3663,8 +3693,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 28,
-        "matchedCount": 1
+        "rawCount": 30,
+        "matchedCount": 3
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -3698,14 +3728,14 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 4,
+        "rawCount": 7,
         "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 56,
-      "new": 1,
-      "updated": 0,
+      "matched": 57,
+      "new": 3,
+      "updated": 2,
       "failures": 1
     }
   }
