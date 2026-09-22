@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-22T07:08:00.619545+00:00",
-  "generatedAt": "2026-09-22T07:08:00.619545+00:00",
+  "lastRun": "2026-09-22T16:27:02.677996+00:00",
+  "generatedAt": "2026-09-22T16:27:02.677996+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-22T07:08:00.619545+00:00",
-    "finishedAt": "2026-09-22T07:18:49.655321+00:00",
+    "startedAt": "2026-09-22T16:27:02.677996+00:00",
+    "finishedAt": "2026-09-22T16:38:14.368559+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -167,7 +167,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 139,
+        "rawCount": 140,
         "matchedCount": 2
       },
       {
@@ -212,8 +212,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 34,
-        "matchedCount": 3
+        "rawCount": 28,
+        "matchedCount": 4
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,18 +247,38 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 11,
+        "rawCount": 14,
         "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 57,
-      "new": 0,
+      "matched": 58,
+      "new": 2,
       "updated": 0,
       "failures": 1
     }
   },
   "jobs": [
+    {
+      "id": "b5e4e0e204ca6d46",
+      "title": "Produktový manažer",
+      "company": "",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4468912155",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22"
+    },
+    {
+      "id": "5025b2b712d09ee6",
+      "title": "Product Owner",
+      "company": "Direct Group",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4470401518",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22"
+    },
     {
       "id": "1ee37b306256178b",
       "title": "Produktový manažer/ka pro služby osobní ochrany - (m/ž/n)",
@@ -1160,6 +1180,16 @@
       "lastSeen": "2026-09-02"
     },
     {
+      "id": "0c8528aef60786ff",
+      "title": "Product Manager",
+      "company": "SITA",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449862359",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-22"
+    },
+    {
       "id": "676bfda2aeb33b55",
       "title": "PRODUKTOVÝ MANAŽER - iVYSÍLÁNÍ",
       "company": "ČESKÁ TELEVIZE",
@@ -1168,16 +1198,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-09-22"
-    },
-    {
-      "id": "0c8528aef60786ff",
-      "title": "Product Manager",
-      "company": "SITA",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449862359",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-01",
-      "lastSeen": "2026-09-17"
     },
     {
       "id": "be88fd5b5efbc8e5",
@@ -1350,6 +1370,16 @@
       "lastSeen": "2026-08-27"
     },
     {
+      "id": "997ab3f43da28f6f",
+      "title": "Group Senior Product Owner - (PAM)",
+      "company": "FEG",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4457947778",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-09-22"
+    },
+    {
       "id": "f3fb15b1f1b4886e",
       "title": "Senior product lead pro B2B SaaS",
       "company": "Single Case",
@@ -1378,16 +1408,6 @@
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-26",
       "lastSeen": "2026-09-17"
-    },
-    {
-      "id": "997ab3f43da28f6f",
-      "title": "Group Senior Product Owner - (PAM)",
-      "company": "FEG",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4457947778",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-01"
     },
     {
       "id": "c352efef20cc3240",

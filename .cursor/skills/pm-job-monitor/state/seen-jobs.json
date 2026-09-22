@@ -561,6 +561,46 @@
       "lastSeen": "2026-09-22"
     },
     {
+      "id": "0c8528aef60786ff",
+      "title": "Product Manager",
+      "company": "SITA",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449862359",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-22"
+    },
+    {
+      "id": "997ab3f43da28f6f",
+      "title": "Group Senior Product Owner - (PAM)",
+      "company": "FEG",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4457947778",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-09-22"
+    },
+    {
+      "id": "b5e4e0e204ca6d46",
+      "title": "Produktový manažer",
+      "company": "",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4468912155",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22"
+    },
+    {
+      "id": "5025b2b712d09ee6",
+      "title": "Product Owner",
+      "company": "Direct Group",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4470401518",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22"
+    },
+    {
       "id": "1b2ebed3b2a60750",
       "title": "Product Manager/Instruktor/Trainer",
       "company": "Astana Motors Czech, s.r.o.",
@@ -838,16 +878,6 @@
       "url": "https://www.startupjobs.cz/nabidka/107041/sr-product-manager-pharmacy-care",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-08-18",
-      "lastSeen": "2026-09-17"
-    },
-    {
-      "id": "0c8528aef60786ff",
-      "title": "Product Manager",
-      "company": "SITA",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449862359",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-01",
       "lastSeen": "2026-09-17"
     },
     {
@@ -1768,16 +1798,6 @@
       "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank-it/prace/product-manager-crypto-m-f/d7e3527f-4978-4b49-9f02-5323f67211c6",
       "portal": "Tribee",
       "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-01"
-    },
-    {
-      "id": "997ab3f43da28f6f",
-      "title": "Group Senior Product Owner - (PAM)",
-      "company": "FEG",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4457947778",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-26",
       "lastSeen": "2026-09-01"
     },
     {
@@ -3481,10 +3501,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-09-22T07:08:00.619545+00:00",
+  "lastRun": "2026-09-22T16:27:02.677996+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-22T07:08:00.619545+00:00",
-    "finishedAt": "2026-09-22T07:18:49.655321+00:00",
+    "startedAt": "2026-09-22T16:27:02.677996+00:00",
+    "finishedAt": "2026-09-22T16:38:14.368559+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -3648,7 +3668,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 139,
+        "rawCount": 140,
         "matchedCount": 2
       },
       {
@@ -3693,8 +3713,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 34,
-        "matchedCount": 3
+        "rawCount": 28,
+        "matchedCount": 4
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -3728,13 +3748,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 11,
+        "rawCount": 14,
         "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 57,
-      "new": 0,
+      "matched": 58,
+      "new": 2,
       "updated": 0,
       "failures": 1
     }
