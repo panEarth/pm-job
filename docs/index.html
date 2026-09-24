@@ -256,9 +256,10 @@
 
     .section-head {
       display: flex;
-      align-items: baseline;
+      flex-wrap: wrap;
+      align-items: center;
       justify-content: space-between;
-      gap: 1rem;
+      gap: 0.75rem 1rem;
       margin-bottom: 1rem;
       padding-bottom: 0.65rem;
       border-bottom: 1px solid var(--line);
@@ -270,6 +271,51 @@
       font-size: 1.55rem;
       font-weight: 700;
       letter-spacing: -0.02em;
+    }
+
+    .section-head-aside {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.65rem 0.85rem;
+      margin-left: auto;
+    }
+
+    .view-toggle {
+      display: inline-flex;
+      padding: 0.2rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.65);
+    }
+
+    .view-toggle button {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      margin: 0;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      font: inherit;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .view-toggle button:hover {
+      color: var(--ink-soft);
+    }
+
+    .view-toggle button[aria-pressed="true"] {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .view-toggle button:focus-visible {
+      outline: 2px solid rgba(15, 118, 110, 0.45);
+      outline-offset: 2px;
     }
 
     .count {
@@ -682,6 +728,19 @@
       `).join("");
     }
 
+    function renderHistoryByRole(jobs, { emptyText = "" } = {}) {
+      if (!jobs.length) return `<div class="empty">${emptyText}</div>`;
+      return renderCategoryGroups(jobs);
+    }
+
+    function renderHistory(jobs, { mode = "date", emptyText = "" } = {}) {
+      return mode === "role"
+        ? renderHistoryByRole(jobs, { emptyText })
+        : renderHistoryByDay(jobs, { emptyText });
+    }
+
+    let historyMode = "date";
+
     function renderRunReport(report) {
       const body = $("#run-dialog-body");
       if (!report || !Array.isArray(report.portals) || !report.portals.length) {
@@ -780,13 +839,29 @@
         <section aria-labelledby="prev-heading">
           <div class="section-head">
             <h2 id="prev-heading">Dříve nalezené</h2>
-            <span class="count">${previous.length}</span>
+            <div class="section-head-aside">
+              <div class="view-toggle" role="group" aria-label="Řazení historie">
+                <button type="button" data-history-mode="date" aria-pressed="${historyMode === "date" ? "true" : "false"}">Podle data</button>
+                <button type="button" data-history-mode="role" aria-pressed="${historyMode === "role" ? "true" : "false"}">Podle pozice</button>
+              </div>
+              <span class="count">${previous.length}</span>
+            </div>
           </div>
-          ${renderHistoryByDay(previous, {
+          ${renderHistory(previous, {
+            mode: historyMode,
             emptyText: q ? "Žádné starší nabídky neodpovídají filtru." : "Zatím žádná historie.",
           })}
         </section>
       `;
+
+      $("#app").querySelectorAll("[data-history-mode]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const next = btn.getAttribute("data-history-mode");
+          if (!next || next === historyMode) return;
+          historyMode = next;
+          render(data, query);
+        });
+      });
     }
 
     async function boot() {
