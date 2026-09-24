@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-24T07:10:25.477048+00:00",
-  "generatedAt": "2026-09-24T07:10:25.477048+00:00",
+  "lastRun": "2026-09-24T16:17:38.910577+00:00",
+  "generatedAt": "2026-09-24T16:17:38.910577+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-24T07:10:25.477048+00:00",
-    "finishedAt": "2026-09-24T07:21:38.299563+00:00",
+    "startedAt": "2026-09-24T16:17:38.910577+00:00",
+    "finishedAt": "2026-09-24T16:28:57.920856+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -52,7 +52,7 @@
           "vp-product"
         ],
         "rawCount": 17,
-        "matchedCount": 9
+        "matchedCount": 10
       },
       {
         "name": "Jobs.cz",
@@ -86,43 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 54,
-        "matchedCount": 44
-      },
-      {
-        "name": "Indeed CZ",
-        "status": "error",
-        "error": "HTTP Error 403: Forbidden",
-        "queries": [
-          "product manager",
-          "product owner",
-          "head of product",
-          "head of product management",
-          "vp product",
-          "vice president of product",
-          "produktový manažer",
-          "produktový manažerka",
-          "produktovy manazer",
-          "vedoucí produktu",
-          "ředitel produktu",
-          "director of product",
-          "senior product manager",
-          "senior product owner",
-          "group product manager",
-          "principal product manager",
-          "staff product manager",
-          "product lead",
-          "product director",
-          "chief product officer",
-          "technical product manager",
-          "growth product manager",
-          "platform product manager",
-          "ai product manager",
-          "ai product owner",
-          "ai head of product"
-        ],
-        "rawCount": 0,
-        "matchedCount": 0
+        "rawCount": 55,
+        "matchedCount": 45
       },
       {
         "name": "Jooble CZ",
@@ -167,7 +132,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 143,
+        "rawCount": 142,
         "matchedCount": 2
       },
       {
@@ -213,7 +178,7 @@
           "ai head of product"
         ],
         "rawCount": 23,
-        "matchedCount": 6
+        "matchedCount": 5
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -247,18 +212,68 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 9,
-        "matchedCount": 3
+        "rawCount": 8,
+        "matchedCount": 2
       }
     ],
     "totals": {
       "matched": 64,
-      "new": 1,
+      "new": 6,
       "updated": 0,
-      "failures": 1
+      "failures": 0
     }
   },
   "jobs": [
+    {
+      "id": "ed1bc4d4bfbd5fd8",
+      "title": "Product Owner pro Kate Coin (m/ž)",
+      "company": "ČSOB Československá obchodní banka, a. s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001433422",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24"
+    },
+    {
+      "id": "31c8c4fe86129ccb",
+      "title": "Product Owner pro Kate Coin (m/ž)",
+      "company": "CSOB",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4471495113",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24"
+    },
+    {
+      "id": "c070d263afd5aa96",
+      "title": "Product Owner - Pricing & Contracting Insights",
+      "company": "Medtronic",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4471482648",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24"
+    },
+    {
+      "id": "f97652cb7b9615ab",
+      "title": "Product Lead - Real estate / Finance / Wealth management",
+      "company": "Liberty Choice",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/108075/product-lead-real-estate-finance-wealth-management",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24"
+    },
+    {
+      "id": "e42e6ad1b0c30656",
+      "title": "Lead Product Manager IA (H/F) - Remote",
+      "company": "Staff & Go",
+      "location": "France",
+      "url": "https://www.linkedin.com/jobs/view/4471420607",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24"
+    },
     {
       "id": "0533566886711754",
       "title": "Group Product Manager, Sales Experience (Remote within Europe)",
@@ -266,6 +281,16 @@
       "location": "Barcelona, Catalonia, Spain",
       "url": "https://www.linkedin.com/jobs/view/4470981543",
       "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24"
+    },
+    {
+      "id": "edb84b7224aad7be",
+      "title": "Analytics Product Owner",
+      "company": "BRP",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4469759101",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-24",
       "lastSeen": "2026-09-24"
     },
@@ -795,7 +820,7 @@
       "company": "Air Bank a.s.",
       "location": "Czechia, Prague, Praha",
       "url": "https://www.jobs.cz/rpd/2001419569",
-      "portal": "LinkedIn Jobs — Česko",
+      "portal": "Jobs.cz",
       "firstSeen": "2026-09-10",
       "lastSeen": "2026-09-24"
     },
@@ -1600,21 +1625,21 @@
       "lastSeen": "2026-08-25"
     },
     {
-      "id": "095c841f513f5985",
-      "title": "Product Owner – Online sjednání pojištění",
-      "company": "Pojišťovna VZP, a.s.",
-      "location": "Lazarská 1718/3, Praha – Nové Město",
-      "url": "https://www.jobs.cz/rpd/2001387211",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-08-21",
-      "lastSeen": "2026-09-18"
-    },
-    {
       "id": "6814f04badf612cb",
       "title": "PRODUKTOVÝ MANAŽER pro odbornou komunikaci v lékárnách",
       "company": "BENU Česká republika s.r.o.",
       "location": "K pérovně 945/7, Praha – Hostivař",
       "url": "https://www.jobs.cz/rpd/2001387434",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-09-24"
+    },
+    {
+      "id": "095c841f513f5985",
+      "title": "Product Owner – Online sjednání pojištění",
+      "company": "Pojišťovna VZP, a.s.",
+      "location": "Lazarská 1718/3, Praha – Nové Město",
+      "url": "https://www.jobs.cz/rpd/2001387211",
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-21",
       "lastSeen": "2026-09-18"
@@ -1880,6 +1905,16 @@
       "lastSeen": "2026-09-24"
     },
     {
+      "id": "39a3d0d2c6909c0a",
+      "title": "Product Growth & Monetization Lead",
+      "company": "Gen",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4422760071",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-14",
+      "lastSeen": "2026-09-24"
+    },
+    {
       "id": "c2a7ce16564761cd",
       "title": "Product Owner – HMG Segment",
       "company": "ComAp Group",
@@ -1908,16 +1943,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-14",
       "lastSeen": "2026-09-09"
-    },
-    {
-      "id": "39a3d0d2c6909c0a",
-      "title": "Product Growth & Monetization Lead",
-      "company": "Gen",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4422760071",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-08-14",
-      "lastSeen": "2026-09-04"
     },
     {
       "id": "2b982376320296e1",
