@@ -15,19 +15,12 @@
       "notes": "Obecný český job portál — klíčová slova z filters.json searchKeywords"
     },
     {
-      "name": "Indeed CZ",
-      "type": "search_url",
-      "searchUrl": "https://cz.indeed.com/jobs?q=product+manager&l=%C4%8Cesko",
+      "name": "Jooble CZ",
+      "type": "jooble_api",
+      "searchUrl": "https://cz.jooble.org/SearchResult?ukw=product+manager",
       "enabled": true,
-      "notes": "Indeed pro Česko — agent filtruje lokaci dle pravidel"
+      "notes": "Jooble REST API — keywords=product remote, location=Europe; klíč v secrets.local.json / env JOOBLE_API_KEY"
     },
-{
-  "name": "Jooble CZ",
-  "type": "jooble_api",
-  "searchUrl": "https://cz.jooble.org/SearchResult?ukw=product+manager",
-  "enabled": true,
-  "notes": "Jooble REST API — keywords=product remote, location=Europe; klíč v secrets.local.json / env JOOBLE_API_KEY"
-},
     {
       "name": "Tribee",
       "type": "url",

@@ -364,8 +364,6 @@ def portal_search_queries(portal: dict, filters: dict) -> list[str]:
         keywords = (filters.get("joobleKeywords") or "product remote").strip()
         location = (filters.get("joobleLocation") or "Europe").strip()
         return [f"API: jooble.org · {location}", keywords]
-    if name == "Indeed CZ":
-        return keywords
     if name.startswith("LinkedIn Jobs") or "linkedin.com/jobs" in (portal.get("searchUrl") or ""):
         return keywords
     url = portal.get("searchUrl") or portal.get("url")
@@ -974,20 +972,6 @@ def scan_portal(portal: dict, filters: dict) -> tuple[list[dict], str | None]:
 
     if name == "Jooble CZ":
         return scrape_jooble_api(portal, filters)
-
-    if name == "Indeed CZ":
-        target = portal.get("searchUrl") or portal.get("url", "")
-        for term in get_search_keywords(filters):
-            query_url = url_set_query_param(target, "q", term)
-            content, err = fetch(query_url)
-            time.sleep(REQUEST_DELAY)
-            if err:
-                return [], err
-            if content and ("Just a moment" in content or "challenge-platform" in content):
-                return [], "Cloudflare ochrana — vyžaduje browser"
-            if content and len(content) < 5000:
-                return [], "Prázdná nebo blokovaná odpověď"
-        return [], "SPA bez veřejného API — vyžaduje browser"
 
     if name.startswith("LinkedIn Jobs") or "linkedin.com/jobs" in (portal.get("searchUrl") or ""):
         return scrape_linkedin(portal, filters)
