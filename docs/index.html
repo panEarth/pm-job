@@ -372,12 +372,43 @@
       background: rgba(255,255,255,0.45);
     }
 
+    .day {
+      margin-top: 1.75rem;
+    }
+
+    .day:first-child {
+      margin-top: 0.35rem;
+    }
+
+    .day-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin: 0 0 0.85rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .day-head h3 {
+      margin: 0;
+      font-family: "Fraunces", serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .day-head .count {
+      font-size: 0.85rem;
+    }
+
     .category {
-      margin-top: 1.35rem;
+      margin-top: 1.1rem;
     }
 
     .category:first-child {
-      margin-top: 0.35rem;
+      margin-top: 0.15rem;
     }
 
     .category-head {
@@ -388,7 +419,7 @@
       margin: 0 0 0.7rem;
     }
 
-    .category-head h3 {
+    .category-head h4 {
       margin: 0;
       font-family: "Outfit", sans-serif;
       font-size: 0.95rem;
@@ -577,6 +608,18 @@
       return [...buckets.values()].filter((b) => b.jobs.length > 0);
     }
 
+    function groupByDay(jobs) {
+      const buckets = new Map();
+      for (const job of jobs) {
+        const day = dateOnly(job.firstSeen) || "neznámé";
+        if (!buckets.has(day)) buckets.set(day, []);
+        buckets.get(day).push(job);
+      }
+      return [...buckets.entries()]
+        .sort((a, b) => String(b[0]).localeCompare(String(a[0])))
+        .map(([day, dayJobs]) => ({ day, jobs: dayJobs }));
+    }
+
     function jobMatches(job, q) {
       if (!q) return true;
       const hay = [job.title, companyLabel(job), job.location, job.portal, job.url, categorizeJob(job).label]
@@ -594,7 +637,7 @@
       return `
         <article class="job${isNew ? " new" : ""}">
           <div class="job-top">
-            <h3 class="job-title"><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(job.title || "Bez názvu")}</a></h3>
+            <p class="job-title"><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(job.title || "Bez názvu")}</a></p>
             ${isNew ? '<span class="badge">Nové</span>' : ""}
           </div>
           <div class="job-meta">
@@ -607,18 +650,34 @@
       `;
     }
 
-    function renderGroupedList(jobs, { isNew = false, emptyText = "" } = {}) {
-      if (!jobs.length) return `<div class="empty">${emptyText}</div>`;
-      const groups = groupByCategory(jobs);
-      return groups.map((group) => `
+    function renderCategoryGroups(jobs, { isNew = false } = {}) {
+      return groupByCategory(jobs).map((group) => `
         <div class="category">
           <div class="category-head">
-            <h3>${escapeHtml(group.label)}</h3>
+            <h4>${escapeHtml(group.label)}</h4>
             <span class="count${isNew ? " hot" : ""}">${group.jobs.length}</span>
           </div>
           <div class="list">
             ${group.jobs.map((j) => renderJob(j, { isNew })).join("")}
           </div>
+        </div>
+      `).join("");
+    }
+
+    function renderGroupedList(jobs, { isNew = false, emptyText = "" } = {}) {
+      if (!jobs.length) return `<div class="empty">${emptyText}</div>`;
+      return renderCategoryGroups(jobs, { isNew });
+    }
+
+    function renderHistoryByDay(jobs, { emptyText = "" } = {}) {
+      if (!jobs.length) return `<div class="empty">${emptyText}</div>`;
+      return groupByDay(jobs).map(({ day, jobs: dayJobs }) => `
+        <div class="day">
+          <div class="day-head">
+            <h3>${escapeHtml(formatDateDMY(day))}</h3>
+            <span class="count">${dayJobs.length}</span>
+          </div>
+          ${renderCategoryGroups(dayJobs)}
         </div>
       `).join("");
     }
@@ -723,7 +782,7 @@
             <h2 id="prev-heading">Dříve nalezené</h2>
             <span class="count">${previous.length}</span>
           </div>
-          ${renderGroupedList(previous, {
+          ${renderHistoryByDay(previous, {
             emptyText: q ? "Žádné starší nabídky neodpovídají filtru." : "Zatím žádná historie.",
           })}
         </section>
