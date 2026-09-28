@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-09-28T07:07:57.801587+00:00",
-  "generatedAt": "2026-09-28T07:07:57.801587+00:00",
+  "lastRun": "2026-09-28T16:11:03.581225+00:00",
+  "generatedAt": "2026-09-28T16:11:03.581225+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-28T07:07:57.801587+00:00",
-    "finishedAt": "2026-09-28T07:18:10.398902+00:00",
+    "startedAt": "2026-09-28T16:11:03.581225+00:00",
+    "finishedAt": "2026-09-28T16:22:28.124040+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 53,
-        "matchedCount": 41
+        "rawCount": 55,
+        "matchedCount": 43
       },
       {
         "name": "Jooble CZ",
@@ -132,7 +132,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 145,
+        "rawCount": 131,
         "matchedCount": 2
       },
       {
@@ -177,8 +177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 24,
-        "matchedCount": 1
+        "rawCount": 14,
+        "matchedCount": 2
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -212,12 +212,12 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 7,
+        "rawCount": 9,
         "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 56,
+      "matched": 59,
       "new": 0,
       "updated": 0,
       "failures": 0
@@ -712,7 +712,7 @@
       "url": "https://www.linkedin.com/jobs/view/4465506285",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-09-22"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "bf6a9a65aa2414ce",
@@ -2465,6 +2465,16 @@
       "lastSeen": "2026-08-05"
     },
     {
+      "id": "a202dcc62ea08751",
+      "title": "Technický Product Owner - cloudová integrační platforma",
+      "company": "Asseco Solutions, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001340108",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-09-28"
+    },
+    {
       "id": "8ce0678934b653ab",
       "title": "Produktový manažer pro brandovou reklamu",
       "company": "Seznam.cz, a.s.",
@@ -2473,16 +2483,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-09-28"
-    },
-    {
-      "id": "a202dcc62ea08751",
-      "title": "Technický Product Owner - cloudová integrační platforma",
-      "company": "Asseco Solutions, a.s.",
-      "location": "",
-      "url": "https://www.jobs.cz/rpd/2001340108",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-09-25"
     },
     {
       "id": "5941af25334d8e51",
@@ -3445,21 +3445,21 @@
       "lastSeen": "2026-09-28"
     },
     {
-      "id": "6c2a30f0ea64cc19",
-      "title": "Veď digitální transformaci investičních služeb | Project Manager/Product Owner 📱",
-      "company": "UniCredit Bank Czech Republic and Slovakia, a.s.",
-      "location": "Remote",
-      "url": "https://www.jobs.cz/rpd/2001293180",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-07-15",
-      "lastSeen": "2026-09-25"
-    },
-    {
       "id": "8036acc9f29fad3e",
       "title": "Produktový manažer/ka",
       "company": "Asseco Solutions, a.s.",
       "location": "",
       "url": "https://www.jobs.cz/rpd/2001298892",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-09-28"
+    },
+    {
+      "id": "6c2a30f0ea64cc19",
+      "title": "Veď digitální transformaci investičních služeb | Project Manager/Product Owner 📱",
+      "company": "UniCredit Bank Czech Republic and Slovakia, a.s.",
+      "location": "Remote",
+      "url": "https://www.jobs.cz/rpd/2001293180",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
       "lastSeen": "2026-09-25"
