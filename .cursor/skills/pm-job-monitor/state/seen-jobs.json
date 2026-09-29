@@ -531,6 +531,76 @@
       "lastSeen": "2026-09-29"
     },
     {
+      "id": "0f11ac5a6068c6ed",
+      "title": "Product Manager",
+      "company": "Windsor.ai",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4468659347",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-29"
+    },
+    {
+      "id": "8bb0f8f0846a7eee",
+      "title": "Senior Product Manager",
+      "company": "Transcarent",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4452595995",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-09-29"
+    },
+    {
+      "id": "3c30e354ac571c0f",
+      "title": "Country Product Manager",
+      "company": "Cultural Care Au Pair",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449128121",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-29"
+    },
+    {
+      "id": "b7bf86c1ad3ea2a4",
+      "title": "Senior Product Manager",
+      "company": "La Fosse",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4471918329",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29"
+    },
+    {
+      "id": "fdc5e00efa12ec49",
+      "title": "Product Owner - Platební karty - Fraud & Settlement (m/ž)",
+      "company": "CSOB",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4473208647",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29"
+    },
+    {
+      "id": "55f3b9b7ea3c3ae1",
+      "title": "Group Sportsbook Product Manager",
+      "company": "FEG",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4471711142",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29"
+    },
+    {
+      "id": "6bd807f0ed6a661b",
+      "title": "Product Owner",
+      "company": "KBC Global Services",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4473215157",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29"
+    },
+    {
       "id": "7e6e90607f4a3916",
       "title": "Technical Product Owner - PC Tools",
       "company": "ComAp a.s.",
@@ -1028,16 +1098,6 @@
       "url": "https://www.linkedin.com/jobs/view/4457971387",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-27",
-      "lastSeen": "2026-09-18"
-    },
-    {
-      "id": "0f11ac5a6068c6ed",
-      "title": "Product Manager",
-      "company": "Windsor.ai",
-      "location": "Prague Metropolitan Area",
-      "url": "https://www.linkedin.com/jobs/view/4468659347",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-18",
       "lastSeen": "2026-09-18"
     },
     {
@@ -1641,16 +1701,6 @@
       "lastSeen": "2026-09-09"
     },
     {
-      "id": "8bb0f8f0846a7eee",
-      "title": "Senior Product Manager",
-      "company": "Transcarent",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4452595995",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-08-18",
-      "lastSeen": "2026-09-09"
-    },
-    {
       "id": "b00a803d0e3798ff",
       "title": "Product Manager",
       "company": "Schaeffler",
@@ -1736,16 +1786,6 @@
       "company": "ARCHIMED",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4464330526",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-08"
-    },
-    {
-      "id": "3c30e354ac571c0f",
-      "title": "Country Product Manager",
-      "company": "Cultural Care Au Pair",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449128121",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-07",
       "lastSeen": "2026-09-08"
@@ -3681,10 +3721,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-09-29T07:08:06.505111+00:00",
+  "lastRun": "2026-09-29T16:16:33.656342+00:00",
   "lastRunReport": {
-    "startedAt": "2026-09-29T07:08:06.505111+00:00",
-    "finishedAt": "2026-09-29T07:19:13.175456+00:00",
+    "startedAt": "2026-09-29T16:16:33.656342+00:00",
+    "finishedAt": "2026-09-29T16:28:18.593612+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -3813,7 +3853,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 143,
+        "rawCount": 145,
         "matchedCount": 2
       },
       {
@@ -3858,8 +3898,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 16,
-        "matchedCount": 1
+        "rawCount": 31,
+        "matchedCount": 7
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -3893,13 +3933,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 5,
-        "matchedCount": 0
+        "rawCount": 8,
+        "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 54,
-      "new": 0,
+      "matched": 61,
+      "new": 4,
       "updated": 0,
       "failures": 0
     }
