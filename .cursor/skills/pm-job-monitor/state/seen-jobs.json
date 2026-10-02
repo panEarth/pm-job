@@ -626,7 +626,7 @@
       "company": "Coupa",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4473100819",
-      "portal": "LinkedIn Jobs — Česko",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-10-02",
       "lastSeen": "2026-10-02"
     },
@@ -647,6 +647,46 @@
       "location": "A Coruña, Galicia, Spain",
       "url": "https://www.linkedin.com/jobs/view/4472592732",
       "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02"
+    },
+    {
+      "id": "e7ef264710790a48",
+      "title": "Product Manager",
+      "company": "Celltrion Inc",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4460608083",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-10-02"
+    },
+    {
+      "id": "ca649dc145427563",
+      "title": "IT Product Owner / Application Manager",
+      "company": "JUST CS spol. s r.o.",
+      "location": "U továren 256/14, Praha – Hostivař",
+      "url": "https://www.jobs.cz/rpd/2001460132",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02"
+    },
+    {
+      "id": "356464a7ab85986b",
+      "title": "IT Product Owner / Application Manager",
+      "company": "JUST CS",
+      "location": "Hostivař, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4437671770",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02"
+    },
+    {
+      "id": "eb0b8c8a7bab4347",
+      "title": "Technical Product Manager – Databricks Platform (Prague)",
+      "company": "Puritas Group",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4472884742",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-10-02",
       "lastSeen": "2026-10-02"
     },
@@ -2167,16 +2207,6 @@
       "location": "Remote",
       "url": "https://jooble.org/desc/-8902117535629511539?ckey=product+remote&rgn=55180&pos=32&groupId=34902&elckey=5864705041804594301&p=1&aq=5242906948608284387&cid=16672&jobAge=34&brelb=15&bscr=643.3389&scr=643.3389",
       "portal": "Jooble CZ",
-      "firstSeen": "2026-09-01",
-      "lastSeen": "2026-09-02"
-    },
-    {
-      "id": "e7ef264710790a48",
-      "title": "Product Manager",
-      "company": "Celltrion Inc",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4460608083",
-      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-09-02"
     },
@@ -3891,10 +3921,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-10-02T07:12:15.411537+00:00",
+  "lastRun": "2026-10-02T16:10:07.486497+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-02T07:12:15.411537+00:00",
-    "finishedAt": "2026-10-02T07:23:58.830932+00:00",
+    "startedAt": "2026-10-02T16:10:07.486497+00:00",
+    "finishedAt": "2026-10-02T16:22:11.491174+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -3942,7 +3972,7 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 17,
+        "rawCount": 16,
         "matchedCount": 10
       },
       {
@@ -3978,7 +4008,7 @@
           "ai head of product"
         ],
         "rawCount": 55,
-        "matchedCount": 41
+        "matchedCount": 42
       },
       {
         "name": "Jooble CZ",
@@ -4023,7 +4053,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 148,
+        "rawCount": 146,
         "matchedCount": 3
       },
       {
@@ -4068,8 +4098,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 29,
-        "matchedCount": 10
+        "rawCount": 28,
+        "matchedCount": 7
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -4103,12 +4133,12 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 15,
-        "matchedCount": 5
+        "rawCount": 17,
+        "matchedCount": 3
       }
     ],
     "totals": {
-      "matched": 69,
+      "matched": 65,
       "new": 3,
       "updated": 0,
       "failures": 0
