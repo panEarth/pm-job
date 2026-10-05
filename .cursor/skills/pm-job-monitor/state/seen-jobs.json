@@ -541,6 +541,66 @@
       "lastSeen": "2026-10-05"
     },
     {
+      "id": "f472e6cec2fce00c",
+      "title": "Product Manager/ka | Vlastní produkt | ⭐ Oceňovaná recruitment platforma | Discovery, data & strategie | 4 dny HO týdně",
+      "company": "Alma Career Czechia",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4465506285",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-10-05"
+    },
+    {
+      "id": "05fff12362863cd3",
+      "title": "Technical Product Owner",
+      "company": "Good at IT s.r.o.",
+      "location": "Pohořelec 149/6, Praha – Hradčany",
+      "url": "https://www.jobs.cz/rpd/2001382707",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-10-05"
+    },
+    {
+      "id": "78751128e2a6686e",
+      "title": "Technical Sales & Product Manager – Food (all ages, all genders)",
+      "company": "Nordmann",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4464462576",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-10-05"
+    },
+    {
+      "id": "9502bf05336138a8",
+      "title": "👕Product Manager👚",
+      "company": "OPT OnDemand s.r.o.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001463384",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05"
+    },
+    {
+      "id": "22269299ced1ca2f",
+      "title": "Product Owner – Online sjednání pojištění",
+      "company": "PVZP",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4472692317",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05"
+    },
+    {
+      "id": "469cf94b613553cb",
+      "title": "AI Solution Architect and Product Owner – Cost Value Engineering",
+      "company": "Siemens Energy",
+      "location": "Praha 13, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4474267419",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05"
+    },
+    {
       "id": "1d71f6118949ed8b",
       "title": "Product Manager dětského oddělení | ZARA | Praha",
       "company": "INDITEX Česká republika, s.r.o.",
@@ -899,16 +959,6 @@
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-09-30"
-    },
-    {
-      "id": "f472e6cec2fce00c",
-      "title": "Product Manager/ka | Vlastní produkt | ⭐ Oceňovaná recruitment platforma | Discovery, data & strategie | 4 dny HO týdně",
-      "company": "Alma Career Czechia",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4465506285",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-15",
-      "lastSeen": "2026-09-29"
     },
     {
       "id": "3c30e354ac571c0f",
@@ -1378,16 +1428,6 @@
       "url": "https://www.startupjobs.cz/nabidka/98925/senior-product-lead-pro-b2b-saas",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-18"
-    },
-    {
-      "id": "05fff12362863cd3",
-      "title": "Technical Product Owner",
-      "company": "Good at IT s.r.o.",
-      "location": "Pohořelec 149/6, Praha – Hradčany",
-      "url": "https://www.jobs.cz/rpd/2001382707",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-08-31",
       "lastSeen": "2026-09-18"
     },
     {
@@ -1927,16 +1967,6 @@
       "location": "Praha",
       "url": "https://www.startupjobs.cz/nabidka/107571/product-manager-tipli-cz",
       "portal": "StartupJobs.cz",
-      "firstSeen": "2026-09-08",
-      "lastSeen": "2026-09-09"
-    },
-    {
-      "id": "78751128e2a6686e",
-      "title": "Technical Sales & Product Manager – Food (all ages, all genders)",
-      "company": "Nordmann",
-      "location": "Prague Metropolitan Area",
-      "url": "https://www.linkedin.com/jobs/view/4464462576",
-      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-08",
       "lastSeen": "2026-09-09"
     },
@@ -3931,10 +3961,10 @@
       "lastSeen": "2026-07-15"
     }
   ],
-  "lastRun": "2026-10-05T07:07:53.646633+00:00",
+  "lastRun": "2026-10-05T16:09:51.552293+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-05T07:07:53.646633+00:00",
-    "finishedAt": "2026-10-05T07:18:50.891179+00:00",
+    "startedAt": "2026-10-05T16:09:51.552293+00:00",
+    "finishedAt": "2026-10-05T16:22:27.614078+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -4017,8 +4047,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 53,
-        "matchedCount": 40
+        "rawCount": 52,
+        "matchedCount": 39
       },
       {
         "name": "Jooble CZ",
@@ -4063,7 +4093,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 142,
+        "rawCount": 143,
         "matchedCount": 2
       },
       {
@@ -4108,8 +4138,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 27,
-        "matchedCount": 4
+        "rawCount": 28,
+        "matchedCount": 7
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -4143,13 +4173,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 5,
-        "matchedCount": 1
+        "rawCount": 3,
+        "matchedCount": 0
       }
     ],
     "totals": {
-      "matched": 57,
-      "new": 1,
+      "matched": 58,
+      "new": 3,
       "updated": 0,
       "failures": 0
     }

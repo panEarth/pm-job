@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-05T07:07:53.646633+00:00",
-  "generatedAt": "2026-10-05T07:07:53.646633+00:00",
+  "lastRun": "2026-10-05T16:09:51.552293+00:00",
+  "generatedAt": "2026-10-05T16:09:51.552293+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-05T07:07:53.646633+00:00",
-    "finishedAt": "2026-10-05T07:18:50.891179+00:00",
+    "startedAt": "2026-10-05T16:09:51.552293+00:00",
+    "finishedAt": "2026-10-05T16:22:27.614078+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 53,
-        "matchedCount": 40
+        "rawCount": 52,
+        "matchedCount": 39
       },
       {
         "name": "Jooble CZ",
@@ -132,7 +132,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 142,
+        "rawCount": 143,
         "matchedCount": 2
       },
       {
@@ -177,8 +177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 27,
-        "matchedCount": 4
+        "rawCount": 28,
+        "matchedCount": 7
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -212,24 +212,54 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 5,
-        "matchedCount": 1
+        "rawCount": 3,
+        "matchedCount": 0
       }
     ],
     "totals": {
-      "matched": 57,
-      "new": 1,
+      "matched": 58,
+      "new": 3,
       "updated": 0,
       "failures": 0
     }
   },
   "jobs": [
     {
+      "id": "9502bf05336138a8",
+      "title": "👕Product Manager👚",
+      "company": "OPT OnDemand s.r.o.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001463384",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05"
+    },
+    {
+      "id": "22269299ced1ca2f",
+      "title": "Product Owner – Online sjednání pojištění",
+      "company": "PVZP",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4472692317",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05"
+    },
+    {
       "id": "ea9a64022a786950",
       "title": "Product Manager",
       "company": "Splynx ISP Framework",
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4475505611",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05"
+    },
+    {
+      "id": "469cf94b613553cb",
+      "title": "AI Solution Architect and Product Owner – Cost Value Engineering",
+      "company": "Siemens Energy",
+      "location": "Praha 13, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4474267419",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-10-05",
       "lastSeen": "2026-10-05"
@@ -962,7 +992,7 @@
       "url": "https://www.linkedin.com/jobs/view/4465506285",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-09-29"
+      "lastSeen": "2026-10-05"
     },
     {
       "id": "bf6a9a65aa2414ce",
@@ -1245,6 +1275,16 @@
       "lastSeen": "2026-09-09"
     },
     {
+      "id": "78751128e2a6686e",
+      "title": "Technical Sales & Product Manager – Food (all ages, all genders)",
+      "company": "Nordmann",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4464462576",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-10-05"
+    },
+    {
       "id": "6f00248e1b88a5df",
       "title": "Senior Product Owner (PAM)",
       "company": "Fortuna Group",
@@ -1253,16 +1293,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-08",
       "lastSeen": "2026-10-05"
-    },
-    {
-      "id": "78751128e2a6686e",
-      "title": "Technical Sales & Product Manager – Food (all ages, all genders)",
-      "company": "Nordmann",
-      "location": "Prague Metropolitan Area",
-      "url": "https://www.linkedin.com/jobs/view/4464462576",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-08",
-      "lastSeen": "2026-09-09"
     },
     {
       "id": "88950d7545629fa9",
@@ -1635,6 +1665,16 @@
       "lastSeen": "2026-09-01"
     },
     {
+      "id": "05fff12362863cd3",
+      "title": "Technical Product Owner",
+      "company": "Good at IT s.r.o.",
+      "location": "Pohořelec 149/6, Praha – Hradčany",
+      "url": "https://www.jobs.cz/rpd/2001382707",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-10-05"
+    },
+    {
       "id": "1f88a1a3d618c078",
       "title": "Product Manager / Product Owner v menší technologické firmě 🖥️",
       "company": "EGIT s.r.o.",
@@ -1653,16 +1693,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-31",
       "lastSeen": "2026-09-21"
-    },
-    {
-      "id": "05fff12362863cd3",
-      "title": "Technical Product Owner",
-      "company": "Good at IT s.r.o.",
-      "location": "Pohořelec 149/6, Praha – Hradčany",
-      "url": "https://www.jobs.cz/rpd/2001382707",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-08-31",
-      "lastSeen": "2026-09-18"
     },
     {
       "id": "4aa95b7bcfc1fd5d",
