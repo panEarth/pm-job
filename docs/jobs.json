@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-06T07:18:13.286158+00:00",
-  "generatedAt": "2026-10-06T07:18:13.286158+00:00",
+  "lastRun": "2026-10-06T16:10:25.891663+00:00",
+  "generatedAt": "2026-10-06T16:10:25.891663+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-06T07:18:13.286158+00:00",
-    "finishedAt": "2026-10-06T07:30:40.585698+00:00",
+    "startedAt": "2026-10-06T16:10:25.891663+00:00",
+    "finishedAt": "2026-10-06T16:22:27.834907+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 53,
-        "matchedCount": 40
+        "rawCount": 54,
+        "matchedCount": 42
       },
       {
         "name": "Jooble CZ",
@@ -132,8 +132,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 147,
-        "matchedCount": 2
+        "rawCount": 148,
+        "matchedCount": 3
       },
       {
         "name": "NoFluffJobs CZ",
@@ -177,8 +177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 40,
-        "matchedCount": 2
+        "rawCount": 28,
+        "matchedCount": 3
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -212,18 +212,48 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 6,
-        "matchedCount": 0
+        "rawCount": 12,
+        "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 54,
-      "new": 0,
+      "matched": 59,
+      "new": 3,
       "updated": 0,
       "failures": 0
     }
   },
   "jobs": [
+    {
+      "id": "db8a045b82dcc792",
+      "title": "Produktový manažer ve vzdělávání pro slovenský trh – Slovenka nebo Slovák v Praze",
+      "company": "Seminaria, s.r.o.",
+      "location": "Malátova 633/12, Praha – Smíchov",
+      "url": "https://www.jobs.cz/rpd/2001465277",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-06",
+      "lastSeen": "2026-10-06"
+    },
+    {
+      "id": "593670b2fd4fd262",
+      "title": "Product Manager",
+      "company": "JPServis, a.s.",
+      "location": "Chodovská 228/3, Praha – Michle",
+      "url": "https://www.jobs.cz/rpd/2001466186",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-06",
+      "lastSeen": "2026-10-06"
+    },
+    {
+      "id": "8c4b6deed3cee4c0",
+      "title": "Data Platform Product Manager",
+      "company": "Kolomolo",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4474055359",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-06",
+      "lastSeen": "2026-10-06"
+    },
     {
       "id": "9502bf05336138a8",
       "title": "👕Product Manager👚",
@@ -335,6 +365,16 @@
       "lastSeen": "2026-10-06"
     },
     {
+      "id": "7ffdcad2b996bf57",
+      "title": "Investment Product Manager (m/f) - Praha",
+      "company": "Raiffeisenbank",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/investment-product-manager-m-f-praha/48b8578a-56ee-4aa4-801b-e64f7ba11b14",
+      "portal": "Tribee",
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-06"
+    },
+    {
       "id": "cbf924a028724384",
       "title": "Technical Product Owner | Energy & Technology / BESS / Fieldbus communication",
       "company": "ComAp Group",
@@ -381,16 +421,6 @@
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4453435975",
       "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-02"
-    },
-    {
-      "id": "7ffdcad2b996bf57",
-      "title": "Investment Product Manager (m/f) - Praha",
-      "company": "Raiffeisenbank",
-      "location": "Praha",
-      "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/investment-product-manager-m-f-praha/48b8578a-56ee-4aa4-801b-e64f7ba11b14",
-      "portal": "Tribee",
       "firstSeen": "2026-10-01",
       "lastSeen": "2026-10-02"
     },
@@ -985,6 +1015,16 @@
       "lastSeen": "2026-09-16"
     },
     {
+      "id": "bd2eb4c5c3400904",
+      "title": "Group Product Managers (Future Opportunities) - Prague",
+      "company": "L'Oréal",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4466197381",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-10-06"
+    },
+    {
       "id": "f472e6cec2fce00c",
       "title": "Product Manager/ka | Vlastní produkt | ⭐ Oceňovaná recruitment platforma | Discovery, data & strategie | 4 dny HO týdně",
       "company": "Alma Career Czechia",
@@ -1000,16 +1040,6 @@
       "company": "Shoptet",
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4466509929",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-15",
-      "lastSeen": "2026-09-16"
-    },
-    {
-      "id": "bd2eb4c5c3400904",
-      "title": "Group Product Managers (Future Opportunities) - Prague",
-      "company": "L'Oréal",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4466197381",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-15",
       "lastSeen": "2026-09-16"
@@ -2585,6 +2615,16 @@
       "lastSeen": "2026-08-07"
     },
     {
+      "id": "9ff95a197409673e",
+      "title": "Group Product Manager  (Core)",
+      "company": "Wrike",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4422349630",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-10-06"
+    },
+    {
       "id": "7e6e90607f4a3916",
       "title": "Technical Product Owner - PC Tools",
       "company": "ComAp a.s.",
@@ -2620,16 +2660,6 @@
       "company": "Aeven",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4448985246",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-08-06",
-      "lastSeen": "2026-09-17"
-    },
-    {
-      "id": "9ff95a197409673e",
-      "title": "Group Product Manager  (Core)",
-      "company": "Wrike",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4422349630",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-06",
       "lastSeen": "2026-09-17"
