@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-07T07:07:51.799778+00:00",
-  "generatedAt": "2026-10-07T07:07:51.799778+00:00",
+  "lastRun": "2026-10-07T16:10:01.106974+00:00",
+  "generatedAt": "2026-10-07T16:10:01.106974+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-07T07:07:51.799778+00:00",
-    "finishedAt": "2026-10-07T07:19:48.912123+00:00",
+    "startedAt": "2026-10-07T16:10:01.106974+00:00",
+    "finishedAt": "2026-10-07T16:22:10.603774+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -52,7 +52,7 @@
           "vp-product"
         ],
         "rawCount": 14,
-        "matchedCount": 9
+        "matchedCount": 8
       },
       {
         "name": "Jobs.cz",
@@ -86,7 +86,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 56,
+        "rawCount": 55,
         "matchedCount": 43
       },
       {
@@ -132,7 +132,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 149,
+        "rawCount": 147,
         "matchedCount": 3
       },
       {
@@ -177,8 +177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 35,
-        "matchedCount": 4
+        "rawCount": 39,
+        "matchedCount": 6
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -217,8 +217,8 @@
       }
     ],
     "totals": {
-      "matched": 61,
-      "new": 4,
+      "matched": 62,
+      "new": 2,
       "updated": 0,
       "failures": 0
     }
@@ -241,6 +241,26 @@
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4476346929",
       "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07"
+    },
+    {
+      "id": "a03f0301a091cd8f",
+      "title": "Product Manager (m/ž) – až 100 000 Kč | udržitelnost, nové produkty",
+      "company": "HOFMANN WIZARD s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001468285",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07"
+    },
+    {
+      "id": "a8e5ff8a9a54b98c",
+      "title": "Machine Learning Product Owner",
+      "company": "Seznam.cz, a.s.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001234158",
+      "portal": "Jobs.cz",
       "firstSeen": "2026-10-07",
       "lastSeen": "2026-10-07"
     },
@@ -955,6 +975,16 @@
       "lastSeen": "2026-09-17"
     },
     {
+      "id": "6851ca286f998506",
+      "title": "Staff Product Manager, OpenTelemetry | Spain | Remote",
+      "company": "Grafana Labs",
+      "location": "Madrid, Community of Madrid, Spain",
+      "url": "https://www.linkedin.com/jobs/view/4459039082",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-10-07"
+    },
+    {
       "id": "9954d8b1587b4b38",
       "title": "Produktový manažer – hudební nástroje & audio",
       "company": "Praha Music Center spol. s.r.o., AudioMaster CZ a.s.",
@@ -991,16 +1021,6 @@
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4468211074",
       "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-16",
-      "lastSeen": "2026-09-17"
-    },
-    {
-      "id": "6851ca286f998506",
-      "title": "Staff Product Manager, OpenTelemetry | Spain | Remote",
-      "company": "Grafana Labs",
-      "location": "Madrid, Community of Madrid, Spain",
-      "url": "https://www.linkedin.com/jobs/view/4459039082",
-      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-09-16",
       "lastSeen": "2026-09-17"
     },
@@ -1058,8 +1078,18 @@
       "id": "bd2eb4c5c3400904",
       "title": "Group Product Managers (Future Opportunities) - Prague",
       "company": "L'Oréal",
-      "location": "Czechia, Prague",
+      "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4466197381",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-15",
+      "lastSeen": "2026-10-07"
+    },
+    {
+      "id": "0ddc48df86cb8b55",
+      "title": "(Senior) Product Manager for Prada, Yves Saint Laurent and Miu Miu",
+      "company": "L'Oréal",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4466538156",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-15",
       "lastSeen": "2026-10-07"
@@ -1091,16 +1121,6 @@
       "location": "Ocelářská 937/39, Praha – Vysočany",
       "url": "https://www.jobs.cz/rpd/2001420652",
       "portal": "Jobs.cz",
-      "firstSeen": "2026-09-15",
-      "lastSeen": "2026-09-16"
-    },
-    {
-      "id": "0ddc48df86cb8b55",
-      "title": "(Senior) Product Manager for Prada, Yves Saint Laurent and Miu Miu",
-      "company": "L'Oréal",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4466538156",
-      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-15",
       "lastSeen": "2026-09-16"
     },
@@ -1458,7 +1478,7 @@
       "id": "998c9d31cd272345",
       "title": "Product Manager – Enclosures & Low Voltage Solutions",
       "company": "Noark Electric Europe",
-      "location": "Prague, Prague, Czechia",
+      "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4462213789",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-07",
@@ -1505,6 +1525,16 @@
       "lastSeen": "2026-09-07"
     },
     {
+      "id": "9109e3aa3aa1492b",
+      "title": "Data Product Owner - Accounting & Tax Data Architecture",
+      "company": "TMF Group",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4463326210",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-10-07"
+    },
+    {
       "id": "017e622f6d880ce6",
       "title": "Investment Product Manager (m/ž) - Praha",
       "company": "Raiffeisenbank",
@@ -1540,16 +1570,6 @@
       "company": "Scale Up Recruiting Partners",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4463324283",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-04",
-      "lastSeen": "2026-09-04"
-    },
-    {
-      "id": "9109e3aa3aa1492b",
-      "title": "Data Product Owner - Accounting & Tax Data Architecture",
-      "company": "TMF Group",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4463326210",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-04",
       "lastSeen": "2026-09-04"
@@ -1675,6 +1695,16 @@
       "lastSeen": "2026-09-02"
     },
     {
+      "id": "0c8528aef60786ff",
+      "title": "Product Manager",
+      "company": "SITA",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449862359",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-10-07"
+    },
+    {
       "id": "e7ef264710790a48",
       "title": "Product Manager",
       "company": "Celltrion Inc",
@@ -1693,16 +1723,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-09-24"
-    },
-    {
-      "id": "0c8528aef60786ff",
-      "title": "Product Manager",
-      "company": "SITA",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449862359",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-09-01",
-      "lastSeen": "2026-09-23"
     },
     {
       "id": "be88fd5b5efbc8e5",
@@ -2175,6 +2195,16 @@
       "lastSeen": "2026-08-20"
     },
     {
+      "id": "8bb0f8f0846a7eee",
+      "title": "Senior Product Manager",
+      "company": "Transcarent",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4452595995",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-10-07"
+    },
+    {
       "id": "62c56f6ae0502037",
       "title": "Produktový manažer pro značku Dücker – CZ /SK /HU",
       "company": "AGROTEC a.s.",
@@ -2213,16 +2243,6 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-10-01"
-    },
-    {
-      "id": "8bb0f8f0846a7eee",
-      "title": "Senior Product Manager",
-      "company": "Transcarent",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4452595995",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-08-18",
-      "lastSeen": "2026-09-30"
     },
     {
       "id": "1b488f9481063422",
