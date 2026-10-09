@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-09T07:13:08.300470+00:00",
-  "generatedAt": "2026-10-09T07:13:08.300470+00:00",
+  "lastRun": "2026-10-09T16:22:09.291781+00:00",
+  "generatedAt": "2026-10-09T16:22:09.291781+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-09T07:13:08.300470+00:00",
-    "finishedAt": "2026-10-09T07:24:53.575061+00:00",
+    "startedAt": "2026-10-09T16:22:09.291781+00:00",
+    "finishedAt": "2026-10-09T16:35:35.192243+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -51,8 +51,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 12,
-        "matchedCount": 6
+        "rawCount": 11,
+        "matchedCount": 5
       },
       {
         "name": "Jobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 48,
-        "matchedCount": 37
+        "rawCount": 55,
+        "matchedCount": 44
       },
       {
         "name": "Jooble CZ",
@@ -132,8 +132,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 148,
-        "matchedCount": 3
+        "rawCount": 144,
+        "matchedCount": 4
       },
       {
         "name": "NoFluffJobs CZ",
@@ -177,7 +177,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 27,
+        "rawCount": 31,
         "matchedCount": 9
       },
       {
@@ -212,24 +212,124 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 18,
-        "matchedCount": 6
+        "rawCount": 7,
+        "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 61,
-      "new": 1,
+      "matched": 64,
+      "new": 10,
       "updated": 0,
       "failures": 0
     }
   },
   "jobs": [
     {
+      "id": "f9d31ef26e15b488",
+      "title": "Technical Product Manager | English only",
+      "company": "Manpower IT",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001472331",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09"
+    },
+    {
+      "id": "50838c9f4f56d088",
+      "title": "Tech Product Manager",
+      "company": "MALFINI, a.s.",
+      "location": "Prosecká 855/68, Praha – Prosek",
+      "url": "https://www.jobs.cz/rpd/2001472352",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09"
+    },
+    {
+      "id": "613ec7ba49178269",
+      "title": "Senior Product Manager",
+      "company": "Rossum",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4477656957",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09"
+    },
+    {
+      "id": "04a7515cf15ceff8",
+      "title": "Product Owner Corporate Lending (m/f)",
+      "company": "Raiffeisenbank",
+      "location": "Praha",
+      "url": "https://www.tribee.cz/cs/spolecnost/raiffeisenbank/prace/product-owner-corporate-lending-m-f/85ee2c10-60ca-490d-84e5-a8b3101a1d4f",
+      "portal": "Tribee",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09"
+    },
+    {
+      "id": "24e456e56f56bb46",
+      "title": "Product Owner Corporate Lending (m/f)",
+      "company": "Raiffeisenbank a.s.",
+      "location": "Remote",
+      "url": "https://www.jobs.cz/rpd/2001472450",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09"
+    },
+    {
+      "id": "92aec30f4bc975bf",
+      "title": "Product Owner Corporate Lending (m/f)",
+      "company": "Raiffeisenbank Česká republika",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4477667846",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09"
+    },
+    {
+      "id": "190e8b13ecd6f4cf",
+      "title": "PRODUCT MANAGER (m/ž) – farmacie (Rx, OTC & DIGITAL)",
+      "company": "Zahraniční farmaceutická společnost",
+      "location": "Jemnická 1138/1, Praha – Michle",
+      "url": "https://www.jobs.cz/rpd/2001472779",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09"
+    },
+    {
+      "id": "9a9e51d495f5930e",
+      "title": "EP-CNV IT Manager, Technical Product Owner",
+      "company": "Johnson & Johnson",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4477816645",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09"
+    },
+    {
+      "id": "bcbc234318264278",
+      "title": "Datový analytik a Produktový manažer",
+      "company": "Začni učit!",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4475238113",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09"
+    },
+    {
       "id": "53a71d982e941615",
       "title": "B2C Product Manager",
       "company": "Similarweb",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4477427107",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09"
+    },
+    {
+      "id": "e3c7c3aa23a7e734",
+      "title": "Applied AI Co-Founder / Head of Product (100 % remote) (m/f/d)",
+      "company": "EWOR",
+      "location": "Warsaw, Mazowieckie, Poland",
+      "url": "https://www.linkedin.com/jobs/view/4476292735",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-10-09",
       "lastSeen": "2026-10-09"
@@ -515,6 +615,16 @@
       "lastSeen": "2026-10-02"
     },
     {
+      "id": "cbf924a028724384",
+      "title": "Technical Product Owner | Energy & Technology / BESS / Fieldbus communication",
+      "company": "ComAp Group",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4472622177",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-09"
+    },
+    {
       "id": "34800640fabd3286",
       "title": "Product owner (M/Ž)",
       "company": "Elektroline a.s.",
@@ -533,16 +643,6 @@
       "portal": "Tribee",
       "firstSeen": "2026-10-01",
       "lastSeen": "2026-10-09"
-    },
-    {
-      "id": "cbf924a028724384",
-      "title": "Technical Product Owner | Energy & Technology / BESS / Fieldbus communication",
-      "company": "ComAp Group",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4472622177",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-05"
     },
     {
       "id": "989a505c21af1dcf",
@@ -965,6 +1065,16 @@
       "lastSeen": "2026-10-09"
     },
     {
+      "id": "a6b6435bf988c2f9",
+      "title": "Product Owner - Supply Chain",
+      "company": "Vilgain",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4459843056",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-10-09"
+    },
+    {
       "id": "106c9276dc42e107",
       "title": "Technical Product Manager - Agentic AI Platform (f/m/d) Remote Europe",
       "company": "Otera",
@@ -1011,16 +1121,6 @@
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4467511167",
       "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-09-18",
-      "lastSeen": "2026-09-18"
-    },
-    {
-      "id": "a6b6435bf988c2f9",
-      "title": "Product Owner - Supply Chain",
-      "company": "Vilgain",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4459843056",
-      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-18",
       "lastSeen": "2026-09-18"
     },
@@ -1235,6 +1335,16 @@
       "lastSeen": "2026-09-15"
     },
     {
+      "id": "d48d440a4537a495",
+      "title": "Produktový manažer/ka",
+      "company": "TRINITY BANK a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001425652",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-10-09"
+    },
+    {
       "id": "a912cf580f70daba",
       "title": "Product Manager, Individual Products",
       "company": "innogy Česká republika a.s.",
@@ -1243,16 +1353,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-14",
       "lastSeen": "2026-10-09"
-    },
-    {
-      "id": "d48d440a4537a495",
-      "title": "Produktový manažer/ka",
-      "company": "TRINITY BANK a.s.",
-      "location": "",
-      "url": "https://www.jobs.cz/rpd/2001425652",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-09-14",
-      "lastSeen": "2026-10-08"
     },
     {
       "id": "aa6899ff028c12c3",
@@ -1298,11 +1398,11 @@
       "id": "b495b170eb7a6a8e",
       "title": "Buyer/Product Manager – segment Televize, Monitory, Projektory (JPO28169)",
       "company": "Alza.cz a.s.",
-      "location": "Jankovcova 1522/53, Praha – Holešovice",
+      "location": "Jankovcova 1522/53, Praha, Praha – Holešovice",
       "url": "https://www.jobs.cz/rpd/2001421609",
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-11",
-      "lastSeen": "2026-10-08"
+      "lastSeen": "2026-10-09"
     },
     {
       "id": "0319f4b0321d9014",
@@ -1340,7 +1440,7 @@
       "company": "Air Bank a.s.",
       "location": "Czechia, Prague, Praha",
       "url": "https://www.jobs.cz/rpd/2001419569",
-      "portal": "StartupJobs.cz",
+      "portal": "Jobs.cz",
       "firstSeen": "2026-09-10",
       "lastSeen": "2026-10-09"
     },
@@ -2295,6 +2395,16 @@
       "lastSeen": "2026-08-20"
     },
     {
+      "id": "8bb0f8f0846a7eee",
+      "title": "Senior Product Manager",
+      "company": "Transcarent",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4452595995",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-10-09"
+    },
+    {
       "id": "62c56f6ae0502037",
       "title": "Produktový manažer pro značku Dücker – CZ /SK /HU",
       "company": "AGROTEC a.s.",
@@ -2323,16 +2433,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-10-09"
-    },
-    {
-      "id": "8bb0f8f0846a7eee",
-      "title": "Senior Product Manager",
-      "company": "Transcarent",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4452595995",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-08-18",
-      "lastSeen": "2026-10-08"
     },
     {
       "id": "b00a803d0e3798ff",
@@ -2785,6 +2885,16 @@
       "lastSeen": "2026-10-09"
     },
     {
+      "id": "9dcaad3f580c9b51",
+      "title": "Product Manager – Rare Diseases – Czech & Slovakia",
+      "company": "AstraZeneca",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449304365",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-10-09"
+    },
+    {
       "id": "9ff95a197409673e",
       "title": "Group Product Manager  (Core)",
       "company": "Wrike",
@@ -2810,16 +2920,6 @@
       "company": "Siemens",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4449139154",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-08-06",
-      "lastSeen": "2026-09-18"
-    },
-    {
-      "id": "9dcaad3f580c9b51",
-      "title": "Product Manager – Rare Diseases – Czech & Slovakia",
-      "company": "AstraZeneca",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449304365",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-06",
       "lastSeen": "2026-09-18"
