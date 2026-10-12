@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-12T07:17:04.519134+00:00",
-  "generatedAt": "2026-10-12T07:17:04.519134+00:00",
+  "lastRun": "2026-10-12T16:09:55.473258+00:00",
+  "generatedAt": "2026-10-12T16:09:55.473258+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-12T07:17:04.519134+00:00",
-    "finishedAt": "2026-10-12T07:28:19.392193+00:00",
+    "startedAt": "2026-10-12T16:09:55.473258+00:00",
+    "finishedAt": "2026-10-12T16:21:28.953551+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -51,8 +51,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 10,
-        "matchedCount": 5
+        "rawCount": 12,
+        "matchedCount": 6
       },
       {
         "name": "Jobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 46,
-        "matchedCount": 38
+        "rawCount": 51,
+        "matchedCount": 42
       },
       {
         "name": "Jooble CZ",
@@ -133,7 +133,7 @@
           "ai head of product"
         ],
         "rawCount": 135,
-        "matchedCount": 4
+        "matchedCount": 3
       },
       {
         "name": "NoFluffJobs CZ",
@@ -177,8 +177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 27,
-        "matchedCount": 0
+        "rawCount": 25,
+        "matchedCount": 5
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -212,18 +212,28 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 5,
+        "rawCount": 4,
         "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 49,
-      "new": 2,
+      "matched": 58,
+      "new": 5,
       "updated": 0,
       "failures": 0
     }
   },
   "jobs": [
+    {
+      "id": "d64ea048de39e472",
+      "title": "Technical Product Owner (Mobile Apps)",
+      "company": "Livesport",
+      "location": "Czechia, Prague, Praha",
+      "url": "https://www.startupjobs.cz/nabidka/108483/technical-product-owner-mobile-apps",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12"
+    },
     {
       "id": "f6b57ea4cc2c8b11",
       "title": "Senior Product Manager – Dovolená za benefity",
@@ -235,12 +245,52 @@
       "lastSeen": "2026-10-12"
     },
     {
+      "id": "a29f9d5328d2e4ce",
+      "title": "Senior Product Manager - Production (Riga, Barcelona or remote in Europe)",
+      "company": "FYUL",
+      "location": "Spain",
+      "url": "https://www.linkedin.com/jobs/view/4478524709",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12"
+    },
+    {
       "id": "429d59e3705097b0",
       "title": "Senior Clinical Product Lead | 100% Remote within Europe",
       "company": "Docplanner",
       "location": "Warsaw, Mazowieckie, Poland",
       "url": "https://www.linkedin.com/jobs/view/4450010764",
       "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12"
+    },
+    {
+      "id": "62ff32fef5f10049",
+      "title": "Produktový manažer / Kalkulant (M/Ž) – Facility Management",
+      "company": "M2C",
+      "location": "Vladislavova 1390/17, Praha – Nové Město",
+      "url": "https://www.jobs.cz/rpd/2001475156",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12"
+    },
+    {
+      "id": "a74550064d6ee26e",
+      "title": "Product Manager (all genders) - Remote Germany",
+      "company": "Linro",
+      "location": "Germany",
+      "url": "https://www.linkedin.com/jobs/view/4478395296",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12"
+    },
+    {
+      "id": "cf299acbc8e0d328",
+      "title": "Innovation Product Manager",
+      "company": "SatoshiLabs",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4478543248",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-10-12",
       "lastSeen": "2026-10-12"
     },
@@ -635,6 +685,16 @@
       "lastSeen": "2026-10-02"
     },
     {
+      "id": "cbf924a028724384",
+      "title": "Technical Product Owner | Energy & Technology / BESS / Fieldbus communication",
+      "company": "ComAp Group",
+      "location": "Czechia, Prague",
+      "url": "https://www.linkedin.com/jobs/view/4472622177",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-12"
+    },
+    {
       "id": "34800640fabd3286",
       "title": "Product owner (M/Ž)",
       "company": "Elektroline a.s.",
@@ -653,16 +713,6 @@
       "portal": "Tribee",
       "firstSeen": "2026-10-01",
       "lastSeen": "2026-10-12"
-    },
-    {
-      "id": "cbf924a028724384",
-      "title": "Technical Product Owner | Energy & Technology / BESS / Fieldbus communication",
-      "company": "ComAp Group",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4472622177",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-09"
     },
     {
       "id": "989a505c21af1dcf",
@@ -1022,7 +1072,17 @@
       "url": "https://www.jobs.cz/rpd/2001405523",
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-10-08"
+      "lastSeen": "2026-10-12"
+    },
+    {
+      "id": "54083dd220b70d7e",
+      "title": "Product Manager - Home assortment",
+      "company": "Vilgain",
+      "location": "Czechia, Prague",
+      "url": "https://www.linkedin.com/jobs/view/4468647563",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-10-12"
     },
     {
       "id": "75918772ee4dab28",
@@ -1043,16 +1103,6 @@
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-09-21",
       "lastSeen": "2026-09-28"
-    },
-    {
-      "id": "54083dd220b70d7e",
-      "title": "Product Manager - Home assortment",
-      "company": "Vilgain",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4468647563",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-22"
     },
     {
       "id": "0a296d26cae94963",
@@ -1465,22 +1515,22 @@
       "lastSeen": "2026-10-12"
     },
     {
-      "id": "0647f2bfadb42f07",
-      "title": "Product Manager",
-      "company": "FaceUp 💙",
-      "location": "Praha",
-      "url": "https://www.startupjobs.cz/nabidka/107671/product-manager",
-      "portal": "StartupJobs.cz",
-      "firstSeen": "2026-09-10",
-      "lastSeen": "2026-10-09"
-    },
-    {
       "id": "d7adc62caba64e34",
       "title": "Product Manager",
       "company": "Innomotics, s.r.o.",
       "location": "",
       "url": "https://www.jobs.cz/rpd/2001418916",
       "portal": "Jobs.cz",
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-10-12"
+    },
+    {
+      "id": "0647f2bfadb42f07",
+      "title": "Product Manager",
+      "company": "FaceUp 💙",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/107671/product-manager",
+      "portal": "StartupJobs.cz",
       "firstSeen": "2026-09-10",
       "lastSeen": "2026-10-09"
     },
@@ -2775,6 +2825,16 @@
       "lastSeen": "2026-08-10"
     },
     {
+      "id": "57d88e952ba2dc0f",
+      "title": "Product manager / Technical lead",
+      "company": "Ubiquiti Inc.",
+      "location": "Czechia, Prague",
+      "url": "https://www.linkedin.com/jobs/view/4395241415",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-09",
+      "lastSeen": "2026-10-12"
+    },
+    {
       "id": "b95981442a11e083",
       "title": "Senior Product Manager",
       "company": "Vendavo",
@@ -2783,16 +2843,6 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-09",
       "lastSeen": "2026-10-08"
-    },
-    {
-      "id": "57d88e952ba2dc0f",
-      "title": "Product manager / Technical lead",
-      "company": "Ubiquiti Inc.",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4395241415",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-08-09",
-      "lastSeen": "2026-09-21"
     },
     {
       "id": "8466fb401df0632c",
@@ -4025,6 +4075,16 @@
       "lastSeen": "2026-10-12"
     },
     {
+      "id": "9f557fe09e08c6c8",
+      "title": "Produktový manažer/ka IT služeb",
+      "company": "CESNET, zájmové sdružení právnických osob",
+      "location": "Generála Píky 430/26, Praha – Dejvice",
+      "url": "https://www.jobs.cz/rpd/2001304776",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-10-12"
+    },
+    {
       "id": "8036acc9f29fad3e",
       "title": "Produktový manažer/ka",
       "company": "Asseco Solutions, a.s.",
@@ -4183,16 +4243,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
       "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "9f557fe09e08c6c8",
-      "title": "Produktový manažer/ka IT služeb",
-      "company": "CESNET, zájmové sdružení právnických osob",
-      "location": "Generála Píky 430/26, Praha – Dejvice",
-      "url": "https://www.jobs.cz/rpd/2001304776",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-29"
     },
     {
       "id": "ad9c531d866a0a6c",
