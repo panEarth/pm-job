@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-14T07:08:07.089662+00:00",
-  "generatedAt": "2026-10-14T07:08:07.089662+00:00",
+  "lastRun": "2026-10-14T16:09:52.085152+00:00",
+  "generatedAt": "2026-10-14T16:09:52.085152+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-14T07:08:07.089662+00:00",
-    "finishedAt": "2026-10-14T07:19:04.167684+00:00",
+    "startedAt": "2026-10-14T16:09:52.085152+00:00",
+    "finishedAt": "2026-10-14T16:22:03.823382+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 50,
-        "matchedCount": 41
+        "rawCount": 51,
+        "matchedCount": 40
       },
       {
         "name": "Jooble CZ",
@@ -132,7 +132,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 134,
+        "rawCount": 141,
         "matchedCount": 3
       },
       {
@@ -177,8 +177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 29,
-        "matchedCount": 2
+        "rawCount": 27,
+        "matchedCount": 5
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -213,17 +213,37 @@
           "ai head of product"
         ],
         "rawCount": 6,
-        "matchedCount": 0
+        "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 52,
-      "new": 1,
-      "updated": 0,
+      "matched": 56,
+      "new": 2,
+      "updated": 1,
       "failures": 0
     }
   },
   "jobs": [
+    {
+      "id": "b3971d907c0d743e",
+      "title": "Lead Product Manager Crypto Custody - Open to remote",
+      "company": "Bitvavo",
+      "location": "Amsterdam, North Holland, Netherlands",
+      "url": "https://www.linkedin.com/jobs/view/4479298493",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14"
+    },
+    {
+      "id": "9ea5b7b5fcf02f7a",
+      "title": "Innovation Product Manager",
+      "company": "Trezor",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/108573/innovation-product-manager",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14"
+    },
     {
       "id": "541fed8986ded3a8",
       "title": "BRAIINS FORGE: Product Manager",
@@ -376,11 +396,11 @@
     },
     {
       "id": "50838c9f4f56d088",
-      "title": "Tech Product Manager",
+      "title": "TECH PRODUCT MANAGER",
       "company": "MALFINI, a.s.",
-      "location": "Praha – Prosek, Prosecká 855/68",
+      "location": "Czechia, Prague, Praha, Praha – Prosek, Prosecká 855/68",
       "url": "https://www.jobs.cz/rpd/2001472352",
-      "portal": "Jobs.cz",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-10-09",
       "lastSeen": "2026-10-14"
     },
@@ -468,7 +488,7 @@
       "id": "e3c7c3aa23a7e734",
       "title": "Applied AI Co-Founder / Head of Product (100 % remote) (m/f/d)",
       "company": "EWOR",
-      "location": "Warsaw, Mazowieckie, Poland",
+      "location": "Poland",
       "url": "https://www.linkedin.com/jobs/view/4476292735",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-10-09",
@@ -1075,6 +1095,26 @@
       "lastSeen": "2026-10-14"
     },
     {
+      "id": "3cfd204ea329a74e",
+      "title": "Product Manager - Cloudera Kubernetes",
+      "company": "Cloudera",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4469463061",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-10-14"
+    },
+    {
+      "id": "0f5cd8ea274aa72e",
+      "title": "IT Product Owner for Supply Chain",
+      "company": "Avio Aero",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4470601089",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-10-14"
+    },
+    {
       "id": "bcdc4ecdb2130ece",
       "title": "Senior Product Owner – Mobile Application | Healthcare / Life Sciences, 0.5 FTE",
       "company": "Projectman",
@@ -1085,32 +1125,12 @@
       "lastSeen": "2026-09-24"
     },
     {
-      "id": "3cfd204ea329a74e",
-      "title": "Product Manager - Cloudera Kubernetes",
-      "company": "Cloudera",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4469463061",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-09-23",
-      "lastSeen": "2026-09-24"
-    },
-    {
       "id": "e4f0fc53c5d928f6",
       "title": "Staff Product Manager - VPN (Remote)",
       "company": "Mode Mobile",
       "location": "Spain",
       "url": "https://www.linkedin.com/jobs/view/4470624861",
       "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-09-23",
-      "lastSeen": "2026-09-23"
-    },
-    {
-      "id": "0f5cd8ea274aa72e",
-      "title": "IT Product Owner for Supply Chain",
-      "company": "Avio Aero",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4470601089",
-      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-23",
       "lastSeen": "2026-09-23"
     },
@@ -2225,6 +2245,16 @@
       "lastSeen": "2026-08-27"
     },
     {
+      "id": "997ab3f43da28f6f",
+      "title": "Group Senior Product Owner - (PAM)",
+      "company": "FEG",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4457947778",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-26",
+      "lastSeen": "2026-10-14"
+    },
+    {
       "id": "3c0f54d29e6f5c25",
       "title": "Staff Product Manager, OpenTelemetry | Sweden | Remote",
       "company": "Grafana Labs",
@@ -2243,16 +2273,6 @@
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-08-26",
       "lastSeen": "2026-10-09"
-    },
-    {
-      "id": "997ab3f43da28f6f",
-      "title": "Group Senior Product Owner - (PAM)",
-      "company": "FEG",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4457947778",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-26",
-      "lastSeen": "2026-09-23"
     },
     {
       "id": "f3fb15b1f1b4886e",
