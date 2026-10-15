@@ -322,11 +322,11 @@
     },
     {
       "id": "50838c9f4f56d088",
-      "title": "TECH PRODUCT MANAGER",
+      "title": "Tech Product Manager",
       "company": "MALFINI, a.s.",
       "location": "Czechia, Prague, Praha, Praha – Prosek, Prosecká 855/68",
       "url": "https://www.jobs.cz/rpd/2001472352",
-      "portal": "LinkedIn Jobs — Česko",
+      "portal": "Jobs.cz",
       "firstSeen": "2026-10-09",
       "lastSeen": "2026-10-15"
     },
@@ -514,9 +514,9 @@
       "id": "0c8528aef60786ff",
       "title": "Product Manager",
       "company": "SITA",
-      "location": "Czechia, Prague",
+      "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4449862359",
-      "portal": "LinkedIn Jobs — Remote EU",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-10-15"
     },
@@ -524,7 +524,7 @@
       "id": "3791c96bc0417494",
       "title": "Talent Product Owner - Skills - Associate Director",
       "company": "EY",
-      "location": "Prague, Prague, Czechia",
+      "location": "Czechia, Prague",
       "url": "https://www.linkedin.com/jobs/view/4459960437",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-02",
@@ -538,6 +538,36 @@
       "url": "https://www.linkedin.com/jobs/view/4479775187",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15"
+    },
+    {
+      "id": "fd2c62ba32d8d171",
+      "title": "Produktový manažer / Produktová manažerka pojištění osob – vývoj produktů",
+      "company": "UNIQA",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001431809",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-10-15"
+    },
+    {
+      "id": "edb84b7224aad7be",
+      "title": "Analytics Product Owner",
+      "company": "BRP",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4469759101",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-10-15"
+    },
+    {
+      "id": "680c8829c4a86318",
+      "title": "Technical Product Manager (f/m)",
+      "company": "T-Mobile Czech Republic a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001391852",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-25",
       "lastSeen": "2026-10-15"
     },
     {
@@ -558,16 +588,6 @@
       "url": "https://www.startupjobs.cz/nabidka/106843/product-manager",
       "portal": "StartupJobs.cz",
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-10-14"
-    },
-    {
-      "id": "fd2c62ba32d8d171",
-      "title": "Produktový manažer / Produktová manažerka pojištění osob – vývoj produktů",
-      "company": "UNIQA",
-      "location": "",
-      "url": "https://www.jobs.cz/rpd/2001431809",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-09-18",
       "lastSeen": "2026-10-14"
     },
     {
@@ -1801,16 +1821,6 @@
       "lastSeen": "2026-09-25"
     },
     {
-      "id": "edb84b7224aad7be",
-      "title": "Analytics Product Owner",
-      "company": "BRP",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4469759101",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-24",
-      "lastSeen": "2026-09-25"
-    },
-    {
       "id": "c070d263afd5aa96",
       "title": "Product Owner - Pricing & Contracting Insights",
       "company": "Medtronic",
@@ -1899,16 +1909,6 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-25",
       "lastSeen": "2026-09-25"
-    },
-    {
-      "id": "680c8829c4a86318",
-      "title": "Technical Product Manager (f/m)",
-      "company": "T-Mobile Czech Republic a.s.",
-      "location": "",
-      "url": "https://www.jobs.cz/rpd/2001391852",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-08-25",
-      "lastSeen": "2026-09-24"
     },
     {
       "id": "676bfda2aeb33b55",
@@ -4301,10 +4301,10 @@
       "lastSeen": "2026-07-20"
     }
   ],
-  "lastRun": "2026-10-15T07:08:02.143519+00:00",
+  "lastRun": "2026-10-15T16:10:10.340202+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-15T07:08:02.143519+00:00",
-    "finishedAt": "2026-10-15T07:19:35.498145+00:00",
+    "startedAt": "2026-10-15T16:10:10.340202+00:00",
+    "finishedAt": "2026-10-15T16:22:21.635192+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -4352,7 +4352,7 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 11,
+        "rawCount": 12,
         "matchedCount": 6
       },
       {
@@ -4387,8 +4387,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 47,
-        "matchedCount": 38
+        "rawCount": 49,
+        "matchedCount": 39
       },
       {
         "name": "Jooble CZ",
@@ -4433,7 +4433,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 142,
+        "rawCount": 143,
         "matchedCount": 3
       },
       {
@@ -4478,8 +4478,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 32,
-        "matchedCount": 6
+        "rawCount": 31,
+        "matchedCount": 3
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -4513,14 +4513,14 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 10,
-        "matchedCount": 4
+        "rawCount": 9,
+        "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 57,
-      "new": 1,
-      "updated": 2,
+      "matched": 52,
+      "new": 0,
+      "updated": 1,
       "failures": 0
     }
   }
