@@ -18,7 +18,12 @@ fi
 
 if [[ ! -x "$PYTHON" ]]; then
   echo "Vytvářím venv v $VENV_DIR …"
-  python3 -m venv "$VENV_DIR"
+  if ! python3 -m venv "$VENV_DIR" 2>/dev/null; then
+    rm -rf "$VENV_DIR"
+    echo "python3-venv nedostupné — používám virtualenv…"
+    python3 -m pip install -q virtualenv
+    python3 -m virtualenv "$VENV_DIR"
+  fi
 fi
 
 echo "Instaluji Python závislosti (včetně Playwright)…"
