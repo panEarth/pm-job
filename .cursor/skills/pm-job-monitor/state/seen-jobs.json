@@ -491,6 +491,86 @@
       "lastSeen": "2026-10-19"
     },
     {
+      "id": "e0f3e1a665470060",
+      "title": "Senior Embedded Developer (C/C++) & Product Owner",
+      "company": "Škoda Digital",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001057560",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-10-19"
+    },
+    {
+      "id": "52e0c00de7183030",
+      "title": "Hands-on Technical Product Owner, BE-A Avatar",
+      "company": "FLAE ROBOTICS a.s.",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4480984864",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19"
+    },
+    {
+      "id": "59aab356507dcbb9",
+      "title": "DMS Product Manager (Full Remote)",
+      "company": "Adentis Portugal",
+      "location": "Lisbon, Portugal",
+      "url": "https://www.linkedin.com/jobs/view/4479987291",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19"
+    },
+    {
+      "id": "8a1ee4877e9fd0f6",
+      "title": "Senior Product Owner - Research & Ontology (remote)",
+      "company": "InnoTech",
+      "location": "Portugal",
+      "url": "https://www.linkedin.com/jobs/view/4479835848",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19"
+    },
+    {
+      "id": "9cd0709a709cce1e",
+      "title": "Staff Product Manager, Enterprise Deployment Solutions | Ireland | Remote",
+      "company": "Grafana Labs",
+      "location": "Dublin, County Dublin, Ireland",
+      "url": "https://www.linkedin.com/jobs/view/4480944556",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19"
+    },
+    {
+      "id": "7991bdf64f6bec72",
+      "title": "Staff Product Manager, Enterprise Deployment Solutions | Sweden | Remote",
+      "company": "Grafana Labs",
+      "location": "Stockholm, Stockholm County, Sweden",
+      "url": "https://www.linkedin.com/jobs/view/4480945545",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19"
+    },
+    {
+      "id": "240e6861d0d41b6b",
+      "title": "Staff Product Manager, Enterprise Deployment Solutions | Spain | Remote",
+      "company": "Grafana Labs",
+      "location": "Madrid, Community of Madrid, Spain",
+      "url": "https://www.linkedin.com/jobs/view/4480946558",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19"
+    },
+    {
+      "id": "e8432403e807684e",
+      "title": "Staff Product Manager, Enterprise Deployment Solutions | Germany | Remote",
+      "company": "Grafana Labs",
+      "location": "Germany",
+      "url": "https://www.linkedin.com/jobs/view/4480957000",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19"
+    },
+    {
       "id": "a912cf580f70daba",
       "title": "Product Manager, Individual Products",
       "company": "innogy Česká republika a.s.",
@@ -1248,16 +1328,6 @@
       "url": "https://www.startupjobs.cz/nabidka/104343/technicky-produktovy-manazer-pro-doporucovaci-system",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-10-07"
-    },
-    {
-      "id": "e0f3e1a665470060",
-      "title": "Senior Embedded Developer (C/C++) & Product Owner",
-      "company": "Škoda Digital",
-      "location": "",
-      "url": "https://www.jobs.cz/rpd/2001057560",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-07-21",
       "lastSeen": "2026-10-07"
     },
     {
@@ -4201,10 +4271,10 @@
       "lastSeen": "2026-07-21"
     }
   ],
-  "lastRun": "2026-10-19T07:07:40.990248+00:00",
+  "lastRun": "2026-10-19T16:10:03.249067+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-19T07:07:40.990248+00:00",
-    "finishedAt": "2026-10-19T07:18:53.249651+00:00",
+    "startedAt": "2026-10-19T16:10:03.249067+00:00",
+    "finishedAt": "2026-10-19T16:21:56.957530+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -4287,7 +4357,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 49,
+        "rawCount": 48,
         "matchedCount": 40
       },
       {
@@ -4333,7 +4403,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 130,
+        "rawCount": 133,
         "matchedCount": 3
       },
       {
@@ -4378,8 +4448,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 26,
-        "matchedCount": 0
+        "rawCount": 28,
+        "matchedCount": 1
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -4413,13 +4483,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 4,
-        "matchedCount": 0
+        "rawCount": 13,
+        "matchedCount": 6
       }
     ],
     "totals": {
-      "matched": 49,
-      "new": 0,
+      "matched": 56,
+      "new": 7,
       "updated": 0,
       "failures": 0
     }
