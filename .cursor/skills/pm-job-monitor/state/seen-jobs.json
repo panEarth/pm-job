@@ -548,7 +548,7 @@
       "url": "https://www.jobs.cz/rpd/2001380967",
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-18",
-      "lastSeen": "2026-10-19"
+      "lastSeen": "2026-10-20"
     },
     {
       "id": "44c739ac3b8eac3d",
@@ -558,7 +558,7 @@
       "url": "https://www.jobs.cz/rpd/2001335552",
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-02",
-      "lastSeen": "2026-10-19"
+      "lastSeen": "2026-10-20"
     },
     {
       "id": "34800640fabd3286",
@@ -568,7 +568,7 @@
       "url": "https://www.jobs.cz/rpd/2001438836",
       "portal": "Jobs.cz",
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-19"
+      "lastSeen": "2026-10-20"
     },
     {
       "id": "05fff12362863cd3",
@@ -578,7 +578,87 @@
       "url": "https://www.jobs.cz/rpd/2001382707",
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-31",
-      "lastSeen": "2026-10-19"
+      "lastSeen": "2026-10-20"
+    },
+    {
+      "id": "55f3b9b7ea3c3ae1",
+      "title": "Group Sportsbook Product Manager",
+      "company": "FEG",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4471711142",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-10-20"
+    },
+    {
+      "id": "ffff3d065aabd2f4",
+      "title": "Product Manager – Moderní energetika | B2B",
+      "company": "innogy Česká republika a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001342252",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20"
+    },
+    {
+      "id": "ad234a41a868b09e",
+      "title": "Senior Product Manager - Payments & Transactions",
+      "company": "Česká spořitelna, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001489400",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20"
+    },
+    {
+      "id": "2bf9a196cac71190",
+      "title": "Senior Product Manager - Payments & Transactions",
+      "company": "Česká spořitelna",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4481592224",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20"
+    },
+    {
+      "id": "05b4f4a2e489d960",
+      "title": "Product Manager - AI Services",
+      "company": "Esko",
+      "location": "Praha 5, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4481564516",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20"
+    },
+    {
+      "id": "75534c527e446937",
+      "title": "Product manager – Oneplay",
+      "company": "TV Nova",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4481592634",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20"
+    },
+    {
+      "id": "7400df47d43b352a",
+      "title": "Product Manager",
+      "company": "Heureka Group",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4481565517",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20"
+    },
+    {
+      "id": "cd0bb3195e730e84",
+      "title": "Product Director – EV Charging & Technology - Portugal (Remote)",
+      "company": "EVEREC",
+      "location": "Portugal",
+      "url": "https://www.linkedin.com/jobs/view/4481549310",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20"
     },
     {
       "id": "e8432403e807684e",
@@ -1837,16 +1917,6 @@
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4473208647",
       "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-29",
-      "lastSeen": "2026-09-30"
-    },
-    {
-      "id": "55f3b9b7ea3c3ae1",
-      "title": "Group Sportsbook Product Manager",
-      "company": "FEG",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4471711142",
-      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-09-29",
       "lastSeen": "2026-09-30"
     },
@@ -4171,10 +4241,10 @@
       "lastSeen": "2026-07-23"
     }
   ],
-  "lastRun": "2026-10-20T07:07:39.066795+00:00",
+  "lastRun": "2026-10-20T16:09:45.848939+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-20T07:07:39.066795+00:00",
-    "finishedAt": "2026-10-20T07:18:25.936356+00:00",
+    "startedAt": "2026-10-20T16:09:45.848939+00:00",
+    "finishedAt": "2026-10-20T16:22:08.057489+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -4222,7 +4292,7 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 12,
+        "rawCount": 11,
         "matchedCount": 6
       },
       {
@@ -4257,8 +4327,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 46,
-        "matchedCount": 37
+        "rawCount": 53,
+        "matchedCount": 43
       },
       {
         "name": "Jooble CZ",
@@ -4348,8 +4418,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 31,
-        "matchedCount": 2
+        "rawCount": 30,
+        "matchedCount": 6
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -4383,13 +4453,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 9,
-        "matchedCount": 6
+        "rawCount": 10,
+        "matchedCount": 4
       }
     ],
     "totals": {
-      "matched": 54,
-      "new": 1,
+      "matched": 62,
+      "new": 7,
       "updated": 0,
       "failures": 0
     }
