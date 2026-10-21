@@ -601,6 +601,66 @@
       "lastSeen": "2026-10-21"
     },
     {
+      "id": "3c30e354ac571c0f",
+      "title": "Country Product Manager",
+      "company": "Cultural Care Au Pair",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449128121",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-10-21"
+    },
+    {
+      "id": "cef44a89a6090ca8",
+      "title": "Produktový manažer - Vytápění a chlazení",
+      "company": "innogy Česká republika a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001491481",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21"
+    },
+    {
+      "id": "c5017937d77e5026",
+      "title": "Product Owner pro retailovou pobočkovou síť",
+      "company": "MONETA Money Bank, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001491424",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21"
+    },
+    {
+      "id": "8f235b6aac106be5",
+      "title": "Senior Product Manager, AI Platform & Ecosystem",
+      "company": "Wrike",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4482064240",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21"
+    },
+    {
+      "id": "56151aac80564c46",
+      "title": "Senior Product Manager",
+      "company": "Groupe SEB",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4478978904",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21"
+    },
+    {
+      "id": "8f54d9bf670083e0",
+      "title": "Umíte rozsvítit svou fantazii? 💡 Světelný specialista & produktový manažer | flexibilita | 2 dny v týdnu home office | pracovní smlouva nebo IČO",
+      "company": "EXX HOLDING",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4479404503",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21"
+    },
+    {
       "id": "52e0c00de7183030",
       "title": "Hands-on Technical Product Owner, BE-A Avatar",
       "company": "FLAE ROBOTICS a.s.",
@@ -1969,16 +2029,6 @@
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-09-30"
-    },
-    {
-      "id": "3c30e354ac571c0f",
-      "title": "Country Product Manager",
-      "company": "Cultural Care Au Pair",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449128121",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-29"
     },
     {
       "id": "7e6e90607f4a3916",
@@ -4251,10 +4301,10 @@
       "lastSeen": "2026-07-23"
     }
   ],
-  "lastRun": "2026-10-21T07:07:47.702894+00:00",
+  "lastRun": "2026-10-21T16:10:00.918706+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-21T07:07:47.702894+00:00",
-    "finishedAt": "2026-10-21T07:22:36.726596+00:00",
+    "startedAt": "2026-10-21T16:10:00.918706+00:00",
+    "finishedAt": "2026-10-21T16:23:32.921673+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -4337,8 +4387,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 53,
-        "matchedCount": 43
+        "rawCount": 54,
+        "matchedCount": 44
       },
       {
         "name": "Jooble CZ",
@@ -4383,8 +4433,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 132,
-        "matchedCount": 3
+        "rawCount": 129,
+        "matchedCount": 2
       },
       {
         "name": "NoFluffJobs CZ",
@@ -4428,8 +4478,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 36,
-        "matchedCount": 6
+        "rawCount": 39,
+        "matchedCount": 5
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -4463,13 +4513,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 10,
-        "matchedCount": 3
+        "rawCount": 13,
+        "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 61,
-      "new": 1,
+      "matched": 58,
+      "new": 5,
       "updated": 0,
       "failures": 0
     }
