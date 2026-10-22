@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-22T07:07:41.127685+00:00",
-  "generatedAt": "2026-10-22T07:07:41.127685+00:00",
+  "lastRun": "2026-10-22T16:10:22.301708+00:00",
+  "generatedAt": "2026-10-22T16:10:22.301708+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-22T07:07:41.127685+00:00",
-    "finishedAt": "2026-10-22T07:20:11.277085+00:00",
+    "startedAt": "2026-10-22T16:10:22.301708+00:00",
+    "finishedAt": "2026-10-22T16:23:19.377431+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -51,8 +51,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 11,
-        "matchedCount": 6
+        "rawCount": 12,
+        "matchedCount": 7
       },
       {
         "name": "Jobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 51,
-        "matchedCount": 43
+        "rawCount": 50,
+        "matchedCount": 42
       },
       {
         "name": "Jooble CZ",
@@ -132,8 +132,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 128,
-        "matchedCount": 2
+        "rawCount": 131,
+        "matchedCount": 1
       },
       {
         "name": "NoFluffJobs CZ",
@@ -177,8 +177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 39,
-        "matchedCount": 5
+        "rawCount": 27,
+        "matchedCount": 7
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -212,18 +212,48 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 7,
-        "matchedCount": 0
+        "rawCount": 6,
+        "matchedCount": 1
       }
     ],
     "totals": {
-      "matched": 56,
-      "new": 1,
+      "matched": 58,
+      "new": 3,
       "updated": 0,
       "failures": 0
     }
   },
   "jobs": [
+    {
+      "id": "09381fcc96a01882",
+      "title": "Senior Product Manager, Core Platform - 100% Remote - EMEA",
+      "company": "Hostaway",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4482473477",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22"
+    },
+    {
+      "id": "3efd8efa88888c59",
+      "title": "Produktový manažer",
+      "company": "Megapixel s.r.o.",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4479489917",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22"
+    },
+    {
+      "id": "16c18ceb815cbbda",
+      "title": "Product Manager (d/f/m)",
+      "company": "Schaeffler",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4474118882",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22"
+    },
     {
       "id": "c9f05abdad3ceda9",
       "title": "Product Manager",
@@ -1235,6 +1265,16 @@
       "lastSeen": "2026-09-30"
     },
     {
+      "id": "5aec68255cbdbcf5",
+      "title": "Product Manager",
+      "company": "PSD Group",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4472020586",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-10-22"
+    },
+    {
       "id": "65d2277c6145fd56",
       "title": "Hledáme Product Ownera pro oblast Digitálních Investic📱",
       "company": "UniCredit Bank Czech Republic and Slovakia, a.s.",
@@ -1270,16 +1310,6 @@
       "company": "Eleveo",
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4470145432",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-25",
-      "lastSeen": "2026-09-25"
-    },
-    {
-      "id": "5aec68255cbdbcf5",
-      "title": "Product Manager",
-      "company": "PSD Group",
-      "location": "Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4472020586",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-09-25",
       "lastSeen": "2026-09-25"
@@ -2865,6 +2895,16 @@
       "lastSeen": "2026-10-22"
     },
     {
+      "id": "b00a803d0e3798ff",
+      "title": "Product Manager",
+      "company": "Schaeffler",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4455340999",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-10-22"
+    },
+    {
       "id": "8bb0f8f0846a7eee",
       "title": "Senior Product Manager",
       "company": "Transcarent",
@@ -2873,16 +2913,6 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-10-09"
-    },
-    {
-      "id": "b00a803d0e3798ff",
-      "title": "Product Manager",
-      "company": "Schaeffler",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4455340999",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-08-18",
-      "lastSeen": "2026-10-01"
     },
     {
       "id": "1b488f9481063422",
@@ -2955,6 +2985,16 @@
       "lastSeen": "2026-09-11"
     },
     {
+      "id": "e1a7796e579fcffd",
+      "title": "Head of Product",
+      "company": "PLG Group: GoOut & Ticketportal",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/106831/head-of-product",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-08-14",
+      "lastSeen": "2026-10-22"
+    },
+    {
       "id": "39a3d0d2c6909c0a",
       "title": "Product Growth & Monetization Lead",
       "company": "Gen",
@@ -2983,16 +3023,6 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-14",
       "lastSeen": "2026-09-15"
-    },
-    {
-      "id": "e1a7796e579fcffd",
-      "title": "Head of Product",
-      "company": "PLG Group: GoOut & Ticketportal",
-      "location": "Praha",
-      "url": "https://www.startupjobs.cz/nabidka/106831/head-of-product",
-      "portal": "StartupJobs.cz",
-      "firstSeen": "2026-08-14",
-      "lastSeen": "2026-09-11"
     },
     {
       "id": "dfa5e69799113430",
@@ -3692,7 +3722,7 @@
       "url": "https://www.linkedin.com/jobs/view/4443289590",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-07-29",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-10-22"
     },
     {
       "id": "01c09ee0c7c5f8eb",
