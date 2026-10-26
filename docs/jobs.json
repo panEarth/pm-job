@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-26T07:07:46.909770+00:00",
-  "generatedAt": "2026-10-26T07:07:46.909770+00:00",
+  "lastRun": "2026-10-26T16:09:44.636750+00:00",
+  "generatedAt": "2026-10-26T16:09:44.636750+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-26T07:07:46.909770+00:00",
-    "finishedAt": "2026-10-26T07:19:29.027385+00:00",
+    "startedAt": "2026-10-26T16:09:44.636750+00:00",
+    "finishedAt": "2026-10-26T16:21:40.915136+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 47,
-        "matchedCount": 40
+        "rawCount": 45,
+        "matchedCount": 38
       },
       {
         "name": "Jooble CZ",
@@ -132,7 +132,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 131,
+        "rawCount": 130,
         "matchedCount": 1
       },
       {
@@ -177,8 +177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 28,
-        "matchedCount": 0
+        "rawCount": 24,
+        "matchedCount": 4
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -212,18 +212,58 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 5,
-        "matchedCount": 0
+        "rawCount": 4,
+        "matchedCount": 2
       }
     ],
     "totals": {
-      "matched": 48,
-      "new": 0,
+      "matched": 52,
+      "new": 4,
       "updated": 0,
       "failures": 0
     }
   },
   "jobs": [
+    {
+      "id": "378f01dce60a982b",
+      "title": "Product manager – udržitelné materiály (m/ž) | až 100 tis. Kč | Tachov",
+      "company": "HOFMANN WIZARD s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001468285",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26"
+    },
+    {
+      "id": "c07f3aea76506523",
+      "title": "Product Owner “Liquidity Risk Reporting”",
+      "company": "COMMERZBANK Aktiengesellschaft, pobočka Praha",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001496132",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26"
+    },
+    {
+      "id": "2e150c825caf6241",
+      "title": "Product Owner “Liquidity Risk Reporting”",
+      "company": "Commerzbank Czech Republic",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4482943342",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26"
+    },
+    {
+      "id": "6e6663159ac9b438",
+      "title": "DIGITAL PRODUCT OWNER/AI CREATOR",
+      "company": "Generali Česká pojišťovna",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001498909",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26"
+    },
     {
       "id": "9877e9bfd3911db9",
       "title": "Product Owner Animation & Leisure",
@@ -305,6 +345,16 @@
       "lastSeen": "2026-10-22"
     },
     {
+      "id": "8f54d9bf670083e0",
+      "title": "Umíte rozsvítit svou fantazii? 💡 Světelný specialista & produktový manažer | flexibilita | 2 dny v týdnu home office | pracovní smlouva nebo IČO",
+      "company": "EXX HOLDING",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4479404503",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-26"
+    },
+    {
       "id": "cef44a89a6090ca8",
       "title": "Produktový manažer - Vytápění a chlazení",
       "company": "innogy Česká republika a.s.",
@@ -323,16 +373,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-10-21",
       "lastSeen": "2026-10-26"
-    },
-    {
-      "id": "8f54d9bf670083e0",
-      "title": "Umíte rozsvítit svou fantazii? 💡 Světelný specialista & produktový manažer | flexibilita | 2 dny v týdnu home office | pracovní smlouva nebo IČO",
-      "company": "EXX HOLDING",
-      "location": "Prague Metropolitan Area",
-      "url": "https://www.linkedin.com/jobs/view/4479404503",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-22"
     },
     {
       "id": "8f235b6aac106be5",
@@ -445,6 +485,16 @@
       "lastSeen": "2026-10-20"
     },
     {
+      "id": "8a1ee4877e9fd0f6",
+      "title": "Senior Product Owner - Research & Ontology (remote)",
+      "company": "InnoTech",
+      "location": "Portugal",
+      "url": "https://www.linkedin.com/jobs/view/4479835848",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-26"
+    },
+    {
       "id": "7991bdf64f6bec72",
       "title": "Staff Product Manager, Enterprise Deployment Solutions | Sweden | Remote",
       "company": "Grafana Labs",
@@ -470,16 +520,6 @@
       "company": "Grafana Labs",
       "location": "Dublin, County Dublin, Ireland",
       "url": "https://www.linkedin.com/jobs/view/4480944556",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-20"
-    },
-    {
-      "id": "8a1ee4877e9fd0f6",
-      "title": "Senior Product Owner - Research & Ontology (remote)",
-      "company": "InnoTech",
-      "location": "Portugal",
-      "url": "https://www.linkedin.com/jobs/view/4479835848",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-10-19",
       "lastSeen": "2026-10-20"
@@ -1042,7 +1082,7 @@
       "url": "https://www.linkedin.com/jobs/view/4474267419",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-10-06"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "22269299ced1ca2f",
@@ -3692,7 +3732,7 @@
       "url": "https://www.linkedin.com/jobs/view/4386694183",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-07-31",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "a406072beda13e7e",
