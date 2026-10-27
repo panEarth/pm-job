@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-27T07:07:44.294950+00:00",
-  "generatedAt": "2026-10-27T07:07:44.294950+00:00",
+  "lastRun": "2026-10-27T16:09:32.684260+00:00",
+  "generatedAt": "2026-10-27T16:09:32.684260+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-27T07:07:44.294950+00:00",
-    "finishedAt": "2026-10-27T07:19:49.867323+00:00",
+    "startedAt": "2026-10-27T16:09:32.684260+00:00",
+    "finishedAt": "2026-10-27T16:22:08.453791+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 46,
-        "matchedCount": 39
+        "rawCount": 51,
+        "matchedCount": 43
       },
       {
         "name": "Jooble CZ",
@@ -177,7 +177,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 31,
+        "rawCount": 34,
         "matchedCount": 4
       },
       {
@@ -212,18 +212,58 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 5,
-        "matchedCount": 2
+        "rawCount": 12,
+        "matchedCount": 4
       }
     ],
     "totals": {
-      "matched": 53,
-      "new": 0,
+      "matched": 59,
+      "new": 4,
       "updated": 0,
       "failures": 0
     }
   },
   "jobs": [
+    {
+      "id": "5de5d8acbdb2402e",
+      "title": "Technical Product Manager (Data / SaaS)",
+      "company": "Windsor.ai",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4484042473",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27"
+    },
+    {
+      "id": "c4d3b372a69b3f85",
+      "title": "Produktový manažer/manažerka",
+      "company": "Fatra, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001494183",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27"
+    },
+    {
+      "id": "ad9c531d866a0a6c",
+      "title": "Product Manager - AI-First E-commerce Marketplace",
+      "company": "Carvago s.r.o.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001501513",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27"
+    },
+    {
+      "id": "17ecc0355b31e94a",
+      "title": "Product Director",
+      "company": "Zone & Co",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4484059997",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27"
+    },
     {
       "id": "378f01dce60a982b",
       "title": "Product manager – udržitelné materiály (m/ž) | až 100 tis. Kč | Tachov",
@@ -355,6 +395,16 @@
       "lastSeen": "2026-10-27"
     },
     {
+      "id": "8f235b6aac106be5",
+      "title": "Senior Product Manager, AI Platform & Ecosystem",
+      "company": "Wrike",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4482064240",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-27"
+    },
+    {
       "id": "cef44a89a6090ca8",
       "title": "Produktový manažer - Vytápění a chlazení",
       "company": "innogy Česká republika a.s.",
@@ -373,16 +423,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-10-21",
       "lastSeen": "2026-10-27"
-    },
-    {
-      "id": "8f235b6aac106be5",
-      "title": "Senior Product Manager, AI Platform & Ecosystem",
-      "company": "Wrike",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4482064240",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-22"
     },
     {
       "id": "56151aac80564c46",
@@ -1552,7 +1592,7 @@
       "url": "https://www.jobs.cz/rpd/2001405523",
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-10-26"
+      "lastSeen": "2026-10-27"
     },
     {
       "id": "54083dd220b70d7e",
@@ -1975,6 +2015,16 @@
       "lastSeen": "2026-09-15"
     },
     {
+      "id": "aa4dcc912adba924",
+      "title": "Senior Product Manager - Pricing & Promo",
+      "company": "Notino s.r.o.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001398477",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-10-27"
+    },
+    {
       "id": "d7adc62caba64e34",
       "title": "Product Manager",
       "company": "Innomotics, s.r.o.",
@@ -1983,16 +2033,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-09-10",
       "lastSeen": "2026-10-27"
-    },
-    {
-      "id": "aa4dcc912adba924",
-      "title": "Senior Product Manager - Pricing & Promo",
-      "company": "Notino s.r.o.",
-      "location": "",
-      "url": "https://www.jobs.cz/rpd/2001398477",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-09-10",
-      "lastSeen": "2026-10-26"
     },
     {
       "id": "900577f9976ac350",
@@ -2798,7 +2838,7 @@
       "id": "095c841f513f5985",
       "title": "Product Owner – Online sjednání pojištění",
       "company": "Pojišťovna VZP, a.s.",
-      "location": "Lazarská 1718/3, Praha – Nové Město",
+      "location": "Lazarská 1718/3, Praha, Praha – Nové Město",
       "url": "https://www.jobs.cz/rpd/2001387211",
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-21",
@@ -3332,7 +3372,7 @@
       "url": "https://www.jobs.cz/rpd/2001364993",
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-08",
-      "lastSeen": "2026-10-26"
+      "lastSeen": "2026-10-27"
     },
     {
       "id": "900f0e99e21f8d4b",
@@ -3425,6 +3465,16 @@
       "lastSeen": "2026-08-07"
     },
     {
+      "id": "9ff95a197409673e",
+      "title": "Group Product Manager  (Core)",
+      "company": "Wrike",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4422349630",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-10-27"
+    },
+    {
       "id": "cdc45bf060a85fda",
       "title": "Product Owner for project OnePlatform",
       "company": "Aeven",
@@ -3443,16 +3493,6 @@
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-08-06",
       "lastSeen": "2026-10-09"
-    },
-    {
-      "id": "9ff95a197409673e",
-      "title": "Group Product Manager  (Core)",
-      "company": "Wrike",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4422349630",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-08-06",
-      "lastSeen": "2026-10-07"
     },
     {
       "id": "7e6e90607f4a3916",
