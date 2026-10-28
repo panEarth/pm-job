@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-28T07:07:33.219425+00:00",
-  "generatedAt": "2026-10-28T07:07:33.219425+00:00",
+  "lastRun": "2026-10-28T16:09:35.812683+00:00",
+  "generatedAt": "2026-10-28T16:09:35.812683+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-28T07:07:33.219425+00:00",
-    "finishedAt": "2026-10-28T07:19:19.719732+00:00",
+    "startedAt": "2026-10-28T16:09:35.812683+00:00",
+    "finishedAt": "2026-10-28T16:24:41.135360+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 51,
-        "matchedCount": 43
+        "rawCount": 50,
+        "matchedCount": 42
       },
       {
         "name": "Jooble CZ",
@@ -98,12 +98,12 @@
           "product remote"
         ],
         "rawCount": 50,
-        "matchedCount": 0
+        "matchedCount": 2
       },
       {
         "name": "Tribee",
         "status": "error",
-        "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.tribee.cz/cs/prace?q=product+manager\", waiting until \"networkidle\"\n",
+        "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.tribee.cz/cs/prace?q=product+director\", waiting until \"networkidle\"\n",
         "queries": [
           "product manager",
           "product owner",
@@ -177,7 +177,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 25,
+        "rawCount": 30,
         "matchedCount": 6
       },
       {
@@ -212,18 +212,28 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 12,
-        "matchedCount": 4
+        "rawCount": 14,
+        "matchedCount": 5
       }
     ],
     "totals": {
-      "matched": 60,
-      "new": 2,
+      "matched": 62,
+      "new": 4,
       "updated": 0,
       "failures": 1
     }
   },
   "jobs": [
+    {
+      "id": "bf2f280b6b924454",
+      "title": "Senior Technical Product Manager - AI Agents, Evals & Reliability, Artificial Intelligence (AI) Required, Work From Home",
+      "company": "Parallel Partners",
+      "location": "Remote",
+      "url": "https://jooble.org/away/-8562937227944244737?p=1&pos=47&rgn=55180&cid=16672&ckey=product+remote&jobAge=394&brelb=15&scr=790.93066&bscr=790.93066&aq=3607764755040844723&elckey=-6385982876606767886",
+      "portal": "Jooble CZ",
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28"
+    },
     {
       "id": "17673c85134d9e44",
       "title": "Senior Product Manager (Remote, Contract)",
@@ -235,11 +245,41 @@
       "lastSeen": "2026-10-28"
     },
     {
+      "id": "3ef65793e3c24331",
+      "title": "Senior Consultant, Product Leadership",
+      "company": "Modus Create",
+      "location": "Remote",
+      "url": "https://jooble.org/away/-6469230137322434907?p=1&pos=40&rgn=55180&cid=16672&ckey=product+remote&jobAge=202&brelb=15&scr=806.7746&bscr=806.7746&aq=3607764755040844723&elckey=-6385982876606767886",
+      "portal": "Jooble CZ",
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28"
+    },
+    {
       "id": "5ac12cf01f0f5638",
       "title": "Principal Product Manager, Java Intelligence",
       "company": "Azul",
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4484297810",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28"
+    },
+    {
+      "id": "032b05d7ab541a81",
+      "title": "Principal Product Manager",
+      "company": "Microsoft",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4484483493",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28"
+    },
+    {
+      "id": "6dc8c5ea74d2c666",
+      "title": "Fullremote Senior Product Owner",
+      "company": "Capitole",
+      "location": "Spain",
+      "url": "https://www.linkedin.com/jobs/view/4482507498",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-10-28",
       "lastSeen": "2026-10-28"
@@ -1035,6 +1075,16 @@
       "lastSeen": "2026-10-08"
     },
     {
+      "id": "6a172845fff70e1a",
+      "title": "Product Owner - Customer Experience",
+      "company": "Rohlik Group",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4476346929",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-28"
+    },
+    {
       "id": "a8e5ff8a9a54b98c",
       "title": "Machine Learning Product Owner",
       "company": "Seznam.cz, a.s.",
@@ -1070,16 +1120,6 @@
       "company": "JPServis, a.s.",
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4132238918",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07"
-    },
-    {
-      "id": "6a172845fff70e1a",
-      "title": "Product Owner - Customer Experience",
-      "company": "Rohlik Group",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4476346929",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-10-07",
       "lastSeen": "2026-10-07"
