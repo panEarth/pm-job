@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-10-30T07:11:51.390775+00:00",
-  "generatedAt": "2026-10-30T07:11:51.390775+00:00",
+  "lastRun": "2026-10-30T16:12:24.837418+00:00",
+  "generatedAt": "2026-10-30T16:12:24.837418+00:00",
   "lastRunReport": {
-    "startedAt": "2026-10-30T07:11:51.390775+00:00",
-    "finishedAt": "2026-10-30T07:25:05.046475+00:00",
+    "startedAt": "2026-10-30T16:12:24.837418+00:00",
+    "finishedAt": "2026-10-30T16:25:22.129316+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -51,7 +51,7 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 11,
+        "rawCount": 10,
         "matchedCount": 7
       },
       {
@@ -87,7 +87,7 @@
           "ai head of product"
         ],
         "rawCount": 50,
-        "matchedCount": 43
+        "matchedCount": 42
       },
       {
         "name": "Jooble CZ",
@@ -177,8 +177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 28,
-        "matchedCount": 5
+        "rawCount": 30,
+        "matchedCount": 10
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -212,18 +212,78 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 11,
-        "matchedCount": 3
+        "rawCount": 12,
+        "matchedCount": 6
       }
     ],
     "totals": {
-      "matched": 61,
-      "new": 0,
+      "matched": 68,
+      "new": 6,
       "updated": 0,
       "failures": 0
     }
   },
   "jobs": [
+    {
+      "id": "90f3e98df323c7b4",
+      "title": "Product Manager/ka pro Mobilní aplikaci & Design System",
+      "company": "Shoptet",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4485319733",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30"
+    },
+    {
+      "id": "8fe0dacd192c1424",
+      "title": "Product Manager",
+      "company": "La Fosse",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4484828522",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30"
+    },
+    {
+      "id": "c3b7ddda753a9322",
+      "title": "Lead AI Product Manager for Credit Union Agents (Remote)",
+      "company": "Clutch",
+      "location": "Half Moon Bay, CA",
+      "url": "https://jooble.org/away/-1417337768952104369?p=1&pos=42&rgn=55180&cid=16672&ckey=product+remote&jobAge=106&brelb=100&scr=420.3116&bscr=420.3116&aq=8793066819454456837&elckey=7085838720172536431",
+      "portal": "Jooble CZ",
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30"
+    },
+    {
+      "id": "26565c6fefc2e235",
+      "title": "Forward Deployed Product Manager, AI Agent",
+      "company": "Cresta",
+      "location": "Remote",
+      "url": "https://jooble.org/away/1022613955299917827?p=1&pos=14&rgn=55180&cid=16672&ckey=product+remote&jobAge=274&brelb=15&scr=550.7643&bscr=550.7643&aq=8793066819454456837&elckey=7085838720172536431",
+      "portal": "Jooble CZ",
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30"
+    },
+    {
+      "id": "71f4305ae0d04b87",
+      "title": "DevRel Product Manager hiring",
+      "company": "Shoptet",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4485330253",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30"
+    },
+    {
+      "id": "d73efc5b114e1a7d",
+      "title": "(Senior) Product Manager (Agentic Commerce)",
+      "company": "Shoptet",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4485320728",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30"
+    },
     {
       "id": "a96276d814e18ae8",
       "title": "Senior Product Manager | digitální identita & trust services",
@@ -935,6 +995,16 @@
       "lastSeen": "2026-10-30"
     },
     {
+      "id": "53a71d982e941615",
+      "title": "B2C Product Manager",
+      "company": "Similarweb",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4477427107",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-30"
+    },
+    {
       "id": "e3c7c3aa23a7e734",
       "title": "Applied AI Co-Founder / Head of Product (100 % remote) (m/f/d)",
       "company": "EWOR",
@@ -1005,16 +1075,6 @@
       "lastSeen": "2026-10-09"
     },
     {
-      "id": "53a71d982e941615",
-      "title": "B2C Product Manager",
-      "company": "Similarweb",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4477427107",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09"
-    },
-    {
       "id": "43becfd532294067",
       "title": "ServiceNow Product Owner",
       "company": "Grafton Recruitment s.r.o.",
@@ -1038,7 +1098,7 @@
       "id": "ef5746746857218b",
       "title": "Product Owner - APIs and Integrations",
       "company": "Corpay",
-      "location": "Prague, Prague, Czechia",
+      "location": "Czechia, Prague",
       "url": "https://www.linkedin.com/jobs/view/4475907210",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-10-08",
@@ -1051,6 +1111,16 @@
       "location": "Praha",
       "url": "https://www.jobs.cz/rpd/2001470400",
       "portal": "Jobs.cz",
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-30"
+    },
+    {
+      "id": "1ff1ca47d58d0ae9",
+      "title": "Product Manager - Knowledge & Data",
+      "company": "Make",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4474828362",
+      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-10-08",
       "lastSeen": "2026-10-30"
     },
@@ -1071,16 +1141,6 @@
       "location": "Prague, Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4477122730",
       "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-09"
-    },
-    {
-      "id": "1ff1ca47d58d0ae9",
-      "title": "Product Manager - Knowledge & Data",
-      "company": "Make",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4474828362",
-      "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-10-08",
       "lastSeen": "2026-10-09"
     },
@@ -1842,7 +1902,7 @@
       "url": "https://www.linkedin.com/jobs/view/4466207868",
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-30"
     },
     {
       "id": "205e5a2b74760ef6",
@@ -2295,6 +2355,16 @@
       "lastSeen": "2026-10-30"
     },
     {
+      "id": "3c30e354ac571c0f",
+      "title": "Country Product Manager",
+      "company": "Cultural Care Au Pair",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4449128121",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-10-30"
+    },
+    {
       "id": "82a8437afbfa9c86",
       "title": "Senior Product Manager – Marketplace (100% Remote within Spain)",
       "company": "Docplanner",
@@ -2313,16 +2383,6 @@
       "portal": "LinkedIn Jobs — Remote EU",
       "firstSeen": "2026-09-07",
       "lastSeen": "2026-10-29"
-    },
-    {
-      "id": "3c30e354ac571c0f",
-      "title": "Country Product Manager",
-      "company": "Cultural Care Au Pair",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4449128121",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-10-22"
     },
     {
       "id": "998c9d31cd272345",
@@ -3992,7 +4052,7 @@
       "url": "https://www.linkedin.com/jobs/view/4443940144",
       "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-07-23",
-      "lastSeen": "2026-10-09"
+      "lastSeen": "2026-10-30"
     },
     {
       "id": "3f8762f2ed612685",
