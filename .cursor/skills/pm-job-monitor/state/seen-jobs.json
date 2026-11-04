@@ -581,6 +581,86 @@
       "lastSeen": "2026-11-04"
     },
     {
+      "id": "8a1ee4877e9fd0f6",
+      "title": "Senior Product Owner - Research & Ontology (remote)",
+      "company": "InnoTech",
+      "location": "Portugal",
+      "url": "https://www.linkedin.com/jobs/view/4479835848",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-11-04"
+    },
+    {
+      "id": "e78aa2f64d16551a",
+      "title": "🎯 Product Manager",
+      "company": "Applifting",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/84421/product-manager",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-08-05",
+      "lastSeen": "2026-11-04"
+    },
+    {
+      "id": "ae7eb83da36abf8d",
+      "title": "Produktový manažer sortimentu školních a kancelářských potřeb (m/ž)",
+      "company": "SEVT, a. s.",
+      "location": "Pekařova 250/4, Praha – Bohnice",
+      "url": "https://www.jobs.cz/rpd/2001515752",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04"
+    },
+    {
+      "id": "1149cf9e415551ba",
+      "title": "(Senior) Product Manager (Core Player Experience & PAM Ecosystem) - Prague",
+      "company": "Allwyn",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4487261904",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04"
+    },
+    {
+      "id": "8ae5ccd57e7aa5ca",
+      "title": "(Senior) Product Manager (Customer Engagement & Rewards) - Prague",
+      "company": "Allwyn",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4487270712",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04"
+    },
+    {
+      "id": "ae895bcd22aefa6c",
+      "title": "Product Manager, PV Reporting and Surveillance",
+      "company": "MSD Czech Republic",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4446868148",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04"
+    },
+    {
+      "id": "1985dc4391581be9",
+      "title": "Product Owner /  Delivery Lead",
+      "company": "Enrian Partners",
+      "location": "Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4484323787",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04"
+    },
+    {
+      "id": "11d7d68cdb87cecf",
+      "title": "Senior Product Manager - Fully Remote Job",
+      "company": "Openprovider",
+      "location": "Zagreb, Zagreb, Croatia",
+      "url": "https://www.linkedin.com/jobs/view/4485506169",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04"
+    },
+    {
       "id": "cfb5ca949ff59496",
       "title": "Senior Product Growth Manager - Remote",
       "company": "Zyte",
@@ -1068,16 +1148,6 @@
       "url": "https://www.jobs.cz/rpd/2001298892",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-10-27"
-    },
-    {
-      "id": "8a1ee4877e9fd0f6",
-      "title": "Senior Product Owner - Research & Ontology (remote)",
-      "company": "InnoTech",
-      "location": "Portugal",
-      "url": "https://www.linkedin.com/jobs/view/4479835848",
-      "portal": "LinkedIn Jobs — Remote EU",
-      "firstSeen": "2026-10-19",
       "lastSeen": "2026-10-27"
     },
     {
@@ -3581,16 +3651,6 @@
       "lastSeen": "2026-08-28"
     },
     {
-      "id": "e78aa2f64d16551a",
-      "title": "🎯 Product Manager",
-      "company": "Applifting",
-      "location": "Praha",
-      "url": "https://www.startupjobs.cz/nabidka/84421/product-manager",
-      "portal": "StartupJobs.cz",
-      "firstSeen": "2026-08-05",
-      "lastSeen": "2026-08-27"
-    },
-    {
       "id": "de6dfe9256b1200f",
       "title": "Product Manager",
       "company": "Invity",
@@ -4331,10 +4391,10 @@
       "lastSeen": "2026-08-06"
     }
   ],
-  "lastRun": "2026-11-04T07:08:51.686469+00:00",
+  "lastRun": "2026-11-04T16:12:05.990369+00:00",
   "lastRunReport": {
-    "startedAt": "2026-11-04T07:08:51.686469+00:00",
-    "finishedAt": "2026-11-04T07:21:39.088899+00:00",
+    "startedAt": "2026-11-04T16:12:05.990369+00:00",
+    "finishedAt": "2026-11-04T16:25:04.949951+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -4382,8 +4442,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 10,
-        "matchedCount": 7
+        "rawCount": 11,
+        "matchedCount": 8
       },
       {
         "name": "Jobs.cz",
@@ -4417,8 +4477,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 55,
-        "matchedCount": 45
+        "rawCount": 51,
+        "matchedCount": 40
       },
       {
         "name": "Jooble CZ",
@@ -4463,7 +4523,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 122,
+        "rawCount": 124,
         "matchedCount": 2
       },
       {
@@ -4508,8 +4568,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 48,
-        "matchedCount": 5
+        "rawCount": 31,
+        "matchedCount": 6
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -4543,13 +4603,13 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 8,
-        "matchedCount": 0
+        "rawCount": 12,
+        "matchedCount": 4
       }
     ],
     "totals": {
-      "matched": 59,
-      "new": 4,
+      "matched": 60,
+      "new": 6,
       "updated": 0,
       "failures": 0
     }
