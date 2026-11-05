@@ -526,7 +526,7 @@
       "company": "Allwyn",
       "location": "Prague, Czechia",
       "url": "https://www.linkedin.com/jobs/view/4487270712",
-      "portal": "LinkedIn Jobs — Remote EU",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-11-04",
       "lastSeen": "2026-11-05"
     },
@@ -617,6 +617,46 @@
       "location": "Dublin, County Dublin, Ireland",
       "url": "https://www.linkedin.com/jobs/view/4485526596",
       "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05"
+    },
+    {
+      "id": "3cfd204ea329a74e",
+      "title": "Product Manager - Cloudera Kubernetes",
+      "company": "Cloudera",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4469463061",
+      "portal": "LinkedIn Jobs — Remote EU",
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-11-05"
+    },
+    {
+      "id": "6a4ee2af75f20427",
+      "title": "Product Manager for Campaign Systems",
+      "company": "Dateio",
+      "location": "Praha",
+      "url": "https://www.startupjobs.cz/nabidka/109191/product-manager-for-campaign-systems",
+      "portal": "StartupJobs.cz",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05"
+    },
+    {
+      "id": "33db9d1ce7e69d50",
+      "title": "Head of Product Digitalization",
+      "company": "SIKO KOUPELNY a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001516790",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05"
+    },
+    {
+      "id": "7a535579b880f637",
+      "title": "IT Product Owner",
+      "company": "Avio Aero",
+      "location": "Prague, Prague, Czechia",
+      "url": "https://www.linkedin.com/jobs/view/4470601089",
+      "portal": "LinkedIn Jobs — Česko",
       "firstSeen": "2026-11-05",
       "lastSeen": "2026-11-05"
     },
@@ -1708,16 +1748,6 @@
       "url": "https://www.jobs.cz/rpd/2001335529",
       "portal": "Jobs.cz",
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-10-15"
-    },
-    {
-      "id": "3cfd204ea329a74e",
-      "title": "Product Manager - Cloudera Kubernetes",
-      "company": "Cloudera",
-      "location": "Prague, Prague, Czechia",
-      "url": "https://www.linkedin.com/jobs/view/4469463061",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-09-23",
       "lastSeen": "2026-10-15"
     },
     {
@@ -4351,10 +4381,10 @@
       "lastSeen": "2026-08-07"
     }
   ],
-  "lastRun": "2026-11-05T07:12:40.651478+00:00",
+  "lastRun": "2026-11-05T16:10:39.181157+00:00",
   "lastRunReport": {
-    "startedAt": "2026-11-05T07:12:40.651478+00:00",
-    "finishedAt": "2026-11-05T07:25:27.477022+00:00",
+    "startedAt": "2026-11-05T16:10:39.181157+00:00",
+    "finishedAt": "2026-11-05T16:23:43.740033+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -4402,8 +4432,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 11,
-        "matchedCount": 8
+        "rawCount": 13,
+        "matchedCount": 9
       },
       {
         "name": "Jobs.cz",
@@ -4437,8 +4467,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 54,
-        "matchedCount": 44
+        "rawCount": 52,
+        "matchedCount": 42
       },
       {
         "name": "Jooble CZ",
@@ -4483,7 +4513,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 121,
+        "rawCount": 127,
         "matchedCount": 2
       },
       {
@@ -4528,7 +4558,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 32,
+        "rawCount": 44,
         "matchedCount": 6
       },
       {
@@ -4563,12 +4593,12 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 12,
-        "matchedCount": 5
+        "rawCount": 11,
+        "matchedCount": 3
       }
     ],
     "totals": {
-      "matched": 65,
+      "matched": 62,
       "new": 3,
       "updated": 0,
       "failures": 0
