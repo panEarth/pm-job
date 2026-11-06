@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-11-06T07:10:34.261904+00:00",
-  "generatedAt": "2026-11-06T07:10:34.261904+00:00",
+  "lastRun": "2026-11-06T16:11:22.500867+00:00",
+  "generatedAt": "2026-11-06T16:11:22.500867+00:00",
   "lastRunReport": {
-    "startedAt": "2026-11-06T07:10:34.261904+00:00",
-    "finishedAt": "2026-11-06T07:23:47.711719+00:00",
+    "startedAt": "2026-11-06T16:11:22.500867+00:00",
+    "finishedAt": "2026-11-06T16:24:50.848881+00:00",
     "portals": [
       {
         "name": "StartupJobs.cz",
@@ -51,8 +51,8 @@
           "vice-president-of-product",
           "vp-product"
         ],
-        "rawCount": 14,
-        "matchedCount": 10
+        "rawCount": 15,
+        "matchedCount": 11
       },
       {
         "name": "Jobs.cz",
@@ -86,8 +86,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 49,
-        "matchedCount": 40
+        "rawCount": 52,
+        "matchedCount": 44
       },
       {
         "name": "Jooble CZ",
@@ -132,7 +132,7 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 126,
+        "rawCount": 131,
         "matchedCount": 2
       },
       {
@@ -177,8 +177,8 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 37,
-        "matchedCount": 4
+        "rawCount": 41,
+        "matchedCount": 3
       },
       {
         "name": "LinkedIn Jobs — Remote EU",
@@ -212,18 +212,38 @@
           "ai product owner",
           "ai head of product"
         ],
-        "rawCount": 10,
-        "matchedCount": 2
+        "rawCount": 5,
+        "matchedCount": 0
       }
     ],
     "totals": {
-      "matched": 58,
-      "new": 2,
+      "matched": 60,
+      "new": 3,
       "updated": 0,
       "failures": 0
     }
   },
   "jobs": [
+    {
+      "id": "3150075d555ebefd",
+      "title": "UX Designer - Product owner (m/ž)",
+      "company": "Skupina E.ON",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001519374",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06"
+    },
+    {
+      "id": "fc7eb6f2f00ffaa6",
+      "title": "Produktový manažer pro Volnamista.cz",
+      "company": "Seznam.cz, a.s.",
+      "location": "Praha",
+      "url": "https://www.jobs.cz/rpd/2001519382",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06"
+    },
     {
       "id": "388c06f90e302ef2",
       "title": "Product Manager, Actors",
@@ -231,6 +251,16 @@
       "location": "Praha",
       "url": "https://www.startupjobs.cz/nabidka/109199/product-manager-actors",
       "portal": "StartupJobs.cz",
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06"
+    },
+    {
+      "id": "f705d63559e096fc",
+      "title": "Product Manager - Protection",
+      "company": "Česká spořitelna, a.s.",
+      "location": "",
+      "url": "https://www.jobs.cz/rpd/2001519657",
+      "portal": "Jobs.cz",
       "firstSeen": "2026-11-06",
       "lastSeen": "2026-11-06"
     },
@@ -568,7 +598,7 @@
       "id": "4dec2b0804eee5ea",
       "title": "BRAIINS FORGE: Product Manager",
       "company": "Braiins Systems s.r.o.",
-      "location": "Praha – Vysočany, Českomoravská 142/18",
+      "location": "Praha, Praha – Vysočany, Českomoravská 142/18",
       "url": "https://www.jobs.cz/rpd/2001503144",
       "portal": "Jobs.cz",
       "firstSeen": "2026-10-29",
@@ -805,6 +835,16 @@
       "lastSeen": "2026-10-22"
     },
     {
+      "id": "8f54d9bf670083e0",
+      "title": "Umíte rozsvítit svou fantazii? 💡 Světelný specialista & produktový manažer | flexibilita | 2 dny v týdnu home office | pracovní smlouva nebo IČO",
+      "company": "EXX HOLDING",
+      "location": "Prague Metropolitan Area",
+      "url": "https://www.linkedin.com/jobs/view/4479404503",
+      "portal": "LinkedIn Jobs — Česko",
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-11-06"
+    },
+    {
       "id": "cef44a89a6090ca8",
       "title": "Produktový manažer - Vytápění a chlazení",
       "company": "innogy Česká republika a.s.",
@@ -823,16 +863,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-10-21",
       "lastSeen": "2026-11-06"
-    },
-    {
-      "id": "8f54d9bf670083e0",
-      "title": "Umíte rozsvítit svou fantazii? 💡 Světelný specialista & produktový manažer | flexibilita | 2 dny v týdnu home office | pracovní smlouva nebo IČO",
-      "company": "EXX HOLDING",
-      "location": "Prague Metropolitan Area",
-      "url": "https://www.linkedin.com/jobs/view/4479404503",
-      "portal": "LinkedIn Jobs — Česko",
-      "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-04"
     },
     {
       "id": "8f235b6aac106be5",
@@ -3255,6 +3285,16 @@
       "lastSeen": "2026-08-25"
     },
     {
+      "id": "095c841f513f5985",
+      "title": "Product Owner – Online sjednání pojištění",
+      "company": "Pojišťovna VZP, a.s.",
+      "location": "Lazarská 1718/3, Praha, Praha – Nové Město",
+      "url": "https://www.jobs.cz/rpd/2001387211",
+      "portal": "Jobs.cz",
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-11-06"
+    },
+    {
       "id": "6814f04badf612cb",
       "title": "PRODUKTOVÝ MANAŽER pro odbornou komunikaci v lékárnách",
       "company": "BENU Česká republika s.r.o.",
@@ -3263,16 +3303,6 @@
       "portal": "Jobs.cz",
       "firstSeen": "2026-08-21",
       "lastSeen": "2026-11-06"
-    },
-    {
-      "id": "095c841f513f5985",
-      "title": "Product Owner – Online sjednání pojištění",
-      "company": "Pojišťovna VZP, a.s.",
-      "location": "Lazarská 1718/3, Praha, Praha – Nové Město",
-      "url": "https://www.jobs.cz/rpd/2001387211",
-      "portal": "Jobs.cz",
-      "firstSeen": "2026-08-21",
-      "lastSeen": "2026-11-05"
     },
     {
       "id": "1e338dde0522e1fb",
